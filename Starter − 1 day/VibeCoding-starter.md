@@ -54,10 +54,13 @@ Le métier de développeur consiste surtout à s'assurer de la qualité du code 
 
 ##### 1. Itératif
 
-Étape par étape. On ajoute les fonctionnalités (ou les refacto) un à un à partir de prompts successif. 
+Étape par étape. On commence par un gros prompt qui défini le projet (on verra plus tard comment en faire des règles)
+On ajoute les fonctionnalités (ou les refacto) un à un à partir de prompts successif. 
 
 ✅ Meilleure maîtrise de l'évolution du logiciel
 ❌ Pensez à commiter chaque étape fonctionnelle, le vibe-coding peut vite partir en vrille
+
+Exemple de session: URL
 
 ##### 2. One big happy prompt
 
@@ -66,17 +69,48 @@ On prépare un prompt très détaillé, générallement sous la forme d'un fichi
 ✅ Peu de risques de régressions entre les prompts: le LLM sait où il va. Le projet a été pensé et structuré
 ❌ La relecture et bonne compréhension de ce qui a été généré est longue et fastidieuse. Le temps de développement est généralement augmenté
 
+Exemple de prompt complet:
+`
+
+`
+
 #### Les outils disponibles
 
 * Replit: https://replit.com/ Éditeur en ligne
 * WindSurf: https://windsurf.com/ 
+* Kilo code : https://marketplace.visualstudio.com/items?itemName=kilocode.Kilo-Code Plugin VSCode 
+* Continue : https://marketplace.visualstudio.com/items?itemName=Continue.continue Plugin VSCode
 * Cursor: https://www.cursor.com/ logiciel retenu au sein d'Astek
 
 #### Comment fonctionne l'IA pour le code
 
+Notions : 
+- LLM (modèles fondations, modèles entraînés)
+- data source
+- vectorisation
+- prompt engineering
+- MCP
+- Agent IA
+- Agent2Agent
+
 Comme pour tout sujet, les LLM fonctionnent en perroquets stochastiques : ils analysent un texte donné, réduit en tokens, et tentent de déduire l'intention entre le prompt et la codebase.
 
-Le LLM tente alors de générer la réponse la plus probable, sur base de son entraînement et de son nombre de paramètres possibles.
+Le LLM tente alors de générer la réponse la plus probable, sur base de son entraînement et de son nombre de paramètres possibles._
+
+<Schemas issus du net ici>
+
+| Aspect                      | Vibe Coding                                        | Traditional Coding                                       |
+|:----------------------------|:---------------------------------------------------|:---------------------------------------------------------|
+| **Approach**                | Describe desired outcomes in plain language        | Write code line-by-line using programming languages      |
+| **Tool Used**               | Large Language Models (LLMs)                       | IDEs, compilers, debuggers, and coding frameworks        |
+| **User Skill Level**        | Suitable for beginners and non-programmers         | Requires strong technical knowledge                      |
+| **Coding Knowledge**        | Minimal – focuses on intent, not syntax            | High – user must understand logic, syntax, and structure |
+| **Speed**                   | Fast – good for quick builds and iteration         | Slower – more precision and planning involved            |
+| **Control and Precision**   | Lower – depends on the AI's interpretation         | High – every line is written and reviewed by developer   |
+| **Best For**                | Rapid prototyping, small tools, idea exploration   | Scalable, secure, and production-grade systems           |
+| **Review Process**          | Output reviewed post-generation; often iterative   | Code is reviewed during and after development            |
+| **Security & Maintenance**  | Higher risk due to unknowns in generated code      | Easier to secure and maintain with full understanding    |
+| **Learning Curve**          | Low – users can start building with basic guidance | High – requires learning languages, logic, and debugging |
 
 #### Modèles à favoriser 
 
@@ -84,12 +118,18 @@ Le LLM tente alors de générer la réponse la plus probable, sur base de son en
 
 Gemini-2.5-pro donne de bons résultats
 
+ChatGPT-4.1 sur le front
+
+C'est aussi très subjectif, d'un dev à l'autre on apprécie des choses différentes. Un LLM plus ou moins verbeux, réflexif… 
+
 ➡️ Faire un essai en one try des différents modèles avec le prompt `Développe un système de gestion de site web statique à partir de fichiers markdown en utilisant Python3, HTML, Javascript (sans framework) et TailWind`
 
 #### Principales Limites et pièges à éviter
 
 - Comitez ! L'IA peut ruiner en quelques minutes plusieurs semaines de travail
 - Faites des branches locales en grande quantité pour tester plusieurs prompts pour régler un même point
+- Soyez attentif à la couverture des tests
+- Soyez attentif à la relecture de code
 
 ### 10h30 - 11h00 : Information : L'art du prompt engineering pour le code (Théorie)
 
@@ -170,3 +210,4 @@ Tour de table:
     * Quelles bonnes pratiques as-tu retenues ?
     * As-tu des ressources à partager ? 
     * As-tu des questions ? 
+</initial_code>
