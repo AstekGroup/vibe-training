@@ -1,7 +1,9 @@
+%%%TBD%%% sur le code lab système de gestion des questions lives avec réponses IA et possibilité d'ajouter la réponse formateur (s'afficherait sous forme d'info-bulle au niveau du moment du cours où est arrivé la question)
+
 # Vibe Coding: Formation Starter (1j)
 
 v1 Philippe Pary - Thomas Foutrein
-2025-05-27
+2025
 
 Première approche d'une formation Vibe Coding en une journée
 Formation "Vibe Coding" pour Développeurs Débutants
@@ -154,7 +156,7 @@ On prépare un prompt très détaillé, générallement sous la forme d'un fichi
 
 ❌ La relecture et bonne compréhension de ce qui a été généré est longue et fastidieuse. Le temps de développement est généralement augmenté
 
-#### Les outils disponibles
+#### Les IDE disponibles
 
 
 | Outil           | Type             | Avantages                                        | Inconvénients                                | Modèles supportés              | URL d'accès                                             |
@@ -218,6 +220,12 @@ C'est aussi très subjectif, d'un dev à l'autre on apprécie des choses différ
 
 ➡️ Faire un essai en one try des différents modèles avec le prompt `Développe un système de gestion de liste de tâches à partir de fichiers markdown en utilisant Python3, HTML, Javascript (sans framework) et TailWind` 
 
+#### Git et Vibe coding
+
+%%%TBD%%%
+
+husky + commitlint + lint-staged
+
 #### Principales Limites et pièges à éviter
 
 - Comitez ! L'IA peut ruiner en quelques minutes plusieurs semaines de travail
@@ -227,75 +235,6 @@ C'est aussi très subjectif, d'un dev à l'autre on apprécie des choses différ
 - Soyez attentif à la sécurité - les modèles peuvent générer du code défectueux ou malveillant
 - Privilégiez les LLMs connus, renseignez vous sur les LLMs plus secondaires ou entraînés par votre client (ou pire, des inconnus)
 - Vous pouvez interrompre le processus de génération de code à tout moment si vous considérez que le LLM part dans la mauvaise direction
-
-### Risques technologiques
-
-#### Développement durable et Green IT avec le Vibe Coding
-
-Le vibe coding a des implications importantes sur l'empreinte carbone du développement logiciel. D'un côté, l'utilisation intensive des LLM augmente la consommation énergétique liée à l'inférence sur des serveurs distants. De l'autre, cette approche peut conduire à des applications plus optimisées et à un cycle de développement raccourci.
-
-Pour un vibe coding respectueux de l'environnement :
-- Optimisez vos prompts pour réduire le nombre d'interactions nécessaires
-- Privilégiez les modèles plus légers lorsque la complexité de la tâche le permet
-- Demandez explicitement à l'IA de générer du code efficient en ressources
-- Incluez des critères d'éco-conception dans vos prompts (optimisation des requêtes, minimisation des dépendances, etc.)
-- Validez la performance énergétique du code généré avec des outils dédiés
-
-Un développeur responsable doit être conscient que chaque prompt a un coût énergétique. Une étude récente estime qu'une session de vibe coding intensive peut consommer l'équivalent de plusieurs heures d'utilisation d'un ordinateur portable. Intégrez cette dimension dans vos choix quotidiens en privilégiant des approches qui maximisent l'efficacité tout en minimisant l'empreinte environnementale.
-
-L'IA peut également être un allié pour optimiser l'efficience énergétique de vos applications. Demandez-lui spécifiquement d'analyser et d'améliorer votre code sous cet angle, et vous obtiendrez souvent des suggestions pertinentes pour réduire la consommation de ressources.
-
-#### Sécurité : les défis du code généré par IA
-
-Le vibe coding introduit de nouveaux défis de sécurité que tout développeur doit connaître. Les LLM peuvent involontairement générer du code vulnérable ou même malveillant, particulièrement lorsqu'ils sont mal dirigés ou manipulés.
-
-Le MCP poisoning (Model Context Poisoning) est une préoccupation majeure : des acteurs malintentionnés peuvent injecter des instructions cachées dans les prompts ou dans le code source pour manipuler les modèles. Pour vous protéger :
-- Vérifiez systématiquement le code généré avant de l'exécuter
-- Utilisez des outils d'analyse statique de code sur les outputs de l'IA
-- Ne partagez jamais de données sensibles ou de secrets dans vos prompts
-- Restez vigilant face aux comportements inhabituels de l'IA
-- Appliquez le principe de moindre privilège pour toute exécution de code généré
-
-La confiance accordée au LLM doit toujours être mesurée. Si les grands modèles comme Claude ou GPT sont généralement fiables, ils ne sont pas infaillibles. Les risques de fuite de données existent également : certains modèles peuvent mémoriser des informations sensibles de vos prompts et les réutiliser ailleurs. Utilisez des instances privées ou des solutions on-premise pour les projets critiques.
-
-Intégrez systématiquement une revue de sécurité dans votre workflow de vibe coding, idéalement en demandant à l'IA elle-même d'analyser les vulnérabilités potentielles du code qu'elle a généré.
-
-#### Considérations éthiques du Vibe Coding
-
-L'utilisation du vibe coding soulève des questions éthiques importantes que chaque développeur doit considérer. Les modèles d'IA reflètent les biais présents dans leurs données d'entraînement, ce qui peut conduire à des solutions techniques qui perpétuent des inégalités existantes ou qui manquent d'inclusivité.
-
-Le sexisme, le racisme, le validisme, l'eurocentrisme et l'occidentalocentrisme sont particulièrement prégnants dans de nombreux LLM. Le code généré peut privilégier des approches, des normes ou des hypothèses qui ne sont pas universelles. 
-
-Par exemple:
-- la gestion des dates, des noms ou des adresses peut ne pas tenir compte des spécificités culturelles diverses (i18n claquée au sol)
-- d'éventuels emoji peuvent être bloqués en couleur de peau et en genre (pour rappel, la bonne pratique étant de choisir des emoji neutres)
-- des formulations inclusives : « madame / monsieur » d'un courier changé en juste « monsieur », « H/F » d'une offre d'emploi qui disparaît
-- l'IA peut générer des applications qui ne respectent pas le RIAA (alt des images pourris, texte essentiel accessible uniquement avec un effet visuel lié à JavaScript etc.)
-
-Pour pratiquer un vibe coding éthique :
-- Examinez le code généré pour identifier et corriger les biais potentiels
-- Diversifiez vos exemples et cas d'usage dans vos prompts
-- Spécifiez explicitement vos attentes en matière d'inclusivité et d'accessibilité
-- Testez les solutions avec des perspectives et des données diverses
-- Restez critique face aux solutions "standard" proposées par l'IA
-
-La transparence est également un enjeu majeur : dans la documentation, signalez clairement aux utilisateurs finaux quelles parties du code ont été générées par IA et comment elles ont été validées. Cette pratique renforce la confiance et permet une utilisation plus responsable de la technologie.
-
-#### Aspects juridiques et réglementaires
-
-Le vibe coding s'inscrit dans un cadre juridique en pleine évolution qu'il est essentiel de maîtriser. RGPD, droit d'auteur, licences libres etc. il y a de nombreux aspects juridiques pour l'instant mal pris en compte par les LLM.
-
-Pour vous protéger légalement :
-- Documentez votre processus de vibe coding (gardez l'historique des prompts et les modèles utilisés)
-- Vérifiez les licences des modèles que vous utilisez
-- Soyez attentif aux licences mentionnées dans le code généré
-- Réécrivez ou adaptez le code lorsque nécessaire pour éviter les problèmes de droits
-- Consultez un expert juridique pour les projets d'envergure
-
-La conformité avec les réglementations sectorielles (finance, santé, etc.) doit également être prise en compte dès la conception de vos prompts, ie rejoindre vos prompts système/projet.
-
-
-
 
 ### 10h30 - 11h00 : Information : L'art du prompt engineering pour le code (Théorie)
 
@@ -399,7 +338,73 @@ Tour de table:
 - Analyse critique du processus: demandez à l'IA d'analyser le processus de développement suivi et de proposer des améliorations pour un projet futur
 - Documentation des apprentissages: créez un document résumant les techniques de prompt engineering qui ont fonctionné et celles à éviter
 
-### 17h15 - 18h00 : Bilan et perspectives (Théorie et discussion)
+### 17H15-17H30 : Risques à connaître (Théorie) - facultatif
+
+#### Développement durable et Green IT avec le Vibe Coding
+
+Le vibe coding a des implications importantes sur l'empreinte carbone du développement logiciel. D'un côté, l'utilisation intensive des LLM augmente la consommation énergétique liée à l'inférence sur des serveurs distants. De l'autre, cette approche peut conduire à des applications plus optimisées et à un cycle de développement raccourci.
+
+Pour un vibe coding respectueux de l'environnement :
+- Optimisez vos prompts pour réduire le nombre d'interactions nécessaires
+- Privilégiez les modèles plus légers lorsque la complexité de la tâche le permet
+- Demandez explicitement à l'IA de générer du code efficient en ressources
+- Incluez des critères d'éco-conception dans vos prompts (optimisation des requêtes, minimisation des dépendances, etc.)
+- Validez la performance énergétique du code généré avec des outils dédiés
+
+Un développeur responsable doit être conscient que chaque prompt a un coût énergétique. Une étude récente estime qu'une session de vibe coding intensive peut consommer l'équivalent de plusieurs heures d'utilisation d'un ordinateur portable. Intégrez cette dimension dans vos choix quotidiens en privilégiant des approches qui maximisent l'efficacité tout en minimisant l'empreinte environnementale.
+
+L'IA peut également être un allié pour optimiser l'efficience énergétique de vos applications. Demandez-lui spécifiquement d'analyser et d'améliorer votre code sous cet angle, et vous obtiendrez souvent des suggestions pertinentes pour réduire la consommation de ressources.
+
+#### Sécurité : les défis du code généré par IA
+
+Le vibe coding introduit de nouveaux défis de sécurité que tout développeur doit connaître. Les LLM peuvent involontairement générer du code vulnérable ou même malveillant, particulièrement lorsqu'ils sont mal dirigés ou manipulés.
+
+Le MCP poisoning (Model Context Poisoning) est une préoccupation majeure : des acteurs malintentionnés peuvent injecter des instructions cachées dans les prompts ou dans le code source pour manipuler les modèles. Pour vous protéger :
+- Vérifiez systématiquement le code généré avant de l'exécuter
+- Utilisez des outils d'analyse statique de code sur les outputs de l'IA
+- Ne partagez jamais de données sensibles ou de secrets dans vos prompts
+- Restez vigilant face aux comportements inhabituels de l'IA
+- Appliquez le principe de moindre privilège pour toute exécution de code généré
+
+La confiance accordée au LLM doit toujours être mesurée. Si les grands modèles comme Claude ou GPT sont généralement fiables, ils ne sont pas infaillibles. Les risques de fuite de données existent également : certains modèles peuvent mémoriser des informations sensibles de vos prompts et les réutiliser ailleurs. Utilisez des instances privées ou des solutions on-premise pour les projets critiques.
+
+Intégrez systématiquement une revue de sécurité dans votre workflow de vibe coding, idéalement en demandant à l'IA elle-même d'analyser les vulnérabilités potentielles du code qu'elle a généré.
+
+#### Considérations éthiques du Vibe Coding
+
+L'utilisation du vibe coding soulève des questions éthiques importantes que chaque développeur doit considérer. Les modèles d'IA reflètent les biais présents dans leurs données d'entraînement, ce qui peut conduire à des solutions techniques qui perpétuent des inégalités existantes ou qui manquent d'inclusivité.
+
+Le sexisme, le racisme, le validisme, l'eurocentrisme et l'occidentalocentrisme sont particulièrement prégnants dans de nombreux LLM. Le code généré peut privilégier des approches, des normes ou des hypothèses qui ne sont pas universelles. 
+
+Par exemple:
+- la gestion des dates, des noms ou des adresses peut ne pas tenir compte des spécificités culturelles diverses (i18n claquée au sol)
+- d'éventuels emoji peuvent être bloqués en couleur de peau et en genre (pour rappel, la bonne pratique étant de choisir des emoji neutres)
+- des formulations inclusives : « madame / monsieur » d'un courier changé en juste « monsieur », « H/F » d'une offre d'emploi qui disparaît
+- l'IA peut générer des applications qui ne respectent pas le RIAA (alt des images pourris, texte essentiel accessible uniquement avec un effet visuel lié à JavaScript etc.)
+
+Pour pratiquer un vibe coding éthique :
+- Examinez le code généré pour identifier et corriger les biais potentiels
+- Diversifiez vos exemples et cas d'usage dans vos prompts
+- Spécifiez explicitement vos attentes en matière d'inclusivité et d'accessibilité
+- Testez les solutions avec des perspectives et des données diverses
+- Restez critique face aux solutions "standard" proposées par l'IA
+
+La transparence est également un enjeu majeur : dans la documentation, signalez clairement aux utilisateurs finaux quelles parties du code ont été générées par IA et comment elles ont été validées. Cette pratique renforce la confiance et permet une utilisation plus responsable de la technologie.
+
+#### Aspects juridiques et réglementaires
+
+Le vibe coding s'inscrit dans un cadre juridique en pleine évolution qu'il est essentiel de maîtriser. RGPD, droit d'auteur, licences libres etc. il y a de nombreux aspects juridiques pour l'instant mal pris en compte par les LLM.
+
+Pour vous protéger légalement :
+- Documentez votre processus de vibe coding (gardez l'historique des prompts et les modèles utilisés)
+- Vérifiez les licences des modèles que vous utilisez
+- Soyez attentif aux licences mentionnées dans le code généré
+- Réécrivez ou adaptez le code lorsque nécessaire pour éviter les problèmes de droits
+- Consultez un expert juridique pour les projets d'envergure
+
+La conformité avec les réglementations sectorielles (finance, santé, etc.) doit également être prise en compte dès la conception de vos prompts, ie rejoindre vos prompts système/projet.
+
+### 17h30 - 18h00 : Bilan et perspectives (Théorie et discussion)
 
 * Présentation des projets réalisés (tour de table)
     * Quelles difficultées as-tu rencontrées ?
@@ -407,3 +412,4 @@ Tour de table:
     * As-tu des ressources à partager ? 
     * As-tu des questions ? 
 * Évaluation de la formation (10 minutes)
+* Rappel: le vibe est une méthode récente en constante évolution : maintenez une veille technologique sur le sujet
