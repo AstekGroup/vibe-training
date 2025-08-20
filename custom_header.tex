@@ -1,0 +1,14 @@
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+
+% Define the style for the first page
+\fancypagestyle{firstpage}{
+    \fancyhf{} % Clear all header and footer fields
+    \rhead{\includegraphics[height=1cm]{/Users/philippe.pary/Documents/Formations/Vibe coding/astek-logo.png}} % Right header with logo
+    \lhead{Formation vibe coding, 1 jour - C2 diffusion limitée} % Left header with text
+    \renewcommand{\headrulewidth}{0pt} % No rule below header
+    \vspace*{2cm} % Add 2cm vertical space after the header
+}
+
+% Set default page style for all other pages to plain (no header/footer)
+\pagestyle{plain}

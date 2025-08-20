@@ -1,5 +1,3 @@
-%%%TBD%%% sur le code lab système de gestion des questions lives avec réponses IA et possibilité d'ajouter la réponse formateur (s'afficherait sous forme d'info-bulle au niveau du moment du cours où est arrivé la question)
-
 # Vibe Coding: Formation Starter (1j)
 
 v1 Philippe Pary - Thomas Foutrein
@@ -31,6 +29,8 @@ Une journée pour apprendre à coder avec l'assistance de l'IA
 ## Cours
 
 ### 9h00 - 9h30 : Introduction et présentation
+
+https://digistorm.app/p/1063168
 
 Tour de table:
     * Nom, fonction
@@ -413,5 +413,5 @@ La conformité avec les réglementations sectorielles (finance, santé, etc.) do
     * Quelles bonnes pratiques as-tu retenues ?
     * As-tu des ressources à partager ? 
     * As-tu des questions ? 
-* Évaluation de la formation (10 minutes)
+* Évaluation de la formation (10 minutes) https://digistorm.app/p/5314548
 * Rappel: le vibe est une méthode récente en constante évolution : maintenez une veille technologique sur le sujet
