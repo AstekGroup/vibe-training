@@ -1,7 +1,7 @@
 # Vibe Coding: Formation Starter (1j)
 
-v1 Philippe Pary - Thomas Foutrein
-2025
+v2 Philippe Pary - Thomas Foutrein
+2025-08-26
 
 Première approche d'une formation Vibe Coding en une journée
 Formation "Vibe Coding" pour Développeurs Débutants
@@ -41,18 +41,42 @@ Tour de table:
 
 ➡️ Présentation du plan de la journée
 
-### 9h30 - 10h15 : Information : Les outils du "Vibe Coding" (Théorie)
+### 9h30 - 10h15 : Fondements et Démonstration Live (45min)
 
-#### Frimer
+#### Démonstration "Frimer" (15min)
 
 Démonstration en direct d'une création rapide d'application en utilisant le vibe coding. Nous allons générer un environnement containerisé pour notre codelab directement avec l'IA. Nous examinerons également des exemples concrets de projets développés lors des sessions précédentes pour illustrer l'efficacité de cette approche.
 
 - vibe-coder le codelab de la journée (générer un container)
 - présenter les sites des sessions précédentes
 
-### Comment fonctionne l'IA pour le code et le vibe coding
+#### Framework des 5 Compétences Clés (15min)
 
-Concept récent, de février 2025. Par Andrej Karpathy (co-fondateur d'OpenAI)
+1. **Thinking** : Décomposer le problème avant de prompter
+   - "Que veux-je exactement ?"
+   - "Quelles sont les contraintes ?"
+
+2. **Frameworks** : Utiliser des structures éprouvées
+   - Templates de prompt
+   - Patterns architecturaux connus
+
+3. **Checkpoints** : Valider à chaque étape
+   - Tests à chaque fonctionnalité
+   - Commits réguliers
+
+4. **Debugging** : Dialoguer avec l'IA pour corriger
+   - Copier-coller les erreurs dans le prompt
+   - Demander des explications étape par étape
+
+5. **Context** : Fournir le bon niveau de détail
+   - Ni trop vague, ni trop prescriptif
+   - Exemples concrets et contre-exemples
+
+> Inspiré des meilleures pratiques industrielles 2025
+
+#### Comment fonctionne l'IA pour le code et le vibe coding (15min)
+
+Concept popularisé début 2025 par Andrej Karpathy (co-fondateur d'OpenAI)
 
 Technique de programmation assisté par des LLMs et basé sur du prompt. Il se différencie d'un outil de complétion basé sur les LLMs comme Copilot par l'importance crucciale du prompt dans le processus de développement.
 
@@ -161,23 +185,22 @@ On prépare un prompt très détaillé, générallement sous la forme d'un fichi
 
 | Outil           | Type             | Avantages                                        | Inconvénients                                | Modèles supportés              | URL d'accès                                             |
 |:----------------|:-----------------|:-------------------------------------------------|:---------------------------------------------|:-------------------------------|:--------------------------------------------------------|
+| **Claude Code** | Outil CLI    | ✅ Puissance du modèle Claude                    | ⚠️ Pas d'intégration IDE                     | Claude 4 Sonnet                | [anthropic.com/claude-code](https://www.anthropic.com/claude-code) |
+|                 |                  | ✅ Interface dédiée au code                      | ⚠️ Nécessite un abonnement                   |                                |                                                         |
 | **Cursor**      | Éditeur dédié    | ✅ Interface optimisée pour le vibe coding       | ⚠️ Application séparée à installer           | Claude, GPT-4, autres          | [cursor.com](https://www.cursor.com/)                   |
-|                 |                  | ✅ Règles personnalisables                       |                                              |                                |                                                         |
-|                 |                  | ✅ Choisi par Astek                              |                                              |                                |                                                         |
+|                 |                  | ✅ Règles personnalisables                       |                                              |                                |                                               
 | **gemini-cli**  | Outil CLI        | ✅ Scriptable, idéal pour l'automatisation       | ⚠️ Pas d'interface graphique                 | Gemini                         | [github.com/google/gemini-cli](https://github.com/google/gemini-cli) |
 |                 |                  | ✅ Gratuit                                       |                                              |                                |                                                         |
-| **Replit**      | Éditeur en ligne | ✅ Environnement complet avec déploiement        | ⚠️ Nécessite une connexion internet          | Plusieurs modèles propriétaires | [replit.com](https://replit.com/)                       |
-|                 |                  | ✅ Collaboration en temps réel                   | ⚠️ Limitations dans version gratuite         |                                |                                                         |
+| **Copilot**     | Extension multi- | ✅ Largement adopté, mature                      | ⚠️ Coût de licence                           | GPT-4 (principalement)         | [github.com/features/copilot](https://github.com/features/copilot) |
+|                 | IDE              | ✅ Bonne intégration                             | ⚠️ Moins orienté vibe coding                 |                                |                                                         |
 | **WindSurf**    | Éditeur dédié    | ✅ Optimisé pour la visualisation                | ⚠️ Relativement récent                       | Gemini, Claude                 | [windsurf.com](https://windsurf.com/)                   |
 |                 |                  | ✅ Interface moderne                             | ⚠️ Moins de documentation                    |                                |                                                         |
-| **Claude Code** | Interface web    | ✅ Puissance du modèle Claude                    | ⚠️ Pas d'intégration IDE                     | Claude uniquement              | [anthropic.com/claude-code](https://www.anthropic.com/claude-code) |
-|                 |                  | ✅ Interface dédiée au code                      | ⚠️ Nécessite un abonnement                   |                                |                                                         |
 | **Kilo Code**   | Extension VSCode | ✅ Modes dédiés pour le code                     | ⚠️ Configuration requise                     | GPT-4 et autres                | [marketplace.visualstudio.com/kilocode](https://marketplace.visualstudio.com/items?itemName=kilocode.Kilo-Code) |
 |                 |                  | ✅ Léger                                         | ⚠️ Fonctionnalités plus limitées             |                                |                                                         |
 | **Continue**    | Extension VSCode | ✅ Bonne intégration workflow                    | ⚠️ Performance variable                      | Plusieurs modèles              | [marketplace.visualstudio.com/continue](https://marketplace.visualstudio.com/items?itemName=Continue.continue) |
 |                 |                  | ✅ Open source                                   | ⚠️ Moins stable                              |                                |                                                         |
-| **Copilot**     | Extension multi- | ✅ Largement adopté, mature                      | ⚠️ Coût de licence                           | GPT-4 (principalement)         | [github.com/features/copilot](https://github.com/features/copilot) |
-|                 | IDE              | ✅ Bonne intégration                             | ⚠️ Moins orienté vibe coding                 |                                |                                                         |
+| **Replit**      | Éditeur en ligne | ✅ Environnement complet avec déploiement        | ⚠️ Nécessite une connexion internet          | Plusieurs modèles propriétaires | [replit.com](https://replit.com/)                       |
+|                 |                  | ✅ Collaboration en temps réel                   | ⚠️ Limitations dans version gratuite         |                                |                                                         |
 
 #### Comment fonctionne l'IA pour le code
 
@@ -210,23 +233,71 @@ Le LLM tente alors de générer la réponse la plus probable, sur base de son en
 | **Sécurité & Maintenance**  | Risque plus élevé dû aux inconnues dans le code généré | Plus facile à sécuriser et maintenir avec une compréhension complète |
 | **Courbe d'Apprentissage**  | Faible - les utilisateurs peuvent commencer à construire avec des conseils de base | Élevée - nécessite d'apprendre langages, logique et débogage |
 
+#### Recommandations 2025 par usage
+
+**Pour débuter** : Cursor ou Claude Code  
+**Pour l'automatisation** : gemini-cli  
+**Pour la collaboration** : Replit  
+**Pour l'intégration** : Continue (VSCode)
+
 #### Modèles à favoriser 
 
-**Claude 4 Sonnet** (Opus est plus cher, limité, mais bien meilleur)
+**Claude 4 Sonnet** (excellent rapport qualité/prix, depuis juin 2025)
 
 Gemini-2.5-pro donne de bons résultats
 
-ChatGPT-4.1 sur le front
+ChatGPT-5 sur le front (dernière version)
+
+> **Exercice** : Testez 2 outils différents sur le même prompt simple
 
 C'est aussi très subjectif, d'un dev à l'autre on apprécie des choses différentes. Un LLM plus ou moins verbeux, réflexif… 
 
 ➡️ Faire un essai en one try des différents modèles avec le prompt `Développe un système de gestion de liste de tâches à partir de fichiers markdown en utilisant Python3, HTML, Javascript (sans framework) et TailWind` 
 
-#### Git et Vibe coding
+#### Git et Vibe Coding : Workflow Recommandé
 
-%%%TBD%%%
+```bash
+# Workflow type pour une fonctionnalité
+git checkout -b feature/user-auth
+git commit -m "init: setup project structure"
 
-husky + commitlint + lint-staged
+# Après chaque prompt réussi
+git add . && git commit -m "feat: implement login form"
+git add . && git commit -m "feat: add validation logic"
+
+# Test de prompts alternatifs
+git checkout -b experiment/different-approach
+# Si échec : git checkout feature/user-auth
+# Si succès : git merge experiment/different-approach
+```
+
+**Tools recommandés :** husky + commitlint + lint-staged
+
+#### Gestion des Versions en Vibe Coding
+
+- **Checkpoints fréquents** : `git commit` à chaque fonctionnalité
+- **Branches d'expérimentation** : tester différents prompts
+- **Rollback rapide** : revenir en arrière si l'IA déraille
+- **Messages de commit assistés** : demandez à l'IA de générer des messages de commit clairs
+
+```bash
+# Workflow recommandé
+git checkout -b feature/new-function
+# Vibe coding...
+git add . && git commit -m "checkpoint: fonction de base"
+# Amélioration via prompt...
+git add . && git commit -m "checkpoint: fonction optimisée"
+```
+
+**Astuce Git + IA :** Utilisez l'IA pour vos messages de commit
+```bash
+# Après avoir ajouté vos fichiers
+git add .
+git diff --cached
+
+# Demandez à l'IA : "Génère un message de commit pour ces modifications"
+# L'IA analyse le diff et propose : "feat(auth): implement JWT token validation with error handling"
+```
 
 #### Principales Limites et pièges à éviter
 
@@ -238,7 +309,7 @@ husky + commitlint + lint-staged
 - Privilégiez les LLMs connus, renseignez vous sur les LLMs plus secondaires ou entraînés par votre client (ou pire, des inconnus)
 - Vous pouvez interrompre le processus de génération de code à tout moment si vous considérez que le LLM part dans la mauvaise direction
 
-### 10h30 - 11h00 : Information : L'art du prompt engineering pour le code (Théorie)
+### 10h15 - 11h00 : Prompt Engineering Pratique (45min)
 
 ##### Principes fondamentaux pour communiquer avec l'IA
 
@@ -254,14 +325,72 @@ Chaque modèle d'IA possède des instructions par défaut qui définissent son c
 Pour les rules consultez:
 | Application | Documentation des règles / configuration du prompt |
 |:------------|:--------------------------------------------------|
+| **Claude Code** | [Claude Code Prompt Guide](https://docs.anthropic.com/en/docs/claude-code/memory) |
 | **Cursor**      | [Rules & Context](https://docs.cursor.com/context/rules) |
-| **Replit**      | [Replit AI Documentation](https://docs.replit.com/programming-ide/ai-help) |
-| **WindSurf**    | [WindSurf Documentation](https://docs.windsurf.com/guidance) |
-| **Claude Code** | [Claude Code Prompt Guide](https://www.anthropic.com/claude/prompt-guide) |
-| **Kilo Code**   | [Kilo Code Configuration](https://docs.kilocode.ai/configuration) |
+| **Gemini-cli**  | [Gemini-cli configuration](https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/configuration.md) |
+| **Copilot**     | [GitHub Copilot Documentation](https://docs.github.com/en/copilot/how-tos/configure-custom-instructions) |
+| **WindSurf**    | [WindSurf Documentation](https://docs.windsurf.com/windsurf/cascade/memories) |
+| **Kilo Code**   | [Kilo Code Configuration](https://kilocode.ai/docs/advanced-usage/prompt-engineering) |
 | **Continue**    | [Continue Rules & Context](https://continue.dev/docs/customization) |
-| **Copilot**     | [GitHub Copilot Documentation](https://docs.github.com/en/copilot/configuring-github-copilot/configuring-github-copilot-in-your-environment) |
+| **Replit**      | [Replit AI Documentation](https://docs.replit.com/programming-ide/ai-help) |
 
+
+
+
+#### Template de Prompt Efficace
+
+```
+## Contexte
+[Décris le projet et l'objectif]
+
+## Rôle  
+Tu es un [expertise] expert en [technologie]...
+
+## Tâche
+[Action précise à réaliser]
+
+## Contraintes
+- Technologies : [liste précise]
+- Standards : [conventions de code] 
+- Tests : [requis/optionnel]
+
+## Format attendu
+- Code commenté
+- Gestion d'erreurs
+- [Autres spécifications]
+
+## Exemples
+Input: [exemple d'entrée]
+Output: [exemple de sortie attendue]
+```
+
+#### Exercice Collectif : Amélioration de Prompts (15 minutes)
+
+**Prompt à améliorer :**
+❌ "Fais une calculatrice web"
+
+**Travail en binômes (5 min) :**
+1. Identifiez 5 problèmes dans ce prompt
+2. Réécrivez-le en utilisant le template de prompt efficace
+
+**Version améliorée attendue :**
+
+✅ **Contexte :** Calculatrice web professionnelle pour comptables
+**Rôle :** Tu es un développeur front-end expert en JavaScript vanilla
+**Tâche :** Développe une calculatrice avec :
+- Opérations de base (+, -, *, /)
+- Historique des 10 derniers calculs
+- Gestion des décimales (2 chiffres après virgule)
+- Raccourcis clavier
+- Design responsive
+
+**Contraintes :**
+- HTML5/CSS3/JS vanilla (pas de framework)
+- Compatible IE11+
+- Accessible (ARIA labels)
+- Stockage local pour l'historique
+
+**Format :** Code modulaire, commenté, avec tests unitaires simples
 
 #### Structure d'un prompt efficace pour le développement
 
@@ -281,9 +410,108 @@ Rappeler
 - technologies utilisées 
 - dans quel dossier travailler (et préciser si l'IA doit s'y contraindre, elle a tendance à aller un peu partout sinon)
 
-#### Exemples de prompts qui fonctionnent vs ceux qui échouent
+#### Exemples Concrets : Do's & Don'ts
 
-Évitez les prompts vagues et non techniques comme "Fais-moi un site web pour vendre des gâteaux". Préférez des prompts structurés et précis comme "Développe une application e-commerce en React avec un backend Node.js qui permet de présenter un catalogue de pâtisseries, gérer un panier d'achat, et traiter des paiements via Stripe. Voici la structure de données pour les produits: [...]".
+##### ❌ Prompts Inefficaces (à éviter)
+
+**Exemple 1 : Trop vague**
+❌ "Fais-moi un site web pour vendre des gâteaux"
+
+**Problèmes :**
+- Aucune indication technique
+- Pas de contraintes définies
+- Résultat imprévisible
+
+**Exemple 2 : Trop prescriptif**
+❌ "Écris une fonction Python qui prend une liste en paramètre, utilise une boucle for avec un index i qui va de 0 à len(liste)-1, et à chaque itération vérifie si liste[i] % 2 == 0, et si c'est le cas ajoute liste[i] à une nouvelle liste appelée pairs, puis retourne pairs"
+
+**Problèmes :**
+- Micro-management de l'IA
+- Perte des optimisations possibles
+- Code verbeux et peu pythonique
+
+**Exemple 3 : Contexte insuffisant**
+❌ "Debug ce code qui ne marche pas"
+
+**Problèmes :**
+- Aucune information sur l'erreur
+- Pas de contexte d'utilisation
+- L'IA doit deviner le problème
+
+##### ✅ Prompts Efficaces (à reproduire)
+
+**Exemple 1 : E-commerce structuré**
+✅ **Contexte :** Boutique de pâtisseries artisanales
+**Rôle :** Tu es un développeur full-stack expert en React/Node.js
+**Tâche :** Développe une application e-commerce avec :
+- Catalogue de produits (nom, photo, prix, allergènes)
+- Panier d'achat persistant
+- Checkout avec Stripe
+- Interface responsive mobile-first
+
+**Contraintes :**
+- React 18+ avec hooks
+- Backend Express.js + MongoDB
+- Authentification JWT
+- Tests Jest obligatoires
+
+**Format :** Structure du projet claire, code commenté, gestion d'erreurs complète
+
+**Exemple de produit :**
+```json
+{
+  "nom": "Tarte aux fraises",
+  "prix": 25.90,
+  "allergenes": ["gluten", "lactose"],
+  "image": "tarte-fraises.jpg"
+}
+```
+
+**Exemple 2 : Debugging efficace**
+✅ **Contexte :** Application React de gestion de tâches
+**Problème :** Erreur "Cannot read property 'map' of undefined" dans TodoList.jsx ligne 15
+
+**Code problématique :**
+```jsx
+const TodoList = ({ todos }) => {
+  return (
+    <ul>
+      {todos.map(todo => <li key={todo.id}>{todo.text}</li>)}
+    </ul>
+  );
+};
+```
+
+**Message d'erreur complet :**
+```
+TypeError: Cannot read property 'map' of undefined
+    at TodoList (/components/TodoList.jsx:15:13)
+```
+
+**Question :** Identifie la cause et propose une solution robuste avec gestion des cas limites.
+
+#### Checklist du Bon Prompt
+
+**Contexte & Rôle :**
+- [ ] J'ai défini le contexte métier/projet
+- [ ] J'ai précisé l'expertise attendue de l'IA
+
+**Tâche & Objectif :**
+- [ ] La tâche est spécifique et mesurable
+- [ ] L'objectif final est clair
+
+**Contraintes Techniques :**
+- [ ] Technologies/langages précisés
+- [ ] Standards de code mentionnés
+- [ ] Contraintes de performance/sécurité définies
+
+**Format & Exemples :**
+- [ ] Format de sortie spécifié
+- [ ] Au moins 1 exemple concret fourni
+- [ ] Cas limites mentionnés si pertinents
+
+**Test Rapide :**
+- [ ] Un collègue pourrait-il réaliser la tâche avec ce prompt ?
 
 #### Adapter ses prompts selon le contexte et l'objectif
 
@@ -296,14 +524,47 @@ Exemple task list avec des objectifs plus ou moins grands:
 - Pour un projet en équipe: Inclusion des conventions de code, structure des branches Git, et processus de revue
 
 
-### 11h00 - 12h30 : Compréhension : Premiers pas pratiques (Pratique)
+### 11h00 - 12h00 : Exercice Guidé Collectif (60min)
 
-#### Exercices simples de génération de code
+**Analyseur de Performance Web** (développement ensemble)
+- Interface HTML avec champ URL
+- Analyse temps de chargement avec JavaScript
+- Affichage des métriques et recommandations
+- Démonstration du workflow itératif en temps réel
 
-- Générer un snake en HTML/CSS/JS (sans Framework) avec sauvegarde des meilleurs score en `localStorage`
-- Calculer en python une approximation de Pi en utilisant la méthode de Monte-Carlo
-- Création d'une application client/serveur de gestion des tâches
-- Bot Discord qui indique la météo à partir d'une commande `/meteo <ville>`
+### 12h00 - 12h30 : Début Exercices Individuels (30min)
+
+#### Phase 1 : Exercice Guidé (fait ensemble)
+**Analyseur Web** - développement collectif en live
+
+#### Phase 2 : Exercices Individuels (suite après pause)
+1. **Snake HTML/JS** - aspect ludique pour l'apprentissage JavaScript
+2. **Pi Monte-Carlo Python** - bon pour comprendre les algorithmes  
+3. **Gestionnaire tâches simple** - application pratique quotidienne
+4. **Mini-défi debugging** - corriger du code buggy généré volontairement
+
+##### Exemple de prompt optimisé pour le Snake :
+
+❌ **Version basique :**
+"Crée un jeu de snake en JavaScript"
+
+✅ **Version optimisée :**
+**Contexte :** Jeu éducatif pour apprendre JavaScript
+**Rôle :** Tu es un expert en développement de jeux web vanilla JS
+**Tâche :** Développe un Snake avec :
+- Canvas HTML5 pour le rendu
+- Contrôles flèches + WASD
+- Score et meilleur score (localStorage)
+- Game over avec restart
+- Vitesse progressive
+
+**Contraintes :**
+- HTML5/CSS3/JS pur (pas de bibliothèques)
+- Code modulaire et commenté
+- 60 FPS fluides
+- Responsive sur mobile
+
+**Bonus :** Effets sonores et animations CSS simples
 
 #### Mini-défis pour tester différentes approches de prompts
 
@@ -311,19 +572,20 @@ avoir des repos buggy en PHP, Java et React %%%faire générer les projets, les 
 
 avoir une suite de Fibonacci en boucle infinie à partir d'un prompt sain
 
-### 13H30-14H00 : Compréhension : retour expérience (Théorie)
+### 13H30-14H00 : Retour d'expérience (30min)
 
 Tour de table:
     * Qu'as-tu appris ce matin ? 
     * Quelles difficultés as-tu rencontrées ?
     * Qu'est-ce qui t'a le plus marqué ? 
 
-### 14h00 - 14h30 : Compréhension: Planification de projet (Théorie)
+### 14h00 - 16h00 : Exercices Individuels + Accompagnement (120min)
 
-- Tour de table:
-    * Choisir un projet
+#### 14h00 - 14h15 : Choix de projet (15min)
+- Tour de table: choisir un projet personnel
+- Application du template de prompt à votre projet
 
-### 14h30 - 16h00 : Utilisation : Développement assisté par IA (Pratique)
+#### 14h15 - 16h00 : Développement assisté par IA (105min)
 
 - Consulter l'IA en mode Ask pour rédiger un plan de développement
 - Développer le projet
@@ -331,7 +593,7 @@ Tour de table:
 - Débugguer avec l'IA (cmd+L ou ctrl+L pour envoyer les logs au prompt)
 - Générer la documentation
 
-### 16h15 - 17h15 : Maîtrise : Finalisation et optimisation (Pratique)
+### 16h15 - 17h15 : Finalisation et Bonnes Pratiques (60min)
 
 - Revue de code assistée par IA: Passez en mode Ask, rédiger un prompt `Tu es un développeur expert, tu es mon binôme et tu relis mon code. Liste ici toutes les améliorations fonctionnelles, dans l'usage de librairies, dans le code que tu pourras trouver. Pointe les bonnes pratiques à adopter. Souligne les problèmes de sécurité que tu as repérés`
 - Optimisation des performances: consulter l'IA (mode Ask) et appliquer les recommandations

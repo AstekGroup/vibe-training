@@ -1,1 +1,5 @@
 .DS_Store
+
+# Large files
+Code/ToDebug.zip
+Code/ToDebug/RNA Analyser/bdd_asso_rna.csv
