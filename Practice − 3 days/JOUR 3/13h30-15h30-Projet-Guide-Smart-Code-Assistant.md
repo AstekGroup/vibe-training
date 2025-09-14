@@ -1,87 +1,82 @@
-# 13h30 - 15h30 : "Projet Guidé : Smart Code Assistant" (120min)
+# 13h30 - 15h30 : "Projet Guidé : Context Rules Builder" (120min)
 
 ### Contenu formation
 
 **Projet unique pour tous mais personnalisable**
 
-**Objectif :** Agent qui améliore la productivité quotidienne
+**Objectif :** Maîtriser le **Context Engineering** avec un système de rules dynamiques
 
-**Architecture imposée :**
-- Agent principal + 3 agents spécialisés
-- Context engineering avec rules
-- Au moins 1 tool externe (API, DB, file system)
+**Architecture simplifiée :**
+- 1 agent principal avec context adaptatif
+- Système de rules YAML dynamiques
+- Focus sur patterns context, pas sur orchestration complexe
 
-**Timeline structurée :**
-- **13h30-14h00** : Définition de l'architecture (30min)
-- **14h00-15h00** : Implémentation core (60min)
-- **15h00-15h30** : Tests et démo préparation (30min)
+**Timeline focus Context Engineering :**
+- **13h30-14h00** : Conception du système de rules (30min)
+- **14h00-15h00** : Implémentation context adaptatif (60min)
+- **15h00-15h30** : Tests et validation patterns (30min)
 
-**Exemples d'agents :**
-- **Code Quality** : Linting + suggestions d'amélioration
-- **Documentation** : Auto-génération doc à partir du code
-- **Testing** : Génération de tests + détection de edge cases
+**Exemples de contexts adaptatifs :**
+- **Code Review Context** : Rules différentes selon type de fichier
+- **Documentation Context** : Templates variables selon projet
+- **Debug Context** : Approche adaptée selon langage/framework
 
 ### 📝 Notes formateur
 
 **13h30-14h00 : Définition architecture (30min)**
 
-**Architecture imposée mais flexible :**
+**Architecture Context Engineering focus :**
 ```
-Smart Code Assistant
-├── Agent Principal (Orchestrateur)
-│   ├── Analyse des demandes utilisateur
-│   ├── Routing vers agents spécialisés
-│   └── Coordination des réponses
-├── Agent Spécialisé 1 (au choix)
-├── Agent Spécialisé 2 (au choix)  
-├── Agent Spécialisé 3 (au choix)
-├── Context Engineering Layer
-│   ├── Rules management
-│   ├── Memory persistence
-│   └── RAG integration
-└── Tools Layer
-    ├── Git integration
-    ├── File system access
-    └── External API (au choix)
+Context Rules Builder
+├── Agent Principal
+│   ├── Détection de contexte
+│   ├── Sélection rules appropriées
+│   └── Application context dynamique
+├── Rules Engine
+│   ├── Rules YAML par contexte
+│   ├── Validation et fallback
+│   └── Templates réutilisables
+└── Context Detection
+    ├── File type detection
+    ├── Project structure analysis
+    └── User preferences
 ```
 
 **13h30-13h45 : Choix des agents spécialisés (15min)**
 
-**Options suggérées :**
-- **Code Quality :** Linting, security scan, suggestions
-- **Documentation :** Auto-génération, maintenance, API docs
-- **Testing :** Test generation, coverage, mocks
-- **Performance :** Profiling, optimization suggestions
-- **Security :** Vulnerability detection, compliance
-- **Deployment :** CI/CD, env management, rollback
-- **Monitoring :** Metrics, alerts, health checks
+**Contexts à implémenter :**
+- **JavaScript Context :** Rules spécifiques ES6, React, Node
+- **Python Context :** Rules adaptées PEP8, Django, Flask
+- **Markdown Context :** Templates documentation, blog
+- **Git Context :** Messages commits, branch naming
+- **Debug Context :** Approche par langage et framework
+- **Review Context :** Critères selon type de changement
 
 **Requirements obligatoires :**
 ```yaml
 context_requirements:
-  rules:
-    - general_rules.md (qualité, sécurité)
-    - specialized_rules.md (selon agents choisis)
-  memory:
-    - project_memory.json (decisions, preferences)  
-    - user_memory.json (interactions history)
-  tools:
-    - git_tools (au minimum)
-    - file_system_tools
-    - 1_external_api (libre choix)
+  rules_structure:
+    - base_rules.yaml (comportement général)
+    - context_rules.yaml (par langage/situation)
+    - fallback_rules.yaml (cas non prévus)
+  detection_logic:
+    - file_extension_mapping
+    - project_structure_patterns  
+    - user_preferences
   output_format:
-    - structured_responses (JSON/YAML)
-    - consistent_styling
+    - consistent_templating
+    - context_aware_responses
+    - adaptive_verbosity
 ```
 
 **14h00-15h00 : Implémentation core (60min)**
 
-**Timeline structurée :**
-- **14h00-14h15 :** Setup infrastructure (15min)
-- **14h15-14h45 :** Implémentation agents (30min)
-- **14h45-15h00 :** Integration et orchestration (15min)
+**Timeline Context Engineering :**
+- **14h00-14h15 :** Setup rules YAML et structure (15min)
+- **14h15-14h45 :** Implémentation detection et application (30min)
+- **14h45-15h00 :** Tests patterns et validation (15min)
 
-**Points d'attention :**
-- Circuler activement, beaucoup de questions techniques
-- Aider à la priorisation : "Commencez par l'agent principal"
-- Pousser vers solutions simples mais fonctionnelles
+**Points d'attention - Focus Context Engineering :**
+- Circuler pour aider sur patterns context, pas sur tech
+- Aider à la conception : "Commencez par détection simple"
+- Pousser vers rules claires et testables, éviter sur-ingénierie

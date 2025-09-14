@@ -2,61 +2,61 @@
 
 ### Contenu formation
 
-**Projet : API de Recommandation Intelligente**
-- Backend Python/FastAPI avec ML basique
-- Frontend React avec visualisations
-- Tests automatisés + CI/CD
-- Documentation auto-générée
+**Projet : Todo App Progressive**
+- Application web simple HTML/CSS/JavaScript
+- 3 niveaux de complexité croissante
+- Focus sur la structuration des prompts
+- Apprentissage itératif avec l'IA
 
-*But :* Montrer la complexité que nous gérerons avec les agents J2-J3
+*But :* Maîtriser les compétences **Thinking** et **Frameworks** du vibe coding
 
 ### 📝 Notes formateur
 
 **Objectifs pédagogiques spécifiques :**
-- Montrer la complexité gérable avec un bon prompt
-- Démontrer l'architecture full-stack en une session
-- Préparer mentalement à la complexité des agents J2-J3
+- Apprendre à structurer une demande progressive à l'IA
+- Maîtriser les techniques d'itération et d'amélioration continue
+- Comprendre comment décomposer un problème avec l'IA
 
-**11h00-11h15 : Préparation du prompt master (15min)**
+**11h00-11h15 : Construction du prompt progressif (15min)**
 
-**Prompt attendu (à construire ensemble) :**
+**Prompt Level 1 - Basique (à construire ensemble) :**
 ```
-## Contexte Entreprise
-Plateforme e-commerce B2C avec 50k+ clients.
-Augmenter panier moyen via recommandations personnalisées.
+## Contexte Simple
+Je veux apprendre à bien structurer mes demandes à l'IA
+pour créer une application web simple.
 
-## Rôle Expert
-Tu es un data engineer senior expert en ML e-commerce.
+## Rôle
+Tu es un développeur web qui explique ses choix clairement.
 
-## Tâche Complexe
-Développe une API de recommandation avec :
-- Backend Python/FastAPI avec algorithme ML basique
-- Endpoints REST pour recommandations produits
-- Frontend React avec visualisations
-- Pipeline de données pour l'entraînement
+## Tâche Level 1
+Crée une todo app basique :
+- Une page HTML avec liste des tâches
+- Possibilité d'ajouter une tâche
+- Case à cocher pour marquer "terminé"
+- Bouton pour supprimer
 
-## Contraintes Entreprise
-- Performance : <200ms response time
-- Scalabilité : Support 1000+ utilisateurs concurrents
-- Data : Respect GDPR
-- Tests : Couverture >80% + tests d'intégration
+## Contraintes Simples
+- Un seul fichier HTML
+- JavaScript vanille (pas de framework)
+- Style CSS propre mais simple
+- Doit fonctionner en ouvrant le fichier dans le navigateur
 
-## Livrable Professionnel
-- API documentée OpenAPI
-- Frontend React TypeScript
-- Tests automatisés (Jest + pytest)
-- Documentation technique et déploiement
-- Métriques performance et business
+## Apprentissage Focus
+- Explique chaque choix technique
+- Montre 3 façons d'améliorer le code
+- Suggère la prochaine étape d'évolution
 ```
 
-**11h15-11h45 : Développement en live (30min)**
+**11h15-11h45 : Développement progressif en live (30min)**
 
 **Stratégie de démonstration :**
-1. **Phase 1 - Backend** (10min) : API FastAPI + ML simple
-2. **Phase 2 - Frontend** (10min) : Interface React
-3. **Phase 3 - Intégration** (10min) : Tests + documentation
+1. **Level 1 - Base** (10min) : Todo app simple, focus sur la structuration du prompt
+2. **Level 2 - Amélioration** (10min) : Ajout localStorage, technique d'itération
+3. **Level 3 - Polish** (10min) : Filtres et design, gestion des changements de scope
 
 **Points d'animation cruciaux :**
-- Commentez chaque décision
-- Montrez les itérations
-- Gérez les erreurs en live
+- Montrez comment reformuler un prompt qui ne donne pas le résultat attendu
+- Démontrez les techniques d'itération ("maintenant ajoute...")
+- Expliquez comment gérer un changement de scope avec l'IA
+- Illustrez la compétence **Thinking** : décomposition du problème
+- Illustrez la compétence **Frameworks** : structure de prompt réutilisable

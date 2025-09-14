@@ -2,66 +2,65 @@
 
 ### Contenu formation
 
-**Choix entre 3 agents prêts :**
+**Choix entre 3 agents simples - Focus apprentissage agent :**
 
-**Option A : "Documentation Generator"**
-- Input : Codebase Python/JS
-- Output : README.md structuré
-- Tools : file system, git log
+**Option A : "Assistant Veille Tech"**
+- Input : Liste de sources RSS/blogs
+- Output : Résumé quotidien personnalisé
+- Tools : RSS reader, markdown
 
-**Option B : "Test Writer"**  
-- Input : Fonction sans tests
-- Output : Suite de tests unitaires
-- Tools : framework de tests, coverage
+**Option B : "Organiseur Fichiers"**  
+- Input : Dossier désordonné
+- Output : Structure organisée + rapport
+- Tools : file system, patterns
 
-**Option C : "Refactor Assistant"**
-- Input : Code legacy
-- Output : Version refactorisée + rapport
-- Tools : linters, analyzer
+**Option C : "Générateur Commits"**
+- Input : Git diff
+- Output : Message commit structuré
+- Tools : git commands, templates
 
-**Structure :**
+**Structure - Focus compétences agent :**
 - Choix de l'option (5min)
-- Setup et paramétrage (20min)
-- Développement (50min)
-- Demo croisée (15min)
+- Conception agent (15min) 
+- Implémentation simple (50min)
+- Test et amélioration (20min)
 
 ### 📝 Notes formateur
 
 **Templates détaillés par option :**
 
-**Template Option A - Documentation Generator :**
+**Template Option A - Assistant Veille Tech :**
 ```yaml
-# .cursor/rules pour Documentation Generator
-Tu es un expert en documentation technique.
+# .cursor/rules pour Assistant Veille Tech
+Tu es un assistant de veille technologique.
 
 MISSION :
-Générer documentation complète et professionnelle.
+Créer un résumé quotidien personnalisé depuis des sources tech.
 
 PROCESSUS :
-1. Analyser structure projet (packages, modules)
-2. Examiner code pour comprendre logique métier
-3. Consulter historique git pour contexte évolutif
-4. Générer documentation structurée
+1. Lire les flux RSS/blog fournis
+2. Identifier les articles pertinents
+3. Extraire les points clés
+4. Générer un résumé structuré
 
-TOOLS DISPONIBLES :
-- File system : lecture code source
-- Git commands : historique et commits
-- AST parser : structure syntaxique
+TOOLS SIMPLES :
+- RSS reader basique
+- Template markdown
+- Filtrage par mots-clés
 
-OUTPUT STANDARD :
-- README.md principal avec getting started
-- Documentation API (si applicable)  
-- Docstrings inline pour fonctions/classes
-- Architecture overview avec diagrammes ASCII
+OUTPUT :
+- Résumé quotidien markdown
+- Catégorisation par thèmes
+- Liens vers articles complets
+- Score de pertinence
 
 STYLE :
-- Clair et concis
-- Exemples concrets d'usage
-- Audience développeur
-- Format Markdown standard
+- Format digest lisible
+- Focus sur l'actionnable
+- Maximum 5 articles/jour
 ```
 
-**Stratégie d'accompagnement :**
-- **Documentation Generator :** Focus structuration information
-- **Test Writer :** Accent couverture et pertinence
-- **Refactor Assistant :** Focus préservation comportement
+**Stratégie d'accompagnement - Focus compétences agent :**
+- **Assistant Veille :** Focus automatisation et filtrage intelligent
+- **Organiseur Fichiers :** Focus patterns reconnaissance et logique
+- **Générateur Commits :** Focus templates et consistance

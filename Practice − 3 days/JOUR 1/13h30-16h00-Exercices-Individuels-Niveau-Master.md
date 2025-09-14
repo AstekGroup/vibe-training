@@ -2,47 +2,51 @@
 
 ### Contenu formation
 
-**Projets au choix :**
-1. **Microservice de Gestion d'Événements** (Event Sourcing + CQRS)
-2. **API Gateway avec Rate Limiting** (Performance + Sécurité)
-3. **Système de Cache Distribué** (Redis + Consistency)
-4. **Pipeline ML en Production** (MLOps + Monitoring)
+**Projets au choix - Focus compétences vibe coding :**
+1. **Blog Personnel Statique** (Compétence : **Thinking** - Décomposition)
+2. **Dashboard Monitoring Simple** (Compétence : **Checkpoints** - Validation) 
+3. **API CRUD Basique** (Compétence : **Debugging** - Gestion erreurs)
+4. **Générateur Documentation** (Compétence : **Context** - Templates)
 
 ### 📝 Notes formateur
 
 **13h30-13h45 : Choix et setup des projets Master (15min)**
 
-**Analyse détaillée des options :**
+**Analyse détaillée des options - Alignées vibe coding :**
 
-**Option 1 : Event Sourcing + CQRS**
-- **Complexité :** Architecture avancée, patterns complexes
-- **Profil :** Architectes, seniors expérimentés
-- **Apprentissages :** Event sourcing, CQRS, consistency
+**Option 1 : Blog Personnel Statique**
+- **Compétence viseée :** **Thinking** (décomposition problème)
+- **Tech simple :** Hugo/11ty + Markdown
+- **Apprentissages :** Structuration demandes, découpage tâches
+- **Durée :** 60min
 
-**Option 2 : API Gateway + Rate Limiting**
-- **Complexité :** Performance critique, sécurité
-- **Profil :** DevOps, sécurité, performance engineers
-- **Apprentissages :** Scaling, security patterns
+**Option 2 : Dashboard Monitoring Simple**
+- **Compétence viseée :** **Checkpoints** (cycles validation)
+- **Tech simple :** Scripts bash + HTML/CSS
+- **Apprentissages :** Feedback loops, validation avec IA
+- **Durée :** 45min
 
-**Option 3 : Cache Distribué**
-- **Complexité :** Systèmes distribués, consistency
-- **Profil :** Backend architects, data engineers
-- **Apprentissages :** CAP theorem, distributed caching
+**Option 3 : API CRUD Basique**
+- **Compétence viseée :** **Debugging** (gestion erreurs)
+- **Tech simple :** Express.js basique
+- **Apprentissages :** Debug avec IA, résolution problèmes
+- **Durée :** 75min
 
-**Option 4 : Pipeline ML**
-- **Complexité :** ML pipeline, monitoring
-- **Profil :** Data scientists, ML engineers
-- **Apprentissages :** MLOps, model monitoring
+**Option 4 : Générateur Documentation**
+- **Compétence viseée :** **Context** (templates dynamiques)
+- **Tech simple :** Markdown + templates
+- **Apprentissages :** Context engineering basique
+- **Durée :** 90min
 
-**13h45-15h45 : Développement supervisé (120min)**
+**13h45-15h45 : Développement avec focus vibe coding (120min)**
 
 **Structure du suivi :**
-- Tour toutes les 30min (plus espacé que Starter)
-- Intervention sur demande (participants plus autonomes)
-- Focus sur l'architecture et choix techniques
+- Tour toutes les 20min (focus apprentissage vibe coding)
+- Interventions sur techniques prompt, pas sur tech
+- Focus sur compétences vibe coding et interaction IA
 
-**Types d'intervention par complexité :**
-- **Event Sourcing :** Patterns, consistency, projections
-- **API Gateway :** Performance, sécurité, monitoring
-- **Cache Distribué :** Cohérence, invalidations, trade-offs
-- **Pipeline ML :** MLOps, monitoring modèles, deployment
+**Types d'intervention par compétence :**
+- **Blog (Thinking) :** Comment décomposer, structurer demandes
+- **Dashboard (Checkpoints) :** Cycles feedback, validation continue
+- **API CRUD (Debugging) :** Techniques debug avec IA, reformulation
+- **Documentation (Context) :** Templates réutilisables, context patterns

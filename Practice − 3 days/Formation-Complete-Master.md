@@ -41,10 +41,10 @@ Développeurs expérimentés, architectes, tech leads avec projet d'entreprise. 
 | **9h00 - 9h30** | **Introduction Master** | 30min | Tour de table niveau expert, projets d'entreprise |
 | **9h30 - 10h15** | **5 Compétences + Preview** | 45min | Framework avancé, transition vers agents |
 | **10h15 - 11h00** | **Prompt Engineering Entreprise** | 45min | Template Master, contraintes business/conformité |
-| **11h00 - 12h00** | **Exercice Guidé Master** | 60min | API Recommandation Intelligente (ML + Full-stack) |
+| **11h00 - 12h00** | **Exercice Guidé Master** | 60min | Todo App Progressive (Compétences Thinking + Frameworks) |
 | **12h00 - 12h30** | **Git + IA Équipes** | 30min | Workflows collaboratifs, preview agents J2 |
 | **12h30 - 13h30** | **🍽️ PAUSE DÉJEUNER** | 60min | |
-| **13h30 - 16h00** | **Exercices Master** | 150min | 4 projets complexes : Event Sourcing, API Gateway, Cache Distribué, ML Pipeline |
+| **13h30 - 16h00** | **Exercices Master** | 150min | 4 projets vibe coding : Blog Statique, Dashboard Simple, API CRUD, Générateur Doc |
 | **16h00 - 16h15** | **☕ PAUSE** | 15min | |
 | **16h15 - 17h00** | **Bonnes Pratiques Entreprise** | 45min | Review sécurité OWASP, performance, Clean Architecture |
 | **17h00 - 17h15** | **Transition Concepts Avancés** | 15min | Préparation mentale J2-J3, glossaire agents |
@@ -74,7 +74,7 @@ Développeurs expérimentés, architectes, tech leads avec projet d'entreprise. 
 | **10h45 - 11h00** | **☕ PAUSE** | 15min | |
 | **11h00 - 12h30** | **Context Engineering Patterns** | 90min | 6 ateliers rotatifs : Prompt Chaining, Conditional Loading, Memory, RAG, Multi-Modal, Error Recovery |
 | **12h30 - 13h30** | **🍽️ PAUSE DÉJEUNER** | 60min | |
-| **13h30 - 15h30** | **Projet Smart Code Assistant** | 120min | Agent principal + 3 spécialisés, Context Engineering, tools externes |
+| **13h30 - 15h30** | **Projet Context Rules Builder** | 120min | Context Engineering avec rules dynamiques, patterns adaptatifs |
 | **15h30 - 15h45** | **Préparation Démos** | 15min | Script présentation, points architecture |
 | **15h45 - 16h45** | **Présentations + Feedback** | 60min | Démos projets, analyse patterns, découvertes techniques |
 | **16h45 - 17h00** | **☕ PAUSE** | 15min | |
@@ -118,7 +118,7 @@ Développeurs expérimentés, architectes, tech leads avec projet d'entreprise. 
 [9h00 - 9h30 : Introduction au Context Engineering](./JOUR 3/09h00-09h30-Introduction-au-Context-Engineering.md)
 [9h30 - 10h45 : "Rules Engineering"](./JOUR 3/09h30-10h45-Rules-Engineering.md)
 [11h00 - 12h30 : "Context Engineering Patterns"](./JOUR 3/11h00-12h30-Context-Engineering-Patterns.md)
-[13h30 - 15h30 : "Projet Guidé : Smart Code Assistant"](./JOUR 3/13h30-15h30-Projet-Guide-Smart-Code-Assistant.md)
+[13h30 - 15h30 : "Projet Guidé : Context Rules Builder"](./JOUR 3/13h30-15h30-Projet-Guide-Smart-Code-Assistant.md)
 [15h45 - 16h45 : Présentation des Projets et Feedback](./JOUR 3/15h45-16h45-Presentation-des-Projets-et-Feedback.md)
 [17h00 - 18h00 : Métriques, Maintenance et Perspectives](./JOUR 3/17h00-18h00-Metriques-Maintenance-et-Perspectives.md)
 
