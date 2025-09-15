@@ -1,0 +1,1615 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Formation Vibe Coding Master (3 jours) - Présentation Complète</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/highlight/monokai.css">
+    
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --astek-green: #009c49;
+            --astek-teal: #00b0be;
+            --astek-dark: #2d2927;
+            --astek-light: #f8f9fa;
+            --astek-gradient: linear-gradient(135deg, #009c49, #00b0be);
+            --shadow-astek: 0 4px 12px rgba(0,156,73,0.15);
+            --shadow-light: 0 2px 8px rgba(0,156,73,0.08);
+        }
+        .reveal {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .reveal .slides section {
+            text-align: left;
+            font-size: 0.8em;
+        }
+        
+        .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            text-transform: none;
+            line-height: 1.3;
+            margin-bottom: 0.8em;
+        }
+        
+        .reveal h1 {
+            font-size: 2em;
+            font-weight: 800;
+            background: var(--astek-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .reveal h2 {
+            font-size: 1.6em;
+            font-weight: 700;
+            color: var(--astek-green);
+        }
+        
+        .reveal h3 {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: var(--astek-teal);
+        }
+        
+        .reveal h4 {
+            font-size: 1.1em;
+            font-weight: 500;
+            color: var(--astek-dark);
+        }
+        
+        .reveal p, .reveal li {
+            font-size: 0.9em;
+            line-height: 1.4;
+            color: var(--astek-dark);
+        }
+        
+        .astek-logo {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            width: 100px;
+            height: auto;
+            z-index: 1000;
+        }
+        
+        .reveal .title-slide h1 {
+            color: var(--astek-green);
+            font-size: 2em;
+            margin-bottom: 0.3em;
+            font-weight: 800;
+        }
+        
+        .reveal .title-slide h2 {
+            color: var(--astek-dark);
+            font-size: 1.2em;
+            margin-bottom: 0.8em;
+            font-weight: 500;
+        }
+        
+        .reveal .progress {
+            color: var(--astek-green);
+        }
+        
+        .day-header {
+            background: var(--astek-gradient);
+            color: white;
+            padding: 3em 2em;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 1.5em;
+            box-shadow: 0 8px 32px rgba(0,156,73,0.3);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+        
+        .day-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 40%, rgba(255,255,255,0.05) 100%);
+            pointer-events: none;
+            animation: shimmer 3s ease-in-out infinite;
+        }
+        
+        @keyframes shimmer {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .day-header:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 48px rgba(0,156,73,0.4);
+        }
+        
+        .day-header h1, .day-header h2 {
+            color: white;
+            margin: 0.3em 0;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        
+        .day-header h1 {
+            font-size: 2.5em;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+        
+        .day-header h2 {
+            font-size: 1.3em;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+        
+        .day-header p {
+            margin: 0.8em 0 0 0;
+            opacity: 0.8;
+            font-size: 0.95em;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .module-time {
+            display: none;
+        }
+        
+        .code-example {
+            background-color: var(--astek-dark);
+            color: #ecf0f1;
+            padding: 1em;
+            border-radius: 8px;
+            border-left: 4px solid var(--astek-green);
+            font-family: 'Courier New', monospace;
+            font-size: 0.75em;
+            line-height: 1.4;
+            margin: 1em 0;
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s ease;
+        }
+        
+        .code-example:hover {
+            box-shadow: var(--shadow-astek);
+            transform: translateY(-2px);
+        }
+        
+        .highlight {
+            background-color: var(--astek-teal);
+            color: white;
+            padding: 0.2em 0.4em;
+            border-radius: 4px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1em;
+            margin: 1em 0;
+        }
+        
+        .tool-card {
+            background-color: white;
+            padding: 1.2em;
+            border-radius: 12px;
+            border-left: 4px solid var(--astek-green);
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .tool-card:hover {
+            box-shadow: var(--shadow-astek);
+            transform: translateY(-4px);
+            border-left-color: var(--astek-teal);
+        }
+        
+        .tool-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--astek-gradient);
+            border-radius: 12px 12px 0 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .tool-card:hover::before {
+            opacity: 1;
+        }
+        
+        .tool-card h4 {
+            margin-top: 0;
+            margin-bottom: 0.6em;
+            color: var(--astek-dark);
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+        
+        .tool-card p, .tool-card li {
+            font-size: 0.9em;
+            line-height: 1.4;
+            margin: 0.4em 0;
+            color: var(--astek-dark);
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.8em;
+            margin: 1em 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow-light);
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            border: 1px solid rgba(0,156,73,0.1);
+            padding: 0.8em;
+            text-align: left;
+        }
+        
+        .comparison-table th {
+            background: var(--astek-gradient);
+            color: white;
+            font-weight: 600;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background-color: rgba(0,156,73,0.02);
+        }
+        
+        .comparison-table tr:hover {
+            background-color: rgba(0,156,73,0.05);
+        }
+        
+        .notes-formateur {
+            display: none;
+        }
+        
+        .notes-formateur h4 {
+            display: none;
+        }
+        
+        .exercise-box {
+            background-color: #d1ecf1;
+            border-left: 3px solid #17a2b8;
+            padding: 0.8em;
+            margin: 0.8em 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .exercise-box h4 {
+            color: #0c5460;
+            margin-top: 0;
+            margin-bottom: 0.5em;
+            font-size: 0.95em;
+        }
+        
+        .sources-box {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 0.8em;
+            margin: 0.8em 0;
+            border-radius: 4px;
+            font-size: 0.8em;
+        }
+        
+        .objective-box {
+            background-color: #d4edda;
+            border-left: 3px solid #28a745;
+            padding: 0.8em;
+            margin: 0.8em 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .objective-box h4 {
+            color: #155724;
+            margin-top: 0;
+            margin-bottom: 0.5em;
+            font-size: 0.95em;
+        }
+        
+        .reveal .slides section .fragment {
+            opacity: 0.6;
+        }
+        
+        .reveal .slides section .fragment.visible {
+            opacity: 1;
+        }
+        
+        .reveal ul, .reveal ol {
+            margin: 0.8em 0;
+            padding-left: 1.5em;
+        }
+        
+        .reveal ul {
+            list-style: none;
+        }
+        
+        .reveal ul li:before {
+            content: '▸';
+            color: var(--astek-green);
+            font-weight: bold;
+            position: absolute;
+            left: -1.2em;
+            font-size: 1.1em;
+        }
+        
+        .reveal li {
+            margin: 0.5em 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+            position: relative;
+        }
+        
+        .compact-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .compact-list li {
+            margin: 0.6em 0;
+            font-size: 0.85em;
+            padding-left: 1.5em;
+            position: relative;
+            line-height: 1.4;
+        }
+        
+        .compact-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--astek-green);
+            font-weight: bold;
+            font-size: 1em;
+        }
+        
+        /* Animations et micro-interactions */
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .tools-grid {
+            animation: slideInUp 0.8s ease-out;
+        }
+        
+        .tool-card {
+            animation: slideInUp 0.6s ease-out;
+            animation-delay: calc(var(--card-index, 0) * 0.1s);
+        }
+        
+        /* Indicateur de progression visuel */
+        .progress-indicator {
+            height: 3px;
+            background: var(--astek-gradient);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transform-origin: left;
+            animation: progressBar 0.3s ease-out;
+        }
+        
+        @keyframes progressBar {
+            from { transform: scaleX(0); }
+            to { transform: scaleX(1); }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <!-- Logo Astek sur chaque slide -->
+        <img src="../astek-logo.png" alt="Astek Logo" class="astek-logo">
+        
+        <div class="slides">
+            <!-- Slide titre principal -->
+            <section class="title-slide">
+                <h1>Formation Vibe Coding Master</h1>
+                <h2>3 jours - Développement Agentique & Context Engineering</h2>
+                <p style="text-align: center;">
+                    <strong>v2 Philippe Pary - Thomas Foutrein</strong><br>
+                    2025-08-26
+                </p>
+                <p style="text-align: center; margin-top: 2em;">
+                    <em>Guide intégré : Contenu formation + Notes formateur</em>
+                </p>
+            </section>
+
+            <!-- JOUR 1 - Section principale -->
+            <section>
+                <section class="day-header">
+                    <h1>📅 JOUR 1</h1>
+                    <h2>Fondements Accélérés + Concepts Avancés</h2>
+                    <p>De 9h00 à 17h30</p>
+                </section>
+
+                <!-- JOUR 1 - Module 1: Introduction -->
+                <section>
+                    <h2>🎯 Tour de table spécifique Master</h2>
+                    
+                    <ul>
+                        <li>Nom, fonction, niveau d'expérience IA</li>
+                        <li>Comment vois-tu le vibe coding ?</li>
+                        <li>Ta machine est prête ? (client vibe coding installé)</li>
+                        <li>Quelles sont tes attentes vis à vis de la formation ?
+                            <ul>
+                                <li>Projets d'entreprise envisagés avec les agents</li>
+                                <li>Attentes sur les concepts avancés (Context Engineering, sécurité)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- JOUR 1 - Module 2: Framework 5 Compétences -->
+                <section>
+                    <span class="module-time">9h30 - 10h15 : Framework des 5 Compétences + Preview Agents</span>
+                    <h2>🛠️ Outils de Vibe Coding</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>Claude Code</h4>
+                            <p>Outil CLI - Puissance du modèle Claude</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Cursor</h4>
+                            <p>Éditeur dédié - Interface optimisée</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Gemini CLI</h4>
+                            <p>Outil CLI - Scriptable, gratuit</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Continue</h4>
+                            <p>Extension VSCode - Open source</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 1 - Module 2b: Premier TP -->
+                <section>
+                    <h2>🎮 Premier TP live de vibe coding instinctif</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>1. Jeu de Snake</h4>
+                            <p>Interface graphique simple avec logique de jeu</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>2. Todo App</h4>
+                            <p>CRUD basique avec interface utilisateur</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>3. Calcul de Pi</h4>
+                            <p>Méthode de Monte-Carlo avec visualisation</p>
+                        </div>
+                    </div>
+                    
+                </section>
+
+                <!-- JOUR 1 - Module 2c: Les 5 compétences - Partie 1 -->
+                <section>
+                    <h2>Les 5 compétences avec perspective avancée</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card fragment">
+                            <h4>1. 🧠 Thinking</h4>
+                            <p><strong>Starter :</strong> Décomposer le problème</p>
+                            <p><strong>Master :</strong> → Planification multi-agents</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>2. 🏗️ Frameworks</h4>
+                            <p><strong>Starter :</strong> Structures de base</p>
+                            <p><strong>Master :</strong> → BMAD, CCPM, Spec-kit</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 1 - Module 2d: Les 5 compétences - Partie 2 -->
+                <section>
+                    <h2>Les 5 compétences (suite)</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card fragment">
+                            <h4>3. ✅ Checkpoints</h4>
+                            <p><strong>Starter :</strong> Validation manuelle</p>
+                            <p><strong>Master :</strong> → Feedback loops automatisés</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>4. 🐛 Debugging</h4>
+                            <p><strong>Starter :</strong> Correction manuelle</p>
+                            <p><strong>Master :</strong> → Auto-correction d'agents</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>5. 📋 Context</h4>
+                            <p><strong>Starter :</strong> Context simple</p>
+                            <p><strong>Master :</strong> → Context Engineering (J3)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="objective-box">
+                        <h4>🎯 Progression logique</h4>
+                        <p><strong>humain → assisté → automatisé</strong></p>
+                    </div>
+                </section>
+
+                <!-- JOUR 1 - Module 3: Prompt Engineering -->
+                <section>
+                    <span class="module-time">10h15 - 11h00 : Prompt Engineering Niveau Entreprise</span>
+                    <h2>📋 Template de Prompt Master</h2>
+                    
+                    <div class="code-example">
+## Contexte Entreprise
+[Système/Plateforme, utilisateurs, contraintes business]
+
+## Rôle Expert
+Tu es un [architecte/senior] expert en [domaine technique]
+
+## Tâche Complexe
+[Objectif technique avec contraintes performance/sécurité]
+
+## Contraintes Entreprise
+- Architecture : [microservices, cloud, etc.]
+- Conformité : [GDPR, SOX, etc.]
+- Performance : [SLA, charge, disponibilité]
+- Sécurité : [authentification, audit, encryption]
+
+## Livrable Professionnel
+[Code + tests + docs + monitoring]
+                    </div>
+                    
+                    <div class="sources-box">
+                        <h4>📚 Sources récentes 2025</h4>
+                        <ul>
+                            <li><a href="#">The Ultimate Guide to Prompt Engineering in 2025</a></li>
+                            <li><a href="#">AWS Prescriptive Guidance: Prompt engineering best practices</a></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- JOUR 1 - Module 3b: Exemple concret -->
+                <section>
+                    <h2>✅ Exemple concret de Prompt Master</h2>
+                    
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Aspect</th>
+                                <th>Starter</th>
+                                <th>Master</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Contexte</strong></td>
+                                <td>Projet personnel</td>
+                                <td>Système d'entreprise</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Rôle</strong></td>
+                                <td>Développeur</td>
+                                <td>Architecte/Senior</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Contraintes</strong></td>
+                                <td>Technologies</td>
+                                <td>Business + Conformité</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Livrable</strong></td>
+                                <td>Code fonctionnel</td>
+                                <td>Solution industrialisée</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="objective-box">
+                        <h4>🎯 Exemple : Plateforme SaaS de facturation</h4>
+                        <ul>
+                            <li><strong>Contexte :</strong> 1M+ utilisateurs, 99.99% uptime</li>
+                            <li><strong>Rôle :</strong> Architecte logiciel senior expert en systèmes distribués</li>
+                            <li><strong>Tâche :</strong> Service de calcul de prix dynamique >1000 req/s</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- JOUR 1 - Module 4: Exercice Guidé -->
+                <section>
+                    <span class="module-time">11h00 - 12h00 : Exercice Guidé "Niveau Master"</span>
+                    <h2>🚀 Todo App Progressive</h2>
+                    
+                    <div class="exercise-box">
+                        <h4>🎯 Objectif : Compétences Thinking + Frameworks</h4>
+                        <p>Développement d'une application Todo avec contraintes entreprise</p>
+                    </div>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>Phase 1: Architecture</h4>
+                            <p>Conception système avec contraintes performance</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Phase 2: Sécurité</h4>
+                            <p>Authentification, autorisation, audit</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Phase 3: Tests</h4>
+                            <p>Tests unitaires, intégration, E2E</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Phase 4: Monitoring</h4>
+                            <p>Métriques, logs, alertes</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 1 - Module 5: Git + IA -->
+                <section>
+                    <span class="module-time">12h00 - 12h30 : Git + IA pour les Équipes</span>
+                    <h2>🔗 Workflows collaboratifs</h2>
+                    
+                    <div class="objective-box">
+                        <h4>🎯 Preview agents J2</h4>
+                        <p>Introduction aux workflows d'équipe avec agents IA</p>
+                    </div>
+                    
+                    <ul>
+                        <li><strong>Code Review automatisé</strong> avec agents</li>
+                        <li><strong>Génération de commits</strong> intelligente</li>
+                        <li><strong>Documentation</strong> synchronisée</li>
+                        <li><strong>Tests</strong> générés automatiquement</li>
+                    </ul>
+                </section>
+
+                <!-- JOUR 1 - Module 6: Exercices Master - 4 projets -->
+                <section>
+                    <h2>🛠️ 4 projets vibe coding</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>1. Blog Statique</h4>
+                            <p>Générateur de site avec CMS headless</p>
+                            <ul class="compact-list">
+                                <li>Architecture JAMstack</li>
+                                <li>SEO optimisé</li>
+                                <li>Performance web</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>2. Dashboard Simple</h4>
+                            <p>Interface analytics temps réel</p>
+                            <ul class="compact-list">
+                                <li>Visualisation données</li>
+                                <li>Responsive design</li>
+                                <li>Authentification</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>3. API CRUD</h4>
+                            <p>Service REST avec authentification</p>
+                            <ul class="compact-list">
+                                <li>OpenAPI documentation</li>
+                                <li>Tests automatisés</li>
+                                <li>Sécurité OWASP</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>4. Générateur Doc</h4>
+                            <p>Documentation automatique de code</p>
+                            <ul class="compact-list">
+                                <li>Parsing AST</li>
+                                <li>Templates Markdown</li>
+                                <li>Intégration CI/CD</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 1 - Module 7: Bonnes Pratiques -->
+                <section>
+                    <h2>🔒 Review sécurité & performance</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>🛡️ Sécurité OWASP</h4>
+                            <ul>
+                                <li>Top 10 vulnerabilités 2025</li>
+                                <li>Validation inputs</li>
+                                <li>Authentification sécurisée</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>⚡ Performance</h4>
+                            <ul>
+                                <li>Optimisation algorithms</li>
+                                <li>Caching strategies</li>
+                                <li>Monitoring métriques</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>🏗️ Clean Architecture</h4>
+                            <ul>
+                                <li>SOLID principles</li>
+                                <li>Design patterns</li>
+                                <li>Code organization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 1 - Module 8: Challenge Overnight -->
+                <section>
+                    <h2>🌙 "Agent Simulator"</h2>
+                    
+                    <div class="exercise-box">
+                        <h4>🎯 Défi : Concevoir 3 agents spécialisés</h4>
+                        <p>Réflexion sur l'architecture d'agents pour votre contexte entreprise</p>
+                    </div>
+                    
+                    <ol>
+                        <li><strong>Agent Code Reviewer</strong> - Analyse qualité et sécurité</li>
+                        <li><strong>Agent Documentation</strong> - Génération docs techniques</li>
+                        <li><strong>Agent Testing</strong> - Création tests automatisés</li>
+                    </ol>
+                    
+                    <p><em>Présentation et discussion demain matin</em></p>
+                </section>
+            </section>
+
+            <!-- JOUR 2 - Section principale -->
+            <section>
+                <section class="day-header">
+                    <h1>📅 JOUR 2</h1>
+                    <h2>Agents IA et Développement Agentique</h2>
+                    <p>De 9h00 à 17h30</p>
+                </section>
+
+                <!-- JOUR 2 - Module 1: Retour Challenge -->
+                <section>
+                    <span class="module-time">9h00 - 9h30 : Retour Challenge + Introduction Agents</span>
+                    <h2>🔄 Partage des agents imaginés</h2>
+                    
+                    <div class="objective-box">
+                        <h4>🎯 Objectifs de la session</h4>
+                        <ul>
+                            <li>Partager les concepts d'agents créés</li>
+                            <li>Identifier les patterns récurrents</li>
+                            <li>Préparer la transition vers l'implémentation</li>
+                        </ul>
+                    </div>
+                    
+                </section>
+
+                <!-- JOUR 2 - Module 2: Théorie Agents - Types 1-2 -->
+                <section>
+                    <span class="module-time">9h30 - 10h30 : Agents IA : Théorie et Pratique Avancées</span>
+                    <h2>🤖 Types d'agents par fonction - Partie 1</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card fragment">
+                            <h4>🧠 Reasoning agents</h4>
+                            <p><strong>Outils :</strong> Claude Code, Cursor Composer</p>
+                            <p><strong>Usage :</strong> Planification complexe, architecture decisions</p>
+                            <p><em>Exemple :</em> "Conçois l'architecture microservices"</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>💻 Code agents</h4>
+                            <p><strong>Outils :</strong> GitHub Copilot, Continue</p>
+                            <p><strong>Usage :</strong> Génération de code, refactoring</p>
+                            <p><em>Exemple :</em> "Implémente cette API selon specs"</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 2b: Théorie Agents - Types 3-4 -->
+                <section>
+                    <h2>🤖 Types d'agents par fonction - Partie 2</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card fragment">
+                            <h4>👁️ Multi-modal agents</h4>
+                            <p><strong>Outils :</strong> GPT4-V, Claude avec vision</p>
+                            <p><strong>Usage :</strong> Analyse diagrammes, UI mockups</p>
+                            <p><em>Exemple :</em> "Génère le code à partir de ce mockup"</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>⚡ Specialized agents</h4>
+                            <p><strong>Outils :</strong> Devin, WindSurf Cascade</p>
+                            <p><strong>Usage :</strong> Tâches spécialisées</p>
+                            <p><em>Exemple :</em> Agents métier spécifiques</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 2c: Anatomie technique - Planning -->
+                <section>
+                    <h2>🔬 Anatomie technique d'un agent</h2>
+                    
+                    <h3>Les 4 composants essentiels</h3>
+                    
+                    <div class="code-example">
+<strong>1. Planning loop :</strong> Décomposition de tâches complexes
+
+Cycle agent typique :
+1. Receive task → 2. Break down → 3. Execute step
+4. Evaluate → 5. Adjust plan → 6. Continue/Complete
+                    </div>
+                    
+                    <div class="objective-box">
+                        <h4>🎯 Exemple concret</h4>
+                        <p>Tâche : "Créer une API de gestion d'utilisateurs"</p>
+                        <p>→ Décomposition : Modèles, Routes, Sécurité, Tests, Documentation</p>
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 2d: Anatomie technique - Tools & Memory -->
+                <section>
+                    <h2>🛠️ Tools & Memory Management</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>2. 🛠️ Tool use</h4>
+                            <ul class="compact-list">
+                                <li><strong>File system :</strong> Read, write, search</li>
+                                <li><strong>Version control :</strong> Git operations</li>
+                                <li><strong>Web :</strong> API calls, documentation</li>
+                                <li><strong>Execution :</strong> Run code, tests, build</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>3. 🧠 Memory management</h4>
+                            <ul class="compact-list">
+                                <li><strong>Context window :</strong> Conversation immédiate</li>
+                                <li><strong>Session memory :</strong> État projet en cours</li>
+                                <li><strong>Long-term memory :</strong> RAG</li>
+                                <li><strong>Shared memory :</strong> Entre agents</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <h4>4. 🔄 Self-correction</h4>
+                        <ul class="compact-list">
+                            <li><strong>Error detection :</strong> Parsing erreurs compilation</li>
+                            <li><strong>Retry strategies :</strong> Tentatives avec ajustements</li>
+                            <li><strong>Fallback mechanisms :</strong> Solutions alternatives</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 2c: Exemples Gemini CLI -->
+                <section>
+                    <h2>🛠️ Exemples pratiques avec Gemini CLI</h2>
+                    
+                    <h3>Installation et configuration rapide</h3>
+                    <div class="code-example">
+# Installation via npm
+npm install -g @google/gemini-cli
+
+# Authentification
+gemini  # Connexion Google Account
+# ou
+export GEMINI_API_KEY="YOUR_API_KEY"
+gemini
+                    </div>
+                    
+                    <h3>Agent d'analyse de code</h3>
+                    <div class="code-example">
+cd my-project/
+gemini
+> Tu es un agent d'analyse de code expert. Analyse ce projet et identifie :
+> 1. Les vulnérabilités potentielles
+> 2. Les points d'amélioration de performance
+> 3. Les problèmes de maintenabilité
+> Fournis un rapport structuré avec des recommandations précises.
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 3: Mon Premier Agent -->
+                <section>
+                    <span class="module-time">10h45 - 12h00 : Atelier "Mon Premier Agent"</span>
+                    <h2>🤖 Agent "Code Reviewer"</h2>
+                    
+                    <div class="objective-box">
+                        <h4>🎯 Objectif : Comprendre concrètement ce qu'est un agent</h4>
+                        <p>Setup + Agent "Code Reviewer" + débrief collectif</p>
+                    </div>
+                    
+                    <div class="exercise-box">
+                        <h4>🔧 Setup avec Gemini CLI (10min)</h4>
+                        <div class="code-example">
+# Installation et initialisation
+npm install -g @google/gemini-cli
+gemini
+# Suivre le processus d'authentification
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 3b: Prompt Code Reviewer -->
+                <section>
+                    <h2>Agent "Code Reviewer" - Prompt système optimisé</h2>
+                    
+                    <div class="code-example">
+Tu es un agent Code Reviewer expert avec 10 ans d'expérience.
+
+MISSION : Analyser les modifications git et fournir un review détaillé
+
+PROCESSUS :
+1. Examine tous les fichiers modifiés avec git diff
+2. Applique les critères de qualité suivants :
+   - Sécurité : Recherche vulnérabilités OWASP Top 10
+   - Performance : Identifie bottlenecks potentiels
+   - Maintenabilité : Structure, nommage, complexité
+   - Tests : Couverture et pertinence
+
+OUTPUT FORMAT :
+## 🔍 Code Review Report
+### ✅ Points positifs
+### ⚠️ Problèmes identifiés
+### 🚀 Recommandations d'amélioration
+### 📊 Score global : X/10
+### 🎯 Actions prioritaires
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 3c: Tests pratiques -->
+                <section>
+                    <h2>🧪 Exemples d'utilisation pratiques</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>Test sur bug fix</h4>
+                            <div class="code-example">
+gemini
+> Analyse cette correction de bug et vérifie qu'elle couvre 
+> tous les edge cases. Regarde particulièrement la gestion 
+> des erreurs et les tests associés.
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Test sur nouvelle feature</h4>
+                            <div class="code-example">
+gemini --include-directories ../tests,../docs
+> Review cette nouvelle feature d'authentification.
+> Vérifie la sécurité, les tests, et l'impact sur 
+> l'architecture existante.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise-box">
+                        <h4>🔄 Débrief collectif</h4>
+                        <ul>
+                            <li>Qu'est-ce qui a bien marché ?</li>
+                            <li>Quelles limites avez-vous observées ?</li>
+                            <li>Comment améliorer cet agent ?</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 4: Introduction MCP -->
+                <section>
+                    <span class="module-time">12h00 - 12h30 : Introduction MCP Simplifiée</span>
+                    <h2>🔗 Model Context Protocol</h2>
+                    
+                    <div class="objective-box">
+                        <h4>🎯 MCP : Bridge entre agents et outils externes</h4>
+                        <p>Démonstrations API/DB avec protocole standardisé</p>
+                    </div>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>🗄️ Accès Base de Données</h4>
+                            <p>Connexion sécurisée aux données entreprise</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>🌐 APIs externes</h4>
+                            <p>Intégration services tiers</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>📁 Systèmes de fichiers</h4>
+                            <p>Manipulation fichiers en toute sécurité</p>
+                        </div>
+                    </div>
+                    
+                    <div class="code-example">
+# Ajout d'un serveur MCP dans Gemini CLI
+# Éditer le fichier .gemini/settings.json
+{
+  "mcpServers": {
+    "context7": {
+      "httpUrl": "https://mcp.context7.com/mcp"
+    }
+  }
+}
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 5: Agent Spécialisé -->
+                <section>
+                    <span class="module-time">13h30 - 15h00 : Atelier "Agent Spécialisé"</span>
+                    <h2>🎯 Choix entre 3 agents - Focus apprentissage</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>Option A : Assistant Veille Tech</h4>
+                            <ul>
+                                <li><strong>Input :</strong> Sources RSS/blogs</li>
+                                <li><strong>Output :</strong> Résumé quotidien personnalisé</li>
+                                <li><strong>Tools :</strong> RSS reader, markdown</li>
+                                <li><strong>Focus :</strong> Automatisation et filtrage intelligent</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Option B : Organiseur Fichiers</h4>
+                            <ul>
+                                <li><strong>Input :</strong> Dossier désordonné</li>
+                                <li><strong>Output :</strong> Structure organisée + rapport</li>
+                                <li><strong>Tools :</strong> File system, patterns</li>
+                                <li><strong>Focus :</strong> Patterns reconnaissance et logique</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Option C : Générateur Commits</h4>
+                            <ul>
+                                <li><strong>Input :</strong> Git diff</li>
+                                <li><strong>Output :</strong> Message commit structuré</li>
+                                <li><strong>Tools :</strong> Git commands, templates</li>
+                                <li><strong>Focus :</strong> Templates et consistance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 5b: Structure agent -->
+                <section>
+                    <h2>📋 Structure - Focus compétences agent</h2>
+                    
+                    <div class="exercise-box">
+                        <h4>🚀 Workflow de développement (90min)</h4>
+                        <ol>
+                            <li><strong>Choix de l'option</strong> (5min)</li>
+                            <li><strong>Conception agent</strong> (15min)</li>
+                            <li><strong>Implémentation simple</strong> (50min)</li>
+                            <li><strong>Test et amélioration</strong> (20min)</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="code-example">
+# Exemple : Assistant Veille Tech avec Gemini CLI
+mkdir tech-watch-agent && cd tech-watch-agent
+gemini
+
+> Tu es un Assistant Veille Technologique expert.
+> 
+> MISSION : Créer un résumé quotidien personnalisé de veille tech
+> 
+> WORKFLOW :
+> 1. Analyse des sources tech (Medium, Dev.to, GitHub Trending)
+> 2. Extraction des points clés par article
+> 3. Classification par catégories (AI/ML, Web Dev, DevOps, Security)
+> 4. Génération d'un digest markdown structuré
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 6: Sécurité Agents -->
+                <section>
+                    <span class="module-time">15h15 - 16h45 : Sécurité Avancée des Agents IA</span>
+                    <h2>🛡️ Menaces 2025 et défenses pratiques</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>🎯 Prompt Injection</h4>
+                            <ul>
+                                <li>Attaques par manipulation de contexte</li>
+                                <li>Défense : Validation et sanitization</li>
+                                <li>Isolation des prompts système</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>📊 Data Poisoning</h4>
+                            <ul>
+                                <li>Corruption des données d'entraînement</li>
+                                <li>Défense : Validation des sources</li>
+                                <li>Monitoring anomalies</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>🔓 Model Extraction</h4>
+                            <ul>
+                                <li>Vol de propriété intellectuelle</li>
+                                <li>Défense : Rate limiting</li>
+                                <li>Obfuscation des réponses</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>🚨 Backdoor Attacks</h4>
+                            <ul>
+                                <li>Triggers cachés dans le modèle</li>
+                                <li>Défense : Audit régulier</li>
+                                <li>Tests adversariaux</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise-box">
+                        <h4>🛠️ Atelier sécurité pratique</h4>
+                        <p>Mise en place de défenses concrètes sur vos agents</p>
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 7: Frameworks + Bilan -->
+                <section>
+                    <span class="module-time">16h45 - 17h30 : Frameworks Avancés + Bilan J2</span>
+                    <h2>🏗️ BMAD-METHOD détaillée</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>🧠 B - Brain (Cerveau)</h4>
+                            <p>Planification et raisonnement central</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>💾 M - Memory (Mémoire)</h4>
+                            <p>Stockage et récupération contextuels</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>🎬 A - Action (Action)</h4>
+                            <p>Exécution d'outils et d'APIs</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>📊 D - Decision (Décision)</h4>
+                            <p>Évaluation et choix stratégiques</p>
+                        </div>
+                    </div>
+                    
+                    <div class="objective-box">
+                        <h4>🎯 Impact métier développeur</h4>
+                        <p>Transformation du rôle : de codeur à orchestrateur d'agents intelligents</p>
+                    </div>
+                </section>
+            </section>
+
+            <!-- JOUR 3 - Section principale -->
+            <section>
+                <section class="day-header">
+                    <h1>📅 JOUR 3</h1>
+                    <h2>Context Engineering et Patterns Avancés</h2>
+                    <p>De 9h00 à 18h00</p>
+                </section>
+
+                <!-- JOUR 3 - Module 1: Introduction Context Engineering -->
+                <section>
+                    <span class="module-time">9h00 - 9h30 : Introduction au Context Engineering</span>
+                    <h2>🎯 Définition et enjeux</h2>
+                    
+                    <div class="objective-box">
+                        <h4>📋 Context Engineering</h4>
+                        <p><strong>L'art de structurer, organiser et optimiser les informations contextuelles pour maximiser l'efficacité des agents IA</strong></p>
+                    </div>
+                    
+                    <h3>🏗️ Les 6 piliers du contexte</h3>
+                    <div class="tools-grid">
+                        <div class="tool-card fragment">
+                            <h4>1. 📋 Rules Engineering</h4>
+                            <p>Définition de règles modulaires et adaptatives</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>2. 🔗 Prompt Chaining</h4>
+                            <p>Enchaînement intelligent de prompts</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>3. 💾 Memory Management</h4>
+                            <p>Gestion de la mémoire contextuelle</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>4. 🔍 RAG Integration</h4>
+                            <p>Retrieval Augmented Generation</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>5. 🎨 Multi-Modal Context</h4>
+                            <p>Intégration de contextes multimodaux</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>6. 🛡️ Error Recovery</h4>
+                            <p>Patterns de récupération d'erreurs</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 2: Rules Engineering -->
+                <section>
+                    <span class="module-time">9h30 - 10h45 : "Rules Engineering"</span>
+                    <h2>📋 Maîtriser les fichiers de contexte persistant</h2>
+                    
+                    <div class="objective-box">
+                        <h4>🎯 Objectif : Exercice progressif (75min)</h4>
+                        <ol>
+                            <li><strong>Étape 1 (20min) :</strong> Audit de règles existantes</li>
+                            <li><strong>Étape 2 (30min) :</strong> Création de règles modulaires</li>
+                            <li><strong>Étape 3 (25min) :</strong> Test en conditions réelles</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 2b: Audit règles -->
+                <section>
+                    <h2>🔍 Audit de règles existantes</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>✅ Fichier 1 - Bonnes pratiques</h4>
+                            <div class="code-example">
+Tu es un développeur Python expert.
+Utilise toujours des type hints.
+Écris des docstrings pour toutes les fonctions.
+Privilégie la lisibilité à la performance.
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <h4>❌ Fichier 2 - Règles problématiques</h4>
+                            <div class="code-example">
+Fais du bon code.
+Sois efficace.
+N'oublie pas les tests.
+Attention à la sécurité.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise-box">
+                        <h4>🔬 Questions d'analyse</h4>
+                        <ul>
+                            <li>"Lesquelles donnent des instructions actionables ?"</li>
+                            <li>"Comment mesurer l'efficacité de ces règles ?"</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 2c: Règles avancées -->
+                <section>
+                    <h2>⭐ Exemple de règles avancées</h2>
+                    
+                    <div class="code-example">
+# Contexte : API fintech haute performance
+Tu es un senior backend engineer spécialisé en systèmes financiers.
+
+STACK TECHNOLOGIQUE :
+- Python 3.11+ avec FastAPI
+- PostgreSQL avec SQLAlchemy async
+- Redis pour caching
+- Pytest pour tests
+
+CONTRAINTES RÉGLEMENTAIRES :
+- PCI DSS Level 1 compliance
+- SOX audit requirements  
+- GDPR pour données EU
+
+STANDARDS QUALITÉ :
+- Type hints obligatoires (mypy strict)
+- Couverture tests > 95%
+- Logging structuré (JSON)
+- Métriques OpenTelemetry
+
+SÉCURITÉ :
+- Jamais de secrets en dur
+- Validation inputs avec Pydantic
+- Audit trail pour toutes mutations
+- Rate limiting sur tous endpoints
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 2d: Création modulaire -->
+                <section>
+                    <h2>🏗️ Création de règles modulaires</h2>
+                    
+                    <div class="exercise-box">
+                        <h4>🛠️ Exercice pratique (binômes) - 30min</h4>
+                        
+                        <div class="tools-grid">
+                            <div class="tool-card">
+                                <h4>Étape 1 : Règles générales (10min)</h4>
+                                <p>Créez <code>rules-general.md</code> avec :</p>
+                                <ul>
+                                    <li>Principes qualité universels</li>
+                                    <li>Standards sécurité de base</li>
+                                    <li>Patterns communication préférés</li>
+                                </ul>
+                            </div>
+                            <div class="tool-card">
+                                <h4>Étape 2 : Règles spécifiques (15min)</h4>
+                                <p>Créez 3 fichiers spécialisés :</p>
+                                <ul>
+                                    <li><code>rules-backend.md</code> : API, databases, performance</li>
+                                    <li><code>rules-frontend.md</code> : UI, UX, responsiveness</li>
+                                    <li><code>rules-mobile.md</code> : Cross-platform, performance</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="objective-box">
+                        <h4>🎯 Points clés</h4>
+                        <ul>
+                            <li>L'itération : "Rules parfaites n'existent pas"</li>
+                            <li>L'importance du test : "Rules non testées = inutiles"</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 3: Context Engineering Patterns - Partie 1 -->
+                <section>
+                    <span class="module-time">11h00 - 12h30 : "Context Engineering Patterns"</span>
+                    <h2>🔗 6 ateliers rotatifs - Patterns 1-3</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>1. 🔗 Prompt Chaining</h4>
+                            <p>Enchaînement intelligent de prompts pour tâches complexes</p>
+                            <ul class="compact-list">
+                                <li>Sequential processing</li>
+                                <li>Context propagation</li>
+                                <li>Result chaining</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>2. ⚙️ Conditional Loading</h4>
+                            <p>Chargement conditionnel de contexte selon le besoin</p>
+                            <ul class="compact-list">
+                                <li>Dynamic context</li>
+                                <li>Performance optimization</li>
+                                <li>Resource management</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>3. 💾 Memory Patterns</h4>
+                            <p>Stratégies de gestion mémoire à court/long terme</p>
+                            <ul class="compact-list">
+                                <li>Session persistence</li>
+                                <li>Knowledge retention</li>
+                                <li>Context compression</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 3b: Context Engineering Patterns - Partie 2 -->
+                <section>
+                    <h2>🔗 6 ateliers rotatifs - Patterns 4-6</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>4. 🔍 RAG Integration</h4>
+                            <p>Retrieval Augmented Generation avec bases de connaissances</p>
+                            <ul class="compact-list">
+                                <li>Vector databases</li>
+                                <li>Similarity search</li>
+                                <li>Context injection</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>5. 🎨 Multi-Modal Context</h4>
+                            <p>Intégration texte, images, code, diagrammes</p>
+                            <ul class="compact-list">
+                                <li>Vision + text</li>
+                                <li>Code analysis</li>
+                                <li>Diagram understanding</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>6. 🛡️ Error Recovery</h4>
+                            <p>Patterns de récupération et fallback automatiques</p>
+                            <ul class="compact-list">
+                                <li>Graceful degradation</li>
+                                <li>Retry mechanisms</li>
+                                <li>Alternative strategies</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise-box">
+                        <h4>🔄 Format rotatif : 15min par atelier</h4>
+                        <p>Chaque binôme découvre tous les patterns avec exercices pratiques</p>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 4: Projet Context Rules Builder -->
+                <section>
+                    <span class="module-time">13h30 - 15h30 : "Projet Guidé : Context Rules Builder"</span>
+                    <h2>🚀 Context Engineering avec rules dynamiques</h2>
+                    
+                    <div class="objective-box">
+                        <h4>🎯 Projet : Smart Code Assistant (120min)</h4>
+                        <p>Développement d'un assistant avec Context Engineering complet et patterns adaptatifs</p>
+                    </div>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>Phase 1 : Architecture</h4>
+                            <ul>
+                                <li>Design du système de rules</li>
+                                <li>Patterns de contexte dynamique</li>
+                                <li>Stratégie de mémoire</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Phase 2 : Implémentation</h4>
+                            <ul>
+                                <li>Rules dynamiques</li>
+                                <li>Context switching</li>
+                                <li>Error recovery</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Phase 3 : Testing</h4>
+                            <ul>
+                                <li>Tests patterns adaptatifs</li>
+                                <li>Validation performance</li>
+                                <li>Métriques qualité</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Phase 4 : Optimisation</h4>
+                            <ul>
+                                <li>Fine-tuning contexte</li>
+                                <li>Amélioration réactivité</li>
+                                <li>Documentation patterns</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 5: Présentations -->
+                <section>
+                    <span class="module-time">15h45 - 16h45 : Présentation des Projets et Feedback</span>
+                    <h2>🎤 Démos projets et analyse patterns</h2>
+                    
+                    <div class="exercise-box">
+                        <h4>🎯 Format de présentation (10min par équipe)</h4>
+                        <ol>
+                            <li><strong>Architecture Context Engineering</strong> (3min)</li>
+                            <li><strong>Démo live du Smart Assistant</strong> (4min)</li>
+                            <li><strong>Patterns découverts/innovations</strong> (2min)</li>
+                            <li><strong>Questions & Feedback collectif</strong> (1min)</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="objective-box">
+                        <h4>🎯 Points à mettre en avant</h4>
+                        <ul>
+                            <li>Architecture et choix techniques</li>
+                            <li>Découvertes et innovations</li>
+                            <li>Patterns réutilisables identifiés</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 6a: Métriques -->
+                <section>
+                    <span class="module-time">17h00 - 18h00 : Métriques, Maintenance et Perspectives</span>
+                    <h2>📊 KPIs techniques & business</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>📈 Métriques Techniques</h4>
+                            <ul class="compact-list">
+                                <li>Temps de réponse agents</li>
+                                <li>Précision des outputs</li>
+                                <li>Utilisation contexte</li>
+                                <li>Taux d'erreur</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>💼 Métriques Business</h4>
+                            <ul class="compact-list">
+                                <li>Productivité développeur</li>
+                                <li>Qualité code généré</li>
+                                <li>Réduction temps projet</li>
+                                <li>ROI formation équipe</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 6b: Lifecycle & Perspectives -->
+                <section>
+                    <h2>🔄 Lifecycle Management & Perspectives 2025+</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>🔄 Lifecycle Management</h4>
+                            <ul class="compact-list">
+                                <li>Versioning des agents</li>
+                                <li>Monitoring performances</li>
+                                <li>Maintenance rules</li>
+                                <li>Évolution besoins métier</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>🚀 Techniques Avancées 2025+</h4>
+                            <ul class="compact-list">
+                                <li>Multi-agent orchestration</li>
+                                <li>Apprentissage continuel</li>
+                                <li>Context adaptatif temps réel</li>
+                                <li>IA générative personnalisée</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Conclusion -->
+            <section class="title-slide">
+                <h1>🎓 Formation Vibe Coding Master</h1>
+                <h2>Merci et bonnes pratiques</h2>
+                
+                <div class="objective-box" style="margin-top: 2em;">
+                    <h4>💡 Messages clés à retenir</h4>
+                    <ol>
+                        <li>"Les agents IA transforment le développement, ne le remplacent pas"</li>
+                        <li>"Le Context Engineering est la compétence différenciante 2025"</li>
+                        <li>"L'adoption progressive et sécurisée est la clé du succès"</li>
+                        <li>"Votre expertise métier devient encore plus précieuse avec l'IA"</li>
+                    </ol>
+                </div>
+                
+                <p style="text-align: center; margin-top: 2em;">
+                    <strong>Cette formation Master positionne les participants comme des experts capables de mener la transformation IA dans leur organisation avec une approche mature et sécurisée.</strong>
+                </p>
+                
+                <p style="text-align: center; margin-top: 2em;">
+                    <em>Questions & Discussion</em>
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/highlight/highlight.js"></script>
+
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+            controls: true,
+            progress: true,
+            center: true,
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+            // Configuration pour les slides verticales
+            navigationMode: 'linear'
+        });
+    </script>
+</body>
+</html>
