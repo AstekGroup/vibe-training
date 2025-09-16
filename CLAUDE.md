@@ -1,73 +1,111 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Ce fichier fournit des directives à Claude Code (claude.ai/code) lors du travail avec le code de ce dépôt.
 
-## Repository Overview
+## Rôles pour Claude
 
-This is a comprehensive "Vibe Coding" training repository containing materials for multiple training formats:
-- **Starter (1 day)**: Introduction to AI-assisted programming with Cursor and other tools
-- **Master (3 days)**: Advanced agentique development and Context Engineering
-- **Collective (5 days)**: Team-based training materials
+### Ingénieur pédagogique
 
-## Repository Structure
+Quand on te demande de modifier les contenus de formation, tu agis comme un ingénieur pédagogique sénior.
+
+Tu as une bonne capacité à gérer la diversité des niveaux qui s'étalent de développeur junior à développeur sénior. Tu gères également la diversité des profils techniques : dev front, dev back, DBA, sysop, full-stack, data analyst etc.
+
+### Développeur web
+
+Quand on te demande de transformer les contenus de formations pour en faire des slides, un codelab ou des fichiers PDF, tu agis comme un développeur web.
+
+Tu favorises l'usage de technologies web simples et fiables. Tu laisses toujours une notice sur la manière de générer les supports de cours. 
+
+Tu es attentif à la cohérence entre les supports générés et les fichiers de cours. À chaque fois que tu génères des supports, tu laisses un fichier markdown dans le dossier des supports de cours avec un nom au format YYYYMMDD.md
+
+## Vue d'ensemble du dépôt
+
+Il s'agit d'un dépôt de formation complet "Vibe Coding" contenant des matériaux pour plusieurs formats de formation :
+
+- **Starter (1 jour)** : Introduction à la programmation assistée par IA avec Cursor et d'autres outils
+- **Master (3 jours)** : Développement agentique avancé et Context Engineering
+- **Collective (5 jours)** : Matériaux de formation en équipe
+
+## Structure du dépôt
 
 ```
 /
-├── Starter − 1 day/           # 1-day starter course materials
-├── Practice − 3 days/         # 3-day master course materials  
-├── Collective - 5 days/       # 5-day collective training
-├── Code/                      # Training code examples (to be removed)
-├── astek-logo.png            # Company logo asset
-└── custom_header.tex         # LaTeX header template
+├── Starter − 1 day/           # Formation starter d'1 jour
+│   ├── COURS/                 # Contenus de formation (MD)
+│   └── SUPPORTS PÉDAGOGIQUES/ # Présentations (HTML, PDF, PPTX, DOCX)
+├── Practice − 3 days/         # Formation master de 3 jours
+│   ├── COURS/                 # Contenus de formation organisés par jour
+│   └── SUPPORTS PÉDAGOGIQUES/ # Présentations et slides (HTML)
+├── Collective - 5 days/       # Formation collective de 5 jours
+├── Code/                      # Exemples de code de formation (à supprimer)
+├── astek-logo.png            # Logo de l'entreprise
+├── custom_header.tex         # Modèle d'en-tête LaTeX
+└── README.md                 # Documentation principale du projet
 ```
 
-## Training Philosophy
+## Philosophie de formation
 
-This repository is designed around the "Vibe Coding" methodology:
-- **Vibe Coding**: AI-assisted programming using LLMs through structured prompting
-- **Context Engineering**: Advanced techniques for optimizing AI interactions  
-- **Agent-based Development**: Using specialized AI agents for different development phases
+Ce dépôt est conçu autour de la méthodologie "Vibe Coding" :
 
-## Key Training Concepts
+- **Vibe Coding** : Programmation assistée par IA utilisant les LLM via des prompts structurés
+- **Context Engineering** : Techniques avancées pour optimiser les interactions IA
+- **Développement basé sur les agents** : Utilisation d'agents IA spécialisés pour différentes phases de développement
 
-### AI Tools Covered
+## Concepts clés de formation
+
+### Outils IA couverts
+
 - Claude Code, Cursor, Gemini CLI, GitHub Copilot, WindSurf, Kilo Code, Continue, Replit
-- Focus on prompt engineering and AI-human collaboration workflows
+- Focus sur l'ingénierie des prompts et les flux de travail de collaboration IA-humain
 
-### Frameworks and Methodologies
-- **BMAD-METHOD**: Collaborative planning framework
-- **SuperClaude/CCPM**: Spec-driven development approach
-- **MCP (Model-Controller-Prompter)**: Bridge between AI and external tools
+### Frameworks et méthodologies
 
-## Course Materials
+- **BMAD-METHOD** : Framework de planification collaborative
+- **SuperClaude/CCPM** : Approche de développement guidée par les spécifications
+- **MCP (Model-Controller-Prompter)** : Pont entre l'IA et les outils externes
+- **Spec-Kit**: Framework de planification orienté spécifications
 
-### Starter Course (1 day)
-- **File**: `Starter − 1 day/VibeCoding-starter.md`
-- **Language**: French
-- **Focus**: Introduction to vibe coding concepts, basic prompt engineering, simple exercises
-- **Prerequisites**: Basic programming knowledge, VSCode, Cursor installed
+## Matériaux de cours
 
-### Master Course (3 days) 
-- **File**: `Practice − 3 days/VibeCoding - Mastering - 3-days.md`
-- **Language**: French
-- **Focus**: Advanced agentique development, Context Engineering, security considerations
-- **Format**: Day 1 = Starter content, Days 2-3 = Advanced concepts
+### Cours Starter (1 jour)
 
-## Development Guidelines
+- **Dossier** : `Starter − 1 day/COURS/`
+- **Fichier principal** : `Formation-Complete-Starter.md`
+- **Supports** : `Starter − 1 day/SUPPORTS PÉDAGOGIQUES/`
+- **Langue** : Français
+- **Focus** : Introduction aux concepts de vibe coding, ingénierie de base des prompts, exercices simples
+- **Prérequis** : Connaissances de base en programmation, VSCode, Cursor installé
 
-### Working with Training Materials
-- Preserve the pedagogical structure when making modifications
-- Keep documentation in French as this is a French training program
-- Respect the progressive difficulty from Starter → Master → Collective
-- Update version numbers and dates when making significant changes
+### Cours Master (3 jours)
 
-### File Modifications
-- Always backup before modifying course materials
-- Maintain consistency between different format versions (PDF, MD, DOCX, etc.)
-- Test any referenced tools or links in the materials
+- **Dossier** : `Practice − 3 days/COURS/`
+- **Fichier principal** : `Formation-Complete-Master.md`
+- **Modules par jour** : `JOUR 1/`, `JOUR 2/`, `JOUR 3/`
+- **Supports** : `Practice − 3 days/SUPPORTS PÉDAGOGIQUES/`
+- **Langue** : Français
+- **Focus** : Développement agentique avancé, Context Engineering, considérations de sécurité
+- **Format** : Jour 1 = Contenu Starter, Jours 2-3 = Concepts avancés
 
-## Excluded Files
-- `.DS_Store` files (macOS system files)
-- Large files referenced in `.gitignore`
+## Directives de développement
 
-When working with this repository, prioritize maintaining the educational integrity of the training materials while helping improve content clarity and updating outdated information about AI tools and techniques.
+### Travail avec les matériaux de formation
+
+- Préserver la structure pédagogique lors des modifications
+- Conserver la documentation en français car il s'agit d'un programme de formation français
+- Respecter la difficulté progressive de Starter → Master → Collective
+- Mettre à jour les numéros de version et les dates lors de changements significatifs
+
+### Modifications de fichiers
+
+À chaque modification de fichier : 
+
+- Toujours sauvegarder avant de modifier les matériaux de cours
+- Il est indispensable de maintenir la cohérence entre les différentes versions de format (Markdown, Slides, Codelab etc.)
+- Tester tous les outils ou liens référencés dans les matériaux
+
+## Fichiers exclus
+
+- Fichiers `.DS_Store` (fichiers système macOS)
+- Fichiers volumineux référencés dans `.gitignore`
+
+Lors du travail avec ce dépôt, priorisez le maintien de l'intégrité éducative des matériaux de formation tout en aidant à améliorer la clarté du contenu et en mettant à jour les informations obsolètes sur les outils et techniques IA.

@@ -1,0 +1,2763 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Formation Vibe Coding Master (3 jours) - Présentation Complète</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/white.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/highlight/monokai.css">
+    
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --astek-green: #009c49;
+            --astek-teal: #00b0be;
+            --astek-dark: #2d2927;
+            --astek-light: #f8f9fa;
+            --astek-gradient: linear-gradient(135deg, #009c49, #00b0be);
+            --shadow-astek: 0 4px 12px rgba(0,156,73,0.15);
+            --shadow-light: 0 2px 8px rgba(0,156,73,0.08);
+        }
+        .reveal {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .reveal .slides section {
+            text-align: left;
+            font-size: 0.7em;
+        }
+
+        /* Table styles for better presentation */
+        .code-example table {
+            margin: 10px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .code-example table th {
+            background: var(--astek-gradient);
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            letter-spacing: 0.5px;
+        }
+
+        .code-example table td, .code-example table th {
+            transition: background-color 0.2s ease;
+        }
+
+        .code-example table tr:hover {
+            background-color: rgba(0,156,73,0.15) !important;
+        }
+
+        /* Fix contrast issues in code-example tables */
+        .code-example table tr {
+            background-color: transparent !important;
+        }
+        .code-example table tr:nth-child(even) {
+            background-color: rgba(255,255,255,0.05) !important;
+        }
+        .code-example table td {
+            background-color: transparent !important;
+            border-color: rgba(255,255,255,0.2) !important;
+            color: #ecf0f1 !important;
+        }
+        .code-example table td[style*="background-color: #f5f5f5"] {
+            background-color: rgba(0,156,73,0.15) !important;
+            color: #ffffff !important;
+        }
+        .code-example table td[style*="background-color: #f9f9f9"] {
+            background-color: rgba(255,255,255,0.05) !important;
+        }
+
+        .code-example h4, .code-example h5 {
+            margin: 15px 0 8px 0;
+            color: var(--astek-green);
+            font-weight: 600;
+        }
+
+        /* List styles for better presentation */
+        .code-example ul, .code-example ol {
+            margin: 10px 0;
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+        .code-example ul li, .code-example ol li {
+            margin: 8px 0;
+            padding: 6px 0;
+            border-left: 3px solid transparent;
+            padding-left: 12px;
+            transition: all 0.2s ease;
+        }
+        .code-example ul li:hover, .code-example ol li:hover {
+            border-left-color: var(--astek-green);
+            background-color: rgba(0,156,73,0.05);
+            transform: translateX(5px);
+        }
+        .code-example ul {
+            list-style-type: none;
+        }
+        .code-example ul li::before {
+            content: "▶";
+            color: var(--astek-green);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        .code-example ol {
+            counter-reset: list-counter;
+        }
+        .code-example ol li {
+            counter-increment: list-counter;
+            position: relative;
+        }
+        .code-example ol li::before {
+            content: counter(list-counter);
+            position: absolute;
+            left: -15px;
+            top: 6px;
+            background: var(--astek-green);
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8em;
+            font-weight: 600;
+        }
+
+        /* Paragraph styles for better text flow */
+        .code-example p {
+            margin: 8px 0;
+            line-height: 1.5;
+        }
+        .code-example p:first-child {
+            margin-top: 0;
+        }
+        .code-example p:last-child {
+            margin-bottom: 0;
+        }
+        .code-example h4 + p {
+            margin-top: 8px;
+        }
+        .code-example p + h4, .code-example p + h5 {
+            margin-top: 20px;
+        }
+
+        /* Ensure good contrast for all text elements in code-example */
+        .code-example, .code-example * {
+            color: #ecf0f1 !important;
+        }
+        .code-example h4, .code-example h5 {
+            color: var(--astek-green) !important;
+        }
+        .code-example strong {
+            color: #ffffff !important;
+            font-weight: 600;
+        }
+        .code-example .highlight {
+            background-color: var(--astek-teal) !important;
+            color: white !important;
+        }
+
+        /* Override any inherited dark colors */
+        .code-example [style*="color: #"] {
+            filter: brightness(1.5) contrast(1.2);
+        }
+
+        /* Ensure semantic colors remain visible in code-example tables */
+        .code-example table td[style*="color: #d32f2f"] {
+            color: #ff6b6b !important; /* Red - lighter for dark background */
+        }
+        .code-example table td[style*="color: #f57c00"] {
+            color: #ffb74d !important; /* Orange - lighter for dark background */
+        }
+        .code-example table td[style*="color: #388e3c"] {
+            color: #81c784 !important; /* Green - lighter for dark background */
+        }
+
+        /* Ensure border colors are visible */
+        .code-example table {
+            border-collapse: separate;
+            border-spacing: 1px;
+        }
+        .code-example table td, .code-example table th {
+            border: 1px solid rgba(255,255,255,0.2) !important;
+        }
+
+        /* Fix specific light background issue in code-example */
+        .code-example [style*="background-color: #f8f9fa"] {
+            background-color: rgba(255,255,255,0.08) !important;
+        }
+
+        /* Amélioration des contrôles Reveal.js */
+        .reveal .controls {
+            color: var(--astek-green) !important;
+            bottom: 20px !important;
+            right: 20px !important;
+        }
+
+        .reveal .controls button {
+            color: var(--astek-green) !important;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .reveal .controls button:hover {
+            opacity: 1 !important;
+            color: #ffffff !important;
+        }
+
+        .reveal .progress {
+            color: var(--astek-green) !important;
+            height: 4px !important;
+        }
+
+        /* Affichage aide navigation */
+        .reveal .help-overlay {
+            background: rgba(0,0,0,0.9);
+            color: white;
+            font-size: 0.8em;
+        }
+        
+        .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            text-transform: none;
+            line-height: 1.3;
+            margin-bottom: 0.8em;
+        }
+        
+        .reveal h1 {
+            font-size: 2em;
+            font-weight: 800;
+            background: var(--astek-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        
+        .reveal h2 {
+            font-size: 1.6em;
+            font-weight: 700;
+            color: var(--astek-green);
+        }
+        
+        .reveal h3 {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: var(--astek-teal);
+        }
+        
+        .reveal h4 {
+            font-size: 1.1em;
+            font-weight: 500;
+            color: var(--astek-dark);
+        }
+        
+        .reveal p, .reveal li {
+            font-size: 0.9em;
+            line-height: 1.4;
+            color: var(--astek-dark);
+        }
+        
+        .astek-logo {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            width: 100px;
+            height: auto;
+            z-index: 1000;
+        }
+        
+        .reveal .title-slide h1 {
+            color: var(--astek-green);
+            font-size: 2em;
+            margin-bottom: 0.3em;
+            font-weight: 800;
+        }
+        
+        .reveal .title-slide h2 {
+            color: var(--astek-dark);
+            font-size: 1.2em;
+            margin-bottom: 0.8em;
+            font-weight: 500;
+        }
+        
+        .reveal .progress {
+            color: var(--astek-green);
+        }
+        
+        .day-header {
+            background: var(--astek-gradient);
+            color: white;
+            padding: 3em 2em;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 1.5em;
+            box-shadow: 0 8px 32px rgba(0,156,73,0.3);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+        
+        .day-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 40%, rgba(255,255,255,0.05) 100%);
+            pointer-events: none;
+            animation: shimmer 3s ease-in-out infinite;
+        }
+        
+        @keyframes shimmer {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .day-header:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 48px rgba(0,156,73,0.4);
+        }
+        
+        .day-header h1, .day-header h2 {
+            color: white;
+            margin: 0.3em 0;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        
+        .day-header h1 {
+            font-size: 2.5em;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+        }
+        
+        .day-header h2 {
+            font-size: 1.3em;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+        
+        .day-header p {
+            margin: 0.8em 0 0 0;
+            opacity: 0.8;
+            font-size: 0.95em;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .module-time {
+            display: none;
+        }
+        
+        .code-example {
+            background-color: var(--astek-dark);
+            color: #ecf0f1;
+            padding: 1em;
+            border-radius: 8px;
+            border-left: 4px solid var(--astek-green);
+            font-family: 'Courier New', monospace;
+            font-size: 0.75em;
+            line-height: 1.4;
+            margin: 1em 0;
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s ease;
+        }
+        
+        .code-example:hover {
+            box-shadow: var(--shadow-astek);
+            transform: translateY(-2px);
+        }
+        
+        .highlight {
+            background-color: var(--astek-teal);
+            color: white;
+            padding: 0.2em 0.4em;
+            border-radius: 4px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1em;
+            margin: 1em 0;
+        }
+        
+        .tool-card {
+            background-color: white;
+            padding: 1.2em;
+            border-radius: 12px;
+            border-left: 4px solid var(--astek-green);
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .tool-card:hover {
+            box-shadow: var(--shadow-astek);
+            transform: translateY(-4px);
+            border-left-color: var(--astek-teal);
+        }
+        
+        .tool-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--astek-gradient);
+            border-radius: 12px 12px 0 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .tool-card:hover::before {
+            opacity: 1;
+        }
+        
+        .tool-card h4 {
+            margin-top: 0;
+            margin-bottom: 0.6em;
+            color: var(--astek-dark);
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+        
+        .tool-card p, .tool-card li {
+            font-size: 0.9em;
+            line-height: 1.4;
+            margin: 0.4em 0;
+            color: var(--astek-dark);
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.8em;
+            margin: 1em 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow-light);
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            border: 1px solid rgba(0,156,73,0.1);
+            padding: 0.8em;
+            text-align: left;
+        }
+        
+        .comparison-table th {
+            background: var(--astek-gradient);
+            color: white;
+            font-weight: 600;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background-color: rgba(0,156,73,0.02);
+        }
+        
+        .comparison-table tr:hover {
+            background-color: rgba(0,156,73,0.05);
+        }
+        
+        .notes-formateur {
+            display: none;
+        }
+        
+        .notes-formateur h4 {
+            display: none;
+        }
+        
+        .exercise-box {
+            background-color: #d1ecf1;
+            border-left: 3px solid #17a2b8;
+            padding: 0.8em;
+            margin: 0.8em 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .exercise-box h4 {
+            color: #0c5460;
+            margin-top: 0;
+            margin-bottom: 0.5em;
+            font-size: 0.95em;
+        }
+        
+        .sources-box {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 0.8em;
+            margin: 0.8em 0;
+            border-radius: 4px;
+            font-size: 0.8em;
+        }
+        
+        .objective-box {
+            background-color: #d4edda;
+            border-left: 3px solid #28a745;
+            padding: 0.8em;
+            margin: 0.8em 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .objective-box h4 {
+            color: #155724;
+            margin-top: 0;
+            margin-bottom: 0.5em;
+            font-size: 0.95em;
+        }
+        
+        .reveal .slides section .fragment {
+            opacity: 0.6;
+        }
+        
+        .reveal .slides section .fragment.visible {
+            opacity: 1;
+        }
+        
+        .reveal ul, .reveal ol {
+            margin: 0.8em 0;
+            padding-left: 1.5em;
+        }
+        
+        .reveal ul {
+            list-style: none;
+        }
+        
+        .reveal ul li:before {
+            content: '▸';
+            color: var(--astek-green);
+            font-weight: bold;
+            position: absolute;
+            left: -1.2em;
+            font-size: 1.1em;
+        }
+        
+        .reveal li {
+            margin: 0.5em 0;
+            font-size: 0.9em;
+            line-height: 1.5;
+            position: relative;
+        }
+        
+        .compact-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .compact-list li {
+            margin: 0.6em 0;
+            font-size: 0.85em;
+            padding-left: 1.5em;
+            position: relative;
+            line-height: 1.4;
+        }
+        
+        .compact-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--astek-green);
+            font-weight: bold;
+            font-size: 1em;
+        }
+        
+        /* Animations et micro-interactions */
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .tools-grid {
+            animation: slideInUp 0.8s ease-out;
+        }
+        
+        .tool-card {
+            animation: slideInUp 0.6s ease-out;
+            animation-delay: calc(var(--card-index, 0) * 0.1s);
+        }
+        
+        /* Indicateur de progression visuel */
+        .progress-indicator {
+            height: 3px;
+            background: var(--astek-gradient);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transform-origin: left;
+            animation: progressBar 0.3s ease-out;
+        }
+        
+        @keyframes progressBar {
+            from { transform: scaleX(0); }
+            to { transform: scaleX(1); }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <!-- Logo Astek sur chaque slide -->
+        <img src="../astek-logo.png" alt="Astek Logo" class="astek-logo">
+        
+        <div class="slides">
+            <!-- Slide titre principal -->
+            <section class="title-slide">
+                <h1>Formation Vibe Coding Master</h1>
+                <h2>3 jours - Développement Agentique & Context Engineering</h2>
+                <p style="text-align: center;">
+                    <strong>v2 Philippe Pary - Thomas Foutrein</strong><br>
+                    2025-08-26
+                </p>
+                <p style="text-align: center; margin-top: 2em;">
+                    <em>Guide intégré : Contenu formation + Notes formateur</em>
+                </p>
+            </section>
+
+            <!-- JOUR 1 - Section principale -->
+            <section>
+                <section class="day-header">
+                    <h1>📅 JOUR 1</h1>
+                    <h2>Fondements Accélérés + Concepts Avancés</h2>
+                    <p>De 9h00 à 17h30</p>
+                </section>
+
+                <!-- JOUR 1 - Module 1: Introduction -->
+                <section>
+                    <h2>🎯 Tour de table spécifique Master</h2>
+                    
+                    <ul>
+                        <li>Nom, fonction, niveau d'expérience IA</li>
+                        <li>Comment vois-tu le vibe coding ?</li>
+                        <li>Ta machine est prête ? (client vibe coding installé)</li>
+                        <li>Quelles sont tes attentes vis à vis de la formation ?
+                            <ul>
+                                <li>Projets d'entreprise envisagés avec les agents</li>
+                                <li>Attentes sur les concepts avancés (Context Engineering, sécurité)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- JOUR 1 - Module 2: Framework 5 Compétences -->
+                <section>
+                    <span class="module-time">9h30 - 10h15 : Framework des 5 Compétences + Preview Agents</span>
+                    <h2>🛠️ Outils de Vibe Coding</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>Claude Code</h4>
+                            <p>Outil CLI - Puissance du modèle Claude</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Cursor</h4>
+                            <p>Éditeur dédié - Interface optimisée</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Gemini CLI</h4>
+                            <p>Outil CLI - Scriptable, gratuit</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Continue</h4>
+                            <p>Extension VSCode - Open source</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 1 - Module 2b: Premier TP -->
+                <section>
+                    <h2>🎮 Premier TP live de vibe coding instinctif</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>1. Jeu de Snake</h4>
+                            <p>Interface graphique simple avec logique de jeu</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>2. Todo App</h4>
+                            <p>CRUD basique avec interface utilisateur</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>3. Calcul de Pi</h4>
+                            <p>Méthode de Monte-Carlo avec visualisation</p>
+                        </div>
+                    </div>
+                    
+                </section>
+
+                <!-- JOUR 1 - Module 2c: Les 5 compétences - Partie 1 -->
+                <section>
+                    <h2>Les 5 compétences avec perspective avancée</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card fragment">
+                            <h4>1. 🧠 Thinking</h4>
+                            <p><strong>Starter :</strong> Décomposer le problème</p>
+                            <p><strong>Master :</strong> → Planification multi-agents</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>2. 🏗️ Frameworks</h4>
+                            <p><strong>Starter :</strong> Structures de base</p>
+                            <p><strong>Master :</strong> → BMAD, CCPM, Spec-kit</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 1 - Module 2d: Les 5 compétences - Partie 2 -->
+                <section>
+                    <h2>Les 5 compétences (suite)</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card fragment">
+                            <h4>3. ✅ Checkpoints</h4>
+                            <p><strong>Starter :</strong> Validation manuelle</p>
+                            <p><strong>Master :</strong> → Feedback loops automatisés</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>4. 🐛 Debugging</h4>
+                            <p><strong>Starter :</strong> Correction manuelle</p>
+                            <p><strong>Master :</strong> → Auto-correction d'agents</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>5. 📋 Context</h4>
+                            <p><strong>Starter :</strong> Context simple</p>
+                            <p><strong>Master :</strong> → Context Engineering (J3)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="objective-box">
+                        <h4>🎯 Progression logique</h4>
+                        <p><strong>humain → assisté → automatisé</strong></p>
+                    </div>
+                </section>
+
+                <!-- JOUR 1 - Module 3: Prompt Engineering -->
+                <section>
+                    <span class="module-time">10h15 - 11h00 : Prompt Engineering Niveau Entreprise</span>
+                    <h2>📋 Template de Prompt Master</h2>
+                    
+                    <div class="code-example">
+<h4>Contexte Entreprise</h4>
+<p>[Système/Plateforme, utilisateurs, contraintes business]</p>
+
+<h4>Rôle Expert</h4>
+<p>Tu es un [architecte/senior] expert en [domaine technique]</p>
+
+<h4>Tâche Complexe</h4>
+<p>[Objectif technique avec contraintes performance/sécurité]</p>
+
+<h4>Contraintes Entreprise</h4>
+<ul>
+<li>Architecture : [microservices, cloud, etc.]</li>
+<li>Conformité : [GDPR, SOX, etc.]</li>
+<li>Performance : [SLA, charge, disponibilité]</li>
+<li>Sécurité : [authentification, audit, encryption]</li>
+</ul>
+
+<h4>Livrable Professionnel</h4>
+<p>[Code + tests + docs + monitoring]</p>
+                    </div>
+                    
+                    <div class="sources-box">
+                        <h4>📚 Sources récentes 2025</h4>
+                        <ul>
+                            <li><a href="#">The Ultimate Guide to Prompt Engineering in 2025</a></li>
+                            <li><a href="#">AWS Prescriptive Guidance: Prompt engineering best practices</a></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- JOUR 1 - Module 3b: Comparaison Starter vs Master -->
+                <section>
+                    <h2>✅ Starter vs Master</h2>
+
+                    <table class="comparison-table" style="font-size: 0.7em;">
+                        <thead>
+                            <tr>
+                                <th>Aspect</th>
+                                <th>Starter</th>
+                                <th>Master</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Contexte</strong></td>
+                                <td>Projet personnel</td>
+                                <td>Système d'entreprise</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Rôle</strong></td>
+                                <td>Développeur</td>
+                                <td>Architecte/Senior</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Contraintes</strong></td>
+                                <td>Technologies</td>
+                                <td>Business + Conformité</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Livrable</strong></td>
+                                <td>Code fonctionnel</td>
+                                <td>Solution industrialisée</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- JOUR 1 - Module 3c: Exemple concret Master -->
+                <section>
+                    <h2>🎯 Exemple Prompt Master</h2>
+
+                    <div class="objective-box">
+                        <h4>🏗️ Plateforme SaaS de facturation</h4>
+                        <ul class="compact-list">
+                            <li><strong>Contexte :</strong> 1M+ utilisateurs, 99.99% uptime</li>
+                            <li><strong>Rôle :</strong> Architecte logiciel senior expert en systèmes distribués</li>
+                            <li><strong>Tâche :</strong> Service de calcul de prix dynamique >1000 req/s</li>
+                        </ul>
+                    </div>
+
+                    <div class="code-example" style="font-size: 0.65em;">
+<p>Tu es un architecte logiciel senior expert en systèmes distribués haute performance.</p>
+
+<p><strong>CONTEXTE :</strong> Plateforme SaaS facturation (1M+ users, 99.99% uptime)</p>
+<p><strong>TÂCHE :</strong> Service calcul prix dynamique supportant >1000 req/s</p>
+<p><strong>CONTRAINTES :</strong> Conformité SOX, GDPR, PCI-DSS Level 1</p>
+                    </div>
+                </section>
+
+                <!-- JOUR 1 - Module 4: Exercice Guidé -->
+                <section>
+                    <span class="module-time">11h00 - 12h00 : Exercice Guidé "Niveau Master"</span>
+                    <h2>🚀 Todo App Progressive</h2>
+                    
+                    <div class="exercise-box">
+                        <h4>🎯 Objectif : Compétences Thinking + Frameworks</h4>
+                        <p>Développement d'une application Todo avec contraintes entreprise</p>
+                    </div>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>Phase 1: Architecture</h4>
+                            <p>Conception système avec contraintes performance</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Phase 2: Sécurité</h4>
+                            <p>Authentification, autorisation, audit</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Phase 3: Tests</h4>
+                            <p>Tests unitaires, intégration, E2E</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Phase 4: Monitoring</h4>
+                            <p>Métriques, logs, alertes</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 1 - Module 5: Git + IA -->
+                <section>
+                    <span class="module-time">12h00 - 12h30 : Git + IA pour les Équipes</span>
+                    <h2>🔗 Workflows collaboratifs</h2>
+                    
+                    <div class="objective-box">
+                        <h4>🎯 Preview agents J2</h4>
+                        <p>Introduction aux workflows d'équipe avec agents IA</p>
+                    </div>
+                    
+                    <ul>
+                        <li><strong>Code Review automatisé</strong> avec agents</li>
+                        <li><strong>Génération de commits</strong> intelligente</li>
+                        <li><strong>Documentation</strong> synchronisée</li>
+                        <li><strong>Tests</strong> générés automatiquement</li>
+                    </ul>
+                </section>
+
+                <!-- JOUR 1 - Module 6: Exercices Master - Projets 1-2 -->
+                <section>
+                    <span class="module-time">13h30 - 16h00 : Exercices Individuels "Niveau Master"</span>
+                    <h2>🛠️ 4 projets vibe coding - Partie 1</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>1. Blog Statique</h4>
+                            <p>Générateur de site avec CMS headless</p>
+                            <ul class="compact-list">
+                                <li>Architecture JAMstack</li>
+                                <li>SEO optimisé</li>
+                                <li>Performance web</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>2. Dashboard Simple</h4>
+                            <p>Interface analytics temps réel</p>
+                            <ul class="compact-list">
+                                <li>Visualisation données</li>
+                                <li>Responsive design</li>
+                                <li>Authentification</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="exercise-box">
+                        <h4>⏱️ Format : 2h30 d'exercices individuels</h4>
+                        <p>Choix libre entre les 4 projets selon votre domaine d'expertise</p>
+                    </div>
+                </section>
+
+                <!-- JOUR 1 - Module 6b: Exercices Master - Projets 3-4 -->
+                <section>
+                    <h2>🛠️ 4 projets vibe coding - Partie 2</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>3. API CRUD</h4>
+                            <p>Service REST avec authentification</p>
+                            <ul class="compact-list">
+                                <li>OpenAPI documentation</li>
+                                <li>Tests automatisés</li>
+                                <li>Sécurité OWASP</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>4. Générateur Doc</h4>
+                            <p>Documentation automatique de code</p>
+                            <ul class="compact-list">
+                                <li>Parsing AST</li>
+                                <li>Templates Markdown</li>
+                                <li>Intégration CI/CD</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="objective-box">
+                        <h4>🎯 Objectif pédagogique</h4>
+                        <p>Expérimenter le vibe coding en conditions réelles avec contraintes enterprise</p>
+                    </div>
+                </section>
+
+                <!-- JOUR 1 - Module 7: Bonnes Pratiques -->
+                <section>
+                    <h2>🔒 Review sécurité & performance</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>🛡️ Sécurité OWASP</h4>
+                            <ul>
+                                <li>Top 10 vulnerabilités 2025</li>
+                                <li>Validation inputs</li>
+                                <li>Authentification sécurisée</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>⚡ Performance</h4>
+                            <ul>
+                                <li>Optimisation algorithms</li>
+                                <li>Caching strategies</li>
+                                <li>Monitoring métriques</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>🏗️ Clean Architecture</h4>
+                            <ul>
+                                <li>SOLID principles</li>
+                                <li>Design patterns</li>
+                                <li>Code organization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 1 - Module 8: Challenge Overnight -->
+                <section>
+                    <h2>🌙 "Agent Simulator"</h2>
+                    
+                    <div class="exercise-box">
+                        <h4>🎯 Défi : Concevoir 3 agents spécialisés</h4>
+                        <p>Réflexion sur l'architecture d'agents pour votre contexte entreprise</p>
+                    </div>
+                    
+                    <ol>
+                        <li><strong>Agent Code Reviewer</strong> - Analyse qualité et sécurité</li>
+                        <li><strong>Agent Documentation</strong> - Génération docs techniques</li>
+                        <li><strong>Agent Testing</strong> - Création tests automatisés</li>
+                    </ol>
+                    
+                    <p><em>Présentation et discussion demain matin</em></p>
+                </section>
+            </section>
+
+            <!-- JOUR 2 - Section principale -->
+            <section>
+                <section class="day-header">
+                    <h1>📅 JOUR 2</h1>
+                    <h2>Agents IA et Développement Agentique</h2>
+                    <p>De 9h00 à 17h30</p>
+                </section>
+
+                <!-- JOUR 2 - Module 1: Retour Challenge -->
+                <section>
+                    <span class="module-time">9h00 - 9h30 : Retour Challenge + Introduction Agents</span>
+                    <h2>🔄 Partage des agents imaginés</h2>
+                    
+                    <div class="objective-box">
+                        <h4>🎯 Objectifs de la session</h4>
+                        <ul>
+                            <li>Partager les concepts d'agents créés</li>
+                            <li>Identifier les patterns récurrents</li>
+                            <li>Préparer la transition vers l'implémentation</li>
+                        </ul>
+                    </div>
+                    
+                </section>
+
+                <!-- JOUR 2 - Module 2: Théorie Agents - Types 1-2 -->
+                <section>
+                    <span class="module-time">9h30 - 10h30 : Agents IA : Théorie et Pratique Avancées</span>
+                    <h2>🤖 Types d'agents par fonction - Partie 1</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card fragment">
+                            <h4>🧠 Agents de raisonnement</h4>
+                            <p><strong>Outils :</strong> Claude Code, Cursor Composer</p>
+                            <p><strong>Usage :</strong> Planification complexe, décisions d'architecture</p>
+                            <p><em>Exemple :</em> "Conçois l'architecture microservices"</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>💻 Agents de code</h4>
+                            <p><strong>Outils :</strong> GitHub Copilot, Continue</p>
+                            <p><strong>Usage :</strong> Génération de code, refactorisation</p>
+                            <p><em>Exemple :</em> "Implémente cette API selon les spécifications"</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 2b: Théorie Agents - Types 3-4 -->
+                <section>
+                    <h2>🤖 Types d'agents par fonction - Partie 2</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card fragment">
+                            <h4>👁️ Agents multi-modaux</h4>
+                            <p><strong>Outils :</strong> GPT4-V, Claude avec vision</p>
+                            <p><strong>Usage :</strong> Analyse de diagrammes, maquettes d'interface</p>
+                            <p><em>Exemple :</em> "Génère le code à partir de cette maquette"</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>⚡ Agents spécialisés</h4>
+                            <p><strong>Outils :</strong> Devin, WindSurf Cascade</p>
+                            <p><strong>Usage :</strong> Tâches spécialisées</p>
+                            <p><em>Exemple :</em> Agents métier spécifiques</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 2c: Anatomie technique - Planning -->
+                <section>
+                    <h2>🔬 Anatomie d'un agent - Partie 1</h2>
+
+                    <h3>Boucle de planification</h3>
+                    
+                    <div class="code-example">
+<p><strong>1. Boucle de planification :</strong> Décomposition de tâches complexes</p>
+
+<p>Cycle d'agent typique :</p>
+<ol>
+<li>Recevoir tâche → 2. Décomposer → 3. Exécuter étape</li>
+<li>Évaluer → 5. Ajuster plan → 6. Continuer/Terminer</li>
+</ol>
+                    </div>
+                    
+                    <div class="objective-box">
+                        <h4>🎯 Exemple concret</h4>
+                        <p>Tâche : "Créer une API de gestion d'utilisateurs"</p>
+                        <p>→ Décomposition : Modèles, Routes, Sécurité, Tests, Documentation</p>
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 2d: Anatomie technique - Outils -->
+                <section>
+                    <h2>🔬 Anatomie d'un agent - Partie 2</h2>
+                    <h3>Utilisation d'outils et Auto-correction</h3>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>1. 🛠️ Utilisation d'outils</h4>
+                            <ul class="compact-list">
+                                <li><strong>Système de fichiers :</strong> Lecture, écriture, recherche</li>
+                                <li><strong>Contrôle de version :</strong> Opérations Git</li>
+                                <li><strong>Web :</strong> Appels d'API, consultation de documentation</li>
+                                <li><strong>Exécution :</strong> Lancement de code, tests, compilation</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>2. 🔄 Auto-correction</h4>
+                            <ul class="compact-list">
+                                <li><strong>Détection d'erreurs :</strong> Analyse des erreurs de compilation</li>
+                                <li><strong>Stratégies de reprise :</strong> Tentatives avec ajustements</li>
+                                <li><strong>Mécanismes de repli :</strong> Solutions alternatives</li>
+                                <li><strong>Boucles d'apprentissage :</strong> Amélioration des prompts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 2e: Anatomie technique - Memory -->
+                <section>
+                    <h2>🔬 Anatomie d'un agent - Partie 3</h2>
+                    <h3>Gestion de mémoire</h3>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>🧠 Types de mémoire</h4>
+                            <ul class="compact-list">
+                                <li><strong>Fenêtre de contexte :</strong> Conversation immédiate</li>
+                                <li><strong>Mémoire de session :</strong> État du projet en cours</li>
+                                <li><strong>Mémoire à long terme :</strong> Connaissances accumulées (RAG)</li>
+                                <li><strong>Mémoire partagée :</strong> Informations partagées entre agents</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="objective-box">
+                        <h4>🎯 Récapitulatif des 4 composants</h4>
+                        <p><strong>1. Boucle de planification</strong> → <strong>2. Utilisation d'outils</strong> → <strong>3. Gestion de mémoire</strong> → <strong>4. Auto-correction</strong></p>
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 2c: Exemples Gemini CLI -->
+                <section>
+                    <h2>🛠️ Exemples pratiques avec Gemini CLI</h2>
+                    
+                    <h3>Installation et configuration rapide</h3>
+                    <div class="code-example">
+# Installation via npm
+npm install -g @google/gemini-cli
+
+# Authentification
+gemini  # Connexion Google Account
+# ou
+export GEMINI_API_KEY="YOUR_API_KEY"
+gemini
+                    </div>
+                    
+                    <h3>Agent d'analyse de code</h3>
+                    <div class="code-example">
+cd my-project/
+gemini
+> Tu es un agent d'analyse de code expert. Analyse ce projet et identifie :
+> 1. Les vulnérabilités potentielles
+> 2. Les points d'amélioration de performance
+> 3. Les problèmes de maintenabilité
+> Fournis un rapport structuré avec des recommandations précises.
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 3: Mon Premier Agent -->
+                <section>
+                    <span class="module-time">10h45 - 12h00 : Atelier "Mon Premier Agent"</span>
+                    <h2>🤖 Agent "Code Reviewer"</h2>
+                    
+                    <div class="objective-box">
+                        <h4>🎯 Objectif : Comprendre concrètement ce qu'est un agent</h4>
+                        <p>Setup + Agent "Code Reviewer" + débrief collectif</p>
+                    </div>
+                    
+                    <div class="exercise-box">
+                        <h4>🔧 Setup avec Gemini CLI (10min)</h4>
+                        <div class="code-example">
+# Installation et initialisation
+npm install -g @google/gemini-cli
+gemini
+# Suivre le processus d'authentification
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 3b: Prompt Code Reviewer -->
+                <section>
+                    <h2>Agent "Code Reviewer" - Prompt système optimisé</h2>
+                    
+                    <div class="code-example">
+<p>Tu es un agent Code Reviewer expert avec 10 ans d'expérience.</p>
+
+<p><strong>MISSION :</strong> Analyser les modifications git et fournir un review détaillé</p>
+
+<p><strong>PROCESSUS :</strong></p>
+<ol>
+<li>Examine tous les fichiers modifiés avec git diff</li>
+<li>Applique les critères de qualité suivants :
+   <ul>
+   <li>Sécurité : Recherche vulnérabilités OWASP Top 10</li>
+   <li>Performance : Identifie bottlenecks potentiels</li>
+   <li>Maintenabilité : Structure, nommage, complexité</li>
+   <li>Tests : Couverture et pertinence</li>
+   </ul>
+</li>
+</ol>
+
+<p><strong>OUTPUT FORMAT :</strong></p>
+<h4>🔍 Code Review Report</h4>
+<h5>✅ Points positifs</h5>
+<h5>⚠️ Problèmes identifiés</h5>
+<h5>🚀 Recommandations d'amélioration</h5>
+<h5>📊 Score global : X/10</h5>
+<h5>🎯 Actions prioritaires</h5>
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 3c: Tests pratiques -->
+                <section>
+                    <h2>🧪 Exemples d'utilisation pratiques</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>Test sur bug fix</h4>
+                            <div class="code-example">
+gemini
+> Analyse cette correction de bug et vérifie qu'elle couvre 
+> tous les edge cases. Regarde particulièrement la gestion 
+> des erreurs et les tests associés.
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Test sur nouvelle feature</h4>
+                            <div class="code-example">
+gemini --include-directories ../tests,../docs
+> Review cette nouvelle feature d'authentification.
+> Vérifie la sécurité, les tests, et l'impact sur 
+> l'architecture existante.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise-box">
+                        <h4>🔄 Débrief collectif</h4>
+                        <ul>
+                            <li>Qu'est-ce qui a bien marché ?</li>
+                            <li>Quelles limites avez-vous observées ?</li>
+                            <li>Comment améliorer cet agent ?</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 4: Introduction MCP -->
+                <section>
+                    <span class="module-time">12h00 - 12h30 : Introduction MCP Simplifiée</span>
+                    <h2>🔗 Model Context Protocol</h2>
+                    
+                    <div class="objective-box">
+                        <h4>🎯 MCP : Bridge entre agents et outils externes</h4>
+                        <p>Démonstrations API/DB avec protocole standardisé</p>
+                    </div>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>🗄️ Accès Base de Données</h4>
+                            <p>Connexion sécurisée aux données entreprise</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>🌐 APIs externes</h4>
+                            <p>Intégration services tiers</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>📁 Systèmes de fichiers</h4>
+                            <p>Manipulation fichiers en toute sécurité</p>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise-box">
+                        <h4>🚀 Démonstrations live formateur</h4>
+                        <ul class="compact-list">
+                            <li>Agent + API météo externe</li>
+                            <li>Agent + Base de données produits</li>
+                            <li>Configuration MCP rapide</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 5: Agent Spécialisé - Options -->
+                <section>
+                    <span class="module-time">13h30 - 15h00 : Atelier "Agent Spécialisé"</span>
+                    <h2>🎯 Choix entre 3 agents - Focus apprentissage</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>Option A : Assistant Veille Tech</h4>
+                            <ul class="compact-list">
+                                <li><strong>Input :</strong> Sources RSS/blogs</li>
+                                <li><strong>Output :</strong> Résumé quotidien personnalisé</li>
+                                <li><strong>Tools :</strong> RSS reader, markdown</li>
+                                <li><strong>Focus :</strong> Automatisation et filtrage intelligent</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Option B : Organiseur Fichiers</h4>
+                            <ul class="compact-list">
+                                <li><strong>Input :</strong> Dossier désordonné</li>
+                                <li><strong>Output :</strong> Structure organisée + rapport</li>
+                                <li><strong>Tools :</strong> File system, patterns</li>
+                                <li><strong>Focus :</strong> Patterns reconnaissance et logique</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 5a: Agent Spécialisé - Option C -->
+                <section>
+                    <h2>🎯 Option C et Workflow de développement</h2>
+
+                    <div class="tool-card">
+                        <h4>Option C : Générateur Commits</h4>
+                        <ul class="compact-list">
+                            <li><strong>Input :</strong> Git diff</li>
+                            <li><strong>Output :</strong> Message commit structuré</li>
+                            <li><strong>Tools :</strong> Git commands, templates</li>
+                            <li><strong>Focus :</strong> Templates et consistance</li>
+                        </ul>
+                    </div>
+
+                    <div class="exercise-box">
+                        <h4>🚀 Workflow de développement (90min)</h4>
+                        <ol>
+                            <li><strong>Choix de l'option</strong> (5min)</li>
+                            <li><strong>Conception agent</strong> (15min)</li>
+                            <li><strong>Implémentation simple</strong> (50min)</li>
+                            <li><strong>Test et amélioration</strong> (20min)</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 5b: Template d'implémentation -->
+                <section>
+                    <h2>📋 Template d'implémentation</h2>
+
+                    <div class="objective-box">
+                        <h4>🎯 Template de prompt agent spécialisé</h4>
+                        <div class="code-example" style="font-size: 0.65em;">
+<p>Tu es un [RÔLE EXPERT].</p>
+
+<p><strong>MISSION :</strong> [OBJECTIF PRÉCIS]</p>
+
+<p><strong>WORKFLOW :</strong></p>
+<ol>
+<li>[ÉTAPE 1]</li>
+<li>[ÉTAPE 2]</li>
+<li>[ÉTAPE 3]</li>
+<li>[LIVRABLE FINAL]</li>
+</ol>
+                        </div>
+                    </div>
+
+                    <div class="exercise-box">
+                        <h4>⚡ Exemple : Assistant Veille Tech</h4>
+                        <ul class="compact-list">
+                            <li><strong>Rôle :</strong> Assistant Veille Technologique expert</li>
+                            <li><strong>Mission :</strong> Résumé quotidien personnalisé</li>
+                            <li><strong>Workflow :</strong> Sources → Extraction → Classification → Digest</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 6: Sécurité Agents - Menaces 1-2 -->
+                <section>
+                    <span class="module-time">15h15 - 16h45 : Sécurité Avancée des Agents IA</span>
+                    <h2>🛡️ Menaces 2025 - Partie 1</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>🎯 Prompt Injection</h4>
+                            <ul class="compact-list">
+                                <li>Attaques par manipulation de contexte</li>
+                                <li>Défense : Validation et sanitization</li>
+                                <li>Isolation des prompts système</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>📊 Data Poisoning</h4>
+                            <ul class="compact-list">
+                                <li>Corruption des données d'entraînement</li>
+                                <li>Défense : Validation des sources</li>
+                                <li>Monitoring anomalies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 6a: Sécurité Agents - Menaces 3-4 -->
+                <section>
+                    <h2>🛡️ Menaces 2025 - Partie 2</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>🔓 Model Extraction</h4>
+                            <ul class="compact-list">
+                                <li>Vol de propriété intellectuelle</li>
+                                <li>Défense : Rate limiting</li>
+                                <li>Obfuscation des réponses</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>🚨 Backdoor Attacks</h4>
+                            <ul class="compact-list">
+                                <li>Triggers cachés dans le modèle</li>
+                                <li>Défense : Audit régulier</li>
+                                <li>Tests adversariaux</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="exercise-box">
+                        <h4>🛠️ Atelier sécurité pratique</h4>
+                        <p>Mise en place de défenses concrètes sur vos agents</p>
+                    </div>
+                </section>
+
+                <!-- JOUR 2 - Module 7: Frameworks + Bilan -->
+                <section>
+                    <span class="module-time">16h45 - 17h30 : Frameworks Avancés + Bilan J2</span>
+                    <h2>🏗️ Framework Spec-Kit</h2>
+
+                    <div class="objective-box">
+                        <h4>🎯 Spec-Kit : Développement piloté par spécifications exécutables</h4>
+                        <p>Méthodologie révolutionnaire où les spécifications deviennent le cœur du processus</p>
+                    </div>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>1. Initialiser</h4>
+                            <p>Projet avec contexte business</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>2. Créer</h4>
+                            <p>Spécification fonctionnelle détaillée</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>3. Générer</h4>
+                            <p>Plan technique avec l'IA</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>4. Valider</h4>
+                            <p>Plan avec contraintes entreprise</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4>5. Implémenter</h4>
+                            <p>Solution par raffinements successifs</p>
+                        </div>
+                    </div>
+
+                    <div class="exercise-box">
+                        <h4>🛠️ Exercice guidé : Système de gestion distribuée de stocks</h4>
+                        <p>Entreprise avec 5 entrepôts européens - Gestion unifiée temps réel</p>
+                    </div>
+                </section>
+            </section>
+
+            <!-- JOUR 3 - Section principale -->
+            <section>
+                <section class="day-header">
+                    <h1>📅 JOUR 3</h1>
+                    <h2>Context Engineering et Patterns Avancés</h2>
+                    <p>De 9h00 à 18h00</p>
+                </section>
+
+                <!-- JOUR 3 - Module 1: Introduction Context Engineering -->
+                <section>
+                    <span class="module-time">9h00 - 9h30 : Introduction au Context Engineering</span>
+                    <h2>🎯 Définition et enjeux</h2>
+
+                    <div class="objective-box">
+                        <h4>📋 Context Engineering</h4>
+                        <p><strong>L'art d'orchestrer l'information pour maximiser l'efficacité des agents IA</strong></p>
+                        <p style="font-size: 0.8em; margin-top: 0.5em;"><em>Analogie : "Si l'agent est un expert consultant, le Context Engineering c'est lui fournir exactement le dossier dont il a besoin pour exceller."</em></p>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 1b: Enjeux Business -->
+                <section>
+                    <h2>💼 Enjeux Business du Context Engineering</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card fragment">
+                            <h4>🤝 Harmonisation</h4>
+                            <p style="font-size: 0.8em;">Règles de travail communes entre toutes les parties prenantes du projet</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>📈 Productivité</h4>
+                            <p style="font-size: 0.8em;">Agents 3-5x plus efficaces avec contexte optimisé</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>✅ Qualité</h4>
+                            <p style="font-size: 0.8em;">Réduction significative erreurs et itérations</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>💰 ROI</h4>
+                            <p style="font-size: 0.8em;">Moins de temps humain pour superviser</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>📊 Scalabilité</h4>
+                            <p style="font-size: 0.8em;">Agents qui s'adaptent automatiquement</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>🔄 Transmissibilité</h4>
+                            <p style="font-size: 0.8em;">Passage du projet d'une équipe à une autre plus aisé</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 1c: Les 6 piliers détaillés -->
+                <section>
+                    <h2>🏗️ Les 6 Piliers du Contexte - Partie 1</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card fragment">
+                            <h4>1. 📋 System Instructions</h4>
+                            <p style="font-size: 0.8em;"><strong>Fonction :</strong> Personnalité et comportement de base</p>
+                            <p style="font-size: 0.7em;"><em>Exemple :</em> "Tu es un architecte senior avec 10 ans d'expérience..."</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>2. 💾 Memory</h4>
+                            <p style="font-size: 0.8em;"><strong>Short-term :</strong> Conversation en cours</p>
+                            <p style="font-size: 0.8em;"><strong>Long-term :</strong> Connaissances accumulées</p>
+                            <p style="font-size: 0.7em;"><em>Exemple :</em> "Tu te souviens que ce client préfère React à Vue"</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>3. 🔍 RAG</h4>
+                            <p style="font-size: 0.8em;"><strong>Mécanisme :</strong> Recherche sémantique + injection contexte</p>
+                            <p style="font-size: 0.7em;"><em>Exemple :</em> Query "authentification" → Récupère docs sécurité</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 1d: Les 6 piliers détaillés suite -->
+                <section>
+                    <h2>🏗️ Les 6 Piliers du Contexte - Partie 2</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card fragment">
+                            <h4>4. 🔧 Tools</h4>
+                            <p style="font-size: 0.8em;"><strong>Puissance :</strong> Agents qui agissent, pas seulement qui parlent</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>5. 📄 Output Format</h4>
+                            <p style="font-size: 0.8em;"><strong>Cohérence :</strong> Réponses prévisibles et exploitables</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>6. 🔄 Feedback Loops</h4>
+                            <p style="font-size: 0.8em;"><strong>Adaptation :</strong> Personnalisation progressive aux besoins</p>
+                        </div>
+                    </div>
+
+                    <div class="objective-box" style="margin-top: 1em;">
+                        <h4>📚 Sources récentes (2024-2025)</h4>
+                        <ul style="font-size: 0.7em;">
+                            <li><strong>Étude scientifique :</strong> "A Survey of Context Engineering for Large Language Models" (juillet 2025)</li>
+                            <li><strong>Vision entreprise :</strong> "Context Engineering: Elevating AI Strategy" (Medium)</li>
+                            <li><strong>Techniques avancées :</strong> "Advancing Long-Context LLM Performance in 2025"</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 2: Rules Engineering -->
+                <section>
+                    <span class="module-time">9h30 - 10h45 : "Rules Engineering"</span>
+                    <h2>📋 Maîtriser les fichiers de contexte persistant</h2>
+                    
+                    <div class="objective-box">
+                        <h4>🎯 Objectif : Exercice progressif (75min)</h4>
+                        <ol>
+                            <li><strong>Étape 1 (20min) :</strong> Audit de règles existantes</li>
+                            <li><strong>Étape 2 (30min) :</strong> Création de règles modulaires</li>
+                            <li><strong>Étape 3 (25min) :</strong> Test en conditions réelles</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 2b: Audit règles -->
+                <section>
+                    <h2>🔍 Audit de règles existantes</h2>
+                    
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>✅ Fichier 1 - Bonnes pratiques</h4>
+                            <div class="code-example">
+Tu es un développeur Python expert.
+Utilise toujours des type hints.
+Écris des docstrings pour toutes les fonctions.
+Privilégie la lisibilité à la performance.
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <h4>❌ Fichier 2 - Règles problématiques</h4>
+                            <div class="code-example">
+Fais du bon code.
+Sois efficace.
+N'oublie pas les tests.
+Attention à la sécurité.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise-box">
+                        <h4>🔬 Questions d'analyse</h4>
+                        <ul>
+                            <li>"Lesquelles donnent des instructions actionables ?"</li>
+                            <li>"Comment mesurer l'efficacité de ces règles ?"</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 2c: Règles avancées -->
+                <section>
+                    <h2>⭐ Exemple de règles avancées</h2>
+                    
+                    <div class="code-example">
+<h4>Contexte : API fintech haute performance</h4>
+<p>Tu es un senior backend engineer spécialisé en systèmes financiers.</p>
+
+<p><strong>STACK TECHNOLOGIQUE :</strong></p>
+<ul>
+<li>Python 3.11+ avec FastAPI</li>
+<li>PostgreSQL avec SQLAlchemy async</li>
+<li>Redis pour caching</li>
+<li>Pytest pour tests</li>
+</ul>
+
+<p><strong>CONTRAINTES RÉGLEMENTAIRES :</strong></p>
+<ul>
+<li>PCI DSS Level 1 compliance</li>
+<li>SOX audit requirements</li>
+<li>GDPR pour données EU</li>
+</ul>
+
+<p><strong>STANDARDS QUALITÉ :</strong></p>
+<ul>
+<li>Type hints obligatoires (mypy strict)</li>
+<li>Couverture tests > 95%</li>
+<li>Logging structuré (JSON)</li>
+<li>Métriques OpenTelemetry</li>
+</ul>
+
+<p><strong>SÉCURITÉ :</strong></p>
+<ul>
+<li>Jamais de secrets en dur</li>
+<li>Validation inputs avec Pydantic</li>
+<li>Audit trail pour toutes mutations</li>
+<li>Rate limiting sur tous endpoints</li>
+</ul>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 2d: Création modulaire -->
+                <section>
+                    <h2>🏗️ Création de règles modulaires</h2>
+                    
+                    <div class="exercise-box">
+                        <h4>🛠️ Exercice pratique (binômes) - 30min</h4>
+                        
+                        <div class="tools-grid">
+                            <div class="tool-card">
+                                <h4>Étape 1 : Règles générales (10min)</h4>
+                                <p>Créez <code>rules-general.md</code> avec :</p>
+                                <ul>
+                                    <li>Principes qualité universels</li>
+                                    <li>Standards sécurité de base</li>
+                                    <li>Patterns communication préférés</li>
+                                </ul>
+                            </div>
+                            <div class="tool-card">
+                                <h4>Étape 2 : Règles spécifiques (15min)</h4>
+                                <p>Créez 3 fichiers spécialisés :</p>
+                                <ul>
+                                    <li><code>rules-backend.md</code> : API, databases, performance</li>
+                                    <li><code>rules-frontend.md</code> : UI, UX, responsiveness</li>
+                                    <li><code>rules-mobile.md</code> : Cross-platform, performance</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="objective-box">
+                        <h4>🎯 Points clés</h4>
+                        <ul>
+                            <li>L'itération : "Rules parfaites n'existent pas"</li>
+                            <li>L'importance du test : "Rules non testées = inutiles"</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 3: Context Engineering Patterns - Introduction -->
+                <section>
+                    <span class="module-time">11h00 - 12h30 : "Context Engineering Patterns"</span>
+                    <h2>📋 Template "Contrat de Contexte"</h2>
+
+                    <div class="objective-box">
+                        <h4>🎯 Contrat de Contexte Fonctionnel</h4>
+                        <p style="font-size: 0.8em;">Document qui définit précisément les exigences contextuelles pour un agent IA. Interface de communication entre Product Owner, client et équipe de développement.</p>
+                    </div>
+
+                    <div class="exercise-box">
+                        <h4>📚 Sections principales du template (7 sections)</h4>
+                        <ol style="font-size: 0.8em;">
+                            <li><strong>Informations Générales</strong> - Identification et parties prenantes</li>
+                            <li><strong>Définition Fonctionnelle</strong> - Mission et cas d'usage</li>
+                            <li><strong>Spécification Contexte</strong> - 6 piliers détaillés</li>
+                            <li><strong>Spécifications Techniques</strong> - Performance et contraintes</li>
+                            <li><strong>Exemples de Contexte</strong> - Situations concrètes</li>
+                            <li><strong>Configuration Engineering</strong> - Stratégies d'assemblage</li>
+                            <li><strong>Métriques et Validation</strong> - Critères de succès</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 3a: Section 1 - Informations Générales -->
+                <section>
+                    <h2>📋 Section 1 : Informations Générales</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>🆔 Identification du Contrat</h4>
+                            <div class="code-example" style="font-size: 0.6em;">
+                                <table style="width: 100%; border-collapse: collapse;">
+                                    <thead>
+                                        <tr style="background-color: var(--astek-light);">
+                                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: 600;">Champ</th>
+                                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: 600;">Valeur</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="border: 1px solid #ddd; padding: 8px;"><strong>ID Contrat</strong></td>
+                                            <td style="border: 1px solid #ddd; padding: 8px; font-family: monospace; background-color: #f5f5f5;">CC-[PROJET]-[AGENT]-[VERSION]</td>
+                                        </tr>
+                                        <tr style="background-color: #f9f9f9;">
+                                            <td style="border: 1px solid #ddd; padding: 8px;"><strong>Nom de l'Agent</strong></td>
+                                            <td style="border: 1px solid #ddd; padding: 8px; font-family: monospace; background-color: #f5f5f5;">[Nom fonctionnel de l'agent]</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border: 1px solid #ddd; padding: 8px;"><strong>Version</strong></td>
+                                            <td style="border: 1px solid #ddd; padding: 8px; font-family: monospace; background-color: #f5f5f5;">[X.Y.Z]</td>
+                                        </tr>
+                                        <tr style="background-color: #f9f9f9;">
+                                            <td style="border: 1px solid #ddd; padding: 8px;"><strong>Date de Création</strong></td>
+                                            <td style="border: 1px solid #ddd; padding: 8px; font-family: monospace; background-color: #f5f5f5;">[YYYY-MM-DD]</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border: 1px solid #ddd; padding: 8px;"><strong>Statut</strong></td>
+                                            <td style="border: 1px solid #ddd; padding: 8px; font-family: monospace; background-color: #f5f5f5;">[Brouillon/Validé/Approuvé/En Production]</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <h4>👥 Parties Prenantes</h4>
+                            <div class="code-example" style="font-size: 0.6em;">
+                                <table style="width: 100%; border-collapse: collapse;">
+                                    <thead>
+                                        <tr style="background-color: var(--astek-light);">
+                                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: 600;">Rôle</th>
+                                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: 600;">Responsabilité</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="border: 1px solid #ddd; padding: 8px;"><strong>Product Owner</strong></td>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">Définition fonctionnelle et validation</td>
+                                        </tr>
+                                        <tr style="background-color: #f9f9f9;">
+                                            <td style="border: 1px solid #ddd; padding: 8px;"><strong>Client/Métier</strong></td>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">Expression du besoin et acceptation</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border: 1px solid #ddd; padding: 8px;"><strong>Lead Développeur</strong></td>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">Implémentation technique</td>
+                                        </tr>
+                                        <tr style="background-color: #f9f9f9;">
+                                            <td style="border: 1px solid #ddd; padding: 8px;"><strong>Architecte IA</strong></td>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">Conception du contexte</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exercise-box">
+                        <h4>🛠️ Exercice 1 (5min)</h4>
+                        <p style="font-size: 0.8em;"><strong>Remplir l'identification pour un agent de code review :</strong></p>
+                        <ul style="font-size: 0.7em;">
+                            <li>Choisir un ID approprié</li>
+                            <li>Définir les parties prenantes de votre équipe</li>
+                            <li>Établir le statut initial</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 3b: Section 2 - Définition Fonctionnelle -->
+                <section>
+                    <h2>🎯 Section 2 : Définition Fonctionnelle de l'Agent</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>📝 Mission de l'Agent</h4>
+                            <ul style="font-size: 0.7em;">
+                                <li><strong>Description :</strong> Claire et concise de ce que fait l'agent</li>
+                                <li><strong>Objectif Métier :</strong> Impact attendu sur le processus métier</li>
+                                <li><strong>Périmètre :</strong> Limites fonctionnelles de l'agent</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>📋 Structure d'un Cas d'Usage</h4>
+                            <ul style="font-size: 0.7em;">
+                                <li><strong>Nom :</strong> Nom du cas d'usage</li>
+                                <li><strong>Déclencheur :</strong> Événement qui déclenche ce cas</li>
+                                <li><strong>Acteurs :</strong> Qui est impliqué</li>
+                                <li><strong>Résultat Attendu :</strong> Ce qui doit être produit</li>
+                                <li><strong>Critères de Succès :</strong> Comment mesurer le succès</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="exercise-box">
+                        <h4>🛠️ Exercice 2 (10min)</h4>
+                        <p style="font-size: 0.8em;"><strong>Définir la mission d'un agent de code review :</strong></p>
+                        <ul style="font-size: 0.7em;">
+                            <li>Rédiger la description, l'objectif métier et le périmètre</li>
+                            <li>Créer 2 cas d'usage principaux</li>
+                            <li>Définir les critères de succès mesurables</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 3c: Section 3 - Spécification du Contexte -->
+                <section>
+                    <h2>🧠 Section 3 : Spécification du Contexte</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>1. 📋 Instructions Système</h4>
+                            <div class="code-example" style="font-size: 0.6em;">
+                                <div style="background-color: rgba(255,255,255,0.08); padding: 15px; border-left: 4px solid var(--astek-green); border-radius: 4px;">
+                                    <p style="margin: 0 0 10px 0; color: #ecf0f1; font-weight: 600;">Tu es <span style="color: var(--astek-green); background-color: rgba(0,156,73,0.2); padding: 2px 6px; border-radius: 3px;">[description du rôle de l'agent]</span>.</p>
+
+                                    <p style="margin: 15px 0 8px 0; font-weight: 600; color: #ecf0f1;">Tes caractéristiques principales :</p>
+                                    <ul style="margin: 0; padding-left: 20px; list-style-type: none;">
+                                        <li style="margin: 5px 0; padding: 3px 0; border-bottom: 1px solid rgba(255,255,255,0.2);">📋 <strong>Trait 1 :</strong> expertise, spécialisation</li>
+                                        <li style="margin: 5px 0; padding: 3px 0; border-bottom: 1px solid rgba(255,255,255,0.2);">💬 <strong>Trait 2 :</strong> style de communication</li>
+                                        <li style="margin: 5px 0; padding: 3px 0;">🎯 <strong>Trait 3 :</strong> approche méthodologique</li>
+                                    </ul>
+
+                                    <p style="margin: 15px 0 0 0; padding: 10px; background-color: rgba(0,156,73,0.15); border-radius: 4px; color: #ecf0f1; font-weight: 600;">🎯 Ton objectif est de <span style="color: var(--astek-green);">[objectif principal en une phrase]</span>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <h4>2. 📊 Sources de Données</h4>
+                            <div class="code-example" style="font-size: 0.6em;">
+                                <table style="width: 100%; border-collapse: collapse;">
+                                    <thead>
+                                        <tr style="background-color: var(--astek-light);">
+                                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: 600;">Source</th>
+                                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: 600;">Type</th>
+                                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: 600;">Criticité</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">Système CRM</td>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">API</td>
+                                            <td style="border: 1px solid #ddd; padding: 8px; color: #d32f2f; font-weight: 600;">Critique</td>
+                                        </tr>
+                                        <tr style="background-color: #f9f9f9;">
+                                            <td style="border: 1px solid #ddd; padding: 8px;">Base de Règles</td>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">Fichier</td>
+                                            <td style="border: 1px solid #ddd; padding: 8px; color: #f57c00; font-weight: 600;">Important</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">Logs d'activité</td>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">Base</td>
+                                            <td style="border: 1px solid #ddd; padding: 8px; color: #388e3c; font-weight: 600;">Optionnel</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>3. 🔧 Outils Disponibles</h4>
+                            <div class="code-example" style="font-size: 0.6em;">
+{
+  "nom": "[nom_fonctionnel]",
+  "description": "[Description métier]",
+  "cas_usage": "[Quand utiliser]",
+  "parametres": [...]
+}
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <h4>4. 💾 Gestion Mémoire</h4>
+                            <ul style="font-size: 0.7em;">
+                                <li><strong>Session :</strong> Durée et éléments conservés</li>
+                                <li><strong>Persistante :</strong> Données client et apprentissages</li>
+                                <li><strong>Limites :</strong> Capacité max tokens/éléments</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 3d: Exercice Spécification Contexte -->
+                <section>
+                    <h2>🛠️ Exercice 3 : Spécification Contexte (15min)</h2>
+
+                    <div class="exercise-box">
+                        <h4>📝 Remplir les 6 piliers pour votre agent de code review</h4>
+                    </div>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>🎯 Instructions Système</h4>
+                            <ul style="font-size: 0.7em;">
+                                <li>Définir le rôle et la personnalité</li>
+                                <li>Lister 3 règles obligatoires</li>
+                                <li>Spécifier le format de réponse</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>📊 Sources & Outils</h4>
+                            <ul style="font-size: 0.7em;">
+                                <li>Identifier 3 sources de données</li>
+                                <li>Définir 2 outils nécessaires</li>
+                                <li>Préciser les formats d'échange</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>💾 Mémoire & État</h4>
+                            <ul style="font-size: 0.7em;">
+                                <li>Durée de vie des sessions</li>
+                                <li>Éléments à conserver</li>
+                                <li>Variables d'environnement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 3e: Section 4 - Spécifications Techniques -->
+                <section>
+                    <h2>🔧 Section 4 : Spécifications Techniques</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>📊 Contraintes de Performance</h4>
+                            <div class="code-example" style="font-size: 0.6em;">
+                                <table style="width: 100%; border-collapse: collapse;">
+                                    <thead>
+                                        <tr style="background-color: var(--astek-light);">
+                                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: 600;">Métrique</th>
+                                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: 600;">Valeur Cible</th>
+                                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: 600;">Valeur Limite</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="border: 1px solid #ddd; padding: 8px;"><strong>Temps de Réponse</strong></td>
+                                            <td style="border: 1px solid #ddd; padding: 8px; color: #388e3c; font-weight: 600;">2 secondes</td>
+                                            <td style="border: 1px solid #ddd; padding: 8px; color: #f57c00;">5 secondes max</td>
+                                        </tr>
+                                        <tr style="background-color: #f9f9f9;">
+                                            <td style="border: 1px solid #ddd; padding: 8px;"><strong>Utilisation Tokens</strong></td>
+                                            <td style="border: 1px solid #ddd; padding: 8px; color: #388e3c; font-weight: 600;">1000 tokens</td>
+                                            <td style="border: 1px solid #ddd; padding: 8px; color: #f57c00;">2000 tokens max</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border: 1px solid #ddd; padding: 8px;"><strong>Précision</strong></td>
+                                            <td style="border: 1px solid #ddd; padding: 8px; color: #388e3c; font-weight: 600;">95% minimum</td>
+                                            <td style="border: 1px solid #ddd; padding: 8px; color: #f57c00;">85% acceptable</td>
+                                        </tr>
+                                        <tr style="background-color: #f9f9f9;">
+                                            <td style="border: 1px solid #ddd; padding: 8px;"><strong>Disponibilité</strong></td>
+                                            <td style="border: 1px solid #ddd; padding: 8px; color: #388e3c; font-weight: 600;">99% uptime</td>
+                                            <td style="border: 1px solid #ddd; padding: 8px; color: #f57c00;">95% minimum</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <h4>🛡️ Gestion des Erreurs</h4>
+                            <div class="code-example" style="font-size: 0.6em;">
+                                <table style="width: 100%; border-collapse: collapse;">
+                                    <thead>
+                                        <tr style="background-color: var(--astek-light);">
+                                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: 600;">Type d'Erreur</th>
+                                            <th style="border: 1px solid #ddd; padding: 8px; text-align: left; font-weight: 600;">Comportement Attendu</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="border: 1px solid #ddd; padding: 8px;"><strong>Données Manquantes</strong></td>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">Demander confirmation</td>
+                                        </tr>
+                                        <tr style="background-color: #f9f9f9;">
+                                            <td style="border: 1px solid #ddd; padding: 8px;"><strong>Données Incohérentes</strong></td>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">Prioriser source fiable</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border: 1px solid #ddd; padding: 8px;"><strong>Limite de Contexte</strong></td>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">Compression intelligente</td>
+                                        </tr>
+                                        <tr style="background-color: #f9f9f9;">
+                                            <td style="border: 1px solid #ddd; padding: 8px;"><strong>Erreur Système</strong></td>
+                                            <td style="border: 1px solid #ddd; padding: 8px;">Mode dégradé</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exercise-box">
+                        <h4>🛠️ Exercice 4 (10min)</h4>
+                        <p style="font-size: 0.8em;"><strong>Définir les contraintes techniques :</strong></p>
+                        <ul style="font-size: 0.7em;">
+                            <li>Fixer des métriques de performance réalistes</li>
+                            <li>Identifier 4 types d'erreurs possibles</li>
+                            <li>Définir les règles de sécurité et conformité</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 3f: Sections 5-7 - Exemples et Configuration -->
+                <section>
+                    <h2>📊 Sections 5-7 : Exemples et Configuration</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>📋 Section 5 : Exemples de Contexte</h4>
+                            <ul style="font-size: 0.7em;">
+                                <li><strong>Contexte Nominal :</strong> Situation standard</li>
+                                <li><strong>Contexte d'Exception :</strong> Cas particuliers</li>
+                                <li><strong>Données assemblées :</strong> Input/Output attendus</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>⚙️ Section 6 : Configuration Engineering</h4>
+                            <ul style="font-size: 0.7em;">
+                                <li><strong>Stratégies d'assemblage :</strong> Standard, VIP, Complexe</li>
+                                <li><strong>Règles de sélection :</strong> Matrice de décision</li>
+                                <li><strong>Optimisation :</strong> Compression et performance</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>📈 Section 7 : Métriques et Validation</h4>
+                            <ul style="font-size: 0.7em;">
+                                <li><strong>Validation Client :</strong> Compréhension, Pertinence</li>
+                                <li><strong>Validation Dev :</strong> Performance, Stabilité</li>
+                                <li><strong>Tests d'acceptation :</strong> Scénarios obligatoires</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="exercise-box">
+                        <h4>🛠️ Exercice 5 Final (15min)</h4>
+                        <p style="font-size: 0.8em;"><strong>Compléter votre Contrat de Contexte :</strong></p>
+                        <ul style="font-size: 0.7em;">
+                            <li>Créer 2 exemples de contexte (nominal + exception)</li>
+                            <li>Définir la stratégie d'assemblage appropriée</li>
+                            <li>Établir les critères de validation et tests d'acceptation</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 3g: Template de Remplissage -->
+                <section>
+                    <h2>📝 Template de Remplissage Guidé</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>👔 Section Product Owner</h4>
+                            <div class="code-example" style="font-size: 0.6em;">
+<p><strong>Nom du Projet</strong> : [Nom du projet]</p>
+<p><strong>Agent Concerné</strong> : [Nom de l'agent]</p>
+<p><strong>Objectif Métier</strong> : [Objectif en une phrase]</p>
+
+<p><strong>Problème à Résoudre</strong> :</p>
+<p>[Description du problème métier]</p>
+
+<p><strong>Utilisateurs Finaux</strong> :</p>
+<ul>
+<li>[Type d'utilisateur 1] : [Besoins spécifiques]</li>
+<li>[Type d'utilisateur 2] : [Besoins spécifiques]</li>
+</ul>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <h4>💻 Section Équipe Technique</h4>
+                            <div class="code-example" style="font-size: 0.6em;">
+<p><strong>Architecture Proposée</strong> :</p>
+<ul>
+<li>[Description de l'architecture technique]</li>
+<li>[Choix technologiques justifiés]</li>
+</ul>
+
+<p><strong>Intégrations Système</strong> :</p>
+<ol>
+<li>[Système 1] : [Type d'intégration]</li>
+<li>[Système 2] : [Type d'intégration]</li>
+</ol>
+
+<p><strong>Métriques Techniques</strong> :</p>
+<ul>
+<li><strong>Performance</strong> : [Temps de réponse visé]</li>
+<li><strong>Scalabilité</strong> : [Charge maximale]</li>
+</ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 3h: 6 ateliers rotatifs - Vue d'ensemble -->
+                <section>
+                    <h2>🔗 6 Mini-ateliers de 15min chacun</h2>
+
+                    <div class="exercise-box">
+                        <h4>🔄 Format : Rotation par binômes</h4>
+                        <p style="font-size: 0.8em;">Chaque station = 1 pattern spécifique avec exercices pratiques</p>
+                    </div>
+
+                    <div class="tools-grid">
+                        <div class="tool-card fragment">
+                            <h4>1. 🔗 Prompt Chaining</h4>
+                            <p style="font-size: 0.7em;">Séquence de 3 prompts interdépendants</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>2. ⚙️ Conditional Loading</h4>
+                            <p style="font-size: 0.7em;">Rules qui s'activent selon le contexte</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>3. 💾 Memory Patterns</h4>
+                            <p style="font-size: 0.7em;">Garder l'historique des décisions</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>4. 🔍 RAG Simple</h4>
+                            <p style="font-size: 0.7em;">Agent qui interroge de la documentation</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>5. 🎨 Multi-Modal</h4>
+                            <p style="font-size: 0.7em;">Agent qui traite code + images/diagrammes</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>6. 🛡️ Error Recovery</h4>
+                            <p style="font-size: 0.7em;">Agent qui corrige ses propres erreurs</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 3b: Station 1 - Prompt Chaining -->
+                <section>
+                    <h2>🔗 Station 1 : Prompt Chaining (15min)</h2>
+
+                    <div class="code-example" style="font-size: 0.6em;">
+Prompt 1 (Architecture) : "Conçois l'architecture de cette API"
+↓
+Prompt 2 (Implémentation) : "Implémente selon cette architecture"
+↓
+Prompt 3 (Tests) : "Génère les tests pour cette implémentation"
+                    </div>
+
+                    <div class="exercise-box">
+                        <h4>🛠️ Exercice pratique</h4>
+                        <p style="font-size: 0.8em;"><strong>Tâche :</strong> "Système de notification push"</p>
+                        <ul style="font-size: 0.7em;">
+                            <li><strong>Prompt 1 :</strong> Définir l'architecture</li>
+                            <li><strong>Prompt 2 :</strong> Implémenter les composants</li>
+                            <li><strong>Prompt 3 :</strong> Ajouter monitoring et alerting</li>
+                            <li><strong>Règle :</strong> Chaque prompt utilise l'output du précédent</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 3c: Station 2 - Conditional Loading -->
+                <section>
+                    <h2>⚙️ Station 2 : Conditional Loading (15min)</h2>
+
+                    <div class="code-example" style="font-size: 0.6em;">
+context_rules:
+  language_detected:
+    python: load python_standards.md
+    javascript: load js_standards.md
+    typescript: load ts_standards.md
+
+  project_phase:
+    prototype: load rapid_dev.md
+    production: load production_ready.md
+    maintenance: load refactor_rules.md
+                    </div>
+
+                    <div class="exercise-box">
+                        <h4>🛠️ Exercice pratique</h4>
+                        <p style="font-size: 0.8em;">Créer des règles conditionnelles pour un agent de code review</p>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 3d: Station 3-4 - Memory et RAG -->
+                <section>
+                    <h2>💾 Station 3 : Memory Patterns & 🔍 Station 4 : RAG Simple</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>💾 Template Memory</h4>
+                            <div class="code-example" style="font-size: 0.6em;">
+<h4>Project: [nom]</h4>
+<h5>Decisions Made:</h5>
+<ul>
+<li>Architecture choice: Microservices vs Monolith</li>
+<li>Rationale: [pourquoi cette décision]</li>
+<li>Trade-offs: [avantages/inconvénients]</li>
+</ul>
+
+<h5>Lessons Learned:</h5>
+<ul>
+<li>What worked well: [patterns efficaces]</li>
+<li>What to avoid: [erreurs à ne pas répéter]</li>
+</ul>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <h4>🔍 Pattern RAG</h4>
+                            <div class="code-example" style="font-size: 0.6em;">
+def rag_agent(user_query):
+    # 1. Search relevant docs
+    docs = semantic_search(user_query, knowledge_base)
+
+    # 2. Augment prompt with context
+    augmented_prompt = f"""
+    Context: {docs}
+    User question: {user_query}
+    Answer using provided context.
+    """
+
+    # 3. Generate informed response
+    return ai_model.generate(augmented_prompt)
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 3e: Station 5-6 - Multi-Modal et Error Recovery -->
+                <section>
+                    <h2>🎨 Station 5 : Multi-Modal & 🛡️ Station 6 : Error Recovery</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>🎨 Pattern Multi-Modal</h4>
+                            <div class="code-example" style="font-size: 0.6em;">
+Inputs multiples : Code + Diagramme UML + Spécs texte
+↓
+Agent analyse tous les formats
+↓
+Output cohérent qui réconcilie toutes les sources
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <h4>🛡️ Pattern Error Recovery</h4>
+                            <div class="code-example" style="font-size: 0.6em;">
+def self_correcting_agent(task):
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            result = generate_solution(task)
+            if validate_solution(result):
+                return result
+            else:
+                task = refine_task_with_errors(task, result)
+        except Exception as e:
+            task = add_error_context(task, e)
+
+    # Escalate to human after max retries
+    return escalate_to_human(task, failed_attempts)
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 4: Projet Context Rules Builder -->
+                <section>
+                    <span class="module-time">13h30 - 15h30 : "Projet Guidé : Context Rules Builder"</span>
+                    <h2>📋 Business Process Analysis Template</h2>
+
+                    <div class="objective-box">
+                        <h4>🎯 Objectif : Maîtriser l'analyse des process business (120min)</h4>
+                        <p style="font-size: 0.8em;">Template pour décrire un processus métier avec précision en détaillant chaque étape, inputs requis et outputs produits</p>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 4a: Structure du Template -->
+                <section>
+                    <h2>📊 Structure du Template d'Analyse</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>📋 Informations Générales</h4>
+                            <ul style="font-size: 0.7em;">
+                                <li>Identification du processus</li>
+                                <li>Propriétaire et responsables</li>
+                                <li>Contexte et objectifs</li>
+                                <li>Fréquence et volume</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>📝 Détail des Étapes</h4>
+                            <ul style="font-size: 0.7em;">
+                                <li>Inputs nécessaires (source, format)</li>
+                                <li>Actions exactes (comment, temps)</li>
+                                <li>Outputs produits (destination, usage)</li>
+                                <li>Points de friction récurrents</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>📊 Vue d'Ensemble</h4>
+                            <ul style="font-size: 0.7em;">
+                                <li>Temps total et distribution</li>
+                                <li>Systèmes utilisés</li>
+                                <li>Problèmes récurrents</li>
+                                <li>Questions d'amélioration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 4b: Exemple Pratique -->
+                <section>
+                    <h2>🛠️ Exemple : Analyse d'une Étape</h2>
+
+                    <div class="code-example" style="font-size: 0.6em;">
+                        <h4 style="margin: 0 0 10px 0; color: var(--astek-green);">Étape 1: Validation Facture Client</h4>
+
+                        <h5 style="margin: 15px 0 8px 0; color: var(--astek-dark);">Informations Générales</h5>
+                        <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px;">
+                            <thead>
+                                <tr style="background-color: var(--astek-light);">
+                                    <th style="border: 1px solid #ddd; padding: 6px; text-align: left; font-weight: 600;">Élément</th>
+                                    <th style="border: 1px solid #ddd; padding: 6px; text-align: left; font-weight: 600;">Réponse</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="border: 1px solid #ddd; padding: 6px;">Nom étape</td>
+                                    <td style="border: 1px solid #ddd; padding: 6px;">Validation facture client</td>
+                                </tr>
+                                <tr style="background-color: #f9f9f9;">
+                                    <td style="border: 1px solid #ddd; padding: 6px;">Qui l'exécute</td>
+                                    <td style="border: 1px solid #ddd; padding: 6px;">Équipe comptabilité</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #ddd; padding: 6px;">Temps requis</td>
+                                    <td style="border: 1px solid #ddd; padding: 6px;">15 minutes en moyenne</td>
+                                </tr>
+                                <tr style="background-color: #f9f9f9;">
+                                    <td style="border: 1px solid #ddd; padding: 6px;">Type d'exécution</td>
+                                    <td style="border: 1px solid #ddd; padding: 6px;">☐ Manuel ☑ Semi-automatique ☐ Automatique</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h5 style="margin: 15px 0 8px 0; color: var(--astek-dark);">Inputs Nécessaires</h5>
+                        <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px;">
+                            <thead>
+                                <tr style="background-color: var(--astek-light);">
+                                    <th style="border: 1px solid #ddd; padding: 6px; text-align: left; font-weight: 600;">J'ai besoin de...</th>
+                                    <th style="border: 1px solid #ddd; padding: 6px; text-align: left; font-weight: 600;">D'où ça vient ?</th>
+                                    <th style="border: 1px solid #ddd; padding: 6px; text-align: left; font-weight: 600;">Format ?</th>
+                                    <th style="border: 1px solid #ddd; padding: 6px; text-align: left; font-weight: 600;">Toujours disponible ?</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="border: 1px solid #ddd; padding: 6px;">Facture client</td>
+                                    <td style="border: 1px solid #ddd; padding: 6px;">Email/Système</td>
+                                    <td style="border: 1px solid #ddd; padding: 6px;">PDF</td>
+                                    <td style="border: 1px solid #ddd; padding: 6px;">☑ Oui ☐ Non ☐ Parfois</td>
+                                </tr>
+                                <tr style="background-color: #f9f9f9;">
+                                    <td style="border: 1px solid #ddd; padding: 6px;">Données contrat</td>
+                                    <td style="border: 1px solid #ddd; padding: 6px;">CRM</td>
+                                    <td style="border: 1px solid #ddd; padding: 6px;">Excel</td>
+                                    <td style="border: 1px solid #ddd; padding: 6px;">☐ Oui ☐ Non ☑ Parfois</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h5 style="margin: 15px 0 8px 0; color: var(--astek-dark);">Outputs Produits</h5>
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <thead>
+                                <tr style="background-color: var(--astek-light);">
+                                    <th style="border: 1px solid #ddd; padding: 6px; text-align: left; font-weight: 600;">Je produis...</th>
+                                    <th style="border: 1px solid #ddd; padding: 6px; text-align: left; font-weight: 600;">Où ça va ?</th>
+                                    <th style="border: 1px solid #ddd; padding: 6px; text-align: left; font-weight: 600;">Format ?</th>
+                                    <th style="border: 1px solid #ddd; padding: 6px; text-align: left; font-weight: 600;">Qui l'utilise ?</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="border: 1px solid #ddd; padding: 6px;">Validation</td>
+                                    <td style="border: 1px solid #ddd; padding: 6px;">Système ERP</td>
+                                    <td style="border: 1px solid #ddd; padding: 6px;">Champs structurés</td>
+                                    <td style="border: 1px solid #ddd; padding: 6px;">Équipe facturation</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="exercise-box">
+                        <h4>🎯 Exercice pratique (binômes)</h4>
+                        <p style="font-size: 0.8em;">Choisir un processus de votre organisation et remplir le template complet</p>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 5: Présentations -->
+                <section>
+                    <span class="module-time">15h45 - 16h45 : Présentation des Projets et Feedback</span>
+                    <h2>🎤 Format optimisé - 4 groupes (60min)</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>⏱️ Timing</h4>
+                            <ul style="font-size: 0.8em;">
+                                <li><strong>Présentations :</strong> 24min (6min max/groupe)</li>
+                                <li><strong>Discussion patterns :</strong> 20min</li>
+                                <li><strong>Découvertes techniques :</strong> 16min</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>📋 Format imposé (6min max)</h4>
+                            <ol style="font-size: 0.8em;">
+                                <li><strong>Problème résolu</strong> (2min) : Quel besoin métier ?</li>
+                                <li><strong>Architecture choisie</strong> (1min) : Schéma agents + interactions</li>
+                                <li><strong>Démo live</strong> (2min) : Scénario concret fonctionnel</li>
+                                <li><strong>Leçons apprises</strong> (1min) : Learning + difficulté surmontée</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="objective-box">
+                        <h4>🔍 Questions d'analyse collective</h4>
+                        <ul style="font-size: 0.8em;">
+                            <li>"Quels patterns d'architecture revenaient ?"</li>
+                            <li>"Quelles interactions agent-agent ont marché ?"</li>
+                            <li>"Où le Context Engineering a fait la différence ?"</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 5b: Patterns Attendus -->
+                <section>
+                    <h2>🎯 Patterns d'Architecture Attendus</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card fragment">
+                            <h4>🎯 Orchestrateur Central</h4>
+                            <p style="font-size: 0.8em;">Presque tous les groupes auront ce pattern</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>🎨 Spécialisation par Domaine</h4>
+                            <p style="font-size: 0.8em;">Quality, docs, tests, sécurité</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>⚡ Communication Asynchrone</h4>
+                            <p style="font-size: 0.8em;">Agents en parallèle</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>💾 Context Sharing</h4>
+                            <p style="font-size: 0.8em;">Mémoire partagée entre agents</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 6a: Métriques Techniques Détaillées -->
+                <section>
+                    <span class="module-time">17h00 - 18h00 : Métriques, Maintenance et Perspectives</span>
+                    <h2>📊 KPIs Techniques Détaillés</h2>
+
+                    <div class="code-example" style="font-size: 0.6em;">
+technical_metrics:
+  response_quality:
+    - first_attempt_success_rate: "> 80%"
+    - code_quality_score: "linting + tests coverage"
+    - security_compliance: "0 critical vulnerabilities"
+
+  performance:
+    - average_response_time: "< 30 seconds"
+    - resource_consumption: "CPU/memory limits"
+    - concurrent_operations: "throughput"
+
+  reliability:
+    - uptime_percentage: "> 99%"
+    - error_rate: "< 5%"
+    - recovery_time: "< 2 minutes"
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 6b: Métriques Business Détaillées -->
+                <section>
+                    <h2>💼 KPIs Business & Impact Productivité</h2>
+
+                    <div class="code-example" style="font-size: 0.6em;">
+business_metrics:
+  productivity:
+    - dev_velocity: "story points / sprint"
+    - time_to_market: "feature delivery speed"
+    - code_review_time: "hours saved per week"
+
+  quality:
+    - bug_reduction: "production incidents"
+    - technical_debt: "maintainability index"
+    - documentation_coverage: "API + code docs"
+
+  satisfaction:
+    - developer_happiness: "survey scores"
+    - adoption_rate: "% team using agents"
+    - retention_improvement: "reduced context switching"
+                    </div>
+
+                    <div class="objective-box">
+                        <h4>💰 Mesure ROI</h4>
+                        <ul style="font-size: 0.8em;">
+                            <li>Coût développement avant/après agents</li>
+                            <li>Temps économisé × coût horaire développeur</li>
+                            <li>Réduction bugs × coût de correction</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 6c: Lifecycle Management -->
+                <section>
+                    <h2>🔄 Lifecycle Management des Agents</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>📦 Versioning</h4>
+                            <div class="code-example" style="font-size: 0.6em;">
+agents/
+├── code-reviewer/
+│   ├── v1.0/ (rules, prompts, tools)
+│   ├── v1.1/ (amélioration précision)
+│   └── v2.0/ (nouvelles fonctionnalités)
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <h4>🧪 A/B Testing</h4>
+                            <div class="code-example" style="font-size: 0.6em;">
+def deploy_agent_variant():
+    if user_group == "test":
+        return agent_v2  # New approach
+    else:
+        return agent_v1  # Stable version
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>📈 Monitoring Production</h4>
+                            <div class="code-example" style="font-size: 0.6em;">
+monitoring:
+  logs:
+    - structured_logging: JSON format
+    - correlation_ids: trace requests
+    - error_tracking: failures + context
+
+  metrics:
+    - custom_dashboards: agent performance
+    - alerting: performance degradation
+    - health_checks: agent availability
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <h4>🔄 Rollback Strategies</h4>
+                            <ul style="font-size: 0.7em;">
+                                <li>Rollback automatique si métriques dégradées</li>
+                                <li>Fallback vers intervention humaine</li>
+                                <li>Circuit breaker patterns</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 6d: Techniques Avancées 2025+ -->
+                <section>
+                    <h2>🚀 Techniques Avancées 2025+</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>🎯 Multi-agent Orchestration</h4>
+                            <div class="code-example" style="font-size: 0.6em;">
+Orchestrateur Master
+├── Agent Squad "Backend"
+│   ├── API Designer
+│   ├── Database Architect
+│   └── Performance Optimizer
+├── Agent Squad "Frontend"
+│   ├── UI Designer
+│   ├── UX Validator
+│   └── Accessibility Checker
+└── Agent Squad "DevOps"
+    ├── CI/CD Manager
+    ├── Security Scanner
+    └── Deployment Coordinator
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <h4>⚡ Dynamic Context Loading</h4>
+                            <div class="code-example" style="font-size: 0.6em;">
+# Context adaptatif selon la situation
+context_rules:
+  if_bug_report:
+    load: debugging_specialist_rules.md
+    tools: [error_analyzer, log_parser]
+
+  if_new_feature:
+    load: feature_development_rules.md
+    tools: [architecture_tools, testing_tools]
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Module 6e: Agent-to-Agent Communication -->
+                <section>
+                    <h2>🤝 Agent-to-Agent Communication</h2>
+
+                    <div class="code-example" style="font-size: 0.6em;">
+class AgentMessage:
+    sender: str
+    recipient: str
+    task_context: dict
+    priority: int
+    callback: callable
+
+# Workflow collaboratif
+security_agent.send_message(
+    recipient="code_reviewer",
+    message="Vulnerability detected in auth.py:45",
+    priority=HIGH,
+    callback=handle_security_fix
+)
+                    </div>
+
+                    <div class="objective-box">
+                        <h4>📚 Ressources pour continuer</h4>
+                        <ul style="font-size: 0.8em;">
+                            <li><strong>Communautés :</strong> Discord/Slack agents IA</li>
+                            <li><strong>Documentation :</strong> Links outils avancés</li>
+                            <li><strong>Formations :</strong> Parcours d'approfondissement</li>
+                            <li><strong>Veille :</strong> Newsletters et blogs recommandés</li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Conclusion -->
+            <section class="title-slide">
+                <h1>🎓 Formation Vibe Coding Master</h1>
+                <h2>Merci et bonnes pratiques</h2>
+                
+                <div class="objective-box" style="margin-top: 2em;">
+                    <h4>💡 Messages clés à retenir</h4>
+                    <ol>
+                        <li>"Les agents IA transforment le développement, ne le remplacent pas"</li>
+                        <li>"Le Context Engineering est la compétence différenciante 2025"</li>
+                        <li>"L'adoption progressive et sécurisée est la clé du succès"</li>
+                        <li>"Votre expertise métier devient encore plus précieuse avec l'IA"</li>
+                    </ol>
+                </div>
+                
+                <p style="text-align: center; margin-top: 2em;">
+                    <strong>Cette formation Master positionne les participants comme des experts capables de mener la transformation IA dans leur organisation avec une approche mature et sécurisée.</strong>
+                </p>
+                
+                <p style="text-align: center; margin-top: 2em;">
+                    <em>Questions & Discussion</em>
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/highlight/highlight.js"></script>
+
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+            controls: true,
+            controlsTutorial: true,
+            controlsLayout: 'bottom-right',
+            controlsBackArrows: 'faded',
+            progress: true,
+            center: true,
+            touch: true,
+            loop: false,
+            rtl: false,
+            navigationMode: 'default',
+            shuffle: false,
+            fragments: true,
+            fragmentInURL: false,
+            embedded: false,
+            help: true,
+            showNotes: false,
+            autoPlayMedia: null,
+            preloadIframes: null,
+            autoSlide: 0,
+            autoSlideStoppable: true,
+            mouseWheel: false,
+            hideInactiveCursor: true,
+            hideCursorTime: 5000,
+            previewLinks: false,
+            keyboard: true,
+            overview: true,
+            disableLayout: false,
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+        });
+
+        // Afficher l'aide des contrôles au démarrage
+        Reveal.addEventListener('ready', function(event) {
+            // Afficher les instructions pour les contrôles
+            console.log('Reveal.js initialisé - Navigation dans toutes les directions disponible');
+            console.log('Utilisez les flèches ou appuyez sur "?" pour voir tous les raccourcis');
+        });
+    </script>
+</body>
+</html>

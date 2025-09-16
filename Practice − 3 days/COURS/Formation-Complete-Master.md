@@ -41,10 +41,10 @@ Développeurs expérimentés, architectes, tech leads avec projet d'entreprise. 
 | **9h00 - 9h30** | **Introduction Master** | 30min | Tour de table niveau expert, projets d'entreprise |
 | **9h30 - 10h15** | **5 Compétences + Preview** | 45min | Framework avancé, transition vers agents |
 | **10h15 - 11h00** | **Prompt Engineering Entreprise** | 45min | Template Master, contraintes business/conformité |
-| **11h00 - 12h00** | **Exercice Guidé Master** | 60min | API Recommandation Intelligente (ML + Full-stack) |
+| **11h00 - 12h00** | **Exercice Guidé Master** | 60min | Todo App Progressive (Compétences Thinking + Frameworks) |
 | **12h00 - 12h30** | **Git + IA Équipes** | 30min | Workflows collaboratifs, preview agents J2 |
 | **12h30 - 13h30** | **🍽️ PAUSE DÉJEUNER** | 60min | |
-| **13h30 - 16h00** | **Exercices Master** | 150min | 4 projets complexes : Event Sourcing, API Gateway, Cache Distribué, ML Pipeline |
+| **13h30 - 16h00** | **Exercices Master** | 150min | 4 projets vibe coding : Blog Statique, Dashboard Simple, API CRUD, Générateur Doc |
 | **16h00 - 16h15** | **☕ PAUSE** | 15min | |
 | **16h15 - 17h00** | **Bonnes Pratiques Entreprise** | 45min | Review sécurité OWASP, performance, Clean Architecture |
 | **17h00 - 17h15** | **Transition Concepts Avancés** | 15min | Préparation mentale J2-J3, glossaire agents |
@@ -74,7 +74,7 @@ Développeurs expérimentés, architectes, tech leads avec projet d'entreprise. 
 | **10h45 - 11h00** | **☕ PAUSE** | 15min | |
 | **11h00 - 12h30** | **Context Engineering Patterns** | 90min | 6 ateliers rotatifs : Prompt Chaining, Conditional Loading, Memory, RAG, Multi-Modal, Error Recovery |
 | **12h30 - 13h30** | **🍽️ PAUSE DÉJEUNER** | 60min | |
-| **13h30 - 15h30** | **Projet Smart Code Assistant** | 120min | Agent principal + 3 spécialisés, Context Engineering, tools externes |
+| **13h30 - 15h30** | **Projet Context Rules Builder** | 120min | Context Engineering avec rules dynamiques, patterns adaptatifs |
 | **15h30 - 15h45** | **Préparation Démos** | 15min | Script présentation, points architecture |
 | **15h45 - 16h45** | **Présentations + Feedback** | 60min | Démos projets, analyse patterns, découvertes techniques |
 | **16h45 - 17h00** | **☕ PAUSE** | 15min | |
@@ -87,73 +87,40 @@ Développeurs expérimentés, architectes, tech leads avec projet d'entreprise. 
 
 ---
 
-## 📚 Modules de formation
+# JOUR 1 : Fondements Accélérés + Préparation Concepts Avancés
 
-### JOUR 1 : Fondements Accélérés
+[9h00 - 9h30 : Introduction et présentation](./JOUR 1/09h00-09h30-Introduction-et-presentation.md)
+[9h30 - 10h15 : Framework des 5 Compétences + Preview Agents](./JOUR 1/09h30-10h15-Framework-des-5-Competences-Preview-Agents.md)
+[10h15 - 11h00 : Prompt Engineering Niveau Entreprise](./JOUR 1/10h15-11h00-Prompt-Engineering-Niveau-Entreprise.md)
+[11h00 - 12h00 : Exercice Guidé "Niveau Master"](./JOUR 1/11h00-12h00-Exercice-Guide-Niveau-Master.md)
+[12h00 - 12h30 : Git + IA pour les Équipes](./JOUR 1/12h00-12h30-Git-IA-pour-les-Equipes.md)
+[13h30 - 16h00 : Exercices Individuels Niveau Master](./JOUR 1/13h30-16h00-Exercices-Individuels-Niveau-Master.md)
+[16h15 - 17h00 : Finalisation et Bonnes Pratiques Entreprise](./JOUR 1/16h15-17h00-Finalisation-et-Bonnes-Pratiques-Entreprise.md)
+[17h00 - 17h15 : Transition vers les Concepts Avancés](./JOUR 1/17h00-17h15-Transition-vers-les-Concepts-Avances.md)
+[17h15 - 17h30 : Challenge Overnight](./JOUR 1/17h15-17h30-Challenge-Overnight.md)
 
-1. **[9h00-9h30 : Introduction Master](sections/J1-01-introduction-master.md)**
-   - Tour de table niveau expert
-   - Projets d'entreprise et attentes avancées
-   - Animation pour public expérimenté
+---
 
-2. **[9h30-10h15 : 5 Compétences + Preview Agents](sections/J1-02-competences-preview-agents.md)**
-   - Framework avancé avec perspective agents
-   - Transition vers l'automatisation
-   - Teaser pour J2-J3
+# JOUR 2 : Plongée dans le Vibe Coding Agentique
 
-3. **[10h15-11h00 : Prompt Engineering Entreprise](#)** *(Section complète dans fichier original)*
-   - Template Master avec contraintes business
-   - Conformité et architecture complexe
-   - Exercices niveau entreprise
+[9h00 - 9h30 : Retour Challenge + Introduction Agents](./JOUR 2/09h00-09h30-Retour-Challenge-Introduction-Agents.md)
+[9h30 - 10h30 : Agents IA : Théorie et Pratique Avancées](./JOUR 2/09h30-10h30-Agents-IA-Theorie-et-Pratique-Avancees.md)
+[10h45 - 12h00 : Atelier "Mon Premier Agent"](./JOUR 2/10h45-12h00-Atelier-Mon-Premier-Agent.md)
+[12h00 - 12h30 : Introduction MCP Simplifiée](./JOUR 2/12h00-12h30-Introduction-MCP-Simplifiee.md)
+[13h30 - 15h00 : Atelier "Agent Spécialisé"](./JOUR 2/13h30-15h00-Atelier-Agent-Specialise.md)
+[15h15 - 16h45 : Sécurité Avancée des Agents IA](./JOUR 2/15h15-16h45-Securite-Avancee-des-Agents-IA.md)
+[16h45 - 17h30 : Frameworks Avancés + Bilan J2](./JOUR 2/16h45-17h30-Frameworks-Avances-Bilan-J2.md)
 
-4. **[11h00-12h00 : Exercice Guidé Master](#)** *(Section complète dans fichier original)*
-   - API Recommandation Intelligente
-   - ML + Full-stack en 1 session
-   - Préparation à la complexité J2-J3
+---
 
-### JOUR 2 : Agents IA et Développement Agentique
+# JOUR 3 : Le "Context Engineering" en Pratique
 
-5. **[9h00-9h30 : Retour Challenge + Introduction](#)** *(Section complète dans fichier original)*
-   - Partage agents imaginés
-   - Analyse patterns collectifs
-   - Transition vers implémentation
-
-6. **[9h30-10h30 : Agents IA Théorie Avancée](sections/J2-01-agents-theorie-pratique.md)**
-   - Types d'agents par fonction
-   - Anatomie technique complète
-   - Démonstration live agent custom
-
-7. **[10h45-12h00 : Mon Premier Agent](#)** *(Section complète dans fichier original)*
-   - Setup Cursor + rules basiques
-   - Agent "Code Reviewer" fonctionnel
-   - Débrief collectif et améliorations
-
-8. **[15h15-16h45 : Sécurité Agents IA](#)** *(Section complète dans fichier original)*
-   - Menaces 2025 : hijacking, poisoning
-   - Défenses pratiques avec démos
-   - Atelier sécurité hands-on
-
-### JOUR 3 : Context Engineering et Patterns Avancés
-
-9. **[9h00-9h30 : Introduction Context Engineering](sections/J3-01-context-engineering-intro.md)**
-   - Définition et enjeux business
-   - Les 6 piliers du contexte
-   - Métaphores et exemples concrets
-
-10. **[9h30-10h45 : Rules Engineering](#)** *(Section complète dans fichier original)*
-    - Audit de règles existantes
-    - Création modulaire et templates
-    - Tests en conditions réelles
-
-11. **[13h30-15h30 : Projet Smart Code Assistant](#)** *(Section complète dans fichier original)*
-    - Agent principal + 3 spécialisés
-    - Context Engineering appliqué
-    - Architecture complète et fonctionnelle
-
-12. **[17h00-18h00 : Métriques + Perspectives](#)** *(Section complète dans fichier original)*
-    - KPIs techniques et business
-    - Lifecycle management des agents
-    - Techniques avancées (multi-agent, dynamic context)
+[9h00 - 9h30 : Introduction au Context Engineering](./JOUR 3/09h00-09h30-Introduction-au-Context-Engineering.md)
+[9h30 - 10h45 : "Rules Engineering"](./JOUR 3/09h30-10h45-Rules-Engineering.md)
+[11h00 - 12h30 : "Context Engineering Patterns"](./JOUR 3/11h00-12h30-Context-Engineering-Patterns.md)
+[13h30 - 15h30 : "Projet Guidé : Context Rules Builder"](./JOUR 3/13h30-15h30-Projet-Guide-Smart-Code-Assistant.md)
+[15h45 - 16h45 : Présentation des Projets et Feedback](./JOUR 3/15h45-16h45-Presentation-des-Projets-et-Feedback.md)
+[17h00 - 18h00 : Métriques, Maintenance et Perspectives](./JOUR 3/17h00-18h00-Metriques-Maintenance-et-Perspectives.md)
 
 ---
 
@@ -173,21 +140,18 @@ Développeurs expérimentés, architectes, tech leads avec projet d'entreprise. 
 - Formation des équipes nécessaire
 - Gouvernance et bonnes pratiques
 
+### Points d'attention généraux
+
+**Gestion des niveaux et attentes élevées :**
+- Challenger intellectuellement avec concepts avancés
+- Montrer la valeur : ROI, gains concrets, impact métier
+- Éviter le basique : Pas de temps sur fondamentaux évidents
+- Préparer des débats : Questions profondes, points de vue critiques
+
+**Gestion du rythme intensif :**
+- Planning serré mais réaliste avec buffers cachés
+- Priorités claires : Sacrifier les bonus, pas les essentiels
+- Breaks respectés : Audience experte = fatigue mentale élevée
+- Synthèses fréquentes : Points d'étape pour consolider
+
 Cette formation Master doit positionner les participants comme des experts capables de mener la transformation IA dans leur organisation avec une approche mature et sécurisée.
-
----
-
-## Structure des fichiers
-
-```
-Practice − 3 days/
-├── Formation-Complete-Master.md          # Ce fichier principal
-├── sections/
-│   ├── J1-01-introduction-master.md      # Introduction niveau expert
-│   ├── J1-02-competences-preview-agents.md # 5 compétences + agents
-│   ├── J2-01-agents-theorie-pratique.md # Anatomie des agents
-│   └── J3-01-context-engineering-intro.md # Context Engineering
-└── [autres sections disponibles dans fichier original]
-```
-
-**Note :** Les sections marquées "*(Section complète dans fichier original)*" contiennent le détail complet du contenu et des notes formateur dans la version non éclatée de ce guide.
