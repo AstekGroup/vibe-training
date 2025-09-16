@@ -198,6 +198,36 @@
         .code-example [style*="background-color: #f8f9fa"] {
             background-color: rgba(255,255,255,0.08) !important;
         }
+
+        /* Amélioration des contrôles Reveal.js */
+        .reveal .controls {
+            color: var(--astek-green) !important;
+            bottom: 20px !important;
+            right: 20px !important;
+        }
+
+        .reveal .controls button {
+            color: var(--astek-green) !important;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .reveal .controls button:hover {
+            opacity: 1 !important;
+            color: #ffffff !important;
+        }
+
+        .reveal .progress {
+            color: var(--astek-green) !important;
+            height: 4px !important;
+        }
+
+        /* Affichage aide navigation */
+        .reveal .help-overlay {
+            background: rgba(0,0,0,0.9);
+            color: white;
+            font-size: 0.8em;
+        }
         
         .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
             text-align: center;
@@ -2693,11 +2723,40 @@ security_agent.send_message(
             transitionSpeed: 'default',
             backgroundTransition: 'fade',
             controls: true,
+            controlsTutorial: true,
+            controlsLayout: 'bottom-right',
+            controlsBackArrows: 'faded',
             progress: true,
             center: true,
-            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
-            // Configuration pour les slides verticales
-            navigationMode: 'linear'
+            touch: true,
+            loop: false,
+            rtl: false,
+            navigationMode: 'default',
+            shuffle: false,
+            fragments: true,
+            fragmentInURL: false,
+            embedded: false,
+            help: true,
+            showNotes: false,
+            autoPlayMedia: null,
+            preloadIframes: null,
+            autoSlide: 0,
+            autoSlideStoppable: true,
+            mouseWheel: false,
+            hideInactiveCursor: true,
+            hideCursorTime: 5000,
+            previewLinks: false,
+            keyboard: true,
+            overview: true,
+            disableLayout: false,
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+        });
+
+        // Afficher l'aide des contrôles au démarrage
+        Reveal.addEventListener('ready', function(event) {
+            // Afficher les instructions pour les contrôles
+            console.log('Reveal.js initialisé - Navigation dans toutes les directions disponible');
+            console.log('Utilisez les flèches ou appuyez sur "?" pour voir tous les raccourcis');
         });
     </script>
 </body>
