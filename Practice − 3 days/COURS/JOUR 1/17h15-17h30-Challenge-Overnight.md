@@ -1,6 +1,6 @@
 # 17h15 - 17h30 : Challenge Overnight
 
-### Contenu formation
+## Contenu formation
 
 **"Agent Simulator" :**
 "Réfléchissez : pour automatiser votre workflow d'aujourd'hui, quels seraient les 3 agents spécialisés nécessaires ?"
@@ -12,7 +12,7 @@
 
 *Nous commencerons J2 en partageant vos idées*
 
-### 📝 Notes formateur
+## 📝 Notes formateur
 
 **Consigne détaillée :**
 ```

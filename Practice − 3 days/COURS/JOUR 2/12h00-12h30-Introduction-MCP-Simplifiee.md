@@ -9,6 +9,29 @@
 - Exemple : Agent qui accède à une base de données
 - Q&R : "Quels tools aimeriez-vous pour vos agents ?"
 
+### Serveurs MCP recommandés
+
+**Context7** - Documentation et exemples de code
+- URL : https://context7.com/
+- Usage : Recherche dans la documentation officielle des frameworks
+- Configuration : Automatique via Claude Desktop
+
+**GitHub MCP Server** - Intégration GitHub
+- Repository : https://github.com/github/github-mcp-server
+- Guide d'installation : [Installation pour Gemini CLI](https://github.com/github/github-mcp-server/blob/main/docs/installation-guides/install-gemini-cli.md)
+- Usage : Gestion des issues, PR, repositories
+
+**Autres serveurs populaires :**
+- **SQLite** - Accès bases de données locales
+- **File System** - Manipulation avancée de fichiers
+- **Web Search** - Recherche web intégrée
+- **Docker** - Gestion conteneurs
+- **AWS** - Services cloud Amazon
+
+### Référence complète
+Liste exhaustive des serveurs MCP disponibles :
+📚 **[Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers)**
+
 ### 📝 Notes formateur
 
 **12h00-12h05 : Clarification terminologique (5min)**

@@ -1,6 +1,14 @@
 # 10h15 - 11h00 : Prompt Engineering Niveau Entreprise
 
-### Contenu formation
+## 📚 **Sources et références récentes**
+
+### Prompt Engineering Entreprise (2024-2025)
+
+- [The Ultimate Guide to Prompt Engineering in 2025: Mastering LLM Interactions](https://medium.com/@generativeai.saif/the-ultimate-guide-to-prompt-engineering-in-2025-mastering-llm-interactions-8b88c5cf65b6) - Guide complet 2025
+- [Prompt Engineering Best Practices in 2025: Safe AI](https://www.eicta.iitk.ac.in/knowledge-hub/artificial-intelligence/prompt-engineering-best-practices)
+- Bonnes pratiques sécurisées [AWS Prescriptive Guidance: Prompt engineering best practices](https://docs.aws.amazon.com/prescriptive-guidance/latest/llm-prompt-engineering-best-practices/introduction.html) - Guide officiel AWS
+
+## Contenu formation
 
 **Template de prompt Master :**
 
@@ -28,6 +36,7 @@ Tu es un [architecte/senior] expert en [domaine technique]
 ✅ **Contexte :** Plateforme SaaS de facturation (1M+ utilisateurs)
 **Rôle :** Architecte logiciel senior expert en systèmes distribués
 **Tâche :** Service de calcul de prix dynamique avec :
+
 - API REST haute performance (>1000 req/s)
 - Cache Redis distribué
 - Pricing rules configurables
@@ -39,14 +48,15 @@ Tu es un [architecte/senior] expert en [domaine technique]
 
 **Analyse comparative avec template Starter :**
 
-| Aspect | Starter | Master |
-|--------|---------|---------|
-| **Contexte** | Projet personnel | Système d'entreprise |
-| **Rôle** | Développeur | Architecte/Senior |
-| **Contraintes** | Technologies | Business + Conformité |
-| **Livrable** | Code fonctionnel | Solution industrialisée |
+| Aspect                | Starter          | Master                   |
+| --------------------- | ---------------- | ------------------------ |
+| **Contexte**    | Projet personnel | Système d'entreprise    |
+| **Rôle**       | Développeur     | Architecte/Senior        |
+| **Contraintes** | Technologies     | Business + Conformité   |
+| **Livrable**    | Code fonctionnel | Solution industrialisée |
 
 **Prompt Master complet (exemple détaillé) :**
+
 ```
 ## Contexte Entreprise
 Plateforme SaaS de facturation B2B avec 1M+ utilisateurs actifs.
@@ -80,6 +90,7 @@ Développe un service de calcul de prix dynamique :
 ```
 
 **Exercice d'application (15min) :**
+
 - Binômes : transformer un prompt simple en prompt Master
 - Utilisation du template sur leur projet réel
 - Validation croisée et amélioration
