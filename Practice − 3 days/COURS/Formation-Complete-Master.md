@@ -60,30 +60,28 @@ Développeurs expérimentés, architectes, tech leads avec projet d'entreprise. 
 | **10h45 - 12h00** | **Mon Premier Agent** | 75min | Setup + Agent "Code Reviewer" + débrief collectif |
 | **12h00 - 12h30** | **Introduction MCP** | 30min | Model Context Protocol, démos API/DB |
 | **12h30 - 13h30** | **🍽️ PAUSE DÉJEUNER** | 60min | |
-| **13h30 - 15h00** | **Agent Spécialisé** | 90min | 3 options : Documentation Generator, Test Writer, Refactor Assistant |
+| **13h30 - 15h00** | **TP Configuration Serveurs MCP** | 90min | Context 7 et intégration GitLab, configuration MCP pratique |
 | **15h00 - 15h15** | **☕ PAUSE** | 15min | |
 | **15h15 - 16h45** | **Sécurité Agents IA** | 90min | Menaces 2025, défenses pratiques, atelier sécurité |
 | **16h45 - 17h30** | **Frameworks + Bilan J2** | 45min | BMAD-METHOD détaillée, impact métier développeur |
 
-## 📅 JOUR 3 : Context Engineering et Patterns Avancés
+## 📅 JOUR 3 : Context Engineering et Projet Final
 
 | Horaire | Module | Durée | Contenu |
 |---------|--------|--------|---------|
-| **9h00 - 9h30** | **Introduction Context Engineering** | 30min | Définition, enjeux, 6 piliers du contexte |
-| **9h30 - 10h45** | **Rules Engineering** | 75min | Audit règles, création modulaire, test conditions réelles |
-| **10h45 - 11h00** | **☕ PAUSE** | 15min | |
-| **11h00 - 12h30** | **Context Engineering Patterns** | 90min | 6 ateliers rotatifs : Prompt Chaining, Conditional Loading, Memory, RAG, Multi-Modal, Error Recovery |
+| **9h00 - 11h00** | **Le Contrat de Contexte** | 120min | Context Engineering, 6 piliers, template contrat de contexte |
+| **11h00 - 12h30** | **TP Final - Partie 1** | 90min | Projet collaboratif multi-agents : P.O., Architecte |
 | **12h30 - 13h30** | **🍽️ PAUSE DÉJEUNER** | 60min | |
-| **13h30 - 15h30** | **Projet Context Rules Builder** | 120min | Context Engineering avec rules dynamiques, patterns adaptatifs |
-| **15h30 - 15h45** | **Préparation Démos** | 15min | Script présentation, points architecture |
-| **15h45 - 16h45** | **Présentations + Feedback** | 60min | Démos projets, analyse patterns, découvertes techniques |
+| **13h30 - 15h30** | **TP Final - Partie 2** | 120min | Développement, QA, Code Review |
+| **15h30 - 15h45** | **☕ PAUSE** | 15min | |
+| **15h45 - 16h45** | **TP Final - Partie 3** | 60min | Finalisation MCP, analyse critique |
 | **16h45 - 17h00** | **☕ PAUSE** | 15min | |
-| **17h00 - 18h00** | **Métriques + Perspectives** | 60min | KPIs techniques/business, lifecycle management, techniques avancées |
+| **17h00 - 17h30** | **Conclusion Formation** | 30min | Synthèse, évaluation, prochaines étapes |
 
 **🎯 Objectifs centraux :**
 - **J1 :** Fondations solides + vision agents
-- **J2 :** Maîtrise agents + sécurité  
-- **J3 :** Expertise Context Engineering + industrialisation
+- **J2 :** Maîtrise agents + serveurs MCP + sécurité
+- **J3 :** Context Engineering + projet collaboratif complet
 
 ---
 
@@ -107,20 +105,17 @@ Développeurs expérimentés, architectes, tech leads avec projet d'entreprise. 
 [9h30 - 10h30 : Agents IA : Théorie et Pratique Avancées](./JOUR 2/09h30-10h30-Agents-IA-Theorie-et-Pratique-Avancees.md)
 [10h45 - 12h00 : Atelier "Mon Premier Agent"](./JOUR 2/10h45-12h00-Atelier-Mon-Premier-Agent.md)
 [12h00 - 12h30 : Introduction MCP Simplifiée](./JOUR 2/12h00-12h30-Introduction-MCP-Simplifiee.md)
-[13h30 - 15h00 : Atelier "Agent Spécialisé"](./JOUR 2/13h30-15h00-Atelier-Agent-Specialise.md)
+[13h30 - 15h00 : TP Configuration Serveurs MCP](./JOUR 2/13h30-15h00-Atelier-Agent-Specialise.md)
 [15h15 - 16h45 : Sécurité Avancée des Agents IA](./JOUR 2/15h15-16h45-Securite-Avancee-des-Agents-IA.md)
 [16h45 - 17h30 : Frameworks Avancés + Bilan J2](./JOUR 2/16h45-17h30-Frameworks-Avances-Bilan-J2.md)
 
 ---
 
-# JOUR 3 : Le "Context Engineering" en Pratique
+# JOUR 3 : Le "Context Engineering" et Projet Final
 
-[9h00 - 9h30 : Introduction au Context Engineering](./JOUR 3/09h00-09h30-Introduction-au-Context-Engineering.md)
-[9h30 - 10h45 : "Rules Engineering"](./JOUR 3/09h30-10h45-Rules-Engineering.md)
-[11h00 - 12h30 : "Context Engineering Patterns"](./JOUR 3/11h00-12h30-Context-Engineering-Patterns.md)
-[13h30 - 15h30 : "Projet Guidé : Context Rules Builder"](./JOUR 3/13h30-15h30-Projet-Guide-Smart-Code-Assistant.md)
-[15h45 - 16h45 : Présentation des Projets et Feedback](./JOUR 3/15h45-16h45-Presentation-des-Projets-et-Feedback.md)
-[17h00 - 18h00 : Métriques, Maintenance et Perspectives](./JOUR 3/17h00-18h00-Metriques-Maintenance-et-Perspectives.md)
+[9h00 - 11h00 : Le Contrat de Contexte](./JOUR 3/09h00-11h00-Contrat-de-Contexte.md)
+[11h00 - 17h00 : TP Final - Projet Collaboratif Multi-Agents](./JOUR 3/11h00-17h00-TP-Final-Projet-Collaboratif.md)
+[17h00 - 17h30 : Conclusion de la Formation](./JOUR 3/17h00-17h30-Conclusion-Formation.md)
 
 ---
 
