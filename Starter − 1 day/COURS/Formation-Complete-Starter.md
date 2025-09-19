@@ -55,55 +55,57 @@ Cette formation d'une journée introduit les développeurs au concept du Vibe Co
 
 ### 📚 Sections détaillées
 
+La formation est maintenant divisée en 10 modules autonomes, chacun dans un fichier séparé :
+
 1. **[9h00 - 9h30 : Introduction et présentation](sections/01-introduction-presentation.md)**
-   - Tour de table interactif
-   - Présentation du programme
-   - Notes formateur pour l'animation
+   - Tour de table interactif avec questions guide
+   - Présentation détaillée du programme
+   - Notes formateur pour l'animation et gestion du groupe
 
 2. **[9h30 - 10h15 : Fondements et Démonstration Live](sections/02-fondements-demonstration.md)**
-   - Démonstration "frimer" en direct
-   - Framework des 5 compétences clés
-   - Comprendre le fonctionnement de l'IA
+   - Démonstration "frimer" chronométrée (20 min)
+   - Framework des 5 compétences clés (THINKING, FRAMEWORKS, CHECKPOINTS, DEBUGGING, CONTEXT)
+   - Explication du fonctionnement de l'IA générative
 
 3. **[10h15 - 11h00 : Prompt Engineering Pratique](sections/03-prompt-engineering.md)**
-   - Principes fondamentaux
-   - Template de prompt efficace
-   - Exercice collectif d'amélioration
+   - Les 6 piliers d'un prompt efficace
+   - Template de prompt universel avec structure CONTEXTE-RÔLE-TÂCHE-CONTRAINTES-FORMAT-EXEMPLES
+   - Exercice collectif de transformation d'un prompt inefficace
 
 4. **[11h00 - 12h00 : Exercice Guidé Collectif](sections/04-exercice-guide.md)**
-   - Analyseur de Performance Web
-   - Développement en temps réel
-   - Démonstration du workflow itératif
+   - Développement d'un Analyseur de Performance Web
+   - Workflow itératif en 4 phases chronométrées
+   - Démonstration du cycle prompt → test → validation → commit
 
 5. **[12h00 - 12h30 : Début Exercices Individuels](sections/05-exercices-individuels-debut.md)**
-   - Présentation des 4 exercices
-   - Choix et démarrage supervisé
-   - Préparation de l'après-midi
+   - Présentation détaillée des 4 exercices (Snake, Calculateur Pi, Todo App, Débogage Legacy)
+   - Accompagnement personnalisé au choix selon profil
+   - Lancement supervisé avec premier commit
 
 6. **[13h30 - 14h00 : Retour d'expérience](sections/06-retour-experience.md)**
-   - Tour de table structuré
-   - Analyse des apprentissages
-   - Consolidation des acquis
+   - Tour de table structuré (3 min par participant)
+   - Analyse collective des patterns de succès et difficultés
+   - Consolidation des apprentissages et ajustement pour l'après-midi
 
 7. **[14h00 - 16h00 : Développement Accompagné](sections/07-developpement-accompagne.md)**
-   - Choix de projet personnel
-   - Développement assisté par IA
-   - Accompagnement formateur personnalisé
+   - Développement intensif en cycles de 30 minutes
+   - Accompagnement formateur rotatif (15 min par participant)
+   - Support technique, méthodologique et coaching pédagogique
 
 8. **[16h15 - 17h15 : Finalisation et Bonnes Pratiques](sections/08-finalisation-bonnes-pratiques.md)**
-   - Revue de code assistée par IA
-   - Tests et optimisation
-   - Documentation automatisée
+   - Revue de code assistée par IA avec audit automatisé
+   - Génération de tests automatisés
+   - Documentation automatisée et standards professionnels
 
 9. **[17h15 - 17h30 : Risques à connaître](sections/09-risques-connaitre.md)** *(optionnel)*
-   - Green IT et éco-responsabilité
-   - Sécurité du code généré
-   - Aspects éthiques et juridiques
+   - Impact environnemental et éco-responsabilité
+   - Sécurité du code généré et vulnérabilités fréquentes
+   - Aspects éthiques, propriété intellectuelle et transparence
 
 10. **[17h30 - 18h00 : Bilan et perspectives](sections/10-bilan-perspectives.md)**
-    - Présentation des projets réalisés
-    - Évaluation de la formation
-    - Ressources pour continuer
+    - Présentation des projets (4 min par participant)
+    - Évaluation de satisfaction et atteinte des objectifs
+    - Ressources pour continuer et mise en réseau
 
 ---
 
