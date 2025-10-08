@@ -89,6 +89,48 @@ Exemples : Interface similaire à Canva mais pour les CV
 3. **Conventions** : Standards de l'industrie largement adoptés
 4. **Feedback loop** : L'humain guide et corrige
 
+### Introduction aux serveurs MCP (5 minutes)
+
+#### Qu'est-ce que MCP (Model Context Protocol) ?
+
+**Définition :**
+- **MCP** = Protocole standardisé pour connecter l'IA à des outils externes
+- **Principe** : L'IA peut utiliser des APIs, bases de données, services cloud via des "serveurs"
+- **Avantage** : Élargir les capacités de l'IA au-delà du simple texte
+
+#### Focus sur Context7 - Documentation intelligente
+
+**Context7 en action :**
+- **Fonction** : Accès en temps réel à la documentation des frameworks
+- **Exemple concret** : "Comment utiliser React Hooks ?" → Documentation officielle à jour
+- **Avantage** : Plus besoin de chercher sur Google, l'IA a accès direct aux docs
+
+**Démonstration rapide (2 minutes) :**
+```
+Prompt : "Montre-moi comment utiliser useState en React avec des exemples"
+→ L'IA accède à la doc React via Context7
+→ Génère du code avec les bonnes pratiques officielles
+```
+
+#### Autres serveurs MCP utiles
+
+**GitHub et Gitlab MCP :**
+- Accès direct aux repositories
+- Création de PR, issues, gestion de projets
+- Intégration native avec le workflow de développement
+
+**Docker MCP :**
+- Gestion des conteneurs Docker directement depuis l'IA
+- Création et configuration d'environnements de développement
+- Déploiement et orchestration de services
+
+#### Pourquoi c'est révolutionnaire ?
+
+1. **Données à jour** : Plus de code obsolète
+2. **Intégration native** : L'IA devient un vrai assistant de développement
+3. **Workflow unifié** : Tout dans un seul environnement
+4. **Productivité** : Moins de context switching
+
 ## 🎓 Notes formateur
 
 ### Préparation de la démo
