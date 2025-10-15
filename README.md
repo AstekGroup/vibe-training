@@ -8,11 +8,11 @@ Maîtriser le **Vibe Coding** : méthodologie de développement collaboratif ave
 
 ## 📚 Formats disponibles
 
-| Formation | Durée | Participants | Niveau |
-|-----------|--------|-------------|---------|
-| **Starter** | 1 jour | 6 max | Débutant → Intermédiaire |
-| **Master** | 3 jours | 6 max | Intermédiaire → Expert |
-| **Collective** | 5 jours | 6 max | Équipes mixtes |
+| Formation            | Durée  | Participants | Niveau                      |
+| -------------------- | ------- | ------------ | --------------------------- |
+| **Starter**    | 1 jour  | 6 max        | Débutant → Intermédiaire |
+| **Build**      | 3 jours | 6 max        | Intermédiaire → Expert    |
+| **Collective** | 5 jours | 6 max        | Équipes mixtes             |
 
 ## 🛠️ Outils couverts
 
@@ -30,7 +30,7 @@ Claude Code, Cursor, Gemini CLI, GitHub Copilot, Continue, WindSurf
 ├── Starter − 1 day/           # Formation 1 jour
 │   ├── COURS/                 # Contenus pédagogiques
 │   └── SUPPORTS PÉDAGOGIQUES/ # Présentations
-├── Practice − 3 days/         # Formation 3 jours
+├── Build − 3 days/         # Formation 3 jours
 │   ├── COURS/                 # Contenus par jour
 │   └── SUPPORTS PÉDAGOGIQUES/ # Slides
 └── Collective - 5 days/       # Formation équipe
@@ -39,4 +39,4 @@ Claude Code, Cursor, Gemini CLI, GitHub Copilot, Continue, WindSurf
 ## 👥 Contact
 
 **Formateurs :** Philippe Pary, Thomas Foutrein
-**Version :** v2 - 2025-08-26
+**Version :** v3 - 2025-10-16
