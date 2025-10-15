@@ -2,7 +2,7 @@
 
 ### Contenu formation
 
-**Tour de table spécifique Master :**
+**Tour de table :**
 
 - Nom, fonction, niveau d'expérience IA
 - Comment vois-tu le vibe coding ?

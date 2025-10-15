@@ -2,7 +2,7 @@
 
 ### 📚 **Sources et références récentes**
 
-### Frameworks de Développement Agentique (2024-2025)
+#### Frameworks de Développement Agentique (2024-2025)
 
 - [Top 7 Frameworks for Building AI Agents in 2025](https://www.analyticsvidhya.com/blog/2024/07/ai-agent-frameworks/) - Comparatif détaillé
 - [7 AI Agent Frameworks for Machine Learning Workflows in 2025](https://machinelearningmastery.com/7-ai-agent-frameworks-for-machine-learning-workflows-in-2025/) - Focus workflows ML
@@ -21,12 +21,19 @@
 **Qu'est-ce que Spec-Kit ?**
 Méthodologie qui "révolutionne le développement traditionnel" en transformant les spécifications en éléments exécutables plutôt qu'en simple documentation.
 
+**Alternatives à Spec-Kit**
+
+* OpenSpec : plus orienté brownfield [https://github.com/Fission-AI/OpenSpec/tree/main](https://github.com/Fission-AI/OpenSpec/tree/main)
+* BMAD : plus orienté workflow de développement [https://github.com/bmad-code-org/BMAD-METHOD/](https://github.com/bmad-code-org/BMAD-METHOD/) 
+
 **Principe clé : Développement piloté par l'intention**
+
 - Se concentrer sur le "quoi" avant le "comment"
 - Créer des spécifications riches avec des principes organisationnels
 - Raffiner par étapes plutôt que générer du code en une seule fois
 
 **Processus Spec-Kit en 5 étapes :**
+
 1. **Initialiser** le projet avec contexte business
 2. **Créer** une spécification fonctionnelle détaillée
 3. **Générer** un plan technique avec l'IA
@@ -34,6 +41,7 @@ Méthodologie qui "révolutionne le développement traditionnel" en transformant
 5. **Implémenter** la solution par raffinements successifs
 
 **Avantages entreprise :**
+
 - **Indépendance technologique** : Focus sur le besoin métier
 - **Centré utilisateur** : Spécifications basées sur l'usage réel
 - **Processus itératif** : Amélioration continue guidée par l'IA
@@ -45,6 +53,7 @@ Méthodologie qui "révolutionne le développement traditionnel" en transformant
 Entreprise de distribution avec 5 entrepôts européens nécessitant une gestion unifiée des stocks en temps réel.
 
 **Étape 1 : Initialisation Spec-Kit (5min)**
+
 ```bash
 spec-kit init stock-management-system
 cd stock-management-system
@@ -74,28 +83,36 @@ avec mise à jour temps réel des niveaux de stock.
 ```
 
 **Étape 3 : Génération plan technique (7min)**
+
 ```bash
 spec-kit plan
 ```
+
 L'IA génère automatiquement :
+
 - Architecture microservices
 - Base de données répartie
 - APIs REST + WebSockets
 - Interface web responsive
 
 **Étape 4 : Validation et ajustements (3min)**
+
 ```bash
 spec-kit validate --constraints enterprise
 ```
+
 Intégration contraintes :
+
 - GDPR compliance
 - Haute disponibilité 99.9%
 - Intégration SAP existant
 
 **Étape 5 : Implémentation progressive (2min)**
+
 ```bash
 spec-kit implement --phase mvp
 ```
+
 Génération du MVP avec l'IA de codage
 
 **Bilan de la journée :**
@@ -126,11 +143,13 @@ Génération du MVP avec l'IA de codage
 **Cas pratique :** Gestion distribuée de stocks multi-entrepôts
 
 **Déroulé exercice :**
+
 1. **Initialisation** (5min) : `spec-kit init` + contexte business
 2. **Spécification** (8min) : Rédaction spec.md collaborative avec IA
 3. **Plan technique** (7min) : Génération architecture automatique
 
 **Contraintes entreprise intégrées :**
+
 - GDPR compliance
 - Intégration SAP existant
 - Haute disponibilité 99.9%

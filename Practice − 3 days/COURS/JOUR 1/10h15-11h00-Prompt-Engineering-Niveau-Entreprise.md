@@ -10,7 +10,7 @@
 
 ## Contenu formation
 
-**Template de prompt Master :**
+**Template de prompt :**
 
 ```
 ## Contexte Entreprise
@@ -44,18 +44,18 @@ Tu es un [architecte/senior] expert en [domaine technique]
 
 ### 📝 Notes formateur
 
-**Template de prompt Master - Explication détaillée**
+**Template de prompt - Explication détaillée**
 
 **Analyse comparative avec template Starter :**
 
-| Aspect                | Starter          | Master                   |
+| Aspect                | Starter          | Build                    |
 | --------------------- | ---------------- | ------------------------ |
 | **Contexte**    | Projet personnel | Système d'entreprise    |
 | **Rôle**       | Développeur     | Architecte/Senior        |
 | **Contraintes** | Technologies     | Business + Conformité   |
 | **Livrable**    | Code fonctionnel | Solution industrialisée |
 
-**Prompt Master complet (exemple détaillé) :**
+**Prompt complet (exemple détaillé) :**
 
 ```
 ## Contexte Entreprise
@@ -91,6 +91,6 @@ Développe un service de calcul de prix dynamique :
 
 **Exercice d'application (15min) :**
 
-- Binômes : transformer un prompt simple en prompt Master
+- Binômes : transformer un prompt simple en prompt
 - Utilisation du template sur leur projet réel
 - Validation croisée et amélioration

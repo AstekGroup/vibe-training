@@ -1,4 +1,4 @@
-# 13h30 - 16h00 : Exercices Individuels Niveau Master
+# 13h30 - 16h00 : Exercices Individuels
 
 ### Contenu formation
 
@@ -11,7 +11,7 @@
 
 ### 📝 Notes formateur
 
-**13h30-13h45 : Choix et setup des projets Master (15min)**
+**13h30-13h45 : Choix et setup des projets (15min)**
 
 **Analyse détaillée des options - Alignées vibe coding :**
 

@@ -1,4 +1,4 @@
-# Formation Vibe Coding Master (3 jours) - Guide Complet
+# Formation Vibe Coding Build (3 jours) - Guide Complet
 
 v2 Philippe Pary - Thomas Foutrein
 2025-08-26
@@ -39,13 +39,13 @@ Développeurs expérimentés, architectes, tech leads avec projet d'entreprise. 
 
 | Horaire                 | Module                                  | Durée | Contenu                                                                             |
 | ----------------------- | --------------------------------------- | ------ | ----------------------------------------------------------------------------------- |
-| **9h00 - 9h30**   | **Introduction Master**           | 30min  | Tour de table niveau expert, projets d'entreprise                                   |
+| **9h00 - 9h30**   | **Introduction**           | 30min  | Tour de table niveau expert, projets d'entreprise                                   |
 | **9h30 - 10h15**  | **5 Compétences + Preview**      | 45min  | Framework avancé, transition vers agents                                           |
-| **10h15 - 11h00** | **Prompt Engineering Entreprise** | 45min  | Template Master, contraintes business/conformité                                   |
-| **11h00 - 12h00** | **Exercice Guidé Master**        | 60min  | Todo App Progressive (Compétences Thinking + Frameworks)                           |
+| **10h15 - 11h00** | **Prompt Engineering Entreprise** | 45min  | Template, contraintes business/conformité                                   |
+| **11h00 - 12h00** | **Exercice Guidé**        | 60min  | Todo App Progressive (Compétences Thinking + Frameworks)                           |
 | **12h00 - 12h30** | **Git + IA Équipes**             | 30min  | Workflows collaboratifs, preview agents J2                                          |
 | **12h30 - 13h30** | **🍽️ PAUSE DÉJEUNER**          | 60min  |                                                                                     |
-| **13h30 - 16h00** | **Exercices Master**              | 150min | 4 projets vibe coding : Blog Statique, Dashboard Simple, API CRUD, Générateur Doc |
+| **13h30 - 16h00** | **Exercices**              | 150min | 4 projets vibe coding : Blog Statique, Dashboard Simple, API CRUD, Générateur Doc |
 | **16h00 - 16h15** | **☕ PAUSE**                      | 15min  |                                                                                     |
 | **16h15 - 17h00** | **Bonnes Pratiques Entreprise**   | 45min  | Review sécurité OWASP, performance, Clean Architecture                            |
 | **17h00 - 17h15** | **Transition Concepts Avancés**  | 15min  | Préparation mentale J2-J3, glossaire agents                                        |
@@ -81,15 +81,15 @@ Développeurs expérimentés, architectes, tech leads avec projet d'entreprise. 
 
 ## Les IDE disponibles
 
-| Outil                 | Type                | Avantages                                   | Inconvénients                          | Site officiel |
-| :-------------------- | :------------------ | :------------------------------------------ | :-------------------------------------- | :------------- |
-| **Claude Code** | Outil CLI           | ✅ Puissance du modèle Claude              | ⚠️ Pas d'intégration IDE             | [claude.com/product/claude-code](https://claude.com/product/claude-code) |
-| **Cursor**      | Éditeur dédié    | ✅ Interface optimisée pour le vibe coding | ⚠️ Application séparée à installer | [cursor.sh](https://cursor.sh) |
+| Outil                 | Type                | Avantages                                   | Inconvénients                          | Site officiel                                                                   |
+| :-------------------- | :------------------ | :------------------------------------------ | :-------------------------------------- | :------------------------------------------------------------------------------ |
+| **Claude Code** | Outil CLI           | ✅ Puissance du modèle Claude              | ⚠️ Pas d'intégration IDE             | [claude.com/product/claude-code](https://claude.com/product/claude-code)           |
+| **Cursor**      | Éditeur dédié    | ✅ Interface optimisée pour le vibe coding | ⚠️ Application séparée à installer | [cursor.sh](https://cursor.sh)                                                     |
 | **gemini-cli**  | Outil CLI           | ✅ Scriptable, gratuit                      | ⚠️ Pas d'interface graphique          | [github.com/google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) |
-| **Copilot**     | Extension multi-IDE | ✅ Largement adopté, mature                | ⚠️ Moins orienté vibe coding         | [github.com/features/copilot](https://github.com/features/copilot) |
-| **Kilo Code**   | Éditeur dédié    | ✅ Interface moderne, optimisé pour l'IA    | ⚠️ Relativement récent               | [kilocode.ai](https://kilocode.ai) |
-| **Shai**        | Éditeur dédié    | ✅ Solution souveraine                      | ⚠️ Nouveau sur le marché             | [github.com/ovh/shai](https://github.com/ovh/shai) |
-| **Continue**    | Extension VSCode    | ✅ Open source                              | ⚠️ Moins stable                       | [continue.dev](https://continue.dev) |
+| **Copilot**     | Extension multi-IDE | ✅ Largement adopté, mature                | ⚠️ Moins orienté vibe coding         | [github.com/features/copilot](https://github.com/features/copilot)                 |
+| **Kilo Code**   | Éditeur dédié    | ✅ Interface moderne, optimisé pour l'IA   | ⚠️ Relativement récent               | [kilocode.ai](https://kilocode.ai)                                                 |
+| **Shai**        | Éditeur dédié    | ✅ Solution souveraine                      | ⚠️ Nouveau sur le marché             | [github.com/ovh/shai](https://github.com/ovh/shai)                                 |
+| **Continue**    | Extension VSCode    | ✅ Open source                              | ⚠️ Moins stable                       | [continue.dev](https://continue.dev)                                               |
 
 # **🎯 Objectifs centraux :**
 

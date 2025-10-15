@@ -10,18 +10,15 @@
 
 Le Vibe coding
 
-
 **Tour de perspective des outils de vibe coding existants**
 
-| Outil                 | Type                | Avantages                                   | Site web                                                                    |
-| :-------------------- | :------------------ | :------------------------------------------ | :-------------------------------------------------------------------------- |
-| **Claude Code** | Outil CLI           | ✅ Puissance du modèle Claude              | [https://www.anthropic.com/claude-code](https://www.anthropic.com/claude-code) |
-| **Cursor**      | Éditeur dédié    | ✅ Interface optimisée pour le vibe coding | [https://cursor.com]()                                                         |
-| **gemini-cli**  | Outil CLI           | ✅ Scriptable, gratuit                      | [https://github.com/google-gemini/gemini-cli]()                                |
-| **Copilot**     | Extension multi-IDE | ✅ Largement adopté, mature                | [https://github.com/features/copilot]()                                        |
-| **WindSurf**    | Éditeur dédié    | ✅ Interface moderne                        | [https://windsurf.com/]()                                                      |
-| **Continue**    | Extension VSCode    | ✅ Open source                              | [https://www.continue.dev/]()                                                  |
-| **Replit**      | Éditeur en ligne   | ✅ Environnement complet                    | [https://replit.com/]()                                                        |
+| Outil                 | Type                | Avantages                                        | Site web                                                                    |
+| :-------------------- | :------------------ | :----------------------------------------------- | :-------------------------------------------------------------------------- |
+| **Claude Code** | Outil CLI           | ✅ Lié à Claude, meilleur modèle pour le dev  | [https://www.anthropic.com/claude-code](https://www.anthropic.com/claude-code) |
+| **Cursor**      | Éditeur dédié    | ✅ Interface, pre-prompt efficace, multi-modèle | [https://cursor.com]()                                                         |
+| **gemini-cli**  | Outil CLI           | ✅ Lié à Gemin, large fenêtre de contexte     | [https://github.com/google-gemini/gemini-cli]()                                |
+| **Copilot**     | Extension multi-IDE | ✅ Lié à Github Copilot                        | [https://github.com/features/copilot]()                                        |
+| **Codex**       | Outil CLI           | ✅ Lié à ChatGPT                               | [https://openai.com/codex/](https://openai.com/codex/)                         |
 
 **Premier TP live de vibe coding instinctif :**
 
@@ -61,7 +58,7 @@ Le Vibe coding
 
 ```
 Starter: "Décomposer le problème"
-Master: "Orchestrer plusieurs agents spécialisés"
+Build: "Orchestrer plusieurs agents spécialisés"
 ```
 
 **2. Frameworks → BMAD, CCPM, Spec-kit**
