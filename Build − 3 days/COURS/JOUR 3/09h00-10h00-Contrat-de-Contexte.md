@@ -1,4 +1,4 @@
-# 9h00 - 11h00 : Le Contrat de Contexte (120min)
+# 9h00 - 10h00 : Le Contrat de Contexte
 
 ## 📚 **Sources et références récentes**
 
@@ -6,7 +6,7 @@
 
 - [A Survey of Context Engineering for Large Language Models](https://arxiv.org/abs/2507.13334) - Étude scientifique complète (juillet 2025)
 - [Context Engineering: Elevating AI Strategy from Prompt Crafting to Enterprise Competence](https://medium.com/@adnanmasood/context-engineering-elevating-ai-strategy-from-prompt-crafting-to-enterprise-competence-b036d3f7f76f) - Vision entreprise
-- [The rise of "context engineering" | LangChain Blog](https://blog.langchain.com/the-rise-of-context-engineering/) - Perspective technique
+- [The rise of &#34;context engineering&#34; | LangChain Blog](https://blog.langchain.com/the-rise-of-context-engineering/) - Perspective technique
 - [Context Engineering - What it is, and techniques to consider | LlamaIndex](https://www.llamaindex.ai/blog/context-engineering-what-it-is-and-techniques-to-consider) - Guide pratique
 
 *Sources vérifiées : publications de juillet 2025 et plus récentes*
@@ -16,6 +16,7 @@
 ## **Objectifs de la session**
 
 À l'issue de cette session, vous serez capables de :
+
 - Comprendre les enjeux du Context Engineering
 - Maîtriser les 6 piliers du contexte
 - Rédiger et utiliser un Contrat de Contexte
@@ -23,7 +24,7 @@
 
 ---
 
-## **9h00-9h15 : Introduction au Context Engineering (15min)**
+## **9h00-9h15 : Introduction au Context Engineering**
 
 ### Qu'est-ce que le Context Engineering ?
 
@@ -43,9 +44,10 @@
 
 ---
 
-## **9h15-10h00 : Les 6 Piliers du Contexte (45min)**
+## **9h15-9h30 : Les 6 Piliers du Contexte**
 
-### 1. System Instructions (10min)
+### 1. System Instructions
+
 - **Fonction :** Personnalité et comportement de base
 - **Exemple :** "Tu es un architecte senior avec 10 ans d'expérience..."
 - **Champs clés :**
@@ -54,7 +56,8 @@
   - Contraintes comportementales
   - Format de réponse
 
-### 2. Memory (10min)
+### 2. Memory
+
 - **Short-term :** Conversation en cours
 - **Long-term :** Connaissances accumulées
 - **Exemple :** "Tu te souviens que ce client préfère React à Vue"
@@ -64,7 +67,8 @@
   - Règles de rétention
   - Structure des données
 
-### 3. RAG (Retrieval) (10min)
+### 3. RAG (Retrieval)
+
 - **Mécanisme :** Recherche sémantique + injection contexte
 - **Exemple :** Query "authentification" → Récupère docs sécurité
 - **Champs clés :**
@@ -73,7 +77,8 @@
   - Critères de pertinence
   - Gestion des erreurs
 
-### 4. Tools (5min)
+### 4. Tools
+
 - **Puissance :** Agents qui agissent, pas seulement qui parlent
 - **Champs clés :**
   - Outils disponibles
@@ -81,7 +86,8 @@
   - Conditions d'usage
   - Gestion des erreurs
 
-### 5. Output Format (5min)
+### 5. Output Format
+
 - **Cohérence :** Réponses prévisibles et exploitables
 - **Champs clés :**
   - Structure attendue
@@ -89,7 +95,8 @@
   - Niveau de détail
   - Langue et style
 
-### 6. Feedback Loops (5min)
+### 6. Feedback Loops
+
 - **Adaptation :** Personnalisation progressive aux besoins
 - **Champs clés :**
   - Métriques de qualité
@@ -97,13 +104,7 @@
   - Validation croisée
   - Évolution du contexte
 
----
-
-## **10h00-10h15 : Pause (15min)**
-
----
-
-## **10h15-11h00 : Structure du Contrat de Contexte (45min)**
+## **9h30-10h00 : Structure du Contrat de Contexte (45min)**
 
 ### Présentation du Contrat de Contexte
 
@@ -111,34 +112,37 @@ Le **Contrat de Contexte** est un document fonctionnel qui définit précisémen
 
 ### Les 5 sections principales
 
-#### 📋 **1. Informations Générales (5min)**
+#### 📋 **1. Informations Générales**
 
-| Champ | Description | Exemple |
-|-------|-------------|---------|
-| **ID Contrat** | Identifiant unique | `CC-[PROJET]-[AGENT]-[VERSION]` |
-| **Nom de l'Agent** | Nom fonctionnel | `Assistant Réclamations Voyageurs` |
-| **Version** | Numéro de version | `1.2.3` |
-| **Date de Création** | Date initiale | `2025-01-15` |
-| **Statut** | État du contrat | `Brouillon/Validé/Approuvé/Production` |
+| Champ                       | Description        | Exemple                                    |
+| --------------------------- | ------------------ | ------------------------------------------ |
+| **ID Contrat**        | Identifiant unique | `CC-[PROJET]-[AGENT]-[VERSION]`          |
+| **Nom de l'Agent**    | Nom fonctionnel    | `Assistant Réclamations Voyageurs`      |
+| **Version**           | Numéro de version | `1.2.3`                                  |
+| **Date de Création** | Date initiale      | `2025-01-15`                             |
+| **Statut**            | État du contrat   | `Brouillon/Validé/Approuvé/Production` |
 
-#### 🎯 **2. Définition Fonctionnelle (10min)**
+#### 🎯 **2. Définition Fonctionnelle**
 
 **Mission de l'Agent :**
+
 - Description claire et concise de ce que fait l'agent
 - Objectif métier et impact attendu
 - Périmètre et limites fonctionnelles
 
 **Cas d'Usage Principaux :**
 Pour chaque cas d'usage :
+
 - Nom du cas d'usage
 - Déclencheur (événement)
 - Acteurs impliqués
 - Résultat attendu
 - Critères de succès
 
-#### 🧠 **3. Spécification du Contexte (15min)**
+#### 🧠 **3. Spécification du Contexte**
 
 **Instructions Système :**
+
 ```markdown
 Tu es [description du rôle].
 
@@ -161,43 +165,45 @@ Format de réponse :
 
 **Sources de Connaissance :**
 
-| Source | Type | Description | Criticité |
-|--------|------|-------------|-----------|
+| Source           | Type                 | Description            | Criticité                       |
+| ---------------- | -------------------- | ---------------------- | -------------------------------- |
 | `[Système 1]` | `API/Base/Fichier` | `[Type de données]` | `Critique/Important/Optionnel` |
 
 **Outils Disponibles :**
 
-| Outil | Description | Paramètres | Conditions d'Usage |
-|-------|-------------|------------|------------------|
+| Outil           | Description            | Paramètres             | Conditions d'Usage   |
+| --------------- | ---------------------- | ----------------------- | -------------------- |
 | `[nom_outil]` | `[Fonction métier]` | `[Entrées requises]` | `[Quand utiliser]` |
 
-#### ⚙️ **4. Configuration Technique (10min)**
+#### ⚙️ **4. Configuration Technique**
 
 **Contraintes de Performance :**
 
-| Métrique | Valeur Cible | Valeur Limite |
-|----------|--------------|---------------|
-| **Temps de Réponse** | `< 2 secondes` | `< 5 secondes` |
+| Métrique                    | Valeur Cible      | Valeur Limite     |
+| ---------------------------- | ----------------- | ----------------- |
+| **Temps de Réponse**  | `< 2 secondes`  | `< 5 secondes`  |
 | **Utilisation Tokens** | `< 3000 tokens` | `< 4000 tokens` |
-| **Précision** | `≥ 95%` | `≥ 90%` |
+| **Précision**         | `≥ 95%`        | `≥ 90%`        |
 
 **Gestion des Erreurs :**
 
-| Type d'Erreur | Comportement | Escalade |
-|---------------|--------------|----------|
-| **Données Manquantes** | `Demander confirmation` | `Automatique` |
+| Type d'Erreur                    | Comportement                | Escalade               |
+| -------------------------------- | --------------------------- | ---------------------- |
+| **Données Manquantes**    | `Demander confirmation`   | `Automatique`        |
 | **Données Incohérentes** | `Prioriser source fiable` | `Validation humaine` |
-| **Erreur Système** | `Mode dégradé` | `Support technique` |
+| **Erreur Système**        | `Mode dégradé`          | `Support technique`  |
 
-#### 📊 **5. Validation et Métriques (5min)**
+#### 📊 **5. Validation et Métriques**
 
 **Critères de Validation :**
+
 - Compréhension correcte : ≥ 95%
 - Pertinence des réponses : ≥ 90%
 - Conformité aux règles : 100%
 - Temps de traitement : < objectif défini
 
 **Tests d'Acceptation :**
+
 ```gherkin
 Étant donné [situation]
 Quand [action]
@@ -214,22 +220,26 @@ Et [vérifications]
 ### Contrat de Contexte - Agent de Classification
 
 #### Informations Générales
+
 - **ID** : CC-RAM-CLASSIFICATION-1.0
 - **Agent** : Classification et Dispatch des Réclamations
 - **Mission** : Analyser automatiquement les réclamations clients et les router vers les équipes appropriées
 
 #### Sources de Données
+
 1. **HubSpot CRM** : Nouveaux tickets, messages clients
 2. **Altea** : Données de réservation et vol
 3. **Base Règles** : Critères de classification RAM
 4. **Système RH** : Charge des équipes
 
 #### Outils Disponibles
+
 - `classify_claim_type(message, attachments)`
 - `determine_priority(client_tier, claim_type, urgency)`
 - `route_to_team(claim_data, team_availability)`
 
 #### Exemple de Contexte Assemblé
+
 ```markdown
 ## Instructions
 Tu es l'agent de classification Royal Air Maroc.
@@ -267,12 +277,6 @@ Priorité: Élevée (client Gold)
 
 ---
 
-## **Préparation pour l'après-midi**
-
-Cette session théorique prépare le TP final de l'après-midi où vous mettrez en pratique tous ces concepts dans un projet collaboratif multi-agents complet.
-
----
-
 ## **Annexe : Template Complet du Contrat de Contexte**
 
 ### Vue d'Ensemble
@@ -283,23 +287,23 @@ Ce document constitue un **Contrat de Contexte** fonctionnel qui définit préci
 
 #### Identification du Contrat
 
-| Champ | Valeur |
-|-------|--------|
-| **ID Contrat** | `CC-[PROJET]-[AGENT]-[VERSION]` |
-| **Nom de l'Agent** | `[Nom fonctionnel de l'agent]` |
-| **Version** | `[X.Y.Z]` |
-| **Date de Création** | `[YYYY-MM-DD]` |
-| **Dernière Mise à Jour** | `[YYYY-MM-DD]` |
-| **Statut** | `[Brouillon/Validé/Approuvé/En Production]` |
+| Champ                            | Valeur                                          |
+| -------------------------------- | ----------------------------------------------- |
+| **ID Contrat**             | `CC-[PROJET]-[AGENT]-[VERSION]`               |
+| **Nom de l'Agent**         | `[Nom fonctionnel de l'agent]`                |
+| **Version**                | `[X.Y.Z]`                                     |
+| **Date de Création**      | `[YYYY-MM-DD]`                                |
+| **Dernière Mise à Jour** | `[YYYY-MM-DD]`                                |
+| **Statut**                 | `[Brouillon/Validé/Approuvé/En Production]` |
 
 #### Parties Prenantes
 
-| Rôle | Nom | Email | Responsabilité |
-|------|-----|-------|----------------|
-| **Product Owner** | `[Nom]` | `[email]` | Définition fonctionnelle et validation |
-| **Client/Métier** | `[Nom]` | `[email]` | Expression du besoin et acceptation |
-| **Lead Développeur** | `[Nom]` | `[email]` | Implémentation technique |
-| **Architecte IA** | `[Nom]` | `[email]` | Conception du contexte |
+| Rôle                       | Nom       | Email       | Responsabilité                         |
+| --------------------------- | --------- | ----------- | --------------------------------------- |
+| **Product Owner**     | `[Nom]` | `[email]` | Définition fonctionnelle et validation |
+| **Client/Métier**    | `[Nom]` | `[email]` | Expression du besoin et acceptation     |
+| **Lead Développeur** | `[Nom]` | `[email]` | Implémentation technique               |
+| **Architecte IA**     | `[Nom]` | `[email]` | Conception du contexte                  |
 
 ### 🎯 Définition Fonctionnelle de l'Agent
 
@@ -314,6 +318,7 @@ Ce document constitue un **Contrat de Contexte** fonctionnel qui définit préci
 #### Cas d'Usage Principaux
 
 **Cas d'Usage #1**
+
 - **Nom** : `[Nom du cas d'usage]`
 - **Déclencheur** : `[Événement qui déclenche ce cas]`
 - **Acteurs** : `[Qui est impliqué]`
@@ -325,6 +330,7 @@ Ce document constitue un **Contrat de Contexte** fonctionnel qui définit préci
 #### 1. Instructions Système
 
 **Rôle et Personnalité**
+
 ```
 Tu es [description du rôle de l'agent].
 
@@ -337,6 +343,7 @@ Ton objectif est de [objectif principal en une phrase].
 ```
 
 **Règles de Comportement**
+
 ```
 Règles obligatoires :
 1. [Règle 1 - ex: Toujours vérifier les données avant de répondre]
@@ -350,6 +357,7 @@ Règles interdites :
 ```
 
 **Format de Réponse Attendu**
+
 ```
 Structure de réponse :
 1. [Section 1 : Résumé de la situation]
@@ -368,8 +376,8 @@ Contraintes de format :
 
 **Sources de Données Obligatoires**
 
-| Source | Type | Description | Fréquence de Mise à Jour | Criticité |
-|--------|------|-------------|-------------------------|-----------|
+| Source               | Type                   | Description                    | Fréquence de Mise à Jour               | Criticité                         |
+| -------------------- | ---------------------- | ------------------------------ | ---------------------------------------- | ---------------------------------- |
 | `[Nom Système 1]` | `[API/Base/Fichier]` | `[Description des données]` | `[Temps réel/Quotidien/Hebdomadaire]` | `[Critique/Important/Optionnel]` |
 | `[Nom Système 2]` | `[API/Base/Fichier]` | `[Description des données]` | `[Temps réel/Quotidien/Hebdomadaire]` | `[Critique/Important/Optionnel]` |
 
@@ -377,19 +385,21 @@ Contraintes de format :
 
 **Outils Système**
 
-| Nom de l'Outil | Description Fonctionnelle | Paramètres d'Entrée | Sortie Attendue | Conditions d'Usage |
-|-----------------|--------------------------|---------------------|-----------------|-------------------|
+| Nom de l'Outil    | Description Fonctionnelle | Paramètres d'Entrée       | Sortie Attendue        | Conditions d'Usage     |
+| ----------------- | ------------------------- | --------------------------- | ---------------------- | ---------------------- |
 | `[nom_outil_1]` | `[Ce que fait l'outil]` | `[Liste des paramètres]` | `[Format de sortie]` | `[Quand l'utiliser]` |
 | `[nom_outil_2]` | `[Ce que fait l'outil]` | `[Liste des paramètres]` | `[Format de sortie]` | `[Quand l'utiliser]` |
 
 #### 4. Gestion de la Mémoire
 
 **Mémoire de Session**
+
 - **Durée de Vie** : `[Durée de la session utilisateur]`
 - **Informations Conservées** : `[Liste des éléments à retenir]`
 - **Limite de Capacité** : `[Nombre max d'éléments ou tokens]`
 
 **Mémoire Persistante**
+
 - **Données Client** : `[Informations client à conserver entre sessions]`
 - **Apprentissages** : `[Patterns et règles apprises]`
 - **Historique** : `[Interactions significatives à conserver]`
@@ -398,36 +408,37 @@ Contraintes de format :
 
 #### Contraintes de Performance
 
-| Métrique | Valeur Cible | Valeur Limite | Mesure |
-|----------|--------------|---------------|---------|
-| **Temps de Réponse** | `[X secondes]` | `[Y secondes max]` | `[Temps total traitement]` |
-| **Utilisation Tokens** | `[X tokens moyens]` | `[Y tokens max]` | `[Contexte + réponse]` |
-| **Précision** | `[X% minimum]` | `[Y% acceptable]` | `[Validation métier]` |
-| **Disponibilité** | `[X% uptime]` | `[Y% minimum]` | `[Temps de service]` |
+| Métrique                    | Valeur Cible          | Valeur Limite        | Mesure                       |
+| ---------------------------- | --------------------- | -------------------- | ---------------------------- |
+| **Temps de Réponse**  | `[X secondes]`      | `[Y secondes max]` | `[Temps total traitement]` |
+| **Utilisation Tokens** | `[X tokens moyens]` | `[Y tokens max]`   | `[Contexte + réponse]`    |
+| **Précision**         | `[X% minimum]`      | `[Y% acceptable]`  | `[Validation métier]`     |
+| **Disponibilité**     | `[X% uptime]`       | `[Y% minimum]`     | `[Temps de service]`       |
 
 #### Gestion des Erreurs
 
-| Type d'Erreur | Cause | Comportement Attendu | Escalade |
-|---------------|-------|---------------------|----------|
-| **Données Manquantes** | `[Source indisponible]` | `[Demander confirmation/Utiliser défaut]` | `[Automatique/Manuelle]` |
-| **Données Incohérentes** | `[Conflit entre sources]` | `[Prioriser source fiable/Demander clarification]` | `[Validation humaine]` |
-| **Limite de Contexte** | `[Trop d'informations]` | `[Compression intelligente/Priorisation]` | `[Log pour optimisation]` |
-| **Erreur Système** | `[Panne technique]` | `[Mode dégradé/Message d'erreur]` | `[Support technique]` |
+| Type d'Erreur                    | Cause                       | Comportement Attendu                                 | Escalade                    |
+| -------------------------------- | --------------------------- | ---------------------------------------------------- | --------------------------- |
+| **Données Manquantes**    | `[Source indisponible]`   | `[Demander confirmation/Utiliser défaut]`         | `[Automatique/Manuelle]`  |
+| **Données Incohérentes** | `[Conflit entre sources]` | `[Prioriser source fiable/Demander clarification]` | `[Validation humaine]`    |
+| **Limite de Contexte**     | `[Trop d'informations]`   | `[Compression intelligente/Priorisation]`          | `[Log pour optimisation]` |
+| **Erreur Système**        | `[Panne technique]`       | `[Mode dégradé/Message d'erreur]`                | `[Support technique]`     |
 
 ### 📊 Métriques et Validation
 
 #### Critères de Validation Fonctionnelle
 
-| Critère | Description | Méthode de Test | Seuil d'Acceptation |
-|---------|-------------|-----------------|-------------------|
-| **Compréhension** | L'agent comprend correctement la demande | Test avec cas réels | `≥ 95%` |
-| **Pertinence** | Les réponses sont adaptées au contexte | Évaluation expert métier | `≥ 90%` |
-| **Completude** | Toutes les informations nécessaires sont fournies | Check-list validation | `≥ 95%` |
-| **Conformité** | Respect des règles métier et réglementaires | Audit conformité | `100%` |
+| Critère                 | Description                                        | Méthode de Test           | Seuil d'Acceptation |
+| ------------------------ | -------------------------------------------------- | -------------------------- | ------------------- |
+| **Compréhension** | L'agent comprend correctement la demande           | Test avec cas réels       | `≥ 95%`          |
+| **Pertinence**     | Les réponses sont adaptées au contexte           | Évaluation expert métier | `≥ 90%`          |
+| **Completude**     | Toutes les informations nécessaires sont fournies | Check-list validation      | `≥ 95%`          |
+| **Conformité**    | Respect des règles métier et réglementaires     | Audit conformité          | `100%`            |
 
 ### ✅ Checklist de Validation
 
 #### Validation Fonctionnelle
+
 - [ ] **Mission de l'agent clairement définie**
 - [ ] **Cas d'usage documentés avec exemples**
 - [ ] **Sources de données identifiées et validées**
@@ -438,6 +449,7 @@ Contraintes de format :
 - [ ] **Validation client obtenue**
 
 #### Validation Technique
+
 - [ ] **Faisabilité technique confirmée**
 - [ ] **Architecture du contexte validée**
 - [ ] **Intégrations système spécifiées**

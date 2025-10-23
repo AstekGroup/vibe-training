@@ -39,13 +39,13 @@ Développeurs expérimentés, architectes, tech leads avec projet d'entreprise. 
 
 | Horaire                 | Module                                  | Durée | Contenu                                                                             |
 | ----------------------- | --------------------------------------- | ------ | ----------------------------------------------------------------------------------- |
-| **9h00 - 9h30**   | **Introduction**           | 30min  | Tour de table niveau expert, projets d'entreprise                                   |
+| **9h00 - 9h30**   | **Introduction**                  | 30min  | Tour de table niveau expert, projets d'entreprise                                   |
 | **9h30 - 10h15**  | **5 Compétences + Preview**      | 45min  | Framework avancé, transition vers agents                                           |
-| **10h15 - 11h00** | **Prompt Engineering Entreprise** | 45min  | Template, contraintes business/conformité                                   |
-| **11h00 - 12h00** | **Exercice Guidé**        | 60min  | Todo App Progressive (Compétences Thinking + Frameworks)                           |
+| **10h15 - 11h00** | **Prompt Engineering Entreprise** | 45min  | Template, contraintes business/conformité                                          |
+| **11h00 - 12h00** | **Exercice Guidé**               | 60min  | Todo App Progressive (Compétences Thinking + Frameworks)                           |
 | **12h00 - 12h30** | **Git + IA Équipes**             | 30min  | Workflows collaboratifs, preview agents J2                                          |
 | **12h30 - 13h30** | **🍽️ PAUSE DÉJEUNER**          | 60min  |                                                                                     |
-| **13h30 - 16h00** | **Exercices**              | 150min | 4 projets vibe coding : Blog Statique, Dashboard Simple, API CRUD, Générateur Doc |
+| **13h30 - 16h00** | **Exercices**                     | 150min | 4 projets vibe coding : Blog Statique, Dashboard Simple, API CRUD, Générateur Doc |
 | **16h00 - 16h15** | **☕ PAUSE**                      | 15min  |                                                                                     |
 | **16h15 - 17h00** | **Bonnes Pratiques Entreprise**   | 45min  | Review sécurité OWASP, performance, Clean Architecture                            |
 | **17h00 - 17h15** | **Transition Concepts Avancés**  | 15min  | Préparation mentale J2-J3, glossaire agents                                        |
@@ -68,16 +68,13 @@ Développeurs expérimentés, architectes, tech leads avec projet d'entreprise. 
 
 ## 📅 JOUR 3 : Context Engineering et Projet Final
 
-| Horaire                 | Module                           | Durée | Contenu                                                      |
-| ----------------------- | -------------------------------- | ------ | ------------------------------------------------------------ |
-| **9h00 - 11h00**  | **Le Contrat de Contexte** | 120min | Context Engineering, 6 piliers, template contrat de contexte |
-| **11h00 - 12h30** | **TP Final - Partie 1**    | 90min  | Projet collaboratif multi-agents : P.O., Architecte          |
-| **12h30 - 13h30** | **🍽️ PAUSE DÉJEUNER**   | 60min  |                                                              |
-| **13h30 - 15h30** | **TP Final - Partie 2**    | 120min | Développement, QA, Code Review                              |
-| **15h30 - 15h45** | **☕ PAUSE**               | 15min  |                                                              |
-| **15h45 - 16h45** | **TP Final - Partie 3**    | 60min  | Finalisation MCP, analyse critique                           |
-| **16h45 - 17h00** | **☕ PAUSE**               | 15min  |                                                              |
-| **17h00 - 17h30** | **Conclusion Formation**   | 30min  | Synthèse, évaluation, prochaines étapes                   |
+| Horaire                 | Module                                   | Durée | Contenu                                                                                          |
+| ----------------------- | ---------------------------------------- | ------ | ------------------------------------------------------------------------------------------------ |
+| **9h00 - 10h00**  | **Le Contrat de Contexte**         | 60min  | Context Engineering, 6 piliers, template contrat de contexte                                     |
+| **10h00 - 12h30** | **Google ADK**                     | 150min | Agent Development Kit, création agents personnalisés, exercice pratique                        |
+| **12h30 - 13h30** | **🍽️ PAUSE DÉJEUNER**           | 60min  |                                                                                                  |
+| **13h30 - 17h00** | **TP Final - Projet Collaboratif** | 210min | Orchestration multi-agents : P.O., Architecte, Développement, QA, Code Review, analyse critique |
+| **17h00 - 17h30** | **Conclusion Formation**           | 30min  | Synthèse, évaluation, prochaines étapes                                                       |
 
 ## Les IDE disponibles
 
@@ -95,4 +92,4 @@ Développeurs expérimentés, architectes, tech leads avec projet d'entreprise. 
 
 - **J1 :** Fondations solides + vision agents
 - **J2 :** Maîtrise agents + serveurs MCP + sécurité
-- **J3 :** Context Engineering + projet collaboratif complet
+- **J3 :** Context Engineering + ADK + projet complet

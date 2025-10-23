@@ -1,4 +1,4 @@
-# 11h00 - 17h00 : TP FINAL - Projet Collaboratif Multi-Agents (6h)
+# 14h00 - 17h00 : TP FINAL - Projet Collaboratif Multi-Agents (6h)
 
 *Formation Vibe Coding - Durée estimée : 6 heures*
 
@@ -9,6 +9,7 @@
 **Mise en situation :** Vous êtes une équipe de développement qui vient de recevoir une demande client. Vous devez orchestrer différents agents spécialisés pour livrer un projet complet avec son MCP (Minimum Viable Product).
 
 **Objectifs pédagogiques :**
+
 - Maîtriser l'orchestration d'agents spécialisés
 - Appliquer une méthodologie projet structurée
 - Produire un livrable fonctionnel et sa documentation
@@ -21,6 +22,7 @@
 **Sujet :** *Application de gestion de bibliothèque personnelle*
 
 **Description du besoin :**
+
 > "Je souhaite une application web simple pour gérer ma collection de livres. Je veux pouvoir ajouter des livres (titre, auteur, année, genre), les marquer comme lus/non-lus, les rechercher et filtrer par genre. J'aimerais aussi voir des statistiques basiques sur ma collection (nombre total, pourcentage de livres lus, genre favori). L'interface doit être intuitive et responsive. Budget modéré, délai : 2 semaines."
 
 ---
@@ -28,11 +30,11 @@
 ## 🔄 PROCESSUS À SUIVRE
 
 ### ÉTAPE 1 : Agent P.O.P.M. (Product Owner Project Manager)
-*Temps estimé : 45 minutes*
 
 **Mission :** Définir le projet dans sa globalité
 
 **Prompt suggéré :**
+
 ```
 Tu es un Product Owner expérimenté. À partir du besoin client suivant : [insérer cahier des charges], je veux que tu :
 
@@ -47,6 +49,7 @@ Format ta réponse de manière structurée avec des sections claires.
 ```
 
 **Livrables attendus :**
+
 - Backlog produit priorisé
 - User stories avec critères d'acceptance
 - Planning macro du projet
@@ -55,11 +58,11 @@ Format ta réponse de manière structurée avec des sections claires.
 ---
 
 ### ÉTAPE 2 : Agent Architecte
-*Temps estimé : 60 minutes*
 
 **Mission :** Établir l'architecture et les choix technologiques
 
 **Prompt suggéré :**
+
 ```
 Tu es un architecte logiciel senior. En te basant sur les spécifications du P.O. : [insérer résultats étape 1], je veux que tu :
 
@@ -75,6 +78,7 @@ Contraintes : Application web, budget modéré, maintenance simple.
 ```
 
 **Livrables attendus :**
+
 - Schéma d'architecture
 - Choix technologiques justifiés
 - Modèle de données
@@ -83,16 +87,17 @@ Contraintes : Application web, budget modéré, maintenance simple.
 ---
 
 ### ÉTAPE 3 : Agent(s) Développeur(s)
-*Temps estimé : 90-120 minutes*
 
 **Mission :** Développer les fonctionnalités de base
 
 **Approche recommandée :** Créer 2-3 agents développeurs spécialisés
+
 - Agent Frontend (UI/UX)
 - Agent Backend (API/Base de données)
 - Agent DevOps (Configuration/Déploiement)
 
 **Prompt type pour chaque agent :**
+
 ```
 Tu es un développeur [Frontend/Backend/DevOps] expert. En suivant l'architecture définie : [insérer résultats étape 2], développe :
 
@@ -115,6 +120,7 @@ Code propre, commenté, avec gestion d'erreurs.
 ```
 
 **Livrables attendus :**
+
 - Code source complet et fonctionnel
 - Documentation technique
 - Guide d'installation
@@ -122,11 +128,11 @@ Code propre, commenté, avec gestion d'erreurs.
 ---
 
 ### ÉTAPE 4 : Agent QA (Quality Assurance)
-*Temps estimé : 45 minutes*
 
 **Mission :** Tester et valider la qualité du code
 
 **Prompt suggéré :**
+
 ```
 Tu es un QA Engineer expérimenté. Analyse le code développé et :
 
@@ -142,6 +148,7 @@ Fournis des scripts de test exécutables.
 ```
 
 **Livrables attendus :**
+
 - Plan de tests détaillé
 - Scripts de tests automatisés
 - Rapport de qualité avec recommandations
@@ -149,11 +156,11 @@ Fournis des scripts de test exécutables.
 ---
 
 ### ÉTAPE 5 : Agent Relecteur de Code
-*Temps estimé : 30 minutes*
 
 **Mission :** Code review et optimisation
 
 **Prompt suggéré :**
+
 ```
 Tu es un senior developer spécialisé en code review. Analyse le code produit et fournis :
 
@@ -168,6 +175,7 @@ Sois constructif et pédagogique dans tes retours.
 ```
 
 **Livrables attendus :**
+
 - Rapport de code review
 - Checklist d'améliorations
 - Score qualité global
@@ -189,23 +197,25 @@ Sois constructif et pédagogique dans tes retours.
 ---
 
 ## 🔍 PHASE DE CRITIQUE ET ANALYSE
-*Temps estimé : 45 minutes*
 
 **Questions de réflexion :**
 
 ### Analyse du Processus
+
 1. Quelles ont été les forces et faiblesses de chaque agent ?
 2. Où avez-vous observé des pertes d'information entre agents ?
 3. Quels ajustements de prompts ont été nécessaires ?
 4. Le processus séquentiel était-il optimal ?
 
 ### Analyse du Résultat
+
 5. Le MCP répond-il aux besoins initiaux du client ?
 6. Quelles fonctionnalités auraient mérité plus d'attention ?
 7. L'architecture proposée est-elle adaptée et scalable ?
 8. La qualité du code est-elle satisfaisante ?
 
 ### Analyse Critique du Vibe Coding
+
 9. Dans quels contextes cette approche multi-agents est-elle pertinente ?
 10. Quels sont les risques et limitations identifiés ?
 11. Comment optimiser la collaboration entre agents ?
@@ -216,18 +226,21 @@ Sois constructif et pédagogique dans tes retours.
 ## 📊 CRITÈRES D'ÉVALUATION
 
 ### Aspects techniques (60%)
+
 - Fonctionnalité du MCP
 - Qualité du code
 - Respect de l'architecture
 - Couverture de tests
 
 ### Processus Vibe Coding (25%)
+
 - Qualité des prompts
 - Orchestration des agents
 - Traçabilité des décisions
 - Cohérence globale
 
 ### Analyse critique (15%)
+
 - Profondeur de l'analyse
 - Pertinence des observations
 - Propositions d'amélioration
@@ -247,36 +260,34 @@ Sois constructif et pédagogique dans tes retours.
 
 ## 📝 PLANNING DÉTAILLÉ
 
-### 11h00-11h45 : Étape 1 - Agent P.O.P.M.
+### 14h00-14h30 : Étape 1 - Agent P.O.P.M.
+
 - Analyse du besoin client
 - Création du backlog produit
 - Définition des user stories
 
-### 11h45-12h45 : Étape 2 - Agent Architecte
+### 14h30-15h00 : Étape 2 - Agent Architecte
+
 - Conception de l'architecture
 - Choix technologiques
 - Modélisation des données
 
-### 12h45-13h45 : **PAUSE DÉJEUNER**
+### 15h15-15h30 : **PAUSE**
 
-### 13h45-15h15 : Étape 3 - Agents Développeurs
+### 15h15-16h00 : Étape 3 - Agents Développeurs
+
 - Développement Frontend
 - Développement Backend
 - Configuration DevOps
 
-### 15h15-15h30 : **PAUSE**
+### 16h00-16h30 : Étape 4 - Agent QA et Code Review
 
-### 15h30-16h15 : Étape 4 - Agent QA
 - Plan de tests
 - Tests automatisés
 - Rapport qualité
 
-### 16h15-16h45 : Étape 5 - Agent Code Review
-- Analyse du code
-- Recommandations
-- Score qualité
+### 16h30-17h00 : Phase d'analyse critique
 
-### 16h45-17h00 : Phase d'analyse critique
 - Réflexion sur le processus
 - Discussion collective
 - Synthèse des apprentissages

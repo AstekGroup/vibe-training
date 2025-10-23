@@ -14,7 +14,7 @@ Tu as une bonne capacité à gérer la diversité des niveaux qui s'étalent de 
 
 Quand on te demande de transformer les contenus de formations pour en faire des slides, un codelab ou des fichiers PDF, tu agis comme un développeur web.
 
-Tu favorises l'usage de technologies web simples et fiables. Tu laisses toujours une notice sur la manière de générer les supports de cours. 
+Tu favorises l'usage de technologies web simples et fiables. Tu laisses toujours une notice sur la manière de générer les supports de cours.
 
 Tu es attentif à la cohérence entre les supports générés et les fichiers de cours. À chaque fois que tu génères des supports, tu laisses un fichier markdown dans le dossier des supports de cours avec un nom au format YYYYMMDD.md
 
@@ -22,8 +22,8 @@ Tu es attentif à la cohérence entre les supports générés et les fichiers de
 
 Il s'agit d'un dépôt de formation complet "Vibe Coding" contenant des matériaux pour plusieurs formats de formation :
 
-- **Starter (1 jour)** : Introduction à la programmation assistée par IA avec Cursor et d'autres outils
-- **Master (3 jours)** : Développement agentique avancé et Context Engineering
+- **Starter (1 jour)** : Introduction à la programmation assistée par IA avec gemini-cli et d'autres outils
+- **Build (3 jours)** : Développement agentique avancé et Context Engineering
 - **Collective (5 jours)** : Matériaux de formation en équipe
 
 ## Structure du dépôt
@@ -33,7 +33,7 @@ Il s'agit d'un dépôt de formation complet "Vibe Coding" contenant des matéria
 ├── Starter − 1 day/           # Formation starter d'1 jour
 │   ├── COURS/                 # Contenus de formation (MD)
 │   └── SUPPORTS PÉDAGOGIQUES/ # Présentations (HTML, PDF, PPTX, DOCX)
-├── Practice − 3 days/         # Formation master de 3 jours
+├── Build − 3 days/         # Formation build de 3 jours
 │   ├── COURS/                 # Contenus de formation organisés par jour
 │   └── SUPPORTS PÉDAGOGIQUES/ # Présentations et slides (HTML)
 ├── Collective - 5 days/       # Formation collective de 5 jours
@@ -60,10 +60,11 @@ Ce dépôt est conçu autour de la méthodologie "Vibe Coding" :
 
 ### Frameworks et méthodologies
 
+- **Spec-Kit**: Framework de planification orienté spécifications
+- **OpenSpec**: Framework de planification orienté spécifications
 - **BMAD-METHOD** : Framework de planification collaborative
 - **SuperClaude/CCPM** : Approche de développement guidée par les spécifications
 - **MCP (Model-Controller-Prompter)** : Pont entre l'IA et les outils externes
-- **Spec-Kit**: Framework de planification orienté spécifications
 
 ## Matériaux de cours
 
@@ -74,14 +75,14 @@ Ce dépôt est conçu autour de la méthodologie "Vibe Coding" :
 - **Supports** : `Starter − 1 day/SUPPORTS PÉDAGOGIQUES/`
 - **Langue** : Français
 - **Focus** : Introduction aux concepts de vibe coding, ingénierie de base des prompts, exercices simples
-- **Prérequis** : Connaissances de base en programmation, VSCode, Cursor installé
+- **Prérequis** : Connaissances de base en programmation, VSCode et gemini installés
 
-### Cours Master (3 jours)
+### Cours Build (3 jours)
 
-- **Dossier** : `Practice − 3 days/COURS/`
-- **Fichier principal** : `Formation-Complete-Master.md`
+- **Dossier** : `Build − 3 days/COURS/`
+- **Fichier principal** : `Formation-Complete-Build.md`
 - **Modules par jour** : `JOUR 1/`, `JOUR 2/`, `JOUR 3/`
-- **Supports** : `Practice − 3 days/SUPPORTS PÉDAGOGIQUES/`
+- **Supports** : `Build − 3 days/SUPPORTS PÉDAGOGIQUES/`
 - **Langue** : Français
 - **Focus** : Développement agentique avancé, Context Engineering, considérations de sécurité
 - **Format** : Jour 1 = Contenu Starter, Jours 2-3 = Concepts avancés
@@ -92,12 +93,12 @@ Ce dépôt est conçu autour de la méthodologie "Vibe Coding" :
 
 - Préserver la structure pédagogique lors des modifications
 - Conserver la documentation en français car il s'agit d'un programme de formation français
-- Respecter la difficulté progressive de Starter → Master → Collective
+- Respecter la difficulté progressive de Starter → Build → Collective
 - Mettre à jour les numéros de version et les dates lors de changements significatifs
 
 ### Modifications de fichiers
 
-À chaque modification de fichier : 
+À chaque modification de fichier :
 
 - Toujours sauvegarder avant de modifier les matériaux de cours
 - Il est indispensable de maintenir la cohérence entre les différentes versions de format (Markdown, Slides, Codelab etc.)
