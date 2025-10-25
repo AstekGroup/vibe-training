@@ -83,10 +83,10 @@ Harmoniser le fichier de présentation HTML (`presentation-vibe-coding-complete.
 
 **Décalage total** : -90 minutes de contenu théorique
 
-#### Écart #5 : Acronyme P.O.P.M. Non Défini
+#### Écart #5 : Acronyme P.O.P.M. Non Défini ✅ RÉSOLU
 **Utilisation** : Agent P.O.P.M. dans TP Final JOUR 3
-**Définition** : ❓ Absente des slides et cours
-**Hypothèse** : Product Owner / Project Manager ?
+**Définition** : ✅ **Product Owner & Project Manager**
+**Solution** : Slide de définition des 5 agents ajoutée avant "Processus à suivre"
 
 #### Écart #6 : Rules Engineering
 **Slides** : Module "Rules Engineering" (9h30-10h45)
@@ -208,20 +208,21 @@ RÉFÉRENCES MISES À JOUR : PLAN-MISE-EN-CONFORMITE.md
 ### 🟡 PHASE 2 : Clarifications et Harmonisations (Priorité MOYENNE)
 
 #### Tâche 2.1 : Définir Acronyme P.O.P.M.
-- [ ] **Ajouter slide définition** avant TP Final
-  - Titre : "Les 5 Agents du TP Final"
-  - Agent 1 : P.O.P.M. = [DÉFINITION À VALIDER]
-  - Hypothèses : Product Owner & Project Manager / Product & Planning Manager
+- [x] **Ajouter slide définition** avant TP Final
+  - Titre : "Les 5 Agents Spécialisés du TP Final"
+  - Agent 1 : P.O.P.M. = **Product Owner & Project Manager** ✅
+  - Définition complète des 5 agents avec rôles et livrables
+  - Tool-cards avec fragments pour révélation progressive
 
-- [?] **DÉCISION REQUISE** : Signification exacte de P.O.P.M. ?
+- [x] **DÉCISION** : P.O.P.M. = Product Owner & Project Manager
 
 **Instructions IA** :
 ```
-TÂCHE : Créer slide définition agents TP Final
-POSITION : Avant slide "Processus à suivre - Les 5 Agents" (ligne ~1803)
-CONTENU : Définir clairement chaque agent dont P.O.P.M.
-FORMAT : Tool-card avec nom complet + acronyme + responsabilités
-ATTENTE : Validation utilisateur pour acronyme P.O.P.M.
+TÂCHE : Créer slide définition agents TP Final ✅ TERMINÉ
+POSITION : Avant slide "Processus à suivre - Les 5 Agents" (ligne ~2150)
+CONTENU : 5 agents définis avec P.O.P.M. = Product Owner & Project Manager
+FORMAT : Tool-cards avec fragments + objective-box
+LIVRABLE : Slide complète avec rôles, responsabilités et livrables de chaque agent
 ```
 
 #### Tâche 2.2 : Ajouter Premier TP Live JOUR 1
@@ -430,6 +431,7 @@ Ce plan garantit l'alignement parfait entre support visuel (présentation HTML) 
 | 2025-10-25 | **Tâche 1.1** : Ajout section Google ADK (10 slides) | Claude Code | ✅ Terminé |
 | 2025-10-25 | **Tâche 1.2** : Correction planning JOUR 3 | Claude Code | ✅ Terminé |
 | 2025-10-25 | **Tâche 1.3** : Harmonisation titre module MCP (Option A) | Claude Code | ✅ Terminé |
+| 2025-10-25 | **Tâche 2.1** : Définition acronyme P.O.P.M. | Claude Code | ✅ Terminé |
 
 ---
 
