@@ -51,14 +51,15 @@ Harmoniser le fichier de présentation HTML (`presentation-vibe-coding-complete.
 
 ### 📈 Détail des Écarts
 
-#### Écart #1 : Premier TP Live de Vibe Coding (JOUR 1)
+#### Écart #1 : Premier TP Live de Vibe Coding (JOUR 1) ✅ RÉSOLU
 **Localisation** : Après "Framework 5 Compétences"
-**Présent dans** : Slides (9h30-10h15)
-**Absent de** : Fichiers cours markdown
-**Contenu manquant** :
-- Snake game avec interface graphique
-- Todo App CRUD basique
-- Calcul de Pi (méthode Monte-Carlo)
+**Présent dans** : ✅ Slides (9h30-10h15) + Présentation complétée
+**Solution** : Slide "Premier TP Live de Vibe Coding Instinctif" ajoutée
+**Contenu ajouté** :
+- Exercice 1 : Snake game avec interface graphique
+- Exercice 2 : Todo App CRUD basique
+- Exercice 3 : Calcul de Pi (méthode Monte-Carlo)
+- Consignes détaillées et débriefing
 
 #### Écart #2 : Incohérence Titre Module MCP (JOUR 2) ✅ RÉSOLU
 **Slide** : "TP Configuration Serveurs MCP" (13h30-15h00)
@@ -226,18 +227,21 @@ LIVRABLE : Slide complète avec rôles, responsabilités et livrables de chaque 
 ```
 
 #### Tâche 2.2 : Ajouter Premier TP Live JOUR 1
-- [ ] **Créer slide après "Framework 5 Compétences"**
+- [x] **Créer slide après "Framework 5 Compétences"** ✅
   - Titre : "Premier TP Live de Vibe Coding Instinctif"
   - 3 exercices : Snake, Todo App, Calcul Pi Monte-Carlo
   - Objectif : Expérimenter génération code sans prompt structuré
+  - Horaire : 9h30 - 10h15 (45min)
+  - Contenu : Objective-box + 3 tool-cards + Consignes + Débriefing
 
 **Instructions IA** :
 ```
-TÂCHE : Insérer slide "Premier TP Live" JOUR 1
-POSITION : Après slide "Les 5 compétences - Partie 2" (~ligne 757)
-CONTENU : 3 tool-cards avec Snake / Todo App / Calcul Pi
-DURÉE : Module 9h30-10h15 (déjà présent dans planning)
-STYLE : Format exercice-box + tools-grid
+TÂCHE : Insérer slide "Premier TP Live" JOUR 1 ✅ TERMINÉ
+POSITION : Après slide "Les 5 compétences - Partie 2" (ligne ~757)
+CONTENU : 3 exercices détaillés + Consignes + Débriefing
+DURÉE : Module 9h30-10h15 (45min)
+STYLE : Objective-box + tools-grid (3 tool-cards) + exercise-box
+LIVRABLE : Slide complète avec 3 exercices pratiques de vibe coding instinctif
 ```
 
 #### Tâche 2.3 : Clarifier Positionnement "Rules Engineering"
@@ -432,6 +436,7 @@ Ce plan garantit l'alignement parfait entre support visuel (présentation HTML) 
 | 2025-10-25 | **Tâche 1.2** : Correction planning JOUR 3 | Claude Code | ✅ Terminé |
 | 2025-10-25 | **Tâche 1.3** : Harmonisation titre module MCP (Option A) | Claude Code | ✅ Terminé |
 | 2025-10-25 | **Tâche 2.1** : Définition acronyme P.O.P.M. | Claude Code | ✅ Terminé |
+| 2025-10-25 | **Tâche 2.2** : Ajout Premier TP Live JOUR 1 | Claude Code | ✅ Terminé |
 
 ---
 
