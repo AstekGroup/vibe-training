@@ -2147,6 +2147,138 @@ Format de réponse :
                     </div>
                 </section>
 
+                <!-- JOUR 3 - Google ADK : Code Exemple Outil 1 -->
+                <section>
+                    <h2>📝 Code Exemple : analyze_code_complexity</h2>
+
+                    <div class="code-example">
+<pre style="font-size: 0.55em; line-height: 1.3;">
+# agent/tools.py
+from typing import Dict
+import ast
+
+def analyze_code_complexity(code: str, language: str = "python") -> Dict:
+    """Analyse la complexité d'un code source."""
+    try:
+        if language.lower() == "python":
+            tree = ast.parse(code)
+
+            # Comptage des éléments
+            functions = [n for n in ast.walk(tree) if isinstance(n, ast.FunctionDef)]
+            classes = [n for n in ast.walk(tree) if isinstance(n, ast.ClassDef)]
+
+            # Calcul de métriques
+            lines_of_code = len(code.split('\n'))
+            num_functions = len(functions)
+            num_classes = len(classes)
+
+            # Score de complexité
+            complexity_score = (num_functions * 2 + num_classes * 3) / max(lines_of_code / 10, 1)
+
+            return {
+                "lines_of_code": lines_of_code,
+                "num_functions": num_functions,
+                "num_classes": num_classes,
+                "complexity_score": round(complexity_score, 2),
+                "assessment": _get_complexity_assessment(complexity_score)
+            }
+    except Exception as e:
+        return {"error": f"Erreur d'analyse: {str(e)}"}
+
+def _get_complexity_assessment(score: float) -> str:
+    if score < 1.0:
+        return "Simple - Bonne lisibilité"
+    elif score < 2.0:
+        return "Modéré - Complexité acceptable"
+    elif score < 3.0:
+        return "Élevé - Envisager refactoring"
+    else:
+        return "Très élevé - Refactoring recommandé"
+</pre>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Google ADK : Code Exemple Outil 2 -->
+                <section>
+                    <h2>📝 Code Exemple : check_code_style</h2>
+
+                    <div class="code-example">
+<pre style="font-size: 0.55em; line-height: 1.3;">
+# agent/tools.py (suite)
+def check_code_style(code: str, language: str = "python") -> Dict:
+    """Vérifie le respect des conventions de style."""
+    issues = []
+
+    if language.lower() == "python":
+        lines = code.split('\n')
+
+        for i, line in enumerate(lines, 1):
+            # Vérification longueur de ligne (PEP8 : max 79 caractères)
+            if len(line) > 79:
+                issues.append(f"Ligne {i}: Dépasse 79 caractères")
+
+            # Vérification espaces autour opérateurs
+            if '=' in line and not ('==' in line or '!=' in line or '<=' in line or '>=' in line):
+                if '= ' not in line and ' =' not in line:
+                    issues.append(f"Ligne {i}: Manque d'espaces autour de '='")
+
+        return {
+            "total_issues": len(issues),
+            "issues": issues[:10],  # Limite aux 10 premiers
+            "status": "✅ Conforme" if len(issues) == 0 else f"⚠️ {len(issues)} problèmes"
+        }
+
+    return {"error": "Langage non supporté"}
+</pre>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Google ADK : Intégration Outils Agent -->
+                <section>
+                    <h2>🔗 Intégration des Outils dans l'Agent</h2>
+
+                    <div class="code-example">
+<pre style="font-size: 0.58em; line-height: 1.3;">
+# agent/config.py
+from google.adk import Agent
+from agent.prompts import VIBE_CODING_INSTRUCTIONS
+from agent.tools import analyze_code_complexity, check_code_style
+import os
+
+def create_code_review_agent():
+    """Crée un agent avec outils de code review"""
+
+    agent = Agent(
+        name="CodeReviewAgent",
+        model="gemini-2.0-flash-exp",
+        instructions=VIBE_CODING_INSTRUCTIONS + """
+
+        Outils disponibles :
+        - analyze_code_complexity: Analyse la complexité du code
+        - check_code_style: Vérifie les conventions de style PEP8
+
+        Utilise ces outils pour fournir des reviews complètes et constructives.
+        """,
+        tools=[analyze_code_complexity, check_code_style],
+        temperature=0.3,  # Plus déterministe pour code review
+        api_key=os.getenv('GOOGLE_API_KEY')
+    )
+
+    return agent
+</pre>
+                    </div>
+
+                    <div class="objective-box" style="margin-top: 1em;">
+                        <h4>🎯 Points Clés</h4>
+                        <ul style="font-size: 0.75em; text-align: left;">
+                            <li>Les outils sont de simples fonctions Python avec type hints</li>
+                            <li>Les docstrings sont utilisées par l'agent pour comprendre l'outil</li>
+                            <li>Temperature basse (0.3) pour résultats plus déterministes en code review</li>
+                            <li>Les outils sont passés en liste au paramètre <code>tools=[]</code></li>
+                        </ul>
+                    </div>
+                </section>
+
                 <!-- JOUR 3 - Google ADK : Exercice Pratique -->
                 <section>
                     <h2>🎯 Exercice Pratique : Agent Spec Writer</h2>

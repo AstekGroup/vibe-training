@@ -285,17 +285,21 @@ VALIDATION : Optionnel, amélioration qualitative
 ```
 
 #### Tâche 3.2 : Ajouter Exemples Code Google ADK
-- [ ] Intégrer snippets code dans slides ADK
-- [ ] Exemples : analyze_code_complexity, check_code_style
-- [ ] Structure projet recommandée
+- [x] Intégrer snippets code dans slides ADK ✅
+- [x] Exemples : analyze_code_complexity, check_code_style ✅
+- [x] Code d'intégration des outils dans l'agent ✅
+- [x] Ajout 3 nouvelles slides avec code complet ✅
 
 **Instructions IA** :
 ```
-TÂCHE : Enrichir slides ADK avec code samples
-CONDITION : Après validation Tâche 1.1 (Ajout section ADK)
+TÂCHE : Enrichir slides ADK avec code samples ✅ TERMINÉ
+SLIDES AJOUTÉES : 3 slides avec exemples de code complets
+- Slide 1 : Code analyze_code_complexity (fonction complète)
+- Slide 2 : Code check_code_style (fonction complète)
+- Slide 3 : Intégration outils dans Agent (create_code_review_agent)
 SOURCE : Fichier JOUR 3/10h00-12h30-Google-ADK.md lignes 298-414
-FORMAT : Balises <div class="code-example"> pour affichage code
-QUANTITÉ : 2-3 exemples maximum (éviter surcharge)
+FORMAT : Balises <div class="code-example"> avec font-size optimisé
+POINTS CLÉS : Objective-box explicatif sur fonctionnement outils
 ```
 
 #### Tâche 3.3 : Uniformiser Format Horaires
@@ -440,6 +444,7 @@ Ce plan garantit l'alignement parfait entre support visuel (présentation HTML) 
 | 2025-10-25 | **Tâche 2.1** : Définition acronyme P.O.P.M. | Claude Code | ✅ Terminé |
 | 2025-10-25 | **Tâche 2.2** : Ajout Premier TP Live JOUR 1 | Claude Code | ✅ Terminé |
 | 2025-10-25 | **Tâche 2.3** : Clarification Rules Engineering (Option B) | Claude Code | ✅ Terminé |
+| 2025-10-25 | **Tâche 3.2** : Ajout exemples code Google ADK (3 slides) | Claude Code | ✅ Terminé |
 
 ---
 
