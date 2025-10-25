@@ -303,9 +303,10 @@ POINTS CLÉS : Objective-box explicatif sur fonctionnement outils
 ```
 
 #### Tâche 3.3 : Uniformiser Format Horaires
-- [ ] Standardiser affichage horaires : "HHhMM - HHhMM"
-- [ ] Vérifier cohérence durées slides vs cours
-- [ ] Corriger variations typographiques
+- [x] Standardiser affichage horaires : "HHhMM - HHhMM" ✅
+- [x] Ajouter durées manquantes (3 slides Google ADK) ✅
+- [x] Vérifier cohérence durées slides vs cours ✅
+- [x] Validation durées module Google ADK : 150min total ✅
 
 **Instructions IA** :
 ```
@@ -445,6 +446,7 @@ Ce plan garantit l'alignement parfait entre support visuel (présentation HTML) 
 | 2025-10-25 | **Tâche 2.2** : Ajout Premier TP Live JOUR 1 | Claude Code | ✅ Terminé |
 | 2025-10-25 | **Tâche 2.3** : Clarification Rules Engineering (Option B) | Claude Code | ✅ Terminé |
 | 2025-10-25 | **Tâche 3.2** : Ajout exemples code Google ADK (3 slides) | Claude Code | ✅ Terminé |
+| 2025-10-25 | **Tâche 3.3** : Uniformisation format horaires + durées | Claude Code | ✅ Terminé |
 
 ---
 
