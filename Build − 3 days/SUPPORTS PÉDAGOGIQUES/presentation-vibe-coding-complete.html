@@ -1518,7 +1518,7 @@ gemini --include-directories ../tests,../docs
                     <h2>📋 Programme du Jour 3</h2>
                     <div class="tools-grid">
                         <div class="tool-card">
-                            <h4>🏗️ 9h00 - 11h00 : Le Contrat de Contexte</h4>
+                            <h4>🏗️ 9h00 - 10h00 : Le Contrat de Contexte</h4>
                             <ul style="font-size: 0.8em;">
                                 <li>Context Engineering et 6 piliers</li>
                                 <li>Template du contrat de contexte</li>
@@ -1526,7 +1526,15 @@ gemini --include-directories ../tests,../docs
                             </ul>
                         </div>
                         <div class="tool-card">
-                            <h4>🚀 11h00 - 17h00 : TP Final Multi-Agents (6h)</h4>
+                            <h4>🚀 10h00 - 12h30 : Google ADK</h4>
+                            <ul style="font-size: 0.8em;">
+                                <li>Agent Development Kit</li>
+                                <li>Création agents personnalisés</li>
+                                <li>Exercice pratique : Agent Spec Writer</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>🎯 13h30 - 17h00 : TP Final Multi-Agents</h4>
                             <ul style="font-size: 0.8em;">
                                 <li>Projet collaboratif complet</li>
                                 <li>5 agents spécialisés (P.O.P.M., Architecte, Dev, QA, Review)</li>
@@ -1545,10 +1553,10 @@ gemini --include-directories ../tests,../docs
                     </div>
                 </section>
 
-                <!-- 9h00-11h00 : Le Contrat de Contexte -->
+                <!-- 9h00-10h00 : Le Contrat de Contexte -->
                 <section>
                     <h2>🏗️ Le Contrat de Contexte</h2>
-                    <h3 style="color: #3498db;">9h00 - 11h00 (120min)</h3>
+                    <h3 style="color: #3498db;">9h00 - 10h00 (60min)</h3>
                     <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 15px; margin: 20px;">
                         <h4>🎯 Objectifs</h4>
                         <ul style="text-align: left;">
@@ -1782,10 +1790,351 @@ Attention à la sécurité.
                     </div>
                 </section>
 
+                <!-- JOUR 3 - Module Google ADK -->
+                <section>
+                    <h2>🚀 Google ADK - Agent Development Kit</h2>
+                    <h3 style="color: #3498db;">10h00 - 12h30 (150min)</h3>
+
+                    <div class="objective-box">
+                        <h4>🎯 Objectifs de la session</h4>
+                        <ul style="text-align: left; font-size: 0.85em;">
+                            <li>Comprendre l'architecture Google ADK et ses composants</li>
+                            <li>Configurer un environnement de développement ADK</li>
+                            <li>Créer un agent simple avec Google ADK</li>
+                            <li>Intégrer des outils externes via ADK</li>
+                            <li>Déployer un agent ADK pour le vibe-coding</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Google ADK : Qu'est-ce que c'est ? -->
+                <section>
+                    <h2>🤖 Qu'est-ce que Google ADK ?</h2>
+
+                    <div class="objective-box">
+                        <h4>📚 Définition</h4>
+                        <p style="font-size: 0.9em;">Google Agent Development Kit (ADK) est un framework de développement d'agents IA permettant de créer des agents conversationnels personnalisés avec Gemini.</p>
+                    </div>
+
+                    <div class="code-example" style="margin-top: 1.5em;">
+                        <h4>💡 Analogie pédagogique</h4>
+                        <p>"Si Claude Code est comme un assistant personnel polyvalent, Google ADK vous permet de créer votre propre assistant spécialisé exactement comme vous le souhaitez."</p>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Google ADK : Architecture -->
+                <section>
+                    <h2>🏗️ Architecture Google ADK</h2>
+
+                    <div class="code-example">
+<pre style="font-size: 0.7em; line-height: 1.4;">
+┌─────────────────────────────────────────┐
+│         Application / Interface         │
+└─────────────────┬───────────────────────┘
+                  │
+┌─────────────────▼───────────────────────┐
+│           Agent ADK                     │
+│  ┌─────────────────────────────────┐   │
+│  │  Gemini Model (Core)            │   │
+│  └─────────────────────────────────┘   │
+│  ┌─────────────────────────────────┐   │
+│  │  Tools & Functions              │   │
+│  └─────────────────────────────────┘   │
+│  ┌─────────────────────────────────┐   │
+│  │  Memory & Context               │   │
+│  └─────────────────────────────────┘   │
+└─────────────────┬───────────────────────┘
+                  │
+┌─────────────────▼───────────────────────┐
+│     External Services & APIs            │
+└─────────────────────────────────────────┘
+</pre>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Google ADK : Concepts Clés -->
+                <section>
+                    <h2>🔑 Concepts Clés ADK</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card fragment">
+                            <h4>1. Agents ADK</h4>
+                            <p style="font-size: 0.8em;"><strong>Définition :</strong> Entité IA autonome avec instructions, outils et mémoire</p>
+                            <ul style="font-size: 0.75em;">
+                                <li>Instructions système (personnalité, comportement)</li>
+                                <li>Outils disponibles (functions, API calls)</li>
+                                <li>Gestion de la mémoire (conversation, contexte)</li>
+                                <li>Configuration du modèle Gemini</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>2. Tools (Outils)</h4>
+                            <p style="font-size: 0.8em;"><strong>Capacités :</strong></p>
+                            <ul style="font-size: 0.75em;">
+                                <li><strong>Function Calling :</strong> Appel fonctions Python depuis l'agent</li>
+                                <li><strong>API Integration :</strong> Connexion services externes</li>
+                                <li><strong>Custom Tools :</strong> Outils métier spécifiques</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>3. Memory & Context</h4>
+                            <p style="font-size: 0.8em;"><strong>Gestion :</strong></p>
+                            <ul style="font-size: 0.75em;">
+                                <li><strong>Session Memory :</strong> Conversation temporaire</li>
+                                <li><strong>Persistent Memory :</strong> Stockage long terme (DB)</li>
+                                <li><strong>Context Management :</strong> Gestion optimale contexte</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Google ADK : Pourquoi pour Vibe Coding ? -->
+                <section>
+                    <h2>💡 Pourquoi ADK pour le Vibe Coding ?</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>✅ Avantages</h4>
+                            <ul style="font-size: 0.8em;">
+                                <li>🎯 <strong>Personnalisation totale :</strong> Agent calibré pour vos besoins</li>
+                                <li>🔧 <strong>Intégration facile :</strong> Connexion directe outils/APIs</li>
+                                <li>🚀 <strong>Rapidité :</strong> Déploiement rapide d'agents spécialisés</li>
+                                <li>💰 <strong>Contrôle des coûts :</strong> Gestion fine tokens et appels API</li>
+                                <li>🔒 <strong>Sécurité :</strong> Contrôle total des données et accès</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>🎯 Cas d'usage</h4>
+                            <ul style="font-size: 0.8em;">
+                                <li>Agent de code review spécialisé dans votre stack</li>
+                                <li>Assistant de génération de specs techniques</li>
+                                <li>Bot d'analyse de conformité code</li>
+                                <li>Agent de refactoring intelligent</li>
+                                <li>Assistant de documentation automatique</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Google ADK : Installation -->
+                <section>
+                    <h2>⚙️ Installation et Configuration</h2>
+                    <h3 style="color: #3498db;">10h20 - 10h45</h3>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>📋 Prérequis</h4>
+                            <div class="code-example">
+<pre style="font-size: 0.7em;">
+# Python 3.10 ou supérieur
+python --version
+
+# Compte Google Cloud Platform
+# Clé API Gemini
+</pre>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <h4>🔧 Installation</h4>
+                            <div class="code-example">
+<pre style="font-size: 0.7em;">
+# Installation du package ADK
+pip install google-adk
+
+# Dépendances
+pip install google-generativeai
+pip install python-dotenv
+
+# Vérification
+python -c "import google.adk"
+</pre>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Google ADK : Configuration Environnement -->
+                <section>
+                    <h2>🔐 Configuration de l'environnement</h2>
+
+                    <div class="code-example">
+                        <h4>Fichier .env</h4>
+<pre style="font-size: 0.7em;">
+# Clé API Gemini
+GOOGLE_API_KEY=votre_gemini_api_key_ici
+
+# Configuration optionnelle
+GEMINI_MODEL=gemini-2.0-flash-exp
+TEMPERATURE=0.7
+MAX_TOKENS=8192
+</pre>
+                    </div>
+
+                    <div class="code-example" style="margin-top: 1em;">
+                        <h4>Structure de projet recommandée</h4>
+<pre style="font-size: 0.6em;">
+vibe-coding-agent/
+├── .env                    # Variables d'environnement
+├── requirements.txt        # Dépendances Python
+├── agent/
+│   ├── __init__.py
+│   ├── config.py          # Configuration de l'agent
+│   ├── tools.py           # Définition des outils
+│   └── prompts.py         # Instructions système
+├── tests/
+│   └── test_agent.py      # Tests unitaires
+└── main.py                # Point d'entrée
+</pre>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Google ADK : Création Agent Simple -->
+                <section>
+                    <h2>🤖 Création d'un Agent Simple</h2>
+                    <h3 style="color: #3498db;">10h45 - 11h15</h3>
+
+                    <div class="exercise-box">
+                        <h4>🎯 Exemple : Agent Vibe Coding Basique</h4>
+                        <p style="font-size: 0.85em;">Assistant expert en Vibe Coding pour rédaction de prompts efficaces</p>
+                    </div>
+
+                    <div class="code-example">
+<pre style="font-size: 0.65em;">
+# agent/prompts.py
+VIBE_CODING_INSTRUCTIONS = """
+Tu es un assistant expert en Vibe Coding, spécialisé dans la
+programmation assistée par IA.
+
+Tes responsabilités :
+- Aider à rédiger des prompts efficaces pour génération de code
+- Analyser et critiquer la qualité des prompts
+- Suggérer des améliorations pour maximiser les résultats
+- Guider sur les meilleures pratiques collaboration IA-humain
+
+Format de réponse :
+1. Analyse de la demande
+2. Recommandations
+3. Exemple de prompt amélioré (si applicable)
+4. Conseils additionnels
+"""
+</pre>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Google ADK : Ajout d'Outils -->
+                <section>
+                    <h2>🔧 Ajout d'Outils (Tools)</h2>
+                    <h3 style="color: #3498db;">11h15 - 11h45</h3>
+
+                    <div class="objective-box">
+                        <h4>💡 Exemple : Agent avec Code Review</h4>
+                        <p style="font-size: 0.85em;">Intégration d'outils d'analyse de complexité et de style</p>
+                    </div>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>Outil 1 : analyze_code_complexity</h4>
+                            <ul style="font-size: 0.75em;">
+                                <li>Parsing AST Python</li>
+                                <li>Comptage fonctions/classes</li>
+                                <li>Score de complexité</li>
+                                <li>Recommandations refactoring</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Outil 2 : check_code_style</h4>
+                            <ul style="font-size: 0.75em;">
+                                <li>Vérification PEP8</li>
+                                <li>Longueur de ligne</li>
+                                <li>Espaces opérateurs</li>
+                                <li>Rapport de conformité</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Google ADK : Exercice Pratique -->
+                <section>
+                    <h2>🎯 Exercice Pratique : Agent Spec Writer</h2>
+                    <h3 style="color: #3498db;">11h45 - 12h30 (45min)</h3>
+
+                    <div class="exercise-box">
+                        <h4>📋 Objectif</h4>
+                        <p style="font-size: 0.85em;">Développer un agent ADK qui aide à rédiger des spécifications techniques pour le vibe-coding</p>
+                    </div>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>Cahier des charges</h4>
+                            <ul style="font-size: 0.75em;">
+                                <li>Prend en entrée une description de fonctionnalité</li>
+                                <li>Pose des questions de clarification</li>
+                                <li>Génère spécification structurée</li>
+                                <li>Inclut critères d'acceptation</li>
+                                <li>Propose exemple de prompt</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Livrables attendus</h4>
+                            <ul style="font-size: 0.75em;">
+                                <li>✅ Code source complet de l'agent</li>
+                                <li>✅ Au moins 2 outils fonctionnels</li>
+                                <li>✅ Instructions système claires</li>
+                                <li>✅ Exemple d'utilisation avec résultat</li>
+                                <li>✅ Documentation rapide (README.md)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - Google ADK : Points Clés -->
+                <section>
+                    <h2>🎓 Points Clés à Retenir - Google ADK</h2>
+
+                    <div class="tools-grid">
+                        <div class="tool-card fragment">
+                            <h4>1. Framework ADK</h4>
+                            <p style="font-size: 0.8em;">Google ADK permet de créer des agents IA personnalisés avec Gemini</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>2. Architecture 3 couches</h4>
+                            <p style="font-size: 0.8em;">Instructions + Tools + Memory pour des agents complets</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>3. Function Calling</h4>
+                            <p style="font-size: 0.8em;">Intégration puissante d'outils externes et APIs</p>
+                        </div>
+                    </div>
+
+                    <div class="tools-grid" style="margin-top: 1em;">
+                        <div class="tool-card fragment">
+                            <h4>4. Vibe Coding</h4>
+                            <p style="font-size: 0.8em;">Agents spécialisés (spec, review, refactoring) optimisent le workflow</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>5. Configuration flexible</h4>
+                            <p style="font-size: 0.8em;">Adaptation agents à différents contextes et besoins métier</p>
+                        </div>
+                        <div class="tool-card fragment">
+                            <h4>6. Tests essentiels</h4>
+                            <p style="font-size: 0.8em;">Validation systématique pour agents de production</p>
+                        </div>
+                    </div>
+
+                    <div class="objective-box" style="margin-top: 1.5em;">
+                        <h4>🔗 Ressources</h4>
+                        <ul style="font-size: 0.75em;">
+                            <li><a href="https://ai.google.dev/adk" target="_blank">Documentation officielle Google ADK</a></li>
+                            <li><a href="https://github.com/google/adk" target="_blank">Guide de démarrage rapide</a></li>
+                            <li><a href="https://github.com/google/adk-examples" target="_blank">Exemples de code ADK</a></li>
+                        </ul>
+                    </div>
+                </section>
+
                 <!-- JOUR 3 - TP Final : Projet Collaboratif Multi-Agents -->
                 <section>
                     <h2>🚀 TP FINAL - Projet Collaboratif Multi-Agents</h2>
-                    <h3 style="color: #3498db;">11h00 - 17h00 (6h)</h3>
+                    <h3 style="color: #3498db;">13h30 - 17h00 (3h30)</h3>
 
                     <div class="objective-box">
                         <h4>🎯 Mise en situation</h4>
