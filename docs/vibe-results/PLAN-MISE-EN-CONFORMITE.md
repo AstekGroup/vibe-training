@@ -249,11 +249,13 @@ LIVRABLE : Slide complète avec 3 exercices pratiques de vibe coding instinctif
   - Séparer du Contrat de Contexte
   - Créer slides dédiées 9h30-10h45
 
-- [ ] **Option B** : Maintenir intégration dans Contrat Contexte
+- [x] **Option B** : Maintenir intégration dans Contrat Contexte ✅
   - Ajouter sous-section clairement identifiée
   - Garder horaire 9h00-10h00 global
+  - Slide modifiée : "Module 1e: Rules Engineering (sous-section)"
+  - Ajout contexte : "Persistance pratique du contrat de contexte"
 
-- [?] **DÉCISION REQUISE** : Module séparé ou intégré ?
+- [x] **DÉCISION APPLIQUÉE** : Option B - Intégration maintenue
 
 **Instructions IA** :
 ```
@@ -437,6 +439,7 @@ Ce plan garantit l'alignement parfait entre support visuel (présentation HTML) 
 | 2025-10-25 | **Tâche 1.3** : Harmonisation titre module MCP (Option A) | Claude Code | ✅ Terminé |
 | 2025-10-25 | **Tâche 2.1** : Définition acronyme P.O.P.M. | Claude Code | ✅ Terminé |
 | 2025-10-25 | **Tâche 2.2** : Ajout Premier TP Live JOUR 1 | Claude Code | ✅ Terminé |
+| 2025-10-25 | **Tâche 2.3** : Clarification Rules Engineering (Option B) | Claude Code | ✅ Terminé |
 
 ---
 
