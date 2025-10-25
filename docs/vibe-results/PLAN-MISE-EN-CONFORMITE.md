@@ -271,17 +271,20 @@ SI OPTION B : Renforcer titre sous-section dans "Contrat de Contexte"
 ### 🟢 PHASE 3 : Améliorations Pédagogiques (Priorité BASSE)
 
 #### Tâche 3.1 : Enrichir "Les 5 Compétences"
-- [ ] Détailler progression Starter → Build pour chaque compétence
-- [ ] Ajouter exemples concrets d'évolution
-- [ ] Illustrer avec cas d'usage entreprise
+- [x] Détailler progression Starter → Build pour chaque compétence ✅
+- [x] Ajouter exemples concrets d'évolution ✅
+- [x] Illustrer avec cas d'usage entreprise ✅
+- [x] Créer tableau comparatif avec impacts chiffrés ✅
 
 **Instructions IA** :
 ```
-TÂCHE : Approfondir slides "Les 5 Compétences"
-LIGNES : ~713-757
-AJOUT : Exemples concrets transition Starter → Build
-FORMAT : Tableaux comparatifs ou tool-cards avec évolution
-VALIDATION : Optionnel, amélioration qualitative
+TÂCHE : Approfondir slides "Les 5 Compétences" ✅ TERMINÉ
+SLIDE AJOUTÉE : "Évolution des 5 Compétences : Starter → Build"
+POSITION : Après slide "Les 5 compétences (suite)", ligne ~759-823
+FORMAT : Tableau comparatif avec 4 colonnes + cas d'usage entreprise
+CONTENU : 5 lignes (une par compétence) avec fragments + objective-box
+IMPACT : Gains de productivité chiffrés (5x, 80%, etc.)
+VALIDATION : Amélioration qualitative avec métriques concrètes
 ```
 
 #### Tâche 3.2 : Ajouter Exemples Code Google ADK
@@ -447,6 +450,7 @@ Ce plan garantit l'alignement parfait entre support visuel (présentation HTML) 
 | 2025-10-25 | **Tâche 2.3** : Clarification Rules Engineering (Option B) | Claude Code | ✅ Terminé |
 | 2025-10-25 | **Tâche 3.2** : Ajout exemples code Google ADK (3 slides) | Claude Code | ✅ Terminé |
 | 2025-10-25 | **Tâche 3.3** : Uniformisation format horaires + durées | Claude Code | ✅ Terminé |
+| 2025-10-25 | **Tâche 3.1** : Enrichissement "Les 5 Compétences" (tableau comparatif) | Claude Code | ✅ Terminé |
 
 ---
 
