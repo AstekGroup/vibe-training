@@ -2171,12 +2171,12 @@ Attention à la sécurité.
                     <h2>🏗️ Création de règles modulaires</h2>
                     
                     <div class="exercise-box">
-                        <h4>🛠️ Exercice pratique (binômes) - 30min</h4>
+                        <h4>🛠️ Exercice pratique</h4>
                         
                         <div class="tools-grid">
                             <div class="tool-card">
                                 <h4>Étape 1 : Règles générales (10min)</h4>
-                                <p>Créez <code>rules-general.md</code> avec :</p>
+                                <p>Créez <code>AGENTS.md</code> avec :</p>
                                 <ul>
                                     <li>Principes qualité universels</li>
                                     <li>Standards sécurité de base</li>
@@ -2187,10 +2187,11 @@ Attention à la sécurité.
                                 <h4>Étape 2 : Règles spécifiques (15min)</h4>
                                 <p>Créez 3 fichiers spécialisés :</p>
                                 <ul>
-                                    <li><code>rules-backend.md</code> : API, databases, performance</li>
-                                    <li><code>rules-frontend.md</code> : UI, UX, responsiveness</li>
-                                    <li><code>rules-mobile.md</code> : Cross-platform, performance</li>
+                                    <li><code>rules/backend.md</code></li>
+                                    <li><code>rules/frontend.md</code></li>
+                                    <li><code>rules/mobile.md</code></li>
                                 </ul>
+                                <p>Complétez le AGENTS.md avec les règles spécifiques pour chaque agent.</p>
                             </div>
                         </div>
                     </div>
@@ -2204,9 +2205,9 @@ Attention à la sécurité.
                     </div>
                 </section>
 
-                <!-- Nouvelle introduction simplifiée au Contrat de Contexte -->
+                <!-- Conclusion Contrat de Contexte -->
                 <section>
-                    <h2>📋 Introduction au Contrat de Contexte</h2>
+                    <h2>📋 Conclusion au Contrat de Contexte</h2>
                     <div class="objective-box">
                         <h4>🎯 Définition</h4>
                         <p style="font-size: 0.9em;">Document qui formalise et structure les interactions entre développeurs et agents IA pour optimiser la qualité et la cohérence des outputs</p>
@@ -2629,47 +2630,6 @@ def create_code_review_agent():
                     </div>
                 </section>
 
-                <!-- JOUR 3 - PAUSE DÉJEUNER -->
-                <section data-background-gradient="linear-gradient(135deg, #009c49, #00b0be)" data-background-color="#009c49">
-                    <h1 style="color: white; font-size: 3em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">🍽️ Pause Déjeuner</h1>
-                    <h2 style="color: white; opacity: 0.95; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">12h45 - 13h45</h2>
-                    <p style="color: white; opacity: 0.9; margin-top: 2em; font-size: 1.2em; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">60 minutes</p>
-                </section>
-
-                <!-- JOUR 3 - Google ADK : Exercice Pratique -->
-                <section>
-                    <h2>🎯 Exercice Pratique : Agent Spec Writer</h2>
-                    <h3 style="color: #3498db;">11h45 - 12h30 (45min)</h3>
-
-                    <div class="exercise-box">
-                        <h4>📋 Objectif</h4>
-                        <p style="font-size: 0.85em;">Développer un agent ADK qui aide à rédiger des spécifications techniques pour le vibe-coding</p>
-                    </div>
-
-                    <div class="tools-grid">
-                        <div class="tool-card">
-                            <h4>Cahier des charges</h4>
-                            <ul style="font-size: 0.75em;">
-                                <li>Prend en entrée une description de fonctionnalité</li>
-                                <li>Pose des questions de clarification</li>
-                                <li>Génère spécification structurée</li>
-                                <li>Inclut critères d'acceptation</li>
-                                <li>Propose exemple de prompt</li>
-                            </ul>
-                        </div>
-                        <div class="tool-card">
-                            <h4>Livrables attendus</h4>
-                            <ul style="font-size: 0.75em;">
-                                <li>✅ Code source complet de l'agent</li>
-                                <li>✅ Au moins 2 outils fonctionnels</li>
-                                <li>✅ Instructions système claires</li>
-                                <li>✅ Exemple d'utilisation avec résultat</li>
-                                <li>✅ Documentation rapide (README.md)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
                 <!-- JOUR 3 - Google ADK : Points Clés -->
                 <section>
                     <h2>🎓 Points Clés à Retenir - Google ADK</h2>
@@ -2714,19 +2674,63 @@ def create_code_review_agent():
                     </div>
                 </section>
 
-                <!-- JOUR 3 - TP Final : Projet Collaboratif Multi-Agents -->
+
+                <!-- JOUR 3 - Google ADK : Exercice Pratique -->
                 <section>
-                    <h2>🚀 TP FINAL - Projet Collaboratif Multi-Agents</h2>
+                    <h2>🎯 Exercice Pratique : Agent Spec Writer</h2>
+                    <h3 style="color: #3498db;">11h45 - 12h30 (45min)</h3>
+
+                    <div class="exercise-box">
+                        <h4>📋 Objectif</h4>
+                        <p style="font-size: 0.85em;">Développer un agent ADK qui aide à rédiger des spécifications techniques pour le vibe-coding</p>
+                    </div>
+
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <h4>Cahier des charges</h4>
+                            <ul style="font-size: 0.75em;">
+                                <li>Prend en entrée une description de fonctionnalité</li>
+                                <li>Pose des questions de clarification</li>
+                                <li>Génère spécification structurée</li>
+                                <li>Inclut critères d'acceptation</li>
+                                <li>Propose exemple de prompt</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card">
+                            <h4>Livrables attendus</h4>
+                            <ul style="font-size: 0.75em;">
+                                <li>✅ Code source complet de l'agent</li>
+                                <li>✅ Au moins 2 outils fonctionnels</li>
+                                <li>✅ Instructions système claires</li>
+                                <li>✅ Exemple d'utilisation avec résultat</li>
+                                <li>✅ Documentation rapide (README.md)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- JOUR 3 - PAUSE DÉJEUNER -->
+                <section data-background-gradient="linear-gradient(135deg, #009c49, #00b0be)" data-background-color="#009c49">
+                    <h1 style="color: white; font-size: 3em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">🍽️ Pause Déjeuner</h1>
+                    <h2 style="color: white; opacity: 0.95; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">12h30 - 13h30</h2>
+                    <p style="color: white; opacity: 0.9; margin-top: 2em; font-size: 1.2em; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">60 minutes</p>
+                </section>
+
+                <!-- JOUR 3 - TP Final : Mise en application des savoirs acquis -->
+                <section>
+                    <h2>🚀 TP FINAL - Mise en application des savoirs acquis</h2>
                     <h3 style="color: #3498db;">13h30 - 17h00 (3h30)</h3>
 
                     <div class="objective-box">
                         <h4>🎯 Mise en situation</h4>
-                        <p style="font-size: 0.9em;">Vous êtes une équipe de développement qui vient de recevoir une demande client. Vous devez orchestrer différents agents spécialisés pour livrer un projet complet avec son MCP (Minimum Complete Product).</p>
-                    </div>
-
-                    <div class="exercise-box">
-                        <h4>📋 Cahier des charges : Application de gestion de bibliothèque personnelle</h4>
-                        <p style="font-size: 0.8em;">"Je souhaite une application web simple pour gérer ma collection de livres. Je veux pouvoir ajouter des livres (titre, auteur, année, genre), les marquer comme lus/non-lus, les rechercher et filtrer par genre. J'aimerais aussi voir des statistiques basiques sur ma collection. L'interface doit être intuitive et responsive."</p>
+                        <p style="font-size: 0.9em;">
+                            Exploitez les savoirs acquis durant la formation pour réaliser un projet complet avec son MCP (Minimum Complete Product).
+                            <ul>
+                                <li>Vous pensez le contrat de contexte pour réaliser le projet.</li>
+                                <li>Vous utilisez MCP / ligne de commande pour réaliser le projet.</li>
+                                <li>Vous utilisez les agents spécialisés ADK / slash commands pour réaliser le projet.</li>
+                            </ul>
+                        </p>
                     </div>
                 </section>
 
