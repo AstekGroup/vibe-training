@@ -1079,7 +1079,7 @@
                 <!-- JOUR 1 - Programme de la journée -->
                 <section>
                     <h2>📋 Programme du Jour 1</h2>
-                    <div class="tools-grid">
+                    <div class="tools-grid" style="grid-template-columns: repeat(2, 1fr);">
                         <div class="tool-card" style="padding: 0.8em;">
                             <h4 style="font-size: 0.9em; margin-bottom: 0.4em;">🎯 9h00 - 10h15 : Introduction & 5 Compétences</h4>
                             <ul style="font-size: 0.75em; margin: 0; padding-left: 1.2em;">
@@ -1618,7 +1618,7 @@
                 <!-- JOUR 2 - Programme de la journée -->
                 <section>
                     <h2>📋 Programme du Jour 2</h2>
-                    <div class="tools-grid">
+                    <div class="tools-grid" style="grid-template-columns: repeat(2, 1fr);">
                         <div class="tool-card" style="padding: 0.8em;">
                             <h4 style="font-size: 0.9em; margin-bottom: 0.4em;">🔄 9h00 - 10h30 : Retour Challenge & Théorie Agents</h4>
                             <ul style="font-size: 0.75em; margin: 0; padding-left: 1.2em;">
@@ -2097,45 +2097,53 @@ gemini --include-directories ../tests,../docs<br>
                     <span class="module-time">16h45 - 17h30 : Frameworks Avancés + Bilan J2</span>
                     <h2>🏗️ Framework Spec-Kit</h2>
 
-                    <div class="objective-box">
+                    <div class="objective-box" style="margin-bottom: 1.5em;">
                         <h4>🎯 Spec-Kit : Développement piloté par spécifications exécutables</h4>
-                        <p>Méthodologie où les spécifications deviennent le cœur du processus</p>
-                        <p>
-                            Spec-Kit est plus orienté greenfield (nouveau projet)
-                            <ul class="compact-list">
-                                <li><a href="https://github.com/Fission-AI/OpenSpec/tree/main">OpenSpec</a>: plus orienté brownfield, communauté plus réduite</li>
-                                <li><a href="https://github.com/bmad-code-org/BMAD-METHOD/">BMAD</a> : plus orienté workflow de développement, plus lourd à manipuler</li>
+                        <p style="font-size: 0.9em; margin-bottom: 0.8em;">Méthodologie où les spécifications deviennent le cœur du processus</p>
+                        <p style="font-size: 0.85em; margin-bottom: 0.5em;"><strong>Spec-Kit est plus orienté greenfield</strong> (nouveau projet)</p>
+                        <ul class="compact-list" style="font-size: 0.8em; margin-top: 0.5em;">
+                            <li><a href="https://github.com/Fission-AI/OpenSpec/tree/main" target="_blank" style="color: #009c49; text-decoration: underline;">OpenSpec</a>: plus orienté brownfield, communauté plus réduite</li>
+                            <li><a href="https://github.com/bmad-code-org/BMAD-METHOD/" target="_blank" style="color: #009c49; text-decoration: underline;">BMAD</a> : plus orienté workflow de développement, plus lourd à manipuler</li>
+                        </ul>
+                    </div>
+
+                    <div class="tools-grid" style="grid-template-columns: repeat(3, 1fr); gap: 0.9em; margin-bottom: 1.5em;">
+                        <div class="tool-card fragment" style="padding: 1em; position: relative;">
+                            <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: var(--astek-gradient); color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em; box-shadow: 0 2px 8px rgba(0,156,73,0.3);">1</div>
+                            <h4 style="margin-top: 0.5em; font-size: 0.95em;">Initialiser</h4>
+                            <p style="font-size: 0.8em; margin-top: 0.5em;">Projet avec contexte business</p>
+                        </div>
+                        <div class="tool-card fragment" style="padding: 1em; position: relative;">
+                            <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: var(--astek-gradient); color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em; box-shadow: 0 2px 8px rgba(0,156,73,0.3);">2</div>
+                            <h4 style="margin-top: 0.5em; font-size: 0.95em;">Créer</h4>
+                            <p style="font-size: 0.8em; margin-top: 0.5em;">Spécification fonctionnelle détaillée</p>
+                        </div>
+                        <div class="tool-card fragment" style="padding: 1em; position: relative;">
+                            <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: var(--astek-gradient); color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em; box-shadow: 0 2px 8px rgba(0,156,73,0.3);">3</div>
+                            <h4 style="margin-top: 0.5em; font-size: 0.95em;">Générer</h4>
+                            <p style="font-size: 0.8em; margin-top: 0.5em;">Plan technique avec l'IA</p>
+                        </div>
+                        <div class="tool-card fragment" style="padding: 1em; position: relative;">
+                            <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: var(--astek-gradient); color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em; box-shadow: 0 2px 8px rgba(0,156,73,0.3);">4</div>
+                            <h4 style="margin-top: 0.5em; font-size: 0.95em;">Valider</h4>
+                            <p style="font-size: 0.8em; margin-top: 0.5em;">Plan avec contraintes entreprise</p>
+                        </div>
+                        <div class="tool-card fragment" style="padding: 1em; position: relative;">
+                            <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: var(--astek-gradient); color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em; box-shadow: 0 2px 8px rgba(0,156,73,0.3);">5</div>
+                            <h4 style="margin-top: 0.5em; font-size: 0.95em;">Implémenter</h4>
+                            <p style="font-size: 0.8em; margin-top: 0.5em;">Solution par raffinements successifs</p>
+                        </div>
+                        <div class="tool-card fragment" style="padding: 1em; position: relative; background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); border-left: 4px solid var(--astek-green);">
+                            <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: var(--astek-teal); color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em; box-shadow: 0 2px 8px rgba(0,156,73,0.3);">🎯</div>
+                            <h4 style="margin-top: 0.5em; font-size: 0.95em; color: #1b5e20;">Attendus</h4>
+                            <ul style="font-size: 0.75em; margin-top: 0.6em; padding-left: 1.2em; list-style: none; color: #2e7d32;">
+                                <li style="margin-bottom: 0.4em; position: relative; padding-left: 1em;">✓ Spécification complète</li>
+                                <li style="margin-bottom: 0.4em; position: relative; padding-left: 1em;">✓ Architecture définie</li>
+                                <li style="margin-bottom: 0.4em; position: relative; padding-left: 1em;">✓ Plan d'implémentation</li>
                             </ul>
-                        </p>
-                    </div>
-
-                    <div class="tools-grid">
-                        <div class="tool-card">
-                            <h4>1. Initialiser</h4>
-                            <p>Projet avec contexte business</p>
-                        </div>
-                        <div class="tool-card">
-                            <h4>2. Créer</h4>
-                            <p>Spécification fonctionnelle détaillée</p>
-                        </div>
-                        <div class="tool-card">
-                            <h4>3. Générer</h4>
-                            <p>Plan technique avec l'IA</p>
-                        </div>
-                        <div class="tool-card">
-                            <h4>4. Valider</h4>
-                            <p>Plan avec contraintes entreprise</p>
-                        </div>
-                        <div class="tool-card">
-                            <h4>5. Implémenter</h4>
-                            <p>Solution par raffinements successifs</p>
                         </div>
                     </div>
 
-                    <div class="exercise-box">
-                        <h4>🛠️ Exercice guidé : Système de gestion distribuée de stocks</h4>
-                        <p>Entreprise avec 5 entrepôts européens - Gestion unifiée temps réel</p>
-                    </div>
                 </section>
             </section>
 
