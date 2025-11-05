@@ -524,6 +524,23 @@
             font-size: 0.95em;
         }
         
+        .objective-box a {
+            color: #009c49;
+            text-decoration: underline;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .objective-box a:hover {
+            color: #00b0be;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+        
+        .objective-box a:visited {
+            color: #007a3d;
+        }
+        
         .reveal .slides section .fragment {
             opacity: 0.6;
         }
@@ -2328,9 +2345,9 @@ gemini --include-directories ../tests,../docs<br>
                     <div class="objective-box" style="margin-top: 1em;">
                         <h4>📚 Sources récentes (2024-2025)</h4>
                         <ul style="font-size: 0.7em;">
-                            <li><strong>Étude scientifique :</strong> "A Survey of Context Engineering for Large Language Models" (juillet 2025)</li>
-                            <li><strong>Vision entreprise :</strong> "Context Engineering: Elevating AI Strategy" (Medium)</li>
-                            <li><strong>Techniques avancées :</strong> "Advancing Long-Context LLM Performance in 2025"</li>
+                            <li><strong>Étude scientifique :</strong> <a href="https://arxiv.org/search/?query=Context+Engineering+Large+Language+Models&searchtype=all" target="_blank" style="color: #009c49; text-decoration: underline;">"A Survey of Context Engineering for Large Language Models"</a> (juillet 2025)</li>
+                            <li><strong>Vision entreprise :</strong> <a href="https://medium.com/tag/context-engineering" target="_blank" style="color: #009c49; text-decoration: underline;">"Context Engineering: Elevating AI Strategy"</a> (Medium)</li>
+                            <li><strong>Techniques avancées :</strong> <a href="https://arxiv.org/search/?query=Long-Context+LLM+Performance+2025&searchtype=all" target="_blank" style="color: #009c49; text-decoration: underline;">"Advancing Long-Context LLM Performance in 2025"</a></li>
                         </ul>
                     </div>
                 </section>
@@ -3214,7 +3231,29 @@ def create_code_review_agent():
             // Afficher les instructions pour les contrôles
             console.log('Reveal.js initialisé - Navigation dans toutes les directions disponible');
             console.log('Utilisez les flèches ou appuyez sur "?" pour voir tous les raccourcis');
+            
+            // Masquer/afficher le logo selon la slide active
+            updateLogoVisibility();
         });
+        
+        // Masquer/afficher le logo selon la slide active
+        Reveal.addEventListener('slidechanged', function(event) {
+            updateLogoVisibility();
+        });
+        
+        function updateLogoVisibility() {
+            const logo = document.querySelector('.astek-logo');
+            const currentSlide = Reveal.getCurrentSlide();
+            
+            if (logo && currentSlide) {
+                // Masquer le logo si la slide active a la classe day-header
+                if (currentSlide.classList.contains('day-header')) {
+                    logo.style.display = 'none';
+                } else {
+                    logo.style.display = 'block';
+                }
+            }
+        }
     </script>
 </body>
 </html>
