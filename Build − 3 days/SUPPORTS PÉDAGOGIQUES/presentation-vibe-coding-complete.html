@@ -1904,31 +1904,34 @@ gemini --include-directories ../tests,../docs<br>
                     
                     <div class="objective-box">
                         <h4>🎯 MCP : Bridge entre agents et outils externes</h4>
-                        <p>Démonstrations API/DB avec protocole standardisé</p>
+                        <p>Protocole standardisé pour connecter les agents aux ressources externes</p>
                     </div>
                     
                     <div class="tools-grid">
                         <div class="tool-card">
                             <h4>🗄️ Accès Base de Données</h4>
-                            <p>Connexion sécurisée aux données entreprise</p>
+                            <ul class="compact-list">
+                                <li>Connexion sécurisée aux données entreprise</li>
+                                <li>Requêtes SQL via MCP sans exposition directe</li>
+                                <li>Gestion des transactions et rollback automatique</li>
+                            </ul>
                         </div>
                         <div class="tool-card">
                             <h4>🌐 APIs externes</h4>
-                            <p>Intégration services tiers</p>
+                            <ul class="compact-list">
+                                <li>Intégration services tiers (météo, géolocalisation, etc.)</li>
+                                <li>Gestion automatique de l'authentification et des tokens</li>
+                                <li>Rate limiting et gestion des erreurs HTTP</li>
+                            </ul>
                         </div>
                         <div class="tool-card">
                             <h4>📁 Systèmes de fichiers</h4>
-                            <p>Manipulation fichiers en toute sécurité</p>
+                            <ul class="compact-list">
+                                <li>Manipulation fichiers en toute sécurité</li>
+                                <li>Restriction d'accès par répertoires autorisés</li>
+                                <li>Lecture/écriture avec validation des permissions</li>
+                            </ul>
                         </div>
-                    </div>
-                    
-                    <div class="exercise-box">
-                        <h4>🚀 Démonstrations live formateur</h4>
-                        <ul class="compact-list">
-                            <li>Agent + API météo externe</li>
-                            <li>Agent + Base de données produits</li>
-                            <li>Configuration MCP rapide</li>
-                        </ul>
                     </div>
                 </section>
 
