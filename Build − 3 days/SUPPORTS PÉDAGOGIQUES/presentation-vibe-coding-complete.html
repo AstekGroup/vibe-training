@@ -617,6 +617,222 @@
             from { transform: scaleX(0); }
             to { transform: scaleX(1); }
         }
+        
+        /* Styles spécifiques pour la slide des 5 Agents Spécialisés */
+        .agent-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            padding: 0.55em 0.7em;
+            border-radius: 12px;
+            border-left: 4px solid;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .agent-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: inherit;
+            border-radius: 16px 16px 0 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .agent-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+        
+        .agent-card:hover::before {
+            opacity: 1;
+        }
+        
+        /* Couleurs spécifiques pour chaque agent */
+        .agent-card.agent-popm {
+            border-left-color: #e74c3c;
+            background: linear-gradient(135deg, #fff5f5 0%, #ffeaea 100%);
+        }
+        
+        .agent-card.agent-popm::before {
+            background: linear-gradient(90deg, #e74c3c, #c0392b);
+        }
+        
+        .agent-card.agent-architect {
+            border-left-color: #3498db;
+            background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+        }
+        
+        .agent-card.agent-architect::before {
+            background: linear-gradient(90deg, #3498db, #2980b9);
+        }
+        
+        .agent-card.agent-dev {
+            border-left-color: #27ae60;
+            background: linear-gradient(135deg, #f0fff4 0%, #e8f8f0 100%);
+        }
+        
+        .agent-card.agent-dev::before {
+            background: linear-gradient(90deg, #27ae60, #229954);
+        }
+        
+        .agent-card.agent-qa {
+            border-left-color: #f39c12;
+            background: linear-gradient(135deg, #fffbf0 0%, #fff8e6 100%);
+        }
+        
+        .agent-card.agent-qa::before {
+            background: linear-gradient(90deg, #f39c12, #e67e22);
+        }
+        
+        .agent-card.agent-review {
+            border-left-color: #9b59b6;
+            background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+        }
+        
+        .agent-card.agent-review::before {
+            background: linear-gradient(90deg, #9b59b6, #8e44ad);
+        }
+        
+        .agent-card.agent-success {
+            border-left-color: var(--astek-teal);
+            background: linear-gradient(135deg, #e8f8f5 0%, #d1f2eb 100%);
+            border: 2px solid var(--astek-teal);
+        }
+        
+        .agent-card.agent-success::before {
+            background: var(--astek-gradient);
+        }
+        
+        .agent-card h4 {
+            margin-top: 0;
+            margin-bottom: 0.3em;
+            font-size: 0.82em;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.3em;
+            line-height: 1.08;
+        }
+        
+        .agent-card .agent-icon {
+            font-size: 0.95em;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+        }
+        
+        .agent-card p strong {
+            color: var(--astek-dark);
+            font-size: 0.72em;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.2em;
+        }
+        
+        .agent-card ul {
+            margin: 0.2em 0 0 0;
+            padding-left: 0.85em;
+            list-style: none;
+        }
+        
+        .agent-card ul li {
+            font-size: 0.62em;
+            line-height: 1.2;
+            margin-bottom: 0.15em;
+            position: relative;
+            padding-left: 0.25em;
+        }
+        
+        .agent-card ul li::before {
+            content: '▸';
+            position: absolute;
+            left: -1em;
+            color: inherit;
+            font-weight: bold;
+            opacity: 0.7;
+        }
+        
+        .agent-card.agent-popm ul li::before {
+            color: #e74c3c;
+        }
+        
+        .agent-card.agent-architect ul li::before {
+            color: #3498db;
+        }
+        
+        .agent-card.agent-dev ul li::before {
+            color: #27ae60;
+        }
+        
+        .agent-card.agent-qa ul li::before {
+            color: #f39c12;
+        }
+        
+        .agent-card.agent-review ul li::before {
+            color: #9b59b6;
+        }
+        
+        .agents-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 0.55em;
+            margin: 0.4em 0;
+        }
+        
+        .agents-grid-special {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
+        /* Force l'espacement entre les deux grilles pour éviter le chevauchement */
+        .agents-grid-special:first-of-type {
+            margin-bottom: 0.5em !important;
+        }
+        
+        .agents-grid-special:last-of-type {
+            margin-top: 2em !important;
+        }
+        
+        @media (max-width: 1200px) {
+            .agents-grid-special {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .agents-grid-special {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .objective-box-enhanced {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            border-left: 4px solid var(--astek-green);
+            padding: 0.5em 0.7em;
+            margin: 0.4em 0 0.35em 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,156,73,0.1);
+        }
+        
+        .objective-box-enhanced h4 {
+            color: #1b5e20;
+            margin-top: 0;
+            margin-bottom: 0.2em;
+            font-size: 0.78em;
+            font-weight: 700;
+        }
+        
+        .objective-box-enhanced p {
+            color: #2e7d32;
+            font-size: 0.7em;
+            margin: 0;
+            line-height: 1.2;
+        }
     </style>
 </head>
 
@@ -666,19 +882,20 @@
                                 <li>Premier TP live de vibe coding instinctif</li>
                                 <li>Prompt Engineering niveau entreprise</li>
                                 <li>Exercice guidé : Todo App Progressive</li>
-                                <li>Git + IA pour les équipes</li>
                             </ul>
                         </div>
                         <div class="tool-card" style="padding: 0.8em;">
-                            <h4 style="font-size: 0.9em; margin-bottom: 0.4em;">🛠️ 13h30 - 16h30 : Projets Pratiques</h4>
+                            <h4 style="font-size: 0.9em; margin-bottom: 0.4em;">🛠️ 13h30 - 15h30 : TP Approfondissement</h4>
                             <ul style="font-size: 0.75em; margin: 0; padding-left: 1.2em;">
-                                <li>4 projets au choix (Blog, Dashboard, API CRUD, Générateur Doc)</li>
-                                <li>Application des contraintes entreprise</li>
-                                <li>Review sécurité & performance</li>
+                                <li>Pratique des savoirs du matin</li>
+                                <li>Amélioration Todo App Progressive</li>
+                                <li>Prompt Engineering avancé</li>
+                                <li>Thinking & Debugging pratique</li>
+                                <li>Git + IA Workflow</li>
                             </ul>
                         </div>
                         <div class="tool-card" style="padding: 0.8em;">
-                            <h4 style="font-size: 0.9em; margin-bottom: 0.4em;">🌙 16h30 - 17h30 : Challenge Overnight</h4>
+                            <h4 style="font-size: 0.9em; margin-bottom: 0.4em;">🌙 15h45 - 17h30 : Challenge Overnight</h4>
                             <ul style="font-size: 0.75em; margin: 0; padding-left: 1.2em;">
                                 <li>Concevoir 3 agents spécialisés</li>
                                 <li>Réflexion architecture agents</li>
@@ -933,42 +1150,6 @@
                     </div>
                 </section>
 
-                <!-- JOUR 1 - Module 3: Prompt Engineering -->
-                <section>
-                    <span class="module-time">10h15 - 11h00 : Prompt Engineering Niveau Entreprise</span>
-                    <h2>📋 Template de Prompt</h2>
-                    
-                    <div class="code-example">
-<h4>Contexte Entreprise</h4>
-<p>[Système/Plateforme, utilisateurs, contraintes business]</p>
-
-<h4>Rôle Expert</h4>
-<p>Tu es un [architecte/senior] expert en [domaine technique]</p>
-
-<h4>Tâche Complexe</h4>
-<p>[Objectif technique avec contraintes performance/sécurité]</p>
-
-<h4>Contraintes Entreprise</h4>
-<ul>
-<li>Architecture : [microservices, cloud, etc.]</li>
-<li>Conformité : [GDPR, SOX, etc.]</li>
-<li>Performance : [SLA, charge, disponibilité]</li>
-<li>Sécurité : [authentification, audit, encryption]</li>
-</ul>
-
-<h4>Livrable Professionnel</h4>
-<p>[Code + tests + docs + monitoring]</p>
-                    </div>
-                    
-                    <div class="sources-box">
-                        <h4>📚 Sources récentes 2025</h4>
-                        <ul>
-                            <li><a href="#">The Ultimate Guide to Prompt Engineering in 2025</a></li>
-                            <li><a href="#">AWS Prescriptive Guidance: Prompt engineering best practices</a></li>
-                        </ul>
-                    </div>
-                </section>
-
                 <!-- JOUR 1 - Module 3b: Comparaison Starter vs Build -->
                 <section>
                     <h2>✅ Starter vs Build</h2>
@@ -1066,24 +1247,6 @@
                     </div>
                 </section>
 
-                <!-- JOUR 1 - Module 5: Git + IA -->
-                <section>
-                    <span class="module-time">12h00 - 12h30 : Git + IA pour les Équipes</span>
-                    <h2>🔗 Workflows collaboratifs</h2>
-                    
-                    <div class="objective-box">
-                        <h4>🎯 Preview agents J2</h4>
-                        <p>Introduction aux workflows d'équipe avec agents IA</p>
-                    </div>
-                    
-                    <ul>
-                        <li><strong>Code Review automatisé</strong> avec agents</li>
-                        <li><strong>Génération de commits</strong> intelligente</li>
-                        <li><strong>Documentation</strong> synchronisée</li>
-                        <li><strong>Tests</strong> générés automatiquement</li>
-                    </ul>
-                </section>
-
                 <!-- JOUR 1 - PAUSE DÉJEUNER -->
                 <section data-background-gradient="linear-gradient(135deg, #009c49, #00b0be)" data-background-color="#009c49">
                     <h1 style="color: white; font-size: 3em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">🍽️ Pause Déjeuner</h1>
@@ -1091,73 +1254,92 @@
                     <p style="color: white; opacity: 0.9; margin-top: 2em; font-size: 1.2em; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">60 minutes</p>
                 </section>
 
-                <!-- JOUR 1 - Module 6: Exercices - Projets 1-2 -->
+                <!-- JOUR 1 - Module 6: TP Approfondissement Matin -->
                 <section>
-                    <span class="module-time">13h30 - 16h00 : Exercices Individuels</span>
-                    <h2>🛠️ 4 projets vibe coding - Partie 1</h2>
-
-                    <div class="tools-grid">
-                        <div class="tool-card">
-                            <h4>1. Blog Statique</h4>
-                            <p>Générateur de site avec CMS headless</p>
-                            <ul class="compact-list">
-                                <li>Architecture JAMstack</li>
-                                <li>SEO optimisé</li>
-                                <li>Performance web</li>
-                            </ul>
-                        </div>
-                        <div class="tool-card">
-                            <h4>2. Dashboard Simple</h4>
-                            <p>Interface analytics temps réel</p>
-                            <ul class="compact-list">
-                                <li>Visualisation données</li>
-                                <li>Responsive design</li>
-                                <li>Authentification</li>
-                            </ul>
-                        </div>
+                    <span class="module-time">13h30 - 15h30 : TP Approfondissement - Pratique des savoirs du matin</span>
+                    <h2>🛠️ TP Approfondissement - Pratique des savoirs du matin</h2>
+                    
+                    <div class="objective-box" style="margin-bottom: 1.5em;">
+                        <h4>🎯 Objectif</h4>
+                        <p>Approfondir et mettre en pratique les concepts abordés le matin : Framework des 5 compétences, Prompt Engineering, et Vibe Coding instinctif</p>
                     </div>
 
-                    <div class="exercise-box">
-                        <h4>⏱️ Format : 2h30 d'exercices individuels</h4>
-                        <p>Choix libre entre les 4 projets selon votre domaine d'expertise</p>
+                    <div class="tools-grid" style="grid-template-columns: repeat(2, 1fr); gap: 0.6em;">
+                        <div class="tool-card" style="padding: 0.7em;">
+                            <h4 style="font-size: 0.9em; margin-bottom: 0.4em;">1. 🔄 Amélioration Todo App Progressive</h4>
+                            <ul class="compact-list" style="font-size: 0.65em;">
+                                <li><strong>Rappel :</strong> Reprendre l'exercice guidé du matin</li>
+                                <li><strong>Mission :</strong> Ajouter 3 fonctionnalités avancées</li>
+                                <li><strong>Focus :</strong> Appliquer les 5 compétences</li>
+                                <li><strong>Durée :</strong> 45 minutes</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card" style="padding: 0.7em;">
+                            <h4 style="font-size: 0.9em; margin-bottom: 0.4em;">2. 📝 Prompt Engineering Avancé</h4>
+                            <ul class="compact-list" style="font-size: 0.65em;">
+                                <li><strong>Objectif :</strong> Créer des prompts niveau entreprise</li>
+                                <li><strong>Exercice :</strong> Refactoriser un prompt basique</li>
+                                <li><strong>Critères :</strong> Clarté, structure, contraintes</li>
+                                <li><strong>Durée :</strong> 30 minutes</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card" style="padding: 0.7em;">
+                            <h4 style="font-size: 0.9em; margin-bottom: 0.4em;">3. 🧠 Thinking & Debugging</h4>
+                            <ul class="compact-list" style="font-size: 0.65em;">
+                                <li><strong>Pratique :</strong> Résoudre un bug complexe</li>
+                                <li><strong>Méthode :</strong> Appliquer le framework Thinking</li>
+                                <li><strong>Checkpoints :</strong> Valider chaque étape</li>
+                                <li><strong>Durée :</strong> 30 minutes</li>
+                            </ul>
+                        </div>
+                        <div class="tool-card" style="padding: 0.7em;">
+                            <h4 style="font-size: 0.9em; margin-bottom: 0.4em;">4. 🔗 Git + IA Workflow</h4>
+                            <ul class="compact-list" style="font-size: 0.65em;">
+                                <li><strong>Mise en pratique :</strong> Workflow collaboratif</li>
+                                <li><strong>Commits :</strong> Messages générés par IA</li>
+                                <li><strong>Review :</strong> Code review assisté</li>
+                                <li><strong>Durée :</strong> 25 minutes</li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
 
-                <!-- JOUR 1 - Module 6b: Exercices  - Projets 3-4 -->
+                <!-- JOUR 1 - Module 6b: Consignes TP Approfondissement -->
                 <section>
-                    <h2>🛠️ 4 projets vibe coding - Partie 2</h2>
-
-                    <div class="tools-grid">
-                        <div class="tool-card">
-                            <h4>3. API CRUD</h4>
-                            <p>Service REST avec authentification</p>
-                            <ul class="compact-list">
-                                <li>OpenAPI documentation</li>
-                                <li>Tests automatisés</li>
-                                <li>Sécurité OWASP</li>
+                    <h2>📋 Consignes et Format du TP</h2>
+                    
+                    <div class="tools-grid" style="grid-template-columns: repeat(2, 1fr);">
+                        <div class="objective-box" style="padding: 1.2em;">
+                            <h4>⏱️ Format</h4>
+                            <ul style="font-size: 0.85em; margin: 0.5em 0;">
+                                <li><strong>Durée totale :</strong> 2h00</li>
+                                <li><strong>Modalité :</strong> Travail individuel ou binômes</li>
+                                <li><strong>Support :</strong> Formateur disponible pour questions</li>
+                                <li><strong>Livrables :</strong> Code + Documentation prompts</li>
                             </ul>
                         </div>
-                        <div class="tool-card">
-                            <h4>4. Générateur Doc</h4>
-                            <p>Documentation automatique de code</p>
-                            <ul class="compact-list">
-                                <li>Parsing AST</li>
-                                <li>Templates Markdown</li>
-                                <li>Intégration CI/CD</li>
+                        
+                        <div class="code-example" style="padding: 1.2em;">
+                            <h4>✅ Critères de réussite</h4>
+                            <ul style="font-size: 0.85em; margin: 0.5em 0;">
+                                <li>✓ Application des 5 compétences</li>
+                                <li>✓ Prompts structurés et clairs</li>
+                                <li>✓ Code fonctionnel et testé</li>
+                                <li>✓ Utilisation efficace de Git + IA</li>
                             </ul>
                         </div>
                     </div>
-
-                    <div class="objective-box">
-                        <h4>🎯 Objectif pédagogique</h4>
-                        <p>Expérimenter le vibe coding en conditions réelles avec contraintes enterprise</p>
+                    
+                    <div class="exercise-box" style="margin-top: 1.5em;">
+                        <h4>💡 Conseils</h4>
+                        <p style="font-size: 0.9em; margin: 0.5em 0;">Utilisez les méthodes vues le matin : décomposition de tâches, prompts structurés, itérations avec checkpoints. Documentez vos prompts pour le débriefing collectif.</p>
                     </div>
                 </section>
 
                 <!-- JOUR 1 - PAUSE APRÈS-MIDI -->
                 <section data-background-gradient="linear-gradient(135deg, #009c49, #00b0be)" data-background-color="#009c49">
                     <h1 style="color: white; font-size: 3em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">☕ Pause</h1>
-                    <h2 style="color: white; opacity: 0.95; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">16h00 - 16h15</h2>
+                    <h2 style="color: white; opacity: 0.95; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">15h30 - 15h45</h2>
                     <p style="color: white; opacity: 0.9; margin-top: 2em; font-size: 1.2em; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">15 minutes</p>
                 </section>
 
@@ -1313,37 +1495,16 @@
                     </div>
                 </section>
 
-                <!-- JOUR 2 - Module 2c: Anatomie technique - Planning -->
-                <section>
-                    <h2>🔬 Anatomie d'un agent - Partie 1</h2>
 
-                    <h3>Boucle de planification</h3>
-                    
-                    <div class="code-example">
-<p><strong>1. Boucle de planification :</strong> Décomposition de tâches complexes</p>
-
-<p>Cycle d'agent typique :</p>
-<ol>
-<li>Recevoir tâche → 2. Décomposer → 3. Exécuter étape</li>
-<li>Évaluer → 5. Ajuster plan → 6. Continuer/Terminer</li>
-</ol>
-                    </div>
-                    
-                    <div class="objective-box">
-                        <h4>🎯 Exemple concret</h4>
-                        <p>Tâche : "Créer une API de gestion d'utilisateurs"</p>
-                        <p>→ Décomposition : Modèles, Routes, Sécurité, Tests, Documentation</p>
-                    </div>
-                </section>
 
                 <!-- JOUR 2 - Module 2d: Anatomie technique - Outils -->
                 <section>
-                    <h2>🔬 Anatomie d'un agent - Partie 2</h2>
+                    <h2>🔬 Anatomie d'un agent - Partie 1</h2>
                     <h3>Utilisation d'outils et Auto-correction</h3>
 
-                    <div class="tools-grid">
+                    <div class="tools-grid" style="grid-template-columns: repeat(2, 1fr);">
                         <div class="tool-card">
-                            <h4>1. 🛠️ Utilisation d'outils</h4>
+                            <h4>🛠️ Utilisation d'outils</h4>
                             <ul class="compact-list">
                                 <li><strong>Système de fichiers :</strong> Lecture, écriture, recherche</li>
                                 <li><strong>Contrôle de version :</strong> Opérations Git</li>
@@ -1352,7 +1513,7 @@
                             </ul>
                         </div>
                         <div class="tool-card">
-                            <h4>2. 🔄 Auto-correction</h4>
+                            <h4>🔄 Auto-correction</h4>
                             <ul class="compact-list">
                                 <li><strong>Détection d'erreurs :</strong> Analyse des erreurs de compilation</li>
                                 <li><strong>Stratégies de reprise :</strong> Tentatives avec ajustements</li>
@@ -1365,10 +1526,19 @@
 
                 <!-- JOUR 2 - Module 2e: Anatomie technique - Memory -->
                 <section>
-                    <h2>🔬 Anatomie d'un agent - Partie 3</h2>
-                    <h3>Gestion de mémoire</h3>
+                    <h2>🔬 Anatomie d'un agent - Partie 2</h2>
+                    <h3>Planification et Gestion de mémoire</h3>
 
-                    <div class="tools-grid">
+                    <div class="tools-grid" style="grid-template-columns: repeat(2, 1fr);">
+                        <div class="tool-card">
+                            <h4>🔁 Boucle de planification</h4>
+                            <ul class="compact-list">
+                                <li><strong>Décomposition :</strong> Tâches complexes en sous-tâches</li>
+                                <li><strong>Cycle :</strong> Recevoir → Décomposer → Exécuter</li>
+                                <li><strong>Évaluation :</strong> Analyser les résultats</li>
+                                <li><strong>Ajustement :</strong> Modifier le plan si nécessaire</li>
+                            </ul>
+                        </div>
                         <div class="tool-card">
                             <h4>🧠 Types de mémoire</h4>
                             <ul class="compact-list">
@@ -1380,10 +1550,6 @@
                         </div>
                     </div>
 
-                    <div class="objective-box">
-                        <h4>🎯 Récapitulatif des 4 composants</h4>
-                        <p><strong>1. Boucle de planification</strong> → <strong>2. Utilisation d'outils</strong> → <strong>3. Gestion de mémoire</strong> → <strong>4. Auto-correction</strong></p>
-                    </div>
                 </section>
 
                 <!-- JOUR 2 - PAUSE MATIN -->
@@ -2566,193 +2732,83 @@ def create_code_review_agent():
 
                 <!-- JOUR 3 - TP Final : Les 5 Agents Spécialisés -->
                 <section>
-                    <h2>👥 Les 5 Agents Spécialisés du TP Final</h2>
+                    <h2 style="font-size: 1.25em; margin-bottom: 0.3em;">👥 Les 5 Agents Spécialisés du TP Final</h2>
 
-                    <div class="objective-box">
+                    <div class="objective-box-enhanced">
                         <h4>🎯 Orchestration Multi-Agents</h4>
-                        <p style="font-size: 0.85em;">Vous allez créer et orchestrer 5 agents IA spécialisés qui collaborent pour livrer un projet complet.</p>
+                        <p>Vous allez créer et orchestrer 5 agents IA spécialisés qui collaborent pour livrer un projet complet.</p>
                     </div>
 
-                    <div class="tools-grid" style="margin-top: 1.5em;">
-                        <div class="tool-card fragment">
-                            <h4>1️⃣ Agent P.O.P.M.</h4>
-                            <p style="font-size: 0.85em;"><strong>Product Owner & Project Manager</strong></p>
-                            <ul style="font-size: 0.75em;">
-                                <li>Responsable : Gestion produit et projet</li>
-                                <li>Rôle : Reformuler besoins, prioriser, planifier</li>
-                                <li>Livrable : User stories + Planning développement</li>
+                    <div class="agents-grid agents-grid-special fragment">
+                        <div class="agent-card agent-popm fragment">
+                            <h4>
+                                <span class="agent-icon">👤</span>
+                                <span>Agent P.O.P.M.</span>
+                            </h4>
+                            <ul>
+                                <li><strong>Responsable :</strong> Gestion produit et projet</li>
+                                <li><strong>Rôle :</strong> Reformuler besoins, prioriser, planifier</li>
+                                <li><strong>Livrable :</strong> User stories + Planning développement</li>
                             </ul>
                         </div>
-                        <div class="tool-card fragment">
-                            <h4>2️⃣ Agent Architecte</h4>
-                            <p style="font-size: 0.85em;"><strong>Solution Architect</strong></p>
-                            <ul style="font-size: 0.75em;">
-                                <li>Responsable : Conception technique globale</li>
-                                <li>Rôle : Définir architecture, choix technologiques</li>
-                                <li>Livrable : Schéma architecture + Spécifications</li>
+                        <div class="agent-card agent-architect fragment">
+                            <h4>
+                                <span class="agent-icon">🏗️</span>
+                                <span>Agent Architecte</span>
+                            </h4>
+                            <ul>
+                                <li><strong>Responsable :</strong> Conception technique globale</li>
+                                <li><strong>Rôle :</strong> Définir architecture, choix technologiques</li>
+                                <li><strong>Livrable :</strong> Schéma architecture + Spécifications</li>
                             </ul>
                         </div>
-                        <div class="tool-card fragment">
-                            <h4>3️⃣ Agents Dev (Frontend/Backend/DevOps)</h4>
-                            <p style="font-size: 0.85em;"><strong>Development Team</strong></p>
-                            <ul style="font-size: 0.75em;">
-                                <li>Responsable : Implémentation code</li>
-                                <li>Rôle : Développer fonctionnalités selon architecture</li>
-                                <li>Livrable : Code source complet et fonctionnel</li>
+                        <div class="agent-card agent-dev fragment">
+                            <h4>
+                                <span class="agent-icon">💻</span>
+                                <span>Agents Dev</span>
+                            </h4>
+                            <ul>
+                                <li><strong>Responsable :</strong> Implémentation code</li>
+                                <li><strong>Rôle :</strong> Développer fonctionnalités selon architecture</li>
+                                <li><strong>Livrable :</strong> Code source complet et fonctionnel</li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="tools-grid" style="margin-top: 1em;">
-                        <div class="tool-card fragment">
-                            <h4>4️⃣ Agent QA (Quality Assurance)</h4>
-                            <p style="font-size: 0.85em;"><strong>Test Engineer</strong></p>
-                            <ul style="font-size: 0.75em;">
-                                <li>Responsable : Qualité et tests</li>
-                                <li>Rôle : Créer et exécuter plan de tests</li>
-                                <li>Livrable : Suite tests + Rapport qualité</li>
+                    <div class="agents-grid agents-grid-special fragment" style="margin-top: 2em !important; margin-bottom: 0 !important;">
+                        <div class="agent-card agent-qa fragment">
+                            <h4>
+                                <span class="agent-icon">✅</span>
+                                <span>Agent QA</span>
+                            </h4>
+                            <ul>
+                                <li><strong>Responsable :</strong> Qualité et tests</li>
+                                <li><strong>Rôle :</strong> Créer et exécuter plan de tests</li>
+                                <li><strong>Livrable :</strong> Suite tests + Rapport qualité</li>
                             </ul>
                         </div>
-                        <div class="tool-card fragment">
-                            <h4>5️⃣ Agent Review</h4>
-                            <p style="font-size: 0.85em;"><strong>Technical Reviewer</strong></p>
-                            <ul style="font-size: 0.75em;">
-                                <li>Responsable : Revue code et conformité</li>
-                                <li>Rôle : Analyser qualité, sécurité, bonnes pratiques</li>
-                                <li>Livrable : Rapport review + Recommandations</li>
+                        <div class="agent-card agent-review fragment">
+                            <h4>
+                                <span class="agent-icon">🔍</span>
+                                <span>Agent Review</span>
+                            </h4>
+                            <ul>
+                                <li><strong>Responsable :</strong> Revue code et conformité</li>
+                                <li><strong>Rôle :</strong> Analyser qualité, sécurité, bonnes pratiques</li>
+                                <li><strong>Livrable :</strong> Rapport review + Recommandations</li>
                             </ul>
                         </div>
-                        <div class="tool-card fragment" style="background: rgba(52, 152, 219, 0.2);">
-                            <h4>💡 Clé du Succès</h4>
-                            <p style="font-size: 0.8em;"><strong>Coordination & Communication</strong></p>
-                            <ul style="font-size: 0.75em;">
+                        <div class="agent-card agent-success fragment">
+                            <h4>
+                                <span class="agent-icon">💡</span>
+                                <span>Clé du Succès</span>
+                            </h4>
+                            <ul>
                                 <li>Chaque agent a un rôle précis et complémentaire</li>
                                 <li>La collaboration entre agents est essentielle</li>
                                 <li>Le P.O.P.M. orchestre l'ensemble du processus</li>
                             </ul>
                         </div>
-                    </div>
-                </section>
-
-                <!-- JOUR 3 - PAUSE APRÈS-MIDI -->
-                <section data-background-gradient="linear-gradient(135deg, #009c49, #00b0be)" data-background-color="#009c49">
-                    <h1 style="color: white; font-size: 3em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">☕ Pause</h1>
-                    <h2 style="color: white; opacity: 0.95; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">15h15 - 15h30</h2>
-                    <p style="color: white; opacity: 0.9; margin-top: 2em; font-size: 1.2em; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">15 minutes</p>
-                </section>
-
-                <!-- JOUR 3 - TP Final : Processus et Agents -->
-                <section>
-                    <h2>🔄 Processus à suivre - Les 5 Agents</h2>
-
-                    <div class="tools-grid">
-                        <div class="tool-card">
-                            <h4>1. Agent P.O.P.M. (45min)</h4>
-                            <ul style="font-size: 0.7em;">
-                                <li>Reformuler besoins en user stories</li>
-                                <li>Prioriser fonctionnalités (MoSCoW)</li>
-                                <li>Estimer complexité et risques</li>
-                                <li>Proposer planning de développement</li>
-                            </ul>
-                        </div>
-                        <div class="tool-card">
-                            <h4>2. Agent Architecte (60min)</h4>
-                            <ul style="font-size: 0.7em;">
-                                <li>Proposer architecture technique</li>
-                                <li>Justifier choix technologiques</li>
-                                <li>Définir structure des données</li>
-                                <li>Créer diagramme d'architecture</li>
-                            </ul>
-                        </div>
-                        <div class="tool-card">
-                            <h4>3. Agents Développeurs (90-120min)</h4>
-                            <ul style="font-size: 0.7em;">
-                                <li>Agent Frontend (UI/UX)</li>
-                                <li>Agent Backend (API/Base de données)</li>
-                                <li>Agent DevOps (Configuration/Déploiement)</li>
-                                <li>Code propre, commenté, avec gestion d'erreurs</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- JOUR 3 - TP Final : Agents QA et Review -->
-                <section>
-                    <h2>✅ Agents QA et Code Review</h2>
-
-                    <div class="tools-grid">
-                        <div class="tool-card">
-                            <h4>4. Agent QA (45min)</h4>
-                            <ul style="font-size: 0.7em;">
-                                <li>Créer plan de tests complet</li>
-                                <li>Identifier cas de test critiques</li>
-                                <li>Écrire tests automatisés</li>
-                                <li>Effectuer revue de sécurité basique</li>
-                                <li>Vérifier conformité aux user stories</li>
-                            </ul>
-                        </div>
-                        <div class="tool-card">
-                            <h4>5. Agent Relecteur (30min)</h4>
-                            <ul style="font-size: 0.7em;">
-                                <li>Évaluation qualité du code</li>
-                                <li>Suggestions d'optimisation</li>
-                                <li>Vérification bonnes pratiques</li>
-                                <li>Score qualité global avec justification</li>
-                                <li>Checklist d'améliorations</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="objective-box">
-                        <h4>🎯 Livrable Final : MCP (Minimum Complete Product)</h4>
-                        <ul style="font-size: 0.8em;">
-                            <li>Code source complet avec structure claire</li>
-                            <li>Base de données configurée avec données de test</li>
-                            <li>Interface utilisateur fonctionnelle et responsive</li>
-                            <li>API opérationnelle avec endpoints documentés</li>
-                            <li>Tests automatisés et passants</li>
-                            <li>Documentation utilisateur et technique</li>
-                            <li>Guide d'installation et déploiement</li>
-                        </ul>
-                    </div>
-                </section>
-
-                <!-- JOUR 3 - TP Final : Phase critique et planning -->
-                <section>
-                    <h2>🔍 Phase de Critique et Planning</h2>
-
-                    <div class="tools-grid">
-                        <div class="tool-card">
-                            <h4>🔍 Analyse du Processus (45min)</h4>
-                            <ul style="font-size: 0.7em;">
-                                <li>Forces et faiblesses de chaque agent</li>
-                                <li>Pertes d'information entre agents</li>
-                                <li>Ajustements de prompts nécessaires</li>
-                                <li>Optimisation du processus séquentiel</li>
-                            </ul>
-                        </div>
-                        <div class="tool-card">
-                            <h4>📊 Critères d'Évaluation</h4>
-                            <ul style="font-size: 0.7em;">
-                                <li><strong>Technique (60%) :</strong> Fonctionnalité MCP, qualité code</li>
-                                <li><strong>Processus (25%) :</strong> Qualité prompts, orchestration</li>
-                                <li><strong>Analyse critique (15%) :</strong> Profondeur, observations</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="exercise-box">
-                        <h4>📅 Planning détaillé</h4>
-                        <ul style="font-size: 0.7em;">
-                            <li><strong>11h00-11h45 :</strong> Agent P.O.P.M.</li>
-                            <li><strong>11h45-12h45 :</strong> Agent Architecte</li>
-                            <li><strong>12h45-13h45 :</strong> PAUSE DÉJEUNER</li>
-                            <li><strong>13h45-15h15 :</strong> Agents Développeurs</li>
-                            <li><strong>15h15-15h30 :</strong> PAUSE</li>
-                            <li><strong>15h30-16h15 :</strong> Agent QA</li>
-                            <li><strong>16h15-16h45 :</strong> Agent Code Review</li>
-                            <li><strong>16h45-17h00 :</strong> Phase d'analyse critique</li>
-                        </ul>
                     </div>
                 </section>
             </section>
