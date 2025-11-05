@@ -2133,7 +2133,7 @@ gemini --include-directories ../tests,../docs<br>
                 <!-- JOUR 3 - Programme de la journée -->
                 <section>
                     <h2>📋 Programme du Jour 3</h2>
-                    <div class="tools-grid">
+                    <div class="tools-grid" style="grid-template-columns: repeat(2, 1fr);">
                         <div class="tool-card" style="padding: 0.8em;">
                             <h4 style="font-size: 0.9em; margin-bottom: 0.4em;">🏗️ 9h00 - 10h00 : Le Contrat de Contexte</h4>
                             <ul style="font-size: 0.75em; margin: 0; padding-left: 1.2em;">
@@ -2173,17 +2173,112 @@ gemini --include-directories ../tests,../docs<br>
                 <!-- 9h00-10h00 : Le Contrat de Contexte -->
                 <section>
                     <h2>🏗️ Le Contrat de Contexte</h2>
-                    <h3 style="color: #3498db;">9h00 - 10h00 (60min)</h3>
-                    <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 15px; margin: 20px;">
-                        <h4>🎯 Objectifs</h4>
-                        <ul style="text-align: left;">
-                            <li>Comprendre les enjeux du Context Engineering</li>
-                            <li>Maîtriser les 6 piliers du contexte</li>
-                            <li>Rédiger et utiliser un Contrat de Contexte</li>
-                            <li>Identifier les champs essentiels pour chaque type d'agent</li>
-                        </ul>
-                        <h4>🎯 Définition</h4>
-                        <p style="font-size: 0.9em;">L'art d'orchestrer l'information pour maximiser l'efficacité des agents IA</p>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2em; align-items: start;">
+                        <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 15px;">
+                            <h4>🎯 Objectifs</h4>
+                            <ul style="text-align: left;">
+                                <li>Comprendre les enjeux du Context Engineering</li>
+                                <li>Maîtriser les 6 piliers du contexte</li>
+                                <li>Rédiger et utiliser un Contrat de Contexte</li>
+                                <li>Identifier les champs essentiels pour chaque type d'agent</li>
+                            </ul>
+                            <h4>🎯 Définition</h4>
+                            <p style="font-size: 0.9em;">L'art d'orchestrer l'information pour maximiser l'efficacité des agents IA</p>
+                        </div>
+                        
+                        <div style="display: flex; align-items: center; justify-content: center;">
+                            <svg width="100%" height="480" viewBox="0 0 400 480" style="max-width: 100%; margin-top: 20px;">
+                                <!-- Styles -->
+                                <defs>
+                                    <linearGradient id="contractGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#009c49;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#00b0be;stop-opacity:1" />
+                                    </linearGradient>
+                                    <linearGradient id="rulesGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#00b0be;stop-opacity:0.3" />
+                                        <stop offset="100%" style="stop-color:#009c49;stop-opacity:0.3" />
+                                    </linearGradient>
+                                    <filter id="shadow">
+                                        <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+                                        <feOffset dx="2" dy="2" result="offsetblur"/>
+                                        <feComponentTransfer>
+                                            <feFuncA type="linear" slope="0.3"/>
+                                        </feComponentTransfer>
+                                        <feMerge>
+                                            <feMergeNode/>
+                                            <feMergeNode in="SourceGraphic"/>
+                                        </feMerge>
+                                    </filter>
+                                </defs>
+                                
+                                <!-- Contrat de contexte (en haut) -->
+                                <rect x="50" y="20" width="300" height="80" rx="8" fill="url(#contractGrad)" filter="url(#shadow)"/>
+                                <text x="200" y="50" text-anchor="middle" fill="white" font-size="16" font-weight="bold" font-family="Poppins, sans-serif">
+                                    📋 Contrat de Contexte
+                                </text>
+                                <text x="200" y="70" text-anchor="middle" fill="white" font-size="12" font-family="Poppins, sans-serif">
+                                    Définit les règles générales
+                                </text>
+                                
+                                <!-- Flèche vers le bas -->
+                                <line x1="200" y1="100" x2="200" y2="140" stroke="#009c49" stroke-width="3" marker-end="url(#arrowhead)"/>
+                                <defs>
+                                    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto">
+                                        <polygon points="0 0, 10 3, 0 6" fill="#009c49"/>
+                                    </marker>
+                                </defs>
+                                
+                                <!-- Règles générales (au milieu) -->
+                                <rect x="50" y="150" width="300" height="120" rx="8" fill="url(#rulesGrad)" stroke="#009c49" stroke-width="2" filter="url(#shadow)"/>
+                                <text x="200" y="175" text-anchor="middle" fill="#2d2927" font-size="14" font-weight="bold" font-family="Poppins, sans-serif">
+                                    Règles Générales
+                                </text>
+                                <text x="60" y="200" fill="#2d2927" font-size="11" font-family="Poppins, sans-serif">• Qualité universelle</text>
+                                <text x="60" y="220" fill="#2d2927" font-size="11" font-family="Poppins, sans-serif">• Sécurité de base</text>
+                                <text x="60" y="240" fill="#2d2927" font-size="11" font-family="Poppins, sans-serif">• Standards communication</text>
+                                <text x="60" y="260" fill="#2d2927" font-size="11" font-family="Poppins, sans-serif">• Principes qualité</text>
+                                
+                                <!-- Flèche vers le bas -->
+                                <line x1="200" y1="270" x2="200" y2="310" stroke="#009c49" stroke-width="3" marker-end="url(#arrowhead)"/>
+                                
+                                <!-- Mise en œuvre (en bas) -->
+                                <rect x="50" y="320" width="300" height="140" rx="8" fill="white" stroke="#00b0be" stroke-width="2" filter="url(#shadow)"/>
+                                <text x="200" y="345" text-anchor="middle" fill="#2d2927" font-size="14" font-weight="bold" font-family="Poppins, sans-serif">
+                                    🔧 Mise en Œuvre
+                                </text>
+                                
+                                <!-- AGENTS.md -->
+                                <rect x="70" y="360" width="120" height="80" rx="6" fill="#e8f5e9" stroke="#009c49" stroke-width="2"/>
+                                <text x="130" y="385" text-anchor="middle" fill="#2d2927" font-size="12" font-weight="bold" font-family="Poppins, sans-serif">
+                                    AGENTS.md
+                                </text>
+                                <text x="130" y="405" text-anchor="middle" fill="#555" font-size="10" font-family="Poppins, sans-serif">
+                                    Règles
+                                </text>
+                                <text x="130" y="420" text-anchor="middle" fill="#555" font-size="10" font-family="Poppins, sans-serif">
+                                    spécifiques
+                                </text>
+                                <text x="130" y="435" text-anchor="middle" fill="#555" font-size="10" font-family="Poppins, sans-serif">
+                                    par agent
+                                </text>
+                                
+                                <!-- Agents Google ADK -->
+                                <rect x="210" y="360" width="120" height="80" rx="6" fill="#e0f7fa" stroke="#00b0be" stroke-width="2"/>
+                                <text x="270" y="385" text-anchor="middle" fill="#2d2927" font-size="12" font-weight="bold" font-family="Poppins, sans-serif">
+                                    Agents ADK
+                                </text>
+                                <text x="270" y="405" text-anchor="middle" fill="#555" font-size="10" font-family="Poppins, sans-serif">
+                                    • Product Owner
+                                </text>
+                                <text x="270" y="420" text-anchor="middle" fill="#555" font-size="10" font-family="Poppins, sans-serif">
+                                    • Architecte
+                                </text>
+                                <text x="270" y="435" text-anchor="middle" fill="#555" font-size="10" font-family="Poppins, sans-serif">
+                                    • Dev / QA / Review
+                                </text>
+                            </svg>
+                        </div>
                     </div>
                 </section>
 
