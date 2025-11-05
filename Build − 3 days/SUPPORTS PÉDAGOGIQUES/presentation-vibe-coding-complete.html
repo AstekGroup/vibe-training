@@ -833,6 +833,202 @@
             margin: 0;
             line-height: 1.2;
         }
+        
+        /* Styles pour les slides "Exemple de règles avancées" */
+        .rules-advanced-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1em;
+            margin: 1em 0;
+        }
+        
+        .rule-section-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 12px;
+            padding: 1.2em;
+            border-left: 5px solid;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .rule-section-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: inherit;
+            border-radius: 12px 12px 0 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .rule-section-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+        
+        .rule-section-card:hover::before {
+            opacity: 1;
+        }
+        
+        .rule-section-card.rule-context {
+            border-left-color: #3498db;
+            background: linear-gradient(135deg, #ebf5fb 0%, #d6eaf8 100%);
+        }
+        
+        .rule-section-card.rule-context::before {
+            background: linear-gradient(90deg, #3498db, #2980b9);
+        }
+        
+        .rule-section-card.rule-stack {
+            border-left-color: #27ae60;
+            background: linear-gradient(135deg, #eafaf1 0%, #d5f4e6 100%);
+        }
+        
+        .rule-section-card.rule-stack::before {
+            background: linear-gradient(90deg, #27ae60, #229954);
+        }
+        
+        .rule-section-card.rule-regulatory {
+            border-left-color: #e74c3c;
+            background: linear-gradient(135deg, #fdedec 0%, #fadbd8 100%);
+        }
+        
+        .rule-section-card.rule-regulatory::before {
+            background: linear-gradient(90deg, #e74c3c, #c0392b);
+        }
+        
+        .rule-section-card.rule-quality {
+            border-left-color: #9b59b6;
+            background: linear-gradient(135deg, #f4ecf7 0%, #e8daef 100%);
+        }
+        
+        .rule-section-card.rule-quality::before {
+            background: linear-gradient(90deg, #9b59b6, #8e44ad);
+        }
+        
+        .rule-section-card.rule-security {
+            border-left-color: #f39c12;
+            background: linear-gradient(135deg, #fef9e7 0%, #fef5e7 100%);
+        }
+        
+        .rule-section-card.rule-security::before {
+            background: linear-gradient(90deg, #f39c12, #e67e22);
+        }
+        
+        .rule-section-card.rule-result {
+            border-left-color: var(--astek-teal);
+            background: linear-gradient(135deg, #e8f8f5 0%, #d1f2eb 100%);
+            border: 2px solid var(--astek-teal);
+            grid-column: 1 / -1;
+        }
+        
+        .rule-section-card.rule-result::before {
+            background: var(--astek-gradient);
+        }
+        
+        .rule-section-card h4 {
+            margin-top: 0;
+            margin-bottom: 0.8em;
+            font-size: 0.95em;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.4em;
+            color: var(--astek-dark);
+        }
+        
+        .rule-section-card h4 .rule-icon {
+            font-size: 1.2em;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+        }
+        
+        .rule-section-card p {
+            font-size: 0.85em;
+            line-height: 1.5;
+            margin: 0.5em 0;
+            color: var(--astek-dark);
+        }
+        
+        .rule-section-card ul {
+            margin: 0.6em 0;
+            padding-left: 1.2em;
+            list-style: none;
+        }
+        
+        .rule-section-card ul li {
+            font-size: 0.8em;
+            line-height: 1.6;
+            margin-bottom: 0.5em;
+            position: relative;
+            padding-left: 1.2em;
+            color: var(--astek-dark);
+        }
+        
+        .rule-section-card ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: inherit;
+            font-weight: bold;
+            font-size: 1em;
+        }
+        
+        .rule-section-card.rule-context ul li::before {
+            color: #3498db;
+        }
+        
+        .rule-section-card.rule-stack ul li::before {
+            color: #27ae60;
+        }
+        
+        .rule-section-card.rule-regulatory ul li::before {
+            color: #e74c3c;
+        }
+        
+        .rule-section-card.rule-quality ul li::before {
+            color: #9b59b6;
+        }
+        
+        .rule-section-card.rule-security ul li::before {
+            color: #f39c12;
+        }
+        
+        .rule-section-card.rule-result ul li::before {
+            color: var(--astek-teal);
+        }
+        
+        .rule-section-card strong {
+            color: var(--astek-dark);
+            font-weight: 600;
+        }
+        
+        .rules-header-box {
+            background: linear-gradient(135deg, #2d2927 0%, #3d3937 100%);
+            color: white;
+            padding: 1em 1.2em;
+            border-radius: 12px;
+            margin-bottom: 1em;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .rules-header-box h4 {
+            margin: 0 0 0.5em 0;
+            font-size: 1em;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .rules-header-box p {
+            margin: 0;
+            font-size: 0.85em;
+            line-height: 1.4;
+            opacity: 0.95;
+        }
     </style>
 </head>
 
@@ -2051,7 +2247,7 @@ gemini --include-directories ../tests,../docs<br>
 
                     <div class="objective-box">
                         <h4>🎯 Sous-section intégrée au Contrat de Contexte (9h00-10h00)</h4>
-                        <p style="font-size: 0.85em;">Les fichiers de règles (CLAUDE.md, .cursorrules, etc.) sont la <strong>persistance pratique</strong> du contrat de contexte.</p>
+                        <p style="font-size: 0.85em;">Les fichiers de règles (AGENTS.md, etc.) sont la <strong>persistance pratique</strong> du contrat de contexte.</p>
                     </div>
 
                     <div class="tools-grid" style="margin-top: 1.5em;">
@@ -2062,10 +2258,9 @@ gemini --include-directories ../tests,../docs<br>
                         <div class="tool-card fragment">
                             <h4>🔑 Formats principaux</h4>
                             <ul style="font-size: 0.7em; text-align: left;">
+                                <li><code>AGENTS.md</code> (stanard générique)</li>
                                 <li><code>CLAUDE.md</code> (Claude Code)</li>
                                 <li><code>.cursorrules</code> (Cursor)</li>
-                                <li><code>.continuerules</code> (Continue)</li>
-                                <li><code>.aicontext</code> (générique)</li>
                             </ul>
                         </div>
                         <div class="tool-card fragment">
@@ -2120,24 +2315,36 @@ Attention à la sécurité.
                 <section>
                     <h2>⭐ Exemple de règles avancées (1/2)</h2>
 
-                    <div class="code-example" style="font-size: 0.8em;">
-<h4>Contexte : API fintech haute performance</h4>
-<p>Tu es un senior backend engineer spécialisé en systèmes financiers.</p>
+                    <div class="rules-header-box fragment">
+                        <h4>📋 Contexte : API fintech haute performance</h4>
+                        <p>Tu es un senior backend engineer spécialisé en systèmes financiers.</p>
+                    </div>
 
-<p><strong>STACK TECHNOLOGIQUE :</strong></p>
-<ul>
-<li>Python 3.11+ avec FastAPI</li>
-<li>PostgreSQL avec SQLAlchemy async</li>
-<li>Redis pour caching</li>
-<li>Pytest pour tests</li>
-</ul>
+                    <div class="rules-advanced-container">
+                        <div class="rule-section-card rule-stack fragment">
+                            <h4>
+                                <span class="rule-icon">💻</span>
+                                <span>Stack Technologique</span>
+                            </h4>
+                            <ul>
+                                <li>Python 3.11+ avec FastAPI</li>
+                                <li>PostgreSQL avec SQLAlchemy async</li>
+                                <li>Redis pour caching</li>
+                                <li>Pytest pour tests</li>
+                            </ul>
+                        </div>
 
-<p><strong>CONTRAINTES RÉGLEMENTAIRES :</strong></p>
-<ul>
-<li>PCI DSS Level 1 compliance</li>
-<li>SOX audit requirements</li>
-<li>GDPR pour données EU</li>
-</ul>
+                        <div class="rule-section-card rule-regulatory fragment">
+                            <h4>
+                                <span class="rule-icon">📜</span>
+                                <span>Contraintes Réglementaires</span>
+                            </h4>
+                            <ul>
+                                <li>PCI DSS Level 1 compliance</li>
+                                <li>SOX audit requirements</li>
+                                <li>GDPR pour données EU</li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
 
@@ -2145,24 +2352,42 @@ Attention à la sécurité.
                 <section>
                     <h2>⭐ Exemple de règles avancées (2/2)</h2>
 
-                    <div class="code-example" style="font-size: 0.8em;">
-<p><strong>STANDARDS QUALITÉ :</strong></p>
-<ul>
-<li>Type hints obligatoires (mypy strict)</li>
-<li>Couverture tests > 95%</li>
-<li>Logging structuré (JSON)</li>
-<li>Métriques OpenTelemetry</li>
-</ul>
+                    <div class="rules-advanced-container">
+                        <div class="rule-section-card rule-quality fragment">
+                            <h4>
+                                <span class="rule-icon">✨</span>
+                                <span>Standards Qualité</span>
+                            </h4>
+                            <ul>
+                                <li>Type hints obligatoires (mypy strict)</li>
+                                <li>Couverture tests > 95%</li>
+                                <li>Logging structuré (JSON)</li>
+                                <li>Métriques OpenTelemetry</li>
+                            </ul>
+                        </div>
 
-<p><strong>SÉCURITÉ :</strong></p>
-<ul>
-<li>Jamais de secrets en dur</li>
-<li>Validation inputs avec Pydantic</li>
-<li>Audit trail pour toutes mutations</li>
-<li>Rate limiting sur tous endpoints</li>
-</ul>
+                        <div class="rule-section-card rule-security fragment">
+                            <h4>
+                                <span class="rule-icon">🔒</span>
+                                <span>Sécurité</span>
+                            </h4>
+                            <ul>
+                                <li>Jamais de secrets en dur</li>
+                                <li>Validation inputs avec Pydantic</li>
+                                <li>Audit trail pour toutes mutations</li>
+                                <li>Rate limiting sur tous endpoints</li>
+                            </ul>
+                        </div>
 
-<p><strong>🎯 RÉSULTAT :</strong> Contexte technique précis → Code de qualité production</p>
+                        <div class="rule-section-card rule-result fragment">
+                            <h4>
+                                <span class="rule-icon">🎯</span>
+                                <span>Résultat</span>
+                            </h4>
+                            <p style="font-size: 0.9em; font-weight: 600; margin: 0;">
+                                Contexte technique précis → Code de qualité production
+                            </p>
+                        </div>
                     </div>
                 </section>
 
@@ -2171,7 +2396,7 @@ Attention à la sécurité.
                     <h2>🏗️ Création de règles modulaires</h2>
                     
                     <div class="exercise-box">
-                        <h4>🛠️ Exercice pratique</h4>
+                        <h4>🛠️ Exercice pratiquea</h4>
                         
                         <div class="tools-grid">
                             <div class="tool-card">
