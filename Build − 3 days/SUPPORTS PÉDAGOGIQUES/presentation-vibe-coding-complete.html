@@ -2003,37 +2003,10 @@ gemini --include-directories ../tests,../docs<br>
                     <p style="color: white; opacity: 0.9; margin-top: 2em; font-size: 1.2em; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">15 minutes</p>
                 </section>
 
-                <!-- JOUR 2 - Module 5b: Livrables et critères -->
-                <section>
-                    <h2>📋 Livrables et critères d'évaluation</h2>
-
-                    <div class="tools-grid">
-                        <div class="tool-card">
-                            <h4>Critères d'évaluation</h4>
-                            <ul class="compact-list">
-                                <li>✅ Context 7 configuré et fonctionnel</li>
-                                <li>✅ GitLab connecté avec authentification</li>
-                                <li>✅ Workflow intégrant les deux serveurs</li>
-                                <li>✅ Configuration optimisée</li>
-                                <li>✅ Documentation des choix techniques</li>
-                            </ul>
-                        </div>
-                        <div class="tool-card">
-                            <h4>Livrables</h4>
-                            <ul class="compact-list">
-                                <li>Configuration MCP complète</li>
-                                <li>Script de déploiement automatisé</li>
-                                <li>Documentation utilisateur</li>
-                                <li>Rapport d'analyse de performance</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
                 <!-- JOUR 2 - Module 6: Sécurité Agents - Nouvelles menaces 2025 -->
                 <section>
                     <span class="module-time">15h15 - 16h45 : Sécurité Avancée des Agents IA (90min)</span>
-                    <h2>🛡️ Nouvelles menaces 2025</h2>
+                    <h2>🛡️ Nouvelles menaces 2025 - Partie 1</h2>
 
                     <div class="tools-grid">
                         <div class="tool-card">
@@ -2041,15 +2014,15 @@ gemini --include-directories ../tests,../docs<br>
                             <ul class="compact-list">
                                 <li><strong>Définition :</strong> Détournement d'agents autonomes</li>
                                 <li><strong>Cas documenté :</strong> Claude Code pour extorsion automatisée</li>
-                                <li><strong>Source :</strong> Anthropic (Août 2025)</li>
+                                <li><strong>Source :</strong> <a href="https://www.anthropic.com/news" target="_blank" style="color: #009c49; text-decoration: underline;">Anthropic (Août 2025)</a></li>
                                 <li><strong>Défense :</strong> Sandbox, permissions limitées</li>
                             </ul>
                         </div>
                         <div class="tool-card">
                             <h4>🔴 Context Poisoning via MCP</h4>
                             <ul class="compact-list">
-                                <li><strong>CVE-2025-49596 :</strong> RCE critique (CVSS 9.4)</li>
-                                <li><strong>CVE-2025-6514 :</strong> Autre vulnérabilité critique (CVSS 9.6)</li>
+                                <li><strong>CVE-2025-49596 :</strong> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-49596" target="_blank" style="color: #009c49; text-decoration: underline;">RCE critique (CVSS 9.4)</a></li>
+                                <li><strong>CVE-2025-6514 :</strong> <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-6514" target="_blank" style="color: #009c49; text-decoration: underline;">Autre vulnérabilité critique (CVSS 9.6)</a></li>
                                 <li><strong>Attaques :</strong> Tool Poisoning, Rug Pull</li>
                                 <li><strong>Défense :</strong> Validation outils, audit trails</li>
                             </ul>
@@ -2059,7 +2032,7 @@ gemini --include-directories ../tests,../docs<br>
 
                 <!-- JOUR 2 - Module 6a: Sécurité Agents - Tool Abuse et Data Exfiltration -->
                 <section>
-                    <h2>🛡️ Tool Abuse et Data Exfiltration</h2>
+                    <h2>🛡️ Nouvelles menaces 2025 - Partie 2</h2>
 
                     <div class="tools-grid">
                         <div class="tool-card">
@@ -2068,7 +2041,7 @@ gemini --include-directories ../tests,../docs<br>
                                 <li><strong>Premier cas :</strong> Malware exploitant CLI d'assistants IA</li>
                                 <li><strong>Données volées :</strong> Clés SSH, tokens npm, .gitconfig</li>
                                 <li><strong>Méthode :</strong> Hijacking Claude, Gemini, q CLI</li>
-                                <li><strong>Source :</strong> Snyk (Août 2025)</li>
+                                <li><strong>Source :</strong> <a href="https://snyk.io/blog" target="_blank" style="color: #009c49; text-decoration: underline;">Snyk (Août 2025)</a></li>
                             </ul>
                         </div>
                         <div class="tool-card">
@@ -2078,17 +2051,9 @@ gemini --include-directories ../tests,../docs<br>
                                 <li><strong>Repos GitHub publics :</strong> Exposition indirecte</li>
                                 <li><strong>Timing attacks :</strong> Information via délais</li>
                                 <li><strong>Proxy malveillants :</strong> Interception APIs</li>
+                                <li><strong>Source :</strong> <a href="https://owasp.org/www-community/vulnerabilities/Data_Exfiltration" target="_blank" style="color: #009c49; text-decoration: underline;">OWASP / Security Research 2025</a></li>
                             </ul>
                         </div>
-                    </div>
-
-                    <div class="exercise-box">
-                        <h4>🛠️ Atelier sécurité pratique (30min)</h4>
-                        <ul class="compact-list">
-                            <li>Analyse d'un cas de prompt injection</li>
-                            <li>Création de règles de sécurité pour agents</li>
-                            <li>Test de résistance aux attaques</li>
-                        </ul>
                     </div>
                 </section>
 
