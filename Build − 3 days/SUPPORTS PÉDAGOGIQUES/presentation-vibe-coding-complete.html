@@ -446,6 +446,16 @@
             color: var(--astek-dark);
         }
         
+        .tool-card h4 a {
+            text-decoration: none;
+            transition: opacity 0.2s ease;
+        }
+        
+        .tool-card h4 a:hover {
+            opacity: 0.7;
+            text-decoration: underline;
+        }
+        
         .comparison-table {
             width: 100%;
             border-collapse: collapse;
@@ -1168,114 +1178,89 @@
                     </div>
                 </section>
 
-                <!-- JOUR 1 - Module 2c: Les 5 compétences - Partie 1 -->
+                <!-- JOUR 1 - Module 2b: Modèles IA -->
                 <section>
-                    <h2>Les 5 compétences avec perspective avancée</h2>
+                    <h2 style="margin-bottom: 0.6em; font-size: 1.8em;">🤖 Modèles IA pour le développement</h2>
                     
-                    <div class="tools-grid">
-                        <div class="tool-card fragment">
-                            <h4>1. 🧠 Thinking</h4>
-                            <p><strong>Starter :</strong> Décomposer le problème</p>
-                            <p><strong>Build :</strong> → Planification multi-agents</p>
+                    <div class="tools-grid" style="grid-template-columns: repeat(3, 1fr); gap: 1em; margin-top: 1.2em;">
+                        <div class="tool-card fragment" style="padding: 1em; background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%); border-left: 4px solid #d32f2f; position: relative; transition: transform 0.2s, box-shadow 0.2s;">
+                            <div style="position: absolute; top: -10px; left: 20px; background: #d32f2f; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em; box-shadow: 0 2px 8px rgba(211,47,47,0.3);">🔥</div>
+                            <h4 style="margin-top: 0.5em; margin-bottom: 0.6em; font-size: 1em; color: #b71c1c; font-weight: 600;"><a href="https://www.anthropic.com/claude" target="_blank" style="color: #b71c1c; text-decoration: none;">Claude</a></h4>
+                            <p style="margin: 0.4em 0; font-size: 0.85em; line-height: 1.4; color: #333;"><strong style="color: #d32f2f;">Éditeur :</strong> Anthropic</p>
+                            <p style="margin: 0.4em 0 0; font-size: 0.85em; line-height: 1.4; color: #333;"><strong style="color: #d32f2f;">Points forts :</strong> Raisonnement avancé, sécurité</p>
                         </div>
-                        <div class="tool-card fragment">
-                            <h4>2. 🏗️ Frameworks</h4>
-                            <p><strong>Starter :</strong> Structures de base</p>
-                            <p><strong>Build :</strong> → OpenSpec,BMAD, CCPM, Spec-kit</p>
+                        <div class="tool-card fragment" style="padding: 1em; background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-left: 4px solid #1976d2; position: relative; transition: transform 0.2s, box-shadow 0.2s;">
+                            <div style="position: absolute; top: -10px; left: 20px; background: #1976d2; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em; box-shadow: 0 2px 8px rgba(25,118,210,0.3);">💎</div>
+                            <h4 style="margin-top: 0.5em; margin-bottom: 0.6em; font-size: 1em; color: #0d47a1; font-weight: 600;"><a href="https://deepmind.google/technologies/gemini/" target="_blank" style="color: #0d47a1; text-decoration: none;">Gemini</a></h4>
+                            <p style="margin: 0.4em 0; font-size: 0.85em; line-height: 1.4; color: #333;"><strong style="color: #1976d2;">Éditeur :</strong> Google</p>
+                            <p style="margin: 0.4em 0 0; font-size: 0.85em; line-height: 1.4; color: #333;"><strong style="color: #1976d2;">Points forts :</strong> Contexte étendu, multimodal</p>
+                        </div>
+                        <div class="tool-card fragment" style="padding: 1em; background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%); border-left: 4px solid #7b1fa2; position: relative; transition: transform 0.2s, box-shadow 0.2s;">
+                            <div style="position: absolute; top: -10px; left: 20px; background: #7b1fa2; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em; box-shadow: 0 2px 8px rgba(123,31,162,0.3);">🎨</div>
+                            <h4 style="margin-top: 0.5em; margin-bottom: 0.6em; font-size: 1em; color: #4a148c; font-weight: 600;"><a href="https://cursor.com" target="_blank" style="color: #4a148c; text-decoration: none;">Composer</a></h4>
+                            <p style="margin: 0.4em 0; font-size: 0.85em; line-height: 1.4; color: #333;"><strong style="color: #7b1fa2;">Éditeur :</strong> Cursor</p>
+                            <p style="margin: 0.4em 0 0; font-size: 0.85em; line-height: 1.4; color: #333;"><strong style="color: #7b1fa2;">Points forts :</strong> Édition multi-fichiers, agents</p>
+                    </div>
+                        <div class="tool-card fragment" style="padding: 1em; background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); border-left: 4px solid #388e3c; position: relative; transition: transform 0.2s, box-shadow 0.2s;">
+                            <div style="position: absolute; top: -10px; left: 20px; background: #388e3c; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em; box-shadow: 0 2px 8px rgba(56,142,60,0.3);">⚡</div>
+                            <h4 style="margin-top: 0.5em; margin-bottom: 0.6em; font-size: 1em; color: #1b5e20; font-weight: 600;"><a href="https://openai.com/chatgpt" target="_blank" style="color: #1b5e20; text-decoration: none;">ChatGPT</a></h4>
+                            <p style="margin: 0.4em 0; font-size: 0.85em; line-height: 1.4; color: #333;"><strong style="color: #388e3c;">Éditeur :</strong> OpenAI</p>
+                            <p style="margin: 0.4em 0 0; font-size: 0.85em; line-height: 1.4; color: #333;"><strong style="color: #388e3c;">Points forts :</strong> Popularité, écosystème</p>
+                        </div>
+                        <div class="tool-card fragment" style="padding: 1em; background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-left: 4px solid #f57c00; position: relative; transition: transform 0.2s, box-shadow 0.2s;">
+                            <div style="position: absolute; top: -10px; left: 20px; background: #f57c00; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em; box-shadow: 0 2px 8px rgba(245,124,0,0.3);">🇪🇺</div>
+                            <h4 style="margin-top: 0.5em; margin-bottom: 0.6em; font-size: 1em; color: #e65100; font-weight: 600;"><a href="https://mistral.ai" target="_blank" style="color: #e65100; text-decoration: none;">Mistral</a></h4>
+                            <p style="margin: 0.4em 0; font-size: 0.85em; line-height: 1.4; color: #333;"><strong style="color: #f57c00;">Éditeur :</strong> Mistral AI</p>
+                            <p style="margin: 0.4em 0 0; font-size: 0.85em; line-height: 1.4; color: #333;"><strong style="color: #f57c00;">Points forts :</strong> Open source, européen</p>
+                        </div>
+                        <div class="tool-card fragment" style="padding: 1em; background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%); border-left: 4px solid #757575; position: relative; transition: transform 0.2s, box-shadow 0.2s; opacity: 0.7;">
+                            <div style="position: absolute; top: -10px; left: 20px; background: #757575; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em; box-shadow: 0 2px 8px rgba(117,117,117,0.3);">🚫</div>
+                            <h4 style="margin-top: 0.5em; margin-bottom: 0.6em; font-size: 1em; color: #424242; font-weight: 600;">Auto</h4>
+                            <p style="margin: 0.4em 0; font-size: 0.85em; line-height: 1.4; color: #333;"><strong style="color: #757575;">Mode :</strong> Choix automatique par l'IDE</p>
+                            <p style="margin: 0.4em 0 0; font-size: 0.85em; line-height: 1.4; color: #d32f2f; font-weight: 600;"><strong>⚠️ À éviter</strong> : Perte de contrôle</p>
                         </div>
                     </div>
                 </section>
 
-                <!-- JOUR 1 - Module 2d: Les 5 compétences - Partie 2 -->
+                <!-- JOUR 1 - Module 2c: Les 5 compétences -->
                 <section>
-                    <h2>Les 5 compétences (suite)</h2>
+                    <h2 style="margin-bottom: 0.6em; font-size: 1.8em;">Les 5 compétences avec perspective avancée</h2>
                     
-                    <div class="tools-grid">
-                        <div class="tool-card fragment">
-                            <h4>3. ✅ Checkpoints</h4>
-                            <p><strong>Starter :</strong> Validation manuelle</p>
-                            <p><strong>Build :</strong> → Feedback loops automatisés</p>
-                        </div>
-                        <div class="tool-card fragment">
-                            <h4>4. 🐛 Debugging</h4>
-                            <p><strong>Starter :</strong> Correction manuelle</p>
-                            <p><strong>Build :</strong> → Auto-correction d'agents</p>
-                        </div>
-                        <div class="tool-card fragment">
-                            <h4>5. 📋 Context</h4>
-                            <p><strong>Starter :</strong> Context simple</p>
-                            <p><strong>Build :</strong> → Context Engineering (J3)</p>
-                        </div>
-                    </div>
-                    
-                    <div class="objective-box">
-                        <h4>🎯 Progression logique</h4>
-                        <p><strong>humain → assisté → automatisé</strong></p>
-                    </div>
-                </section>
-
-                <!-- JOUR 1 - Module 2e-bis: Tableau comparatif Starter → Build -->
-                <section>
-                    <h2>📊 Évolution des 5 Compétences : Starter → Build</h2>
-
-                    <table style="font-size: 0.65em; width: 100%; border-collapse: collapse; margin: 1em 0;">
-                        <thead>
-                            <tr style="background: rgba(52, 152, 219, 0.2);">
-                                <th style="padding: 0.8em; text-align: left; border-bottom: 2px solid #3498db;">Compétence</th>
-                                <th style="padding: 0.8em; text-align: left; border-bottom: 2px solid #3498db;">Niveau Starter</th>
-                                <th style="padding: 0.8em; text-align: left; border-bottom: 2px solid #3498db;">Niveau Build</th>
-                                <th style="padding: 0.8em; text-align: center; border-bottom: 2px solid #3498db;">Impact Entreprise</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="fragment">
-                                <td style="padding: 0.8em; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>🧠 THINKING</strong></td>
-                                <td style="padding: 0.8em; border-bottom: 1px solid rgba(255,255,255,0.1);">Décomposition manuelle<br><em style="font-size: 0.9em;">"App todo" → 4 étapes</em></td>
-                                <td style="padding: 0.8em; border-bottom: 1px solid rgba(255,255,255,0.1);">Orchestration multi-agents<br><em style="font-size: 0.9em;">5 agents coordonnés</em></td>
-                                <td style="padding: 0.8em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong style="color: #2ecc71;">5x plus rapide</strong></td>
-                            </tr>
-                            <tr class="fragment">
-                                <td style="padding: 0.8em; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>🏗️ FRAMEWORKS</strong></td>
-                                <td style="padding: 0.8em; border-bottom: 1px solid rgba(255,255,255,0.1);">Structures basiques<br><em style="font-size: 0.9em;">MVC, REST, Atomic Design</em></td>
-                                <td style="padding: 0.8em; border-bottom: 1px solid rgba(255,255,255,0.1);">Frameworks avancés<br><em style="font-size: 0.9em;">OpenSpec, BMAD, CCPM</em></td>
-                                <td style="padding: 0.8em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong style="color: #2ecc71;">Specs structurées</strong></td>
-                            </tr>
-                            <tr class="fragment">
-                                <td style="padding: 0.8em; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>✅ CHECKPOINTS</strong></td>
-                                <td style="padding: 0.8em; border-bottom: 1px solid rgba(255,255,255,0.1);">Validation manuelle<br><em style="font-size: 0.9em;">Git commits + tests unitaires</em></td>
-                                <td style="padding: 0.8em; border-bottom: 1px solid rgba(255,255,255,0.1);">Feedback loops automatisés<br><em style="font-size: 0.9em;">CI/CD intelligent + Agent QA</em></td>
-                                <td style="padding: 0.8em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong style="color: #2ecc71;">Qualité continue</strong></td>
-                            </tr>
-                            <tr class="fragment">
-                                <td style="padding: 0.8em; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong>🐛 DEBUGGING</strong></td>
-                                <td style="padding: 0.8em; border-bottom: 1px solid rgba(255,255,255,0.1);">Dialogue collaboratif<br><em style="font-size: 0.9em;">"Erreur 500, voici le log..."</em></td>
-                                <td style="padding: 0.8em; border-bottom: 1px solid rgba(255,255,255,0.1);">Auto-correction agents<br><em style="font-size: 0.9em;">Détection → Analyse → Fix → Test</em></td>
-                                <td style="padding: 0.8em; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1);"><strong style="color: #2ecc71;">80% bugs auto</strong></td>
-                            </tr>
-                            <tr class="fragment">
-                                <td style="padding: 0.8em;"><strong>📋 CONTEXT</strong></td>
-                                <td style="padding: 0.8em;">Template 6 piliers<br><em style="font-size: 0.9em;">Contexte + Rôle + Tâche...</em></td>
-                                <td style="padding: 0.8em;">Context Engineering<br><em style="font-size: 0.9em;">CLAUDE.md, RAG, Memory, MCP</em></td>
-                                <td style="padding: 0.8em; text-align: center;"><strong style="color: #2ecc71;">Contexte persistant</strong></td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <div class="objective-box" style="margin-top: 1.5em;">
-                        <h4>💼 Cas d'usage entreprise</h4>
-                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1em; margin-top: 0.8em;">
-                            <div style="font-size: 0.75em;">
-                                <strong>🚀 Startup</strong><br>
-                                MVP en 1 semaine avec agent unique
+                    <div class="tools-grid" style="grid-template-columns: repeat(3, 1fr); gap: 1em; margin-top: 1.2em;">
+                        <div class="tool-card fragment" style="padding: 1em; background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-left: 4px solid #2196f3; position: relative; transition: transform 0.2s, box-shadow 0.2s;">
+                            <div style="position: absolute; top: -10px; left: 20px; background: #2196f3; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em; box-shadow: 0 2px 8px rgba(33,150,243,0.3);">🧠</div>
+                            <h4 style="margin-top: 0.5em; margin-bottom: 0.6em; font-size: 1em; color: #1565c0; font-weight: 600;">1. Thinking</h4>
+                            <p style="margin: 0.4em 0; font-size: 0.85em; line-height: 1.4; color: #333;"><strong style="color: #2196f3;">Starter :</strong> Décomposer le problème</p>
+                            <p style="margin: 0.4em 0 0; font-size: 0.85em; line-height: 1.4; color: #333;"><strong style="color: #2196f3;">Build :</strong> → Planification multi-agents</p>
                             </div>
-                            <div style="font-size: 0.75em;">
-                                <strong>📈 Scale-up</strong><br>
-                                Refactoring avec 3 agents spécialisés
+                        <div class="tool-card fragment" style="padding: 1em; background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); border-left: 4px solid #ff9800; position: relative; transition: transform 0.2s, box-shadow 0.2s;">
+                            <div style="position: absolute; top: -10px; left: 20px; background: #ff9800; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em; box-shadow: 0 2px 8px rgba(255,152,0,0.3);">🏗️</div>
+                            <h4 style="margin-top: 0.5em; margin-bottom: 0.6em; font-size: 1em; color: #e65100; font-weight: 600;">2. Frameworks</h4>
+                            <p style="margin: 0.4em 0; font-size: 0.85em; line-height: 1.4; color: #333;"><strong style="color: #ff9800;">Starter :</strong> Structures de base</p>
+                            <p style="margin: 0.4em 0 0; font-size: 0.85em; line-height: 1.4; color: #333;"><strong style="color: #ff9800;">Build :</strong> → OpenSpec,BMAD, CCPM, Spec-kit</p>
                             </div>
-                            <div style="font-size: 0.75em;">
-                                <strong>🏢 Enterprise</strong><br>
-                                Migration legacy avec 5 agents coordonnés
+                        <div class="tool-card fragment" style="padding: 1em; background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); border-left: 4px solid #4caf50; position: relative; transition: transform 0.2s, box-shadow 0.2s;">
+                            <div style="position: absolute; top: -10px; left: 20px; background: #4caf50; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em; box-shadow: 0 2px 8px rgba(76,175,80,0.3);">✅</div>
+                            <h4 style="margin-top: 0.5em; margin-bottom: 0.6em; font-size: 1em; color: #2e7d32; font-weight: 600;">3. Checkpoints</h4>
+                            <p style="margin: 0.4em 0; font-size: 0.85em; line-height: 1.4; color: #333;"><strong style="color: #4caf50;">Starter :</strong> Validation manuelle</p>
+                            <p style="margin: 0.4em 0 0; font-size: 0.85em; line-height: 1.4; color: #333;"><strong style="color: #4caf50;">Build :</strong> → Feedback loops automatisés</p>
                             </div>
+                        <div class="tool-card fragment" style="padding: 1em; background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%); border-left: 4px solid #9c27b0; position: relative; transition: transform 0.2s, box-shadow 0.2s;">
+                            <div style="position: absolute; top: -10px; left: 20px; background: #9c27b0; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em; box-shadow: 0 2px 8px rgba(156,39,176,0.3);">🐛</div>
+                            <h4 style="margin-top: 0.5em; margin-bottom: 0.6em; font-size: 1em; color: #6a1b9a; font-weight: 600;">4. Debugging</h4>
+                            <p style="margin: 0.4em 0; font-size: 0.85em; line-height: 1.4; color: #333;"><strong style="color: #9c27b0;">Starter :</strong> Correction manuelle</p>
+                            <p style="margin: 0.4em 0 0; font-size: 0.85em; line-height: 1.4; color: #333;"><strong style="color: #9c27b0;">Build :</strong> → Auto-correction d'agents</p>
+                        </div>
+                        <div class="tool-card fragment" style="padding: 1em; background: linear-gradient(135deg, #e0f2f1 0%, #b2dfdb 100%); border-left: 4px solid #26a69a; position: relative; transition: transform 0.2s, box-shadow 0.2s;">
+                            <div style="position: absolute; top: -10px; left: 20px; background: #26a69a; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em; box-shadow: 0 2px 8px rgba(38,166,154,0.3);">📋</div>
+                            <h4 style="margin-top: 0.5em; margin-bottom: 0.6em; font-size: 1em; color: #00695c; font-weight: 600;">5. Context</h4>
+                            <p style="margin: 0.4em 0; font-size: 0.85em; line-height: 1.4; color: #333;"><strong style="color: #26a69a;">Starter :</strong> Context simple</p>
+                            <p style="margin: 0.4em 0 0; font-size: 0.85em; line-height: 1.4; color: #333;"><strong style="color: #26a69a;">Build :</strong> → Context Engineering (J3)</p>
+                        </div>
+                        <div class="tool-card fragment" style="padding: 1em; background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); border-left: 4px solid var(--astek-green); position: relative; transition: transform 0.2s, box-shadow 0.2s;">
+                            <div style="position: absolute; top: -10px; left: 20px; background: var(--astek-green); color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em; box-shadow: 0 2px 8px rgba(0,156,73,0.3);">🎯</div>
+                            <h4 style="margin-top: 0.5em; margin-bottom: 0.6em; font-size: 1em; color: #2e7d32; font-weight: 600;">Progression logique</h4>
+                            <p style="margin: 0.5em 0; font-size: 0.9em; font-weight: 600; color: #2e7d32; line-height: 1.4;"><strong>humain → assisté → automatisé</strong></p>
                         </div>
                     </div>
                 </section>
@@ -1660,7 +1645,7 @@
                             <h4 style="margin-top: 0.5em; margin-bottom: 0.6em; font-size: 1em; color: #e65100; font-weight: 600;">Agents multi-modaux</h4>
                             <p style="margin: 0.4em 0; font-size: 0.85em; line-height: 1.4; color: #333;"><strong style="color: #ff9800;">Usage :</strong> Analyse de diagrammes, maquettes d'interface</p>
                             <p style="margin: 0.4em 0 0; font-size: 0.8em; line-height: 1.4; color: #555; font-style: italic;"><em>Exemple :</em> "Génère le code à partir de cette maquette"</p>
-                        </div>
+                    </div>
                         <div class="tool-card fragment" style="padding: 1em; background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%); border-left: 4px solid #9c27b0; position: relative; transition: transform 0.2s, box-shadow 0.2s;">
                             <div style="position: absolute; top: -10px; left: 20px; background: #9c27b0; color: white; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.9em; box-shadow: 0 2px 8px rgba(156,39,176,0.3);">⚡</div>
                             <h4 style="margin-top: 0.5em; margin-bottom: 0.6em; font-size: 1em; color: #6a1b9a; font-weight: 600;">Agents spécialisés</h4>
@@ -1762,16 +1747,16 @@ gemini<br>
                     <div style="margin-top: 0.5em;">
                         <div style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); padding: 0.5em; border-radius: 5px; border-left: 3px solid #2196f3; margin-bottom: 0.5em;">
                             <p style="margin: 0; font-size: 0.82em; font-weight: 500; color: #1565c0; line-height: 1.2;"><strong>Tu es un agent Code Reviewer expert avec 10 ans d'expérience.</strong></p>
-                        </div>
-
+                    </div>
+                    
                         <div style="display: grid; grid-template-columns: 1fr; gap: 0.4em; margin-top: 0.4em;">
                             <div style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%); padding: 0.55em; border-radius: 5px; border-left: 3px solid #ff9800;">
                                 <div style="display: flex; align-items: center; margin-bottom: 0.3em;">
                                     <span style="background: #ff9800; color: white; padding: 0.2em 0.45em; border-radius: 15px; font-size: 0.65em; font-weight: bold; margin-right: 0.35em;">🎯</span>
                                     <h4 style="margin: 0; font-size: 0.82em; color: #e65100;">MISSION</h4>
-                                </div>
+                        </div>
                                 <p style="margin: 0; font-size: 0.72em; color: #333; line-height: 1.25;">Analyser les modifications git et fournir un review détaillé</p>
-                            </div>
+                    </div>
 
                             <div style="background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); padding: 0.55em; border-radius: 5px; border-left: 3px solid #4caf50;">
                                 <div style="display: flex; align-items: center; margin-bottom: 0.3em;">
@@ -1786,9 +1771,9 @@ gemini<br>
                                        <li style="margin-bottom: 0.15em;"><strong>Performance :</strong> Identifie bottlenecks potentiels</li>
                                        <li style="margin-bottom: 0.15em;"><strong>Maintenabilité :</strong> Structure, nommage, complexité</li>
                                        <li style="margin-bottom: 0;"><strong>Tests :</strong> Couverture et pertinence</li>
-                                       </ul>
-                                    </li>
-                                </ol>
+   </ul>
+</li>
+</ol>
                             </div>
 
                             <div style="background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%); padding: 0.55em; border-radius: 5px; border-left: 3px solid #9c27b0;">
@@ -1882,11 +1867,11 @@ gemini --include-directories ../tests,../docs<br>
                         </div>
                         <div class="tool-card">
                             <h4>📁 Systèmes de fichiers</h4>
-                            <ul class="compact-list">
+                        <ul class="compact-list">
                                 <li>Manipulation fichiers en toute sécurité</li>
                                 <li>Restriction d'accès par répertoires autorisés</li>
                                 <li>Lecture/écriture avec validation des permissions</li>
-                            </ul>
+                        </ul>
                         </div>
                     </div>
                 </section>
@@ -1931,7 +1916,7 @@ gemini --include-directories ../tests,../docs<br>
                     <h1 style="color: white; font-size: 3em; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">☕ Pause</h1>
                     <h2 style="color: white; opacity: 0.95; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);">15h00 - 15h15</h2>
                     <p style="color: white; opacity: 0.9; margin-top: 2em; font-size: 1.2em; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">15 minutes</p>
-                </section>                
+                </section>
 
                 <!-- JOUR 2 - Module 6: Sécurité Agents - Nouvelles menaces 2025 -->
                 <section>
@@ -1995,7 +1980,7 @@ gemini --include-directories ../tests,../docs<br>
                         <ul class="compact-list" style="font-size: 0.8em; margin-top: 0.5em;">
                             <li><a href="https://github.com/Fission-AI/OpenSpec/tree/main" target="_blank" style="color: #009c49; text-decoration: underline;">OpenSpec</a>: plus orienté brownfield, communauté plus réduite</li>
                             <li><a href="https://github.com/bmad-code-org/BMAD-METHOD/" target="_blank" style="color: #009c49; text-decoration: underline;">BMAD</a> : plus orienté workflow de développement, plus lourd à manipuler</li>
-                        </ul>
+                            </ul>
                     </div>
 
                     <div class="tools-grid" style="grid-template-columns: repeat(3, 1fr); gap: 0.9em; margin-bottom: 1.5em;">
@@ -2032,7 +2017,7 @@ gemini --include-directories ../tests,../docs<br>
                                 <li style="margin-bottom: 0.4em; position: relative; padding-left: 1em;">✓ Architecture définie</li>
                                 <li style="margin-bottom: 0.4em; position: relative; padding-left: 1em;">✓ Plan d'implémentation</li>
                             </ul>
-                        </div>
+                    </div>
                     </div>
 
                 </section>
@@ -2092,15 +2077,15 @@ gemini --include-directories ../tests,../docs<br>
                     
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2em; align-items: start;">
                         <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 15px;">
-                            <h4>🎯 Objectifs</h4>
-                            <ul style="text-align: left;">
-                                <li>Comprendre les enjeux du Context Engineering</li>
-                                <li>Maîtriser les 6 piliers du contexte</li>
-                                <li>Rédiger et utiliser un Contrat de Contexte</li>
-                                <li>Identifier les champs essentiels pour chaque type d'agent</li>
-                            </ul>
-                            <h4>🎯 Définition</h4>
-                            <p style="font-size: 0.9em;">L'art d'orchestrer l'information pour maximiser l'efficacité des agents IA</p>
+                        <h4>🎯 Objectifs</h4>
+                        <ul style="text-align: left;">
+                            <li>Comprendre les enjeux du Context Engineering</li>
+                            <li>Maîtriser les 6 piliers du contexte</li>
+                            <li>Rédiger et utiliser un Contrat de Contexte</li>
+                            <li>Identifier les champs essentiels pour chaque type d'agent</li>
+                        </ul>
+                        <h4>🎯 Définition</h4>
+                        <p style="font-size: 0.9em;">L'art d'orchestrer l'information pour maximiser l'efficacité des agents IA</p>
                         </div>
                         
                         <div style="display: flex; align-items: center; justify-content: center;">
@@ -2328,7 +2313,7 @@ Attention à la sécurité.
 
                     <div class="rules-header-box fragment">
                         <h4>📋 Contexte : API fintech haute performance</h4>
-                        <p>Tu es un senior backend engineer spécialisé en systèmes financiers.</p>
+<p>Tu es un senior backend engineer spécialisé en systèmes financiers.</p>
                     </div>
 
                     <div class="rules-advanced-container">
@@ -2337,12 +2322,12 @@ Attention à la sécurité.
                                 <span class="rule-icon">💻</span>
                                 <span>Stack Technologique</span>
                             </h4>
-                            <ul>
-                                <li>Python 3.11+ avec FastAPI</li>
-                                <li>PostgreSQL avec SQLAlchemy async</li>
-                                <li>Redis pour caching</li>
-                                <li>Pytest pour tests</li>
-                            </ul>
+<ul>
+<li>Python 3.11+ avec FastAPI</li>
+<li>PostgreSQL avec SQLAlchemy async</li>
+<li>Redis pour caching</li>
+<li>Pytest pour tests</li>
+</ul>
                         </div>
 
                         <div class="rule-section-card rule-regulatory fragment">
@@ -2350,11 +2335,11 @@ Attention à la sécurité.
                                 <span class="rule-icon">📜</span>
                                 <span>Contraintes Réglementaires</span>
                             </h4>
-                            <ul>
-                                <li>PCI DSS Level 1 compliance</li>
-                                <li>SOX audit requirements</li>
-                                <li>GDPR pour données EU</li>
-                            </ul>
+<ul>
+<li>PCI DSS Level 1 compliance</li>
+<li>SOX audit requirements</li>
+<li>GDPR pour données EU</li>
+</ul>
                         </div>
                     </div>
                 </section>
@@ -2369,12 +2354,12 @@ Attention à la sécurité.
                                 <span class="rule-icon">✨</span>
                                 <span>Standards Qualité</span>
                             </h4>
-                            <ul>
-                                <li>Type hints obligatoires (mypy strict)</li>
-                                <li>Couverture tests > 95%</li>
-                                <li>Logging structuré (JSON)</li>
-                                <li>Métriques OpenTelemetry</li>
-                            </ul>
+<ul>
+<li>Type hints obligatoires (mypy strict)</li>
+<li>Couverture tests > 95%</li>
+<li>Logging structuré (JSON)</li>
+<li>Métriques OpenTelemetry</li>
+</ul>
                         </div>
 
                         <div class="rule-section-card rule-security fragment">
@@ -2382,12 +2367,12 @@ Attention à la sécurité.
                                 <span class="rule-icon">🔒</span>
                                 <span>Sécurité</span>
                             </h4>
-                            <ul>
-                                <li>Jamais de secrets en dur</li>
-                                <li>Validation inputs avec Pydantic</li>
-                                <li>Audit trail pour toutes mutations</li>
-                                <li>Rate limiting sur tous endpoints</li>
-                            </ul>
+<ul>
+<li>Jamais de secrets en dur</li>
+<li>Validation inputs avec Pydantic</li>
+<li>Audit trail pour toutes mutations</li>
+<li>Rate limiting sur tous endpoints</li>
+</ul>
                         </div>
 
                         <div class="rule-section-card rule-result fragment">

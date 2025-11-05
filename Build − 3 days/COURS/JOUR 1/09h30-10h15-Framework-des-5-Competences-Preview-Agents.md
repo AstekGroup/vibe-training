@@ -20,6 +20,17 @@ Le Vibe coding
 | **Copilot**     | Extension multi-IDE | ✅ Lié à Github Copilot                        | [https://github.com/features/copilot]()                                        |
 | **Codex**       | Outil CLI           | ✅ Lié à ChatGPT                               | [https://openai.com/codex/](https://openai.com/codex/)                         |
 
+**Modèles IA pour le développement :**
+
+| Modèle            | Éditeur      | Points forts                              | Site web                                           |
+| :---------------- | :----------- | :---------------------------------------- | :------------------------------------------------- |
+| **Claude**        | Anthropic    | Raisonnement avancé, sécurité             | [anthropic.com/claude](https://www.anthropic.com/claude) |
+| **Gemini**        | Google       | Contexte étendu, multimodal               | [deepmind.google/gemini](https://deepmind.google/technologies/gemini/) |
+| **Composer**      | Cursor       | Édition multi-fichiers, agents            | [cursor.com](https://cursor.com)                  |
+| **ChatGPT**       | OpenAI       | Popularité, écosystème                    | [openai.com/chatgpt](https://openai.com/chatgpt)  |
+| **Mistral**       | Mistral AI   | Open source, européen                     | [mistral.ai](https://mistral.ai)                  |
+| **Auto**          | -            | ⚠️ **À éviter** : Perte de contrôle       | Choix automatique par l'IDE                      |
+
 **Premier TP live de vibe coding instinctif :**
 
 - Jeu de Snake
