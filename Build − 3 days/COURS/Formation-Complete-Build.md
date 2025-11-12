@@ -71,7 +71,7 @@ Développeurs expérimentés, architectes, tech leads avec projet d'entreprise. 
 | Horaire                 | Module                                   | Durée | Contenu                                                                                          |
 | ----------------------- | ---------------------------------------- | ------ | ------------------------------------------------------------------------------------------------ |
 | **9h00 - 10h00**  | **Le Contrat de Contexte**         | 60min  | Context Engineering, 6 piliers, template contrat de contexte                                     |
-| **10h00 - 12h30** | **Google ADK**                     | 150min | Agent Development Kit, création agents personnalisés, exercice pratique                        |
+| **10h00 - 12h30** | **IA : Debug, Optim, Tests, Review** | 150min | IA pour débogage, optimisation code, génération tests, revue code, exercice pratique          |
 | **12h30 - 13h30** | **🍽️ PAUSE DÉJEUNER**           | 60min  |                                                                                                  |
 | **13h30 - 17h00** | **TP Final - Projet Collaboratif** | 210min | Orchestration multi-agents : P.O., Architecte, Développement, QA, Code Review, analyse critique |
 | **17h00 - 17h30** | **Conclusion Formation**           | 30min  | Synthèse, évaluation, prochaines étapes                                                       |
@@ -92,4 +92,4 @@ Développeurs expérimentés, architectes, tech leads avec projet d'entreprise. 
 
 - **J1 :** Fondations solides + vision agents
 - **J2 :** Maîtrise agents + serveurs MCP + sécurité
-- **J3 :** Context Engineering + ADK + projet complet
+- **J3 :** Context Engineering + Qualité de code IA + projet complet
