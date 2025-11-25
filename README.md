@@ -1,10 +1,23 @@
 # Formation Vibe Coding
 
-Formation complète à la programmation assistée par IA et au développement agentique.
+> Formation complète à la programmation assistée par IA et au développement agentique.
 
-## 🎯 Objectifs
+---
 
-Maîtriser le **Vibe Coding** : méthodologie de développement collaboratif avec les agents IA pour automatiser et optimiser les tâches de programmation.
+| ℹ️ Informations | Détails |
+| :--- | :--- |
+| **📅 Durée** | Modulaire (1 à 5 jours) |
+| **👥 Public** | Tout développeur informatique, testeur, QA, architecte de tout niveau |
+| **💪 Pré-requis** | Connaissances de base en programmation, VSCode, Git, Comptes GitHub & Claude.ai |
+| **👤 Contact** | Philippe Pary (philippe.pary@astek.net) |
+| **🔄 Mise à jour** | 25 novembre 2025 |
+
+---
+
+## 🎯 Objectifs pédagogiques
+
+*   Maîtriser le **Vibe Coding** : méthodologie de développement collaboratif avec les agents IA.
+*   Connaître les outils IA qui aident à la conception, au développement et à la qualité des projets.
 
 ## 📚 Formats disponibles
 
@@ -18,11 +31,7 @@ Maîtriser le **Vibe Coding** : méthodologie de développement collaboratif ave
 
 Claude Code, Cursor, Gemini CLI, GitHub Copilot, Continue, WindSurf
 
-## 📋 Prérequis
 
-- Connaissances de base en programmation
-- VSCode, Git installés
-- Comptes GitHub, Claude.ai (gratuits)
 
 ## 📁 Structure
 
@@ -36,7 +45,4 @@ Claude Code, Cursor, Gemini CLI, GitHub Copilot, Continue, WindSurf
 └── Collective - 5 days/       # Formation équipe
 ```
 
-## 👥 Contact
 
-**Formateurs :** Philippe Pary, Thomas Foutrein
-**Version :** v3 - 2025-10-16
