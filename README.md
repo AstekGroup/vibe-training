@@ -36,13 +36,19 @@ Claude Code, Cursor, Gemini CLI, GitHub Copilot, Continue, WindSurf
 ## 📁 Structure
 
 ```
-├── Starter − 1 day/           # Formation 1 jour
-│   ├── COURS/                 # Contenus pédagogiques
-│   └── SUPPORTS PÉDAGOGIQUES/ # Présentations
-├── Build − 3 days/         # Formation 3 jours
-│   ├── COURS/                 # Contenus par jour
-│   └── SUPPORTS PÉDAGOGIQUES/ # Slides
-└── Collective - 5 days/       # Formation équipe
+├── COURS/                     # Modules de cours
+│   ├── MODULE_1_Fondements-Avances.md
+│   ├── MODULE_2_Agents-IA.md
+│   └── MODULE_3_Context-Engineering.md
+├── EXERCICES/                 # Exercices pratiques
+│   └── solutions/
+├── SUPPORTS/                  # Présentations et supports
+│   ├── presentations/
+│   ├── templates/
+│   └── archives/
+│       └── starter-1-jour/    # Archive Starter
+└── OUTILS/                    # Scripts et outils
+    └── scripts/
 ```
 
 
